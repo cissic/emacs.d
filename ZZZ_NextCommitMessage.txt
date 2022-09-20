@@ -1,0 +1,7 @@
+ 
+- set of new modifications 
+    - aligning columns in latex tables
+    - embrace.el for smart latex insertions 
+    - shell-pop
+    - make-mode for editing Makefiles
+    - defining emms shortcuts

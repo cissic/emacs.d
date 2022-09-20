@@ -1,0 +1,10 @@
+(setf tpl:*print-length* nil)
+(setf *objects* '(whiskey-bottle bucket frog chain))
+exit
+(switch-to-buffer (url-retrieve-synchronously "https://api.github.com/users/charignon/repos")                  (buffer-string))
+(switch-to-buffer (url-retrieve-synchronously "https://api.github.com/users/charignon/repos")                  (buffer-string))
+(switch-to-buffer (url-retrieve-synchronously"https://api.github.com/users/charignon/repos")                  (buffer-string))
+ls
+make test-s file=tests/test_2_generalparameters.py 
+git status
+(setf *objects* '(whiskey-bottle bucket frog chain))

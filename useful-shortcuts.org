@@ -1,0 +1,162 @@
+1. winner-mode - poprzednie widoki okien
+   C-c left
+   C-c right
+
+2. zaznacz tekst co slowo
+   M-S left/right
+
+3. Znajdowanie i otwieranie pliku pod kursorem (find-file-at-point):
+   M-x ffap
+
+4. Zamiana tekstu:
+   M-%    (Alt+Shift+5)
+   a potem 
+   ! ; zeby zamienic wszystkie wystapienia danego wyrazu
+
+5. Show keybindings for the current major-mode:
+   C-h m
+
+6. Reload the buffer
+   M-x revert-buffer
+
+7. Column mode:
+   C-x r t
+
+   (M-x string-insert-rectangle)
+
+8. Zaznacz wszystko:
+   C-x C-p
+
+9. Idź do poprzedniego widoku: (albo pakiet: https://github.com/rolandwalker/back-button )
+   C-u C-SPC (w celu poruszania się po aktualnym pliku)
+   C-x C-SPC (w celu poruszania się między buforami)
+
+10. Przeszukiwanie dokumentu:
+    C-s    # w przod
+    C-r    # w tyl
+
+11. Kompilowanie (makefile):
+    M-x compile 
+
+12. Zaznacz ostatnie zaznaczenie (przydatne po M-w) https://www.reddit.com/r/emacs/comments/43wh2c/how_to_keep_region_marked_after_copying/
+    C-x C-x 
+
+13. Przełączanie pomiedzy zwijaniem/nie zwijaniem wierszy
+    M-x toggle-truncate-lines
+    albo 
+    (define-key org-mode-map "\M-q" 'toggle-truncate-lines) ; w init file'u
+
+14. Czysci listę buforów ostatnio nieużywanych https://superuser.com/questions/895920/how-can-i-close-all-buffers-in-emacs
+    M-x clean-buffer-list
+
+15. Porzadki w buforach:
+    C-x C-b 
+    d ; zeby zaznaczyc wybrane pozycje na liscie
+    x ; zeby je usunac z listy
+
+16. Powiększanie/pomniejszanie czcionki
+    C-x C-+/C-x C--
+
+17. Zwięszkanie/zmniejszanie wcięcia bloku tekstu:
+    M-<left> / M-<right>  ; obowiazuje w ORG-MODE
+    C-x <TAB> <left>/<right> or S-<left>/<right>
+    ALBO!!!
+    M-S-<left>/<right>
+
+
+14. Komentarz
+    M-;
+    lub
+    C-x C-;
+
+15. Undo changes
+    C-/
+    C-x u
+    C-_
+
+    Redo:
+    C-g a potem C-/ 
+
+16. Przelaczanie pomiedzy line mode/char mode w shellu 
+    (zeby moc wklejac tekst do shella) https://stackoverflow.com/questions/2886184/copy-paste-in-emacs-ansi-term-shell
+    C-c C-j
+    C-c C-k
+
+17. Polecenie <-> skrót
+    M-x describe-key <-> M-x where-is <RET> polecenie <RET>
+    C-h k     <-> C-h w
+
+18. Wywolywanie polecen systemowych https://www.masteringemacs.org/article/executing-shell-commands-emacs
+    M-!
+
+19. Tryb kolumnowy:
+    C-x r t    - insert string 
+    Zaznaczasz "prostokat"
+    C-x r k    - kill
+    C-x r d    - delete
+    C-x r y    - yank (paste last killed rectangle at cursor position)
+
+# ELPY
+1. Idz do definicji (elpy-goto-definition) # ELPY
+   M-.
+ 
+# ORG-MODE
+1. Automatyczne "donumerowanie"/przenumerowanie listy
+   M-<RET>
+
+2. Zwijanie/rozwijanie list itp.
+   <TAB>
+
+3. Automatyczne rozwijanie wszystkich elementów http://muddyazian.blogspot.com/2015/03/how-to-expand-all-trees-emacs-and-org.html
+   C-u C-u C-u <TAB>
+
+4. Zaznaczenie pól checklisty:
+   C-c C-c
+
+5. Eksport dokumentu org to innych formatów:
+   C-c C-e
+
+# AUCTEX
+1. Otworzenie okna ze struktura dokumentu
+   (na gorze tego okna jest opis klawiszologii do nawigacji)
+   C-c =
+
+2. Automatyczne wstawianie labeli:
+   C-c (
+
+3. Automatyczne dokanczenie odnosnikow:
+   C-c )
+
+4. Kompilowanie dokumentu
+   C-c C-a
+
+5. Forward search (Emacs -> Okular) 
+   C-x C-g 
+
+6. Inverse search (Okular -> Emacs)
+   Shift + LMouse  (/przy wlaczonym w Okularze trybie "Browse"/ !!!!)
+
+7. Preview-latex https://www.gnu.org/software/auctex/manual/preview-latex.html#Installation
+   C-c C-p C-b   ; enabling preview
+   M-x preview-clearout   ; disabling preview
+
+8. Debugging LaTeX
+   C-c `    ; apostrof (od tyldy) -> przenosi do miejsca wystapienia pierwszego bledu
+   M-x TeX-error-overview
+
+9. Automatyczne konczenie srodowiska w latexu
+   C-c ]
+
+# MAGIT
+1. Commitowanie itp
+   C-x g
+   s -> stage
+   c c -> commit 
+
+   C-c C-c -> zatwierdz commit
+
+# MATLAB
+1. Uruchomienie shella matlaba:
+   M-x matlab-shell
+
+# BABEL
