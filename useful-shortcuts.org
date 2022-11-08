@@ -1,75 +1,184 @@
-1. winner-mode - poprzednie widoki okien
-   C-c left
-   C-c right
+* org-mode
+[[https://github.com/bzg/org-mode/blob/main/doc/org-manual.org][org-mode-doc-repository]]
 
-2. zaznacz tekst co slowo
+1. Wstawianie krótkiego przykładu. Dwukropek poprzedzający inne znaki w linii
+   (w ten sposób sa zaznaczane skróty klawiszowe w dokumentacji org-mode):
+   : krótki tekst - zostanie napisany inną czcionką zamiast używania #+BEGIN_EXAMPLE
+
+2. Znajdowanie i otwieranie pliku pod kursorem w org-modzie: (raz to dzialalo, ale przestalo)
+   : C-c '     # czyli (org-edit-special)
+
+3. Wstawianie środowiska w org-mode (np. src itp.)
+   : C-c C-,
+
+4. Wstawianie linku w org-mode:
+   : C-c C-l
+
+5. Komentarz w linii po tekście [[https://stackoverflow.com/a/27095959][(link)]]:
+   : @@comment: To komentarz w linii. Nie zostanie wyeksportowany do LateXa. comment@@
+
+6. Dołączanie (polecenie ~#+INCLUDE~ ) plików ([[https://orgmode.org/manual/Include-Files.html][link]]).
+
+7. Automatyczne "donumerowanie"/przenumerowanie listy
+   : M-<RET>
+
+8. Wstawianie nowego punktu checklisty:
+   : M-S-<RET>
+
+9. Zwijanie/rozwijanie list itp.
+   : <TAB>
+   : S-<TAB>
+
+10. Automatyczne rozwijanie wszystkich elementów http://muddyazian.blogspot.com/2015/03/how-to-expand-all-trees-emacs-and-org.html
+    : C-u C-u C-u <TAB>
+
+11. Zaznaczenie pól checklisty:
+   : C-c C-c
+
+12. Eksport dokumentu org do innych formatów:
+   : C-c C-e
+
+13. Dołączanie preambuły do pliku org [[https://emacs.stackexchange.com/questions/41697/reducing-latex-header-clutter-at-the-top-of-my-org-files][link]] (#+INCLUDE,#+SETUPFILE).
+# #+INCLUDE: "manual_venvs.org" src emacs-lisp
+# #+INCLUDE: "manual_venvs.org" :lines "7-"
+# #+INCLUDE: "manual_venvs.org" :lines "7-" :minlevel 1
+# #+INCLUDE: "manual_venvs.org" :minlevel 1 :onlycontents t
+# #+INCLUDE: "manual_venvs.org" :minlevel 1 :onlycontents t
+# #+INCLUDE: "manual_venvs.org::*ChapterName" :minlevel 1 :onlycontents t
+
+#+INCLUDE: "./chapters/manual_venvs.org" :minlevel 1
+
+
+13. Automatyczne przeladowywanie pliku z dysku:
+    https://emacs.stackexchange.com/questions/169/how-do-i-reload-a-file-in-a-buffer
+   : M-x revert-buffer
+   : C-x C-v RET @@comment M-x find-alternate-file -> https://emacs.stackexchange.com/a/189  comment@@
+   : (auto-revert-mode 1)  ; # albo dodac w init.el
+
+14. Generowanie kodu z bloków #+begin_source -> tangling: 
+  : C-c C-v t
+
+15. Literate programming (python)
+   https://orgmode.org/worg/org-contrib/babel/languages/ob-doc-python.html
+   https://www.johndcook.com/blog/2022/08/03/inline-org-babel/
+   https://www.johndcook.com/blog/2022/09/05/literate-programming/
+   https://stackoverflow.com/questions/52413521/how-to-use-variables-from-an-org-mode-source-block-in-an-inline-source-code
+    Przykład
+    #+begin_src org
+       This result is printed from python source: src_python{return 2+2}
+       
+       #+begin_src python :session :exports none
+       def foo(x):
+         if x>0:
+           return x+1
+       
+         else:
+           return x-1
+       
+       def two():
+         return "Hello world"
+       
+       napis = two()+" "+ str(foo(4))
+       
+       # return stringi
+       #+end_src
+       Inline simple: src_python{return 2+2}
+       
+       src_python[:session]{napis}
+    #+end_src
+
+16. Znacznik czasowy (timestamp)
+   : C-c .
+    
+
+
+
+16. 
+   
+
+
+* OLD
+
+1. Wykonanie operacji na kilku slowach
+   : C-3 M-D  ; usunie trzy slowa w przod
+   : C-2 M-DEL # usunie dwa slowa w tyl 
+
+2. winner-mode - poprzednie widoki okien
+   : C-c left
+   : C-c right
+
+3. zaznacz tekst co slowo
    M-S left/right
 
-3. Znajdowanie i otwieranie pliku pod kursorem (find-file-at-point):
-   M-x ffap
+4. Znajdowanie i otwieranie pliku pod kursorem (find-file-at-point):
+   : M-x ffap
+   (albo w org-modzie):
+   : C-c '     # czyli (org-edit-special)
 
-4. Zamiana tekstu:
+5. Zamiana tekstu:
    M-%    (Alt+Shift+5)
    a potem 
    ! ; zeby zamienic wszystkie wystapienia danego wyrazu
 
-5. Show keybindings for the current major-mode:
+6. Show keybindings for the current major-mode:
    C-h m
 
-6. Reload the buffer
+7. Reselect last selection (zaznaczanie obszaru po tym jak Emacs usunie zaznaczenie, np. po zakomentowaniu regionu)
+   C-x C-x
+
+8. Reload the buffer
    M-x revert-buffer
 
-7. Column mode:
+9. Column mode:
    C-x r t
 
    (M-x string-insert-rectangle)
 
-8. Zaznacz wszystko:
-   C-x C-p
+10. Zaznacz wszystko:
+    C-x C-p
 
-9. Idź do poprzedniego widoku: (albo pakiet: https://github.com/rolandwalker/back-button )
-   C-u C-SPC (w celu poruszania się po aktualnym pliku)
-   C-x C-SPC (w celu poruszania się między buforami)
+11. Idź do poprzedniego widoku: (albo pakiet: https://github.com/rolandwalker/back-button )
+    C-u C-SPC (w celu poruszania się po aktualnym pliku)
+    C-x C-SPC (w celu poruszania się między buforami)
 
-10. Przeszukiwanie dokumentu:
+12. Przeszukiwanie dokumentu:
     C-s    # w przod
     C-r    # w tyl
 
-11. Kompilowanie (makefile):
+13. Kompilowanie (makefile):
     M-x compile 
 
-12. Zaznacz ostatnie zaznaczenie (przydatne po M-w) https://www.reddit.com/r/emacs/comments/43wh2c/how_to_keep_region_marked_after_copying/
+14. Zaznacz ostatnie zaznaczenie (przydatne po M-w) https://www.reddit.com/r/emacs/comments/43wh2c/how_to_keep_region_marked_after_copying/
     C-x C-x 
 
-13. Przełączanie pomiedzy zwijaniem/nie zwijaniem wierszy
+15. Przełączanie pomiedzy zwijaniem/nie zwijaniem wierszy
     M-x toggle-truncate-lines
     albo 
     (define-key org-mode-map "\M-q" 'toggle-truncate-lines) ; w init file'u
 
-14. Czysci listę buforów ostatnio nieużywanych https://superuser.com/questions/895920/how-can-i-close-all-buffers-in-emacs
+16. Czysci listę buforów ostatnio nieużywanych https://superuser.com/questions/895920/how-can-i-close-all-buffers-in-emacs
     M-x clean-buffer-list
 
-15. Porzadki w buforach:
+17. Porzadki w buforach:
     C-x C-b 
     d ; zeby zaznaczyc wybrane pozycje na liscie
     x ; zeby je usunac z listy
 
-16. Powiększanie/pomniejszanie czcionki
+18. Powiększanie/pomniejszanie czcionki
     C-x C-+/C-x C--
 
-17. Zwięszkanie/zmniejszanie wcięcia bloku tekstu:
+19. Zwięszkanie/zmniejszanie wcięcia bloku tekstu:
     M-<left> / M-<right>  ; obowiazuje w ORG-MODE
     C-x <TAB> <left>/<right> or S-<left>/<right>
     ALBO!!!
     M-S-<left>/<right>
 
-
-14. Komentarz
+20. Komentarz
     M-;
     lub
     C-x C-;
 
-15. Undo changes
+21. Undo changes
     C-/
     C-x u
     C-_
@@ -77,44 +186,31 @@
     Redo:
     C-g a potem C-/ 
 
-16. Przelaczanie pomiedzy line mode/char mode w shellu 
+22. Przelaczanie pomiedzy line mode/char mode w shellu 
     (zeby moc wklejac tekst do shella) https://stackoverflow.com/questions/2886184/copy-paste-in-emacs-ansi-term-shell
     C-c C-j
     C-c C-k
 
-17. Polecenie <-> skrót
+23. Polecenie <-> skrót
     M-x describe-key <-> M-x where-is <RET> polecenie <RET>
     C-h k     <-> C-h w
 
-18. Wywolywanie polecen systemowych https://www.masteringemacs.org/article/executing-shell-commands-emacs
+24. Wywolywanie polecen systemowych https://www.masteringemacs.org/article/executing-shell-commands-emacs
     M-!
 
-19. Tryb kolumnowy:
+25. Tryb kolumnowy:
     C-x r t    - insert string 
     Zaznaczasz "prostokat"
     C-x r k    - kill
     C-x r d    - delete
     C-x r y    - yank (paste last killed rectangle at cursor position)
 
+
+
 # ELPY
 1. Idz do definicji (elpy-goto-definition) # ELPY
    M-.
  
-# ORG-MODE
-1. Automatyczne "donumerowanie"/przenumerowanie listy
-   M-<RET>
-
-2. Zwijanie/rozwijanie list itp.
-   <TAB>
-
-3. Automatyczne rozwijanie wszystkich elementów http://muddyazian.blogspot.com/2015/03/how-to-expand-all-trees-emacs-and-org.html
-   C-u C-u C-u <TAB>
-
-4. Zaznaczenie pól checklisty:
-   C-c C-c
-
-5. Eksport dokumentu org to innych formatów:
-   C-c C-e
 
 # AUCTEX
 1. Otworzenie okna ze struktura dokumentu

@@ -2,26 +2,24 @@
 ;; Automatically generated file!!! DO NOT EDIT!!!
 
 (setq url-cookie-storage
- '((".interia.pl"
-  [url-cookie "inpl_mobile" "d" "nie cze 26 13:04:37 2022 GMT" "/" ".interia.pl" nil])
+ '((".bieganie.pl"
+  [url-cookie "phpbb3_dqp2x_track" "tf%3A%2810%3A%281cx8%3A1%3B%29%3B73%3A%281dkb%3A1%3B%29%3B%29%3Bt%3A%281cx8%3A83smu8%3B1djw%3A8kwcdi%3B1dju%3A8kwjca%3B1dk8%3A8kwjor%3B1dkb%3A8kxgb0%3B%29%3B" "Wed, 23-Aug-2023 09:29:52 GMT" "/" ".bieganie.pl" nil]
+  [url-cookie "phpbb3_dqp2x_sid" "8d959431499bf52c4c7d48085ecf7659" "Wed, 23-Aug-2023 09:36:23 GMT" "/" ".bieganie.pl" nil]
+  [url-cookie "phpbb3_dqp2x_k" "" "Wed, 23-Aug-2023 09:36:23 GMT" "/" ".bieganie.pl" nil]
+  [url-cookie "phpbb3_dqp2x_u" "1" "Wed, 23-Aug-2023 09:36:23 GMT" "/" ".bieganie.pl" nil])
  ("synonim.net"
   [url-cookie "_giq" "25090b4cbc2789105a00" "wto lip 12 09:24:22 2022 GMT" "/" "synonim.net" nil])
- (".bieganie.pl"
-  [url-cookie "phpbb3_dqp2x_u" "1" "Sat, 24-Sep-2022 20:45:46 GMT" "/" ".bieganie.pl" nil]
-  [url-cookie "phpbb3_dqp2x_k" "" "Sat, 24-Sep-2022 20:45:46 GMT" "/" ".bieganie.pl" nil]
-  [url-cookie "phpbb3_dqp2x_sid" "d6eb6d431107b5f5938527fb1ee6a51b" "Sat, 24-Sep-2022 20:45:46 GMT" "/" ".bieganie.pl" nil]
-  [url-cookie "phpbb3_dqp2x_track" "tf%3A%2810%3A%281cx8%3A1%3B%29%3B%29%3Bt%3A%281cx8%3A83smu8%3B%29%3B" "Sat, 24-Sep-2022 07:31:48 GMT" "/" ".bieganie.pl" nil]))
+ (".interia.pl"
+  [url-cookie "inpl_mobile" "d" "nie cze 26 13:04:37 2022 GMT" "/" ".interia.pl" nil]))
 )
 (setq url-cookie-secure-storage
- '(("reddit.com"
-  [url-cookie "edgebucket" "NOXKkdAU84m2ct5CKL" "wto paź 11 20:24:50 2022 GMT" "/" "reddit.com" t])
- (".google.pl"
-  [url-cookie "AEC" "AakniGNcMHEb5xFQvLa3GfQ0w9dkaNfxlFPTHhdL1UUhKS7bkpKUN8BIgLE" "Wed, 28-Dec-2022 18:47:00 GMT" "/" ".google.pl" t])
- (".reddit.com"
-  [url-cookie "csv" "1" "wto paź 11 20:24:51 2022 GMT" "/" ".reddit.com" t]
+ '((".reddit.com"
   [url-cookie "eu_cookie_v2" "1" "Fri, 11 Oct 2030 20:24:50 GMT" "/" ".reddit.com" t]
-  [url-cookie "d2_token" "3.55425f8a3ba02f14847069273aad166dea0d981cbdf9ae6995ceed2dfe905460.eyJhY2Nlc3NUb2tlbiI6Ii1wLXdROHhNVFhYTWo3VXRIb3JHWGo2QVFoWVEiLCJleHBpcmVzIjoiMjAyMC0xMC0xMVQyMToyNDo0OS4wMDBaIiwibG9nZ2VkT3V0Ijp0cnVlLCJzY29wZXMiOlsiKiIsImVtYWlsIl19" "Tue, 11 Oct 2022 20:24:49 GMT" "/" ".reddit.com" t]
-  [url-cookie "loid" "00000000008fsksum9.2.1602447889908.Z0FBQUFBQmZnMm9SamZ2dllmS1VtaWQ5Sl9jY0Q1WHVIZXZ1al9QNkhzTW5uWXdObzNrNi1PUDFlNVlKYlpTOGZvWnBUVHlJSVJfV0c3cEZJYS1aRnpPcGs2TVl3NVhndkk1QTY0WUk0aGtleWxab2VBdnZtX2x5RU84ekFTTTU4SWpqallqUE5vank" "Tue, 11 Oct 2022 20:24:49 GMT" "/" ".reddit.com" t]))
+  [url-cookie "csv" "1" "wto paź 11 20:24:51 2022 GMT" "/" ".reddit.com" t])
+ (".google.pl"
+  [url-cookie "AEC" "AakniGN_fg15maj5vcFFadpBmHt5xhBPEypdJiEhWwIEo6uleC_TZaqUGA" "Mon, 17-Apr-2023 13:07:19 GMT" "/" ".google.pl" t])
+ ("reddit.com"
+  [url-cookie "edgebucket" "NOXKkdAU84m2ct5CKL" "wto paź 11 20:24:50 2022 GMT" "/" "reddit.com" t]))
 )
 
 ;; Local Variables:

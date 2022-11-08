@@ -54,9 +54,12 @@
     ;mh
     org
     org-ac
+    org-download
     org-mime
     org-ref
     ox-gfm
+    ox-pandoc
+    ; ox-ipynb -> manual-download
     pandoc-mode
     pdf-tools
     projectile

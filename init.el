@@ -101,16 +101,16 @@
 ;;;; Forcing emacs to use user's .bashrc
 ;;;; -> https://stackoverflow.com/questions/6411121/how-to-make-emacs-use-my-bashrc-file
 
-(defun set-exec-path-from-shell-PATH ()
- (let ((path-from-shell (replace-regexp-in-string
-                         "[ \t\n]*$"
-                         ""
-                         (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
-   (setenv "PATH" path-from-shell)
-   (setq eshell-path-env path-from-shell) ; for eshell users
-   (setq exec-path (split-string path-from-shell path-separator))))
-
-(when window-system (set-exec-path-from-shell-PATH))
+;; (defun set-exec-path-from-shell-PATH ()
+;;  (let ((path-from-shell (replace-regexp-in-string
+;;                          "[ \t\n]*$"
+;;                          ""
+;;                          (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
+;;    (setenv "PATH" path-from-shell)
+;;    (setq eshell-path-env path-from-shell) ; for eshell users
+;;    (setq exec-path (split-string path-from-shell path-separator))))
+;; pyt
+;; (when window-system (set-exec-path-from-shell-PATH))
 
 ;; (setq shell-command-switch "-ic")
 
@@ -151,6 +151,10 @@
 ;;   :config (delete-selection-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; Automatically reload file from a disk after change
+(auto-revert-mode 1)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Do not deselect after M-w copying
 ;;;; https://www.reddit.com/r/emacs/comments/1vdumz/emacs_to_keep_selection_after_copy/
 
@@ -177,6 +181,26 @@
 ;;;; New line auto-indent
 (define-key global-map (kbd "RET") 'newline-and-indent)  
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; Reopen buffer that was just killed - NOTE: does not work for eww buffers
+;; ;; https://emacs.stackexchange.com/a/3334
+;; (defvar killed-file-list nil
+;;   "List of recently killed files.")
+
+;; (defun add-file-to-killed-file-list ()
+;;   "If buffer is associated with a file name, add that file to the
+;; `killed-file-list' when killing the buffer."
+;;   (when buffer-file-name
+;;     (push buffer-file-name killed-file-list)))
+
+;; (add-hook 'kill-buffer-hook #'add-file-to-killed-file-list)
+
+;; (defun reopen-killed-file ()
+;;   "Reopen the most recently killed file, if one exists."
+;;   (interactive)
+;;   (when killed-file-list
+;;     (find-file (pop killed-file-list))))
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Easily restore previous/next windows layout 
@@ -190,16 +214,20 @@
   (winner-mode))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;;;;;;;;;;; Useful shortcuts
+;;;;;;;;;;;;; Useful shortcuts (text operations)
 
 ;;;; Backspace/Insert remapping
 (global-set-key (kbd "C-d") 'delete-forward-char)
 (global-set-key (kbd "C-S-d") 'delete-backward-char)
+; (global-set-key (kbd "M-S-d") 'backward-kill-word)
+(global-set-key (kbd "C-c C-e s") 'mark-end-of-sentence)
+
 ;;;; Open eww bookmarks
-(global-set-key (kbd "C-c C-e C-w C-w") 'eww-list-bookmarks) ;
+(global-set-key (kbd "C-C C-e C-w C-w") 'eww-list-bookmarks) ;
+(defun mynet ()  (interactive) (eww-list-bookmarks))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; Making emacs shell environment settings the same as system's shell (.bashrc)
+;;;; Making emacs shell environment \index{settings}settings the same as system's shell (.bashrc)
 ; (setq shell-command-switch "-ic")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -213,6 +241,8 @@
 (defun google-this-in-quotes ()  (interactive) (google-this-region "\"" t))
 (global-set-key (kbd "C-c g") 'google-this-in-quotes)
 (global-set-key (kbd "C-c h") 'google-this-region)
+
+;; elpy
 
 
 ;; ; -> C-c / g (w/ asking for confirmation)
@@ -327,6 +357,25 @@
       (append '(("\\.org$" . org-mode))
               '(("\\.pub$" . org-mode))
               auto-mode-alist))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;; org-download 
+;;; for easy handling images from internet
+;;; https://github.com/abo-abo/org-download
+
+;;; MB comment: This is fine. However it causes problems: when working
+;;; with .org file you are unable to open file by dragging and dropping it over Emacs
+;;; window, because this org-download treats dropped file as an attachment,
+;;; copies it into ./org-downloaded-images and adds in text a link to it.
+;;; That is why I commented this out.
+
+;; (require 'org-download)
+;; ;; Drag-and-drop to `dired`
+;; (add-hook 'dired-mode-hook 'org-download-enable)
+;; (add-hook 'org-mode-hook 'org-download-enable)
+;; (setq-default org-download-image-dir "./org-downloaded-images")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Recently opened files
 
@@ -482,62 +531,60 @@
 ;;         ))
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; These are settings for Project-Template-For-OrgMode
-(require 'project)
-(require 'org-ref)
-(require 'htmlize)
+;; (require 'project)
+;; (require 'org-ref)
+;; (require 'htmlize)
 
-(defun my-new-project-configuration ()
-  "Sets my-project-root as root project directory and load
-my-project-root/setup/setup.el project configuration file "
-  (interactive)
-  (setq my-project-root (expand-file-name (car (project-roots (project-current)))))
+;; (defun my-new-project-configuration ()
+;;   "Sets my-project-root as root project directory and load
+;; my-project-root/setup/setup.el project configuration file "
+;;   (interactive)
+;;   (setq my-project-root (expand-file-name (car (project-roots (project-current)))))
 
-  (if my-project-root
-      (let ((my-project-setup-file (concat my-project-root "setup/setup.el")))
-	(if (file-exists-p my-project-setup-file)
-	    (load my-project-setup-file nil t t nil)
-	  (error "Project %s setup file not found" my-project-setup-file)))
-    (error "Project root dir not found (missing .git ?)")))
+;;   (if my-project-root
+;;       (let ((my-project-setup-file (concat my-project-root "setup/setup.el")))
+;; 	(if (file-exists-p my-project-setup-file)
+;; 	    (load my-project-setup-file nil t t nil)
+;; 	  (error "Project %s setup file not found" my-project-setup-file)))
+;;     (error "Project root dir not found (missing .git ?)")))
 
-
-
-
-;;;;; These are settings for happyblogger (2DELETE ??)
+;; ;;;;; These are settings for happyblogger (2DELETE ??)
 
 
-(setq org-publish-project-alist
-      '(
-        ("blog-posts"
-         :base-directory "~/blog/_org/posts/"
-         :base-extension "org"
-         :publishing-directory "~/blog/_posts"
-         :inline-images t
-         :table-of-contents nil
-         :drawers nil
-         :todo-keywords nil ; Skip todo keywords
-         :exclude "draft*" ; TODO fix
-         :section-numbers nil
-         :auto-preamble nil
-         :auto-postamble nil
-         )
-        ("blog-pages" ;; This section is optional.
-         :base-directory "~/blog/_org/pages/"
-         :base-extension "org"
-         :publishing-directory "~/blog/pages"
-         :inline-images t
-         :table-of-contents nil
-         :drawers nil
-         :todo-keywords nil ; Skip todo keywords
-         :section-numbers nil
-         :auto-preamble nil
-         :auto-postamble nil
-         ;; :completion-function
-         )
-        ("blog" :components ("blog-posts" "blog-pages"))))
+;; (setq org-publish-project-alist
+;;       '(
+;;         ("blog-posts"
+;;          :base-directory "~/blog/_org/posts/"
+;;          :base-extension "org"
+;;          :publishing-directory "~/blog/_posts"
+;;          :inline-images t
+;;          :table-of-contents nil
+;;          :drawers nil
+;;          :todo-keywords nil ; Skip todo keywords
+;;          :exclude "draft*" ; TODO fix
+;;          :section-numbers nil
+;;          :auto-preamble nil
+;;          :auto-postamble nil
+;;          )
+;;         ("blog-pages" ;; This section is optional.
+;;          :base-directory "~/blog/_org/pages/"
+;;          :base-extension "org"
+;;          :publishing-directory "~/blog/pages"
+;;          :inline-images t
+;;          :table-of-contents nil
+;;          :drawers nil
+;;          :todo-keywords nil ; Skip todo keywords
+;;          :section-numbers nil
+;;          :auto-preamble nil
+;;          :auto-postamble nil
+;;          ;; :completion-function
+;;          )
+;;         ("blog" :components ("blog-posts" "blog-pages"))))
 
 
-(setq org-md-headline-style "atx")
+;; (setq org-md-headline-style "atx")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; forcing new window to open below all other windows of the frame
@@ -663,7 +710,7 @@ my-project-root/setup/setup.el project configuration file "
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; EMMS
 
-;; ; https://superuser.com/questions/179186/emms-emacs-multimedia-system-error-in-emacs-dont-know-how-to-play-track
+;; ; https://superuser.com/questions/179186/emms-emacs-multimedia-system-error-in-emacs-dont-know-how-to-play-trackb
 ;; (require 'emms-setup)
 ;; (emms-all)
 ;; (emms-default-players)
@@ -1163,12 +1210,12 @@ Hook this function into `TeX-after-compilation-finished-functions'."
 ;; ;; ;;;;  ELPY
 ;; ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; ;; (elpy-enable)
-;; ;; ; (pyenv-mode)
-;; ;; ;; (setq python-shell-interpreter "ipython"
-;; ;; ;;       python-shell-interpreter-args "-i --simple-prompt")
+;; (elpy-enable)
+;; (pyenv-mode)
+;; ;; (setq python-shell-interpreter "ipython"
+;; ;;       python-shell-interpreter-args "-i --simple-prompt")
 ;; ;; (setq python-shell-interpreter "python3" ; zmienione przeze mnie MB
-;; ;;       python-shell-interpreter-args "-i")
+;;       python-shell-interpreter-args "-i")
 
 ;; (use-package elpy 
 ;;   :ensure t
@@ -1443,12 +1490,16 @@ Hook this function into `TeX-after-compilation-finished-functions'."
 ;;; Set location for external packages.
 (add-to-list 'load-path "~/.emacs.d/manual-download/")
 
-; (require 'nc)
+;; (require 'nc)
+(require 'mc)
 
 (load-file "~/.emacs.d/manual-download/.doconce-mode.el")
 
 (add-to-list 'load-path "~/.emacs.d/manual-download/sunrise")
 (require 'sunrise)
+
+(use-package ox-ipynb
+  :load-path "~/.emacs.d/manual-download/ox-ipynb")
 
 
 
@@ -1503,3 +1554,10 @@ Hook this function into `TeX-after-compilation-finished-functions'."
 ;; (global-set-key (kbd "C-S-d") 'delete-backward-char)
 
 (put 'upcase-region 'disabled nil)
+
+
+;;; open several files at startup
+;; hint: https://stackoverflow.com/a/19284395/4649238
+(find-file "~/.emacs.d/init.el")
+(find-file "~/.emacs.d/install-mb-packages.el")
+(find-file "~/.emacs.d/useful-shortcuts.org")

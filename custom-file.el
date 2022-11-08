@@ -11,7 +11,7 @@
  '(matlab-shell-command-switches '("-nodesktop -nosplash"))
  '(org-export-backends '(ascii html icalendar latex md odt))
  '(package-selected-packages
-   '(pandoc-mode ox-gfm org-ref org-publish sunrise lisp-nc w3m sane-term matlab-emacs mh pdf-tools workgroups use-package treemacs-projectile treemacs-persp treemacs-magit treemacs-icons-dired treemacs-evil shell-pop pylint pyenv-mode org-mime org-ac org matlab-mode markdown-mode jedi google-this flycheck-pos-tip emms embrace elpy dockerfile-mode cdlatex bongo auctex ac-octave ac-math))
+   '(org-download ox-ipynb ox-pandoc pandoc-mode ox-gfm org-ref org-publish sunrise lisp-nc w3m sane-term matlab-emacs mh pdf-tools workgroups use-package treemacs-projectile treemacs-persp treemacs-magit treemacs-icons-dired treemacs-evil shell-pop pylint pyenv-mode org-mime org-ac org matlab-mode markdown-mode jedi google-this flycheck-pos-tip emms embrace elpy dockerfile-mode cdlatex bongo auctex ac-octave ac-math))
  '(safe-local-variable-values '((org-beamer-outline-frame-title . "Spis treści")))
  '(send-mail-function 'mailclient-send-it))
 (custom-set-faces
