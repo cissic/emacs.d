@@ -21,7 +21,8 @@
         ; ("marmalade" . "http://marmalade-repo.org/packages/")
         ("melpa" . "https://melpa.org/packages/")
 	("melpa-stable" . "http://stable.melpa.org/packages/")
-	 ("org" . "https://orgmode.org/elpa/")))
+	; ("org" . "https://orgmode.org/elpa/")    ;;; removed as a way of dealing with https://emacs.stackexchange.com/questions/70081/how-to-deal-with-this-message-important-please-install-org-from-gnu-elpa-as-o
+	))
 
 ;; (add-to-list 'package-archives
 ;;          '("melpa-stable" . "http://stable.melpa.org/packages/"))
@@ -32,7 +33,7 @@
 ;;; https://thoughtbot.com/blog/emacs-as-a-python-ide -> projectile auto-complete epc jedi
 
 (defvar my-packages
-  '(; use-package    
+  '(; use-package
     auctex
     auto-complete    
     ac-math
@@ -47,16 +48,19 @@
     flycheck-pos-tip
     google-this
     ido
-    jedi
+    ; jedi
     magit
     markdown-mode
     matlab-mode
+    moe-theme ; https://github.com/kuanyui/moe-theme.el
     ;mh
+    ;ob-async
     org
     org-ac
     org-download
     org-mime
     org-ref
+    org-special-block-extras
     ox-gfm
     ox-pandoc
     ; ox-ipynb -> manual-download
@@ -66,7 +70,10 @@
     pyenv-mode
     pylint  ; zeby dzialal interpreter python'a po:  C-c C-c 
     recentf
+    session-async
     shell-pop
+    ; tramp  ; domyślnie jest zainstalowany w najnowszych emacsach?
+    tao-theme ; https://github.com/11111000000/tao-theme-emacs
     treemacs
     workgroups
     w3m
@@ -88,5 +95,5 @@
 
 
 
-(jedi:install-server)
+; (jedi:install-server)
 

@@ -18,6 +18,14 @@
 (package-initialize)
 (require 'use-package)
 
+(require 'ox)
+
+;; (require 'ox-beamer)
+;; (setq org-latex-to-pdf-process 
+;;   '("pdflatex --shell-escape -interaction nonstopmode -output-directory %o %f"
+;; "pdflatex --shell-escape -interaction nonstopmode -output-directory %o %f"
+;; "pdflatex --shell-escape -interaction nonstopmode -output-directory %o %f"))
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Setting default font
 
@@ -28,6 +36,23 @@
 ;;; Source: https://stackoverflow.com/questions/13747749/font-families-for-emacs
 
 (set-frame-font "liberation mono 11" nil t)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(use-package org-special-block-extras
+  :ensure t
+  :hook (org-mode . org-special-block-extras-mode)
+  :custom
+    ;; The places where I keep my ‘#+documentation’
+    (o-docs-libraries
+     '("~/org-special-block-extras/documentation.org"))
+    ;; Details heading “flash pink” whenever the user hovers over them?
+    (org-html-head-extra (concat org-html-head-extra "<style>  summary:hover {background:pink;} </style>"))
+    ;; The message prefixing a ‘tweet:url’ badge
+    (o-link-twitter-excitement
+     "This looks super neat (•̀ᴗ•́)و:"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -60,6 +85,28 @@
 (setq system-time-locale "C")         ; Make sure that the weekdays in the
                                       ; time stamps of your Org mode files and
                                       ; in the agenda appear in English.
+
+
+;; ____________________________________________________________________________78
+;; CALENDAR
+;; ____________________________________________________________________________78
+(defun calendar-insert-date ()
+  "Capture the date at point, exit the Calendar, insert the date."
+  (interactive)
+  (seq-let (month day year) (save-match-data (calendar-cursor-to-date))
+    (calendar-exit)
+    (insert (format "%d-%02d-%02d" year month day))))
+
+(define-key calendar-mode-map (kbd "RET") 'calendar-insert-date)
+
+
+;; ____________________________________________________________________________78
+;; ORG-AGENDA Activation
+;; https://orgmode.org/manual/Activation.html#Activation
+;; ____________________________________________________________________________78
+(global-set-key (kbd "C-c l") #'org-store-link)
+(global-set-key (kbd "C-c a") #'org-agenda)
+(global-set-key (kbd "C-c c") #'org-capture)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -175,6 +222,20 @@
 ;;     ;; (setq linum-format "%d")  ; This adds unnecessary spaces
 ;;       (set-face-background 'linum nil)
 ;;       ))
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; 79-character line   -> Added globally to the KDE shortcuts
+
+;; (defun insert-79-character-long-comment ()
+;;   (interactive)
+;;   (insert "\\MBp{}"))
+
+;; ;; (local-set-key (kbd "<M-f12>") #'insert-79-character-long-comment)
+;; (define-key global-map (kbd "") #'insert-79-character-long-comment)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -374,6 +435,39 @@
 ;; (add-hook 'org-mode-hook 'org-download-enable)
 ;; (setq-default org-download-image-dir "./org-downloaded-images")
 
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;; DIRED
+
+;; https://xenodium.com/showhide-emacs-dired-details-in-style/
+;; https://www.reddit.com/r/emacs/comments/4agkye/how_do_you_customize_dired/
+
+;; (autoload 'dired-jump "dired-x"
+;;   "Jump to Dired buffer corresponding to current buffer." t)
+
+;; (autoload 'dired-jump-other-window "dired-x"
+;;   "Like \\[dired-jump] (dired-jump) but in other window." t)
+
+;; (global-set-key (kbd "C-x C-d") #'dired-jump)
+;; (global-set-key (kbd "C-x 4 C-d") #'dired-jump-other-window)
+
+;; (with-eval-after-load 'dired
+;;   (require 'dired-x)
+;;   (setq-default dired-omit-files-p t)
+;;   (setq dired-listing-switches "-alhv")
+;;   (setq dired-omit-files "^\\.\\|^#.#$\\|.~$")
+;;   (define-key dired-mode-map (kbd "/") #'dired-narrow-fuzzy)
+;;   (define-key dired-mode-map (kbd "h") #'dired-omit-mode)
+;;   (define-key dired-mode-map (kbd "e") #'read-only-mode))
+
+;; (with-eval-after-load 'wdired
+;;   (defvar wdired-mode-map)
+;;   (define-key wdired-mode-map (kbd "C-c C-g") 'wdired-abort-changes)
+;;   (defvar wdired-allow-to-change-permissions)
+;;   (setq wdired-allow-to-change-permissions t))
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -460,6 +554,9 @@
 
 ;; no question about confirmation of evaluating babel code block
 (setq org-confirm-babel-evaluate nil)
+
+;; asynchronous execution of org-babel src blocks - should be loaded automatically??
+;; (require 'ob-async)
 
 ;; (org-babel-do-load-languages 'org-babel-load-languages
 ;;                              (append org-babel-load-languages
@@ -798,6 +895,37 @@
 (define-key comint-mode-map (kbd "<down>") 'comint-next-input)
 
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;  ORG-BABEL
+
+;; https://kitchingroup.cheme.cmu.edu/blog/2014/01/26/Language-specific-default-headers-for-code-blocks-in-org-mode/
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ATTENTION -> The lines below override default behaviour of C-c C-, shortcut
+
+;; (setq org-babel-default-header-args:emacs-lisp 
+;;       (cons '(:results . "value")
+;;             (assq-delete-all :results org-babel-default-header-args)))
+
+;; ;; add <p for python expansion
+;; (add-to-list 'org-structure-template-alist
+;;              '("p" "#+BEGIN_SRC python\n?\n#+END_SRC" "<src lang=\"python\">\n?\n</src>"))
+
+;; ;; add <el for emacs-lisp expansion
+;; (add-to-list 'org-structure-template-alist
+;;              '("el" "#+BEGIN_SRC emacs-lisp\n?\n#+END_SRC" "<src lang=\"emacs-lisp\">\n?\n</src>"))
+;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; https://emacs.stackexchange.com/questions/40571/how-to-set-a-short-cut-for-begin-src-end-src
+
+(add-to-list 'org-structure-template-alist '("m" . "src python :session :exports results :results output latex replace "))
+
+
+
+
+
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; shell-pop
 ;;; http://pragmaticemacs.com/emacs/pop-up-a-quick-shell-with-shell-pop/
@@ -951,8 +1079,32 @@
      '("\\.m$" . matlab-mode)
      auto-mode-alist))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; markdown
+
+;; ____________________________________________________________________________78
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; TRAMP
+
+(customize-set-variable 'tramp-default-user "marbor")
+;; (add-to-list 'tramp-default-user-alist
+;;              '("sshfs" ".*\\.somewhere\\.else\\'" "john"))
+
+;; (add-to-list 'tramp-default-user-alist
+;;              '("sshfs" ".*\\hyssopus.man.poznan.pl'" "marbor"))
+
+;; (add-to-list 'tramp-connection-properties
+;;              (list (regexp-quote "/sshfs:marbor@hyssopus.man.poznan.pl:/")
+;;                    "remote-shell" "/bin/bash"))
+
+(add-to-list 'tramp-connection-properties
+             `(,(regexp-quote "/sshfs:marbor@hyssopus.man.poznan.pl:")
+               "mount-point"
+               ,(expand-file-name "sshfs.marbor@hyssopus.man.poznan.pl" user-emacs-directory)))
+
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; MARKDOWN
 (use-package markdown-mode
   :ensure t
   :commands (markdown-mode gfm-mode)
@@ -961,6 +1113,37 @@
          ("\\.markdown\\'" . markdown-mode))
   :init (setq markdown-command "multimarkdown"))
 
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; Append additional lines when exporting to markdown:
+;;;; https://emacs.stackexchange.com/questions/74505/how-can-i-add-specific-text-to-the-content-generated-by-org-mode-export-to-mark#74513
+
+(defun org-export-md-format-front-matter ()
+  (let* ((kv-alist (org-element-map (org-element-parse-buffer 'greater-element)
+                       'keyword
+                     (lambda (keyword)
+                       (cons (intern (downcase (org-element-property :key keyword)))
+                             (org-element-property :value keyword)))))
+         (lines (mapcar (lambda (kw)
+                          (let ((val (alist-get kw kv-alist)))
+                            (format (pcase kw
+                                      ('author "%s: %s")
+                                      ((or 'tags 'title) "%s: '%s'")
+                                      (_ "%s: %s"))
+                                    (downcase (symbol-name kw))
+                                    (pcase kw
+                                      ('date (substring val 1 -1))
+                                      (_ val)))))
+                        '(author date tags title))))
+    (concat "---\n" (concat (mapconcat #'identity lines "\n")) "\n---")))
+
+(defun my/org-export-markdown-hook-function (backend)
+    (if (eq backend 'md)
+        (insert (org-export-md-format-front-matter) "\n")))
+
+;; This hook should be added per file in my org posts. Unfortunately, so far I don't know
+;; how to do this.
+;; (add-hook 'org-export-before-processing-hook #'my/org-export-markdown-hook-function)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; LATEX
@@ -1199,6 +1382,18 @@ Hook this function into `TeX-after-compilation-finished-functions'."
 	    (local-set-key (kbd "<M-f12>") #'my/insert-comment)))
 
 
+;; ____________________________________________________________________________78
+;; https://www.reddit.com/r/emacs/comments/cwnd57/what_is_the_best_way_to_display_the_full_path_of/
+
+(defun copy-file-name-to-clipboard ()
+  "Copy the current buffer file name to the clipboard."
+  (interactive)
+  (let ((filename (if (equal major-mode 'dired-mode)
+                      default-directory
+                    (buffer-file-name))))
+    (when filename
+      (kill-new filename)
+      (message "Copied buffer file name '%s' to the clipboard." filename))))
 
 
 
@@ -1501,12 +1696,28 @@ Hook this function into `TeX-after-compilation-finished-functions'."
 (use-package ox-ipynb
   :load-path "~/.emacs.d/manual-download/ox-ipynb")
 
+;;;;;;;; This functionality is provided by  -> session-async.el package (it works better)
+;; (add-to-list 'load-path "~/.emacs.d/manual-download/ob-async")
+;; (require 'ob-async)
 
 
+(add-to-list 'load-path "~/.emacs.d/manual-download/session-async.el") ;; add repo directory, not the file
+(require 'session-async)
+
+;; ____________________________________________________________________________78
+;;;;;;;; EMACS-THEMES
+;; http://xahlee.info/emacs/emacs/emacs_theme_gallery.html
+;; more to choose from:   https://emacsthemes.com
+;; the most popular:      https://emacsthemes.com/popular/index.html
 
 
+;; (add-to-list 'load-path "~/.emacs.d/manual-download/color-theme")
+;; (require 'color-theme)
 
+;; worth try: deeper-blue, manoj-dark
+(load-theme 'wombat t)
 
+; (load-theme 'moe t)
 
 ;;;;;;;;;;;;;;;; SHORTCUTS SUMMARY
 ;; <f5> emacs-lisp-mode-hook
@@ -1531,7 +1742,7 @@ Hook this function into `TeX-after-compilation-finished-functions'."
 ;; (global-set-key "\C-z\ \C-d" 'delete-latex-comments)
 ;; (global-set-key (kbd "C-,") #'embrace-commander)
 
-;; (local-set-key (kbd "<C-M-tab>") 'org-global-cycle)
+;; (local-set-key (kbd "<C-M-tab>") 'org-lobal-cycle)
 ;; (local-set-key (kbd "<C-M-tab>") 'cd-latex-tab)
 
 ;; (global-set-key (kbd "<f4>") 'cd-to-current-buffers-dir)
@@ -1561,3 +1772,7 @@ Hook this function into `TeX-after-compilation-finished-functions'."
 (find-file "~/.emacs.d/init.el")
 (find-file "~/.emacs.d/install-mb-packages.el")
 (find-file "~/.emacs.d/useful-shortcuts.org")
+
+
+
+

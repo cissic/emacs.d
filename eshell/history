@@ -8,3 +8,7 @@ ls
 make test-s file=tests/test_2_generalparameters.py 
 git status
 (setf *objects* '(whiskey-bottle bucket frog chain))
+cd /home/mb/.emacs.d/
+cd ..
+ls
+pwd
