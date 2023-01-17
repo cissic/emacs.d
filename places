@@ -1,0 +1,38 @@
+;;; -*- coding: utf-8 -*-
+(("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" . 39284)
+ ("/home/mb/.emacs.d/init.el" . 12955)
+ ("/home/mb/.emacs.d/ido.last" . 8406)
+ ("/home/mb/.emacs.d/recentf" . 2783)
+ ("/home/mb/.emacs.d/install-packages.el" . 934)
+ ("/home/mb/.emacs.d/useful-shortcuts.org" . 9006)
+ ("/home/"
+  (dired-filename . "/home/mb"))
+ ("/"
+  (dired-filename . "/dev"))
+ ("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/tempDir/Makefile" . 1089)
+ ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-11-tramp.org" . 603)
+ ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-15-automatic-access-to-remote-storage.org" . 860)
+ ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibliography-and-org-mode.org" . 2880)
+ ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibliography-and-org-mode/Ex1.org" . 178)
+ ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-emacs27.1-and-org9.6.org" . 1124)
+ ("/home/mb/.emacs.d/"
+  (dired-filename . "/home/mb/.emacs.d/auto-save-list"))
+ ("/home/mb/binmb/"
+  (dired-filename . "/home/mb/binmb/googleExactSearch.sh"))
+ ("/home/mb/projects/cissic.github.io/_posts/2022-12-27-configuring-and-installing-emacs.md" . 26810)
+ ("/home/mb/projects/cissic.github.io/mysource/"
+  (dired-filename . "/home/mb/projects/cissic.github.io/mysource/make.sh"))
+ ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/"
+  (dired-filename . "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2021-02-22-Anaconda+jupyter+nbextenstions.org"))
+ ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-10-command-line-printing-and-pdf-operations.org" . 17)
+ ("/home/mb/.emacs.d/elpa/swiper-20220430.2247/swiper-autoloads.el" . 1391)
+ ("/home/mb/.emacs.d/elpa/company-20230106.54/company-autoloads.el" . 12625)
+ ("/usr/share/emacs/site-lisp/elpa/auto-complete-1.5.0/" . 829)
+ ("/home/mb/.emacs.d/elpa/yasnippet-20200604.246/yasnippet-autoloads.el" . 1966)
+ ("/home/mb/.emacs.d/elpa/counsel-20221015.936/counsel-autoloads.el" . 17140)
+ ("/home/mb/.emacs.d/elpa/bash-completion-20220531.1104/bash-completion-autoloads.el" . 4104)
+ ("/home/mb/.emacs.d/elpa/ivy-20220926.1250/ivy-autoloads.el" . 5441)
+ ("/home/mb/.emacs.d/auto-save-list/"
+  (dired-filename . "/home/mb/.emacs.d/auto-save-list/.saves-466696-debi~"))
+ ("/home/mb/.emacs.d/elpa/perspective-20220921.346/perspective-autoloads.el" . 4177)
+ ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-20-installing-pdf-cups.org" . 567))

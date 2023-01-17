@@ -1,2 +1,9 @@
 *.~
 #*#
+elpa/*
+.cache/
+auto-save-list/
+org-downloaded-images/
+
+
+

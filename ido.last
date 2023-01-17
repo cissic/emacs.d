@@ -2,288 +2,36 @@
 
 ;; ----- ido-last-directory-list -----
 (
- ("/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/" . "chapters/")
- ("/home/mb/projects/ZZZ_Testy/!Emacs/" . "org-basics/")
- ("/home/mb/projects/ZZZ_Testy/" . "!Emacs/")
- ("/home/mb/projects/mynotes/mysource/" . "public-notes-org/")
- ("/home/mb/projects/mynotes/" . "mysource/")
- ("/home/mb/org/" . "Debian Upgrade/")
- ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/" . "analysis/")
- ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/" . "chapters/")
- ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book/doc/" . ".src/")
- ("/home/mb/projects/DocOnceBook_TLExact/doc/src/chapters/" . "chTLExact/")
- ("/home/mb/SEarch/Dydaktyka/Prace dyplomowe/Recenzje/! 2021-22/" . "Kuś Jakub/")
- ("/home/mb/projects/Dydaktyka/manual_3_podstawy_numpy/../" . "manual_2_podstawy_python (TODO)/")
- ("/home/" . "mb/")
- ("/home/mb/.icedove/1w0kslzi.maildirProfile/ImapMail/imap.prz.edu.pl/INBOX/" . "cur/")
- ("/home/mb/.icedove/1w0kslzi.maildirProfile/ImapMail/imap.prz.edu.pl/" . "INBOX/")
- ("/home/mb/.icedove/1w0kslzi.maildirProfile/ImapMail/" . "imap.prz.edu.pl/")
- ("/home/mb/.icedove/1w0kslzi.maildirProfile/" . "ImapMail/")
- ("/home/mb/.icedove/" . "1w0kslzi.maildirProfile/")
- ("/home/mb/projects/Dydaktyka/AiSD/AiSD_2020_21/" . "tex/")
- ("/home/mb/projects/Dydaktyka/AiSD/" . "AiSD_2020_21/")
- ("/home/mb/projects/Dydaktyka/" . "Wyklad mono/")
- ("/home/mb/projects/BMTinFHT-paper/" . "5d852791da5a520001df51c3/")
- ("/home/mb/projects/" . "ZZZ_Testy/")
- ("/home/mb/bin/" . "OLD-szukajTuJesliCzegosCiBrakuje/")
- ("/home/mb/.emacs.d/" . "MuzykaA/")
- ("/home/mb/.emacs.d/MuzykaA/" . "90 Day Men - To Everybody/")
- ("/media/mb/HA/MuzykaA/Beirut [2009] - March of the Zapotec;Holland 2xEP/" . "Holland/")
- ("/media/mb/HA/MuzykaA/" . "Adele - 19/")
- ("/media/mb/HA/" . "MuzykaA/")
- ("/media/mb/" . "HA/")
- ("/media/" . "mb/")
- ("/" . "home/")
+ ("/home/mb/projects/cissic.github.io/" . "mysource/")
+ ("/home/mb/projects/" . "cissic.github.io/")
  ("/home/mb/" . "projects/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/ssh:debian@"
- "/ssh:marbor@"
- "/sshfs:marbor@"
- "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/"
- "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/"
- "/home/mb/projects/cissic.github.io/mysource/public-notes-org/"
- "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/"
- "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-11-20-Admonitions/"
- "/home/mb/org/2022.11.06-org-mode-book/"
- "/home/mb/projects/ZZZ_Testy/!Emacs/"
- "/home/mb/.emacs.d/"
- "/home/mb/projects/Dydaktyka/Wyklad mono/decay-book/doc/.src/chapters/"
- "/home/mb/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/alg/"
- "/home/mb/projects/papers/paper-dTM-for-domain-with-cavities/source/"
- "/home/mb/projects/Dydaktyka/FEMwRobotyce/20-21/py_FEM1D_one_more_time_przepisane_z_matlaba/"
- "/home/mb/projects/meshless/"
- "/home/mb/org/"
- "/home/mb/projects/acolocal/"
- "/home/mb/projects/Dydaktyka/2020_21_sem1_Z/"
- "/home/mb/projects/Dydaktyka/AiSD/AiSD_2020_21/tex/"
- "/home/mb/projects/BMTinFHT-paper/5d852791da5a520001df51c3/"
- "/home/mb/projects/BMT_Manual/"
- "/home/mb/projects/BMTinFHT-paper/5d852791da5a520001df51c3-SHORT_COMM/"
- "/home/mb/projects/pythonmuff/"
- "/home/mb/bin/OLD-szukajTuJesliCzegosCiBrakuje/"
- "/home/mb/projects/ZZZ_Testy/py-opti-tests/"
- "/home/mb/projects/pythonmuff/acopti/"
- "/home/mb/projects/pythonmuff/tests/"
+ 
 )
 
 ;; ----- ido-work-file-list -----
 (
- "62.93.61.19"
- "hyssopus.man.poznan.pl"
- "manual_docker.org"
- "manual_docker.pdf"
- ".#manual_docker.org"
- "manual_venvs.org"
- "3000-01-01-Handful-of-helpful-links.org"
- "tailoring-org-mode-export.org"
- "Ex1.org"
- "2022-11-10-tailoring-org-mode-export.org"
+ 
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/mb/.emacs.d/" (25494 23727 538112 331000) ".emacs.desktop.lock" "init.el(2022.10.04 BACKUP)" "ZZZ_NextCommitMessage.txt" "useful-shortcuts.org" "texput.log" "srecode-map.el" "session.1064656269000165330886400000017640037" ".emacs.desktop" "projectile.cache" "projectile-bookmarks.eld" "install-mb-packages.el" "init.el(2022.05.23 BACKUP)" "init.el" "org-downloaded-images/" "eww-bookmarks" "custom-file.el" "ac-comphist.dat" ".cache/" "recentf" "recentf~" ".org-id-locations" ".gitignore" "ido.last" "ido.last~" ".git/" "MuzykaA/" ".python-environments/" "url/" "transient/" "thumbs/" "snippets/" "site/" "manual-download/" "eshell/" "emms/" "elpy/" "elpa/" "auto-save-list/" "../" "./")
+ ("/home/mb/.emacs.d/" (25535 53361 949906 914000) "ido.last~" "install-packages.el" "#install-packages.el#" "#init.el#" ".emacs.desktop" "custom-file.el~" ".emacs_workgroups~" ".emacs.desktop.lock" "custom-file.el" "places" "init.el~" "recentf~" "ido.last" "smex-items" "init.el2DEL" "srecode-map.el" "history" ".emacs_workgroups" "install-packages.el~" "init.el" "recentf" ".git/" "manual-download/" "url/" "ZZZ_NextCommitMessage.txt" "useful-shortcuts.org" ".#init.el" "snippets/" "transient/" "auto-save-list/" "elpa/" "../" "./")
 
- ("/home/mb/" (25494 18628 203263 909000) "LINKI-FEM.txt" "2022-11-26-Note-21-19.pdf" "2022-11-26-Note-21-19.moj" "2022-11-19-Note-10-10.pdf" ".bash_history" ".bash_logout" "BHP.org" "2022-11-19-Note-10-10.moj" "Rejestracja.txt" ".emacs.dLASTWORKINGCOPY/" "texmfOLDVersions/" ".texlive2020/" "met_komp_wyklad_21_konwekcja i dyfuzja.pdf" "Moje źródła danych/" "sleepd-umounted.txt" "IP FOR LAN.txt" ".org-timestamps/" ".elfeed/" "NoMachine/" "MuseScore3/" ".yarn/" ".PlayOnLinux/" ".gnome/" ".aspell.en.pws" "Download/" "AAAAAAAWykladMono/" "org-db/" ".xpra/" "melodia.mp3" ".aspell.en.prepl" ".emacs.d_WORKING_COPY/" ".qt/" ".ash_history" ".yoshimi_history" "Chen_F - emacs, org-mode.pdf" ".gtkrc-2.0-kde4" ".lesshst" ".qmplay2/" "MATLAB Add-Ons/" "VirtualBox VMs/" ".newsrc.eld" ".wget-hsts" ".sage/" ".xcasrc" ".smpd" ".sdcv_history" "andrzej.m" ".recently-used" ".python_history" ".local/" ".rnd" ".ipynb_checkpoints/" ".fop/" ".sshCPY/" ".FreeCAD/" ".profile" ".odbc.ini" ".octaverc" ".octave_hist" ".nanorc" ".isomaster" ".install4j" ".ICEauthority" ".hugin" ".gnuplot-wxt" ".gntpositions" ".gmshrc" ".gitconfig" ".dmrc" ".defaults-0.1.0.ini" ".emacs.d.pre-prelude.tar" "binmb/" ".nx/" ".condarc" ".bashrcOLD" ".thunderbird/" ".Xresources" ".xsession-errors" ".Xdefaults" ".miktex/" ".zotero/" ".xournal/" ".wine/" ".wicd/" ".vim/" ".tor/" ".thumbnails/" ".texmf-var/" ".texlive2018/" ".swt/" ".ssr/" ".ssh/" ".sphinx/" ".aliases" "ZZZPri/" ".gimp-2.8BKP/" ".sane/" ".pylint.d/" ".PyCharmCE2019.3/" ".pki/" ".oracle_jre_usage/" ".cddb/" ".MSfonts/" ".mozilla/" ".matlabCOPY/" ".matlab/" ".macromedia/" ".gitkraken/" ".vimrc_MB" ".kipa/" ".kde/" ".jupyter/" "org/" ".jpicedt/" ".jd/" ".java/" ".ipython/" ".ipe/" ".idlerc/" "SEarch/" ".hplip/" ".gstreamer-0.10/" ".anaconda/" ".gramps/" ".gphoto/" ".goldendict/" ".gnupg/" ".tig_history" ".gconf/" ".fontsCPY/" ".fonts/" ".fltk/" ".eteks/" ".epspdf/" ".vimrc" ".docker/" ".dbus/" ".directory" ".cups/" ".audacity-data/" ".aptitude/" ".AppImages-Portable/" ".adobe/" ".acitivities.conf/" ".!OLDhomefolders/" "Zotero/" ".Xauthority" ".screenlayout/" ".gitignore" ".npm/" "orgpriv/" ".conda/" ".var/" ".emacs.d/" ".sbd/" ".julia/" ".bashrc" ".icedove/" "workspace/" "Wideo/" ".singularity/" "texmf/" "temp/" ".git/" "Shortcuts/" "samba/" "Pulpit/" "projects/" "Pobrane/" "PDF/" "pcloud/" "Obrazy/" "Music/" "media/" "html/" "ftpserver/" "Documents/" "bin/" ".viminfo" "AppImages-Portable/" "!OLDHome/" ".gtkrc-2.0" ".cache/" ".config/" "../" "./")
+ ("/home/mb/projects/cissic.github.io/mysource/" (25529 22775 161313 813000) "todo/" "draft-notes-org(Local)/" "gists/" "Project-Template-For-OrgMode/" "public-notes-org/" "public-notes-doconce/" "makeo.sh" "maked.sh" "make.sh" "Makefile" "../" "./")
 
- ("/home/mb/org/" (25491 35887 69944 848000) "2022.12.09-mail-poprawa-dokumentow -Piecuch.org~" "2022.12.09-mail-poprawa-dokumentow -Piecuch.org" "2022.09.08-emacs-org-mode-to-markdwon.org" "!TODO.org~" "2022.11.10-org-to-markdown-export.org" "2022.09.15-KluOsz.org" "2022.07.13 - DocOnce language support.org TODO" "2022.05.31 - Wniosek o zakup licencji WinEDT.doc" "2022.06.19 - DocOnce Book mail o pomoc.org" "2022.04.26 - na szybko email latex do AB/" "#!TODO.org#" ".~lock.Plan_katedry_ET.csv#" "2022.09.05-email-RDITiT.org" ".#!TODO.org" "2022.09.26-doconce-Development.org" "2021.12.09-mail_do_wydawnictwa_Ford_algebra_liniowa_odpowiedz.org" "2021.11.14-mail_do_wydawnictwa_Ford_algebra_liniowa.org" "2021.11.07 - Borkowski M - Wyjasnienia ewaluacyjne EABE.doc" "2022.02.21 - Wniosek o zakup licencji CCleaner.doc" "2022.10.04-doconce-Development2.org" "2021.04.27-KluskaJ.org" "2021.03.17 0 LateX in Jupyter-stack(DELETED).txt" "2021.10.12-laptopy_na_rok_2021-mail-Zachara.org" "2021.03.23-matlab_arrays_of_funs.txt" "2022.07.13 -Madej-uwagi.org" "2021_11_03-pytanie_o_liczebniki_porzadkowe.org" "2021.03.02-jupyter_markdown_toggling.org" "2022.02.27-Ionut.org" "2021.02.07-Ionut.org" "2021.01.30-Michlowicz.org" "2021.01.23-reply-to-A.Cheng-EABE.org" "2022.01.16-granty-przeglad.org" "2021.01.23-reply-to-A.Cheng-EABE.txt" "!TODO.org" "2021.01.27-Ionut.org" "2021.01.18-Ionut.org" "2021.01.14-Ionut.org" "#2021.01.13-Ionut.org#" "2021.10.31-mail_USB.org" "2021.01.17-Ionut.org" "2021.10.17 - Wniosek o dofinansowanie zakupu laptopa.doc" "2021.01.13-Ionut.org" "2021.01.11-Ionut.org" "2021.01.07-drEdyty-mail-do-komisji.org" ".directory" "2021.01.08-Ionut.org" "data/" "2021.09.12-iterativeSVD-question.org" "2021.01.07-PWN.org" "2021.10.31-mail_Posiewala_Num_Alg_Lin.org" "2021.01.04-Ionut-houseofcards.org" "auto/" "#2021.05.25-emacs-menubar-color.org#" "2020.12.22-zyczeniaKluskaMaslowski.org" "RDITiT.zip" "2021.05.25-matlab-appdesigner-error.org" "2021.01.05-Michlowicz.org" "2020.12.20-Ionut-email_wave_scattering.org" "2021.05.25-emacs-menubar-color.org" "2020.12.15-Ionut-email_Cuthill-McKee.org" "2020.12.09-forum.org" "2020.12.01-Ionut-email_preconditioners2.org" "2020_12_03-Ionut-email_preconditioners3.org" "2020.11.27 - Wniosek o dopuszczenie do pracy.docx" "2020.11.25-Ionut-email_EABE_review.org" "2020.12.03-Ionut-email_preconditioners3.org" "2020.11.25-Ionut-email_EABE_review2.org" "2021.04.27-praca_dypl_Bartosz_Kurylo.org" "2020.11.23-Ionut-email_Freehyte_Problems2.org" "2020.12.01-Ionut-email_preconditioners.org" "2020.11.21-email-odpowiedz-do-Sosnowskiej.org" "RDITiT/" "PreTrash/" "2020.11.23-Chen-EABEs-broken-links.org" "2020.11.23-email-odpowiedz-do-Kluski.org" "2020.11.23-Ionut-email_Freehyte_Problems.org" "2020.11.03-Ionut-email.org" "2020.11.25-COVID.org" "2020.09.29 - mail do A Szczepanskiego.org" "2020.09.24 - boundary methods manual.org" "2020.09.23-chromium-flags-question" "2020.11.01-rosi.org" "2020.11.20-Ionut-email.org" "2020.10.08-Ionut-email.org" "2020.09.02-emacs-windows-question" "! Recenzje artykułów/" "org-basics/" "2020.09.09-Ionut-email.org" "2020.09.01-Ionut-email.org" "../" "./")
+ ("/home/mb/projects/cissic.github.io/" (25398 49660 663952 885000) "images/" "webfonts/" "tag_index.html" "robots.txt" "posts_chrono.html" "mysource/" "mathjax/" "js/" "index.html" "feed.xml" "css/" "build_info/" "browserconfig.xml" "about.md" "_posts/" "_layouts/" "_includes/" "_config.yml" "README.md" "Gemfile.lock" "Gemfile" ".gitignore" ".git/" "../" "./")
 
- ("/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/" (25490 64463 586715 280000) "org-macros.setup" "Preamble.tex" "Preamble.org~" "Preamble_latex.sty" "Makefile" "chapters/" "manual_dependencies.org" ".gitignore" "Preamble.org" "README.md" "PreambleBook.org" "src_py/" ".git/" "aux/" "Figs/" "auto/" "../" "./")
+ ("/home/mb/projects/" (25466 15534 804862 466000) "cissic.github.ioBKP2DEL (2022.09.30) /" "mynotesBKP/" "mynotesCPY2/" "cissic.github.io/" "DocOnceMBTutorial/" "DocOnceMBsTutorialCPY/" "TathamPuzzles/" "Plan godzin WEII (html->html)/" "python_snippets/" "DocOnceBook_TLExact/" "mynotesCPY/" "DocOnceOnceAgain/" "zobib2pubib/" "Ksiazki-tlumaczenia/" "acomuffImpulseArticle/" "pdevideofig/" "acomuffProjectCPYOLD_VERSION/" "Ward Computational Physics/" "muff_2021/" "AAA_TODO_plan_zajec/" "meshless2DEL-only github/" "RDITiT-Beamer/" "Conjugate Gradient Method Schewchuk/" "PythonTeX_ProjectStencil/" "MetNum-Egz-Zad/" "fuzzymesh/" "BoundaryMethodsReport/" "acoDocs (CPY of Ansys-muff-_!source_muffler)/" "TODO.md" "OLDBMs2DToolboxRevitalized/" "pythonmuff (DO NOT MODIFY IT NOW - DO EVERYTHING ON PCLOUD)/" "ZZZ_Testy/" "ZZZ_HiatusAbandoned/" "Karageorghis/" "MetodyNumeryczne/" "auxiliaryprojects/" "acoptiOnPCloud" "muff3D/" "meshless/" "FreeHyTE/" "Ansys-muff-i-okolice/" "ZZZ_2DELETE_SOON/" "acomuffProject/" "papers/" "OnDemand_4Others/" "EXTERNAL_REPOS/" "ZZZ_Archived/" "Dydaktyka/" "mynotes/" "../" "./")
 
- ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/" (25492 44586 863017 32000) "2022-12-01-newline-in-document-title-org-mode.org" "2022-11-30-latex-class-options-in-org-mode.org" "2022-11-29-problems-with-export-to-beamer.org" "2022-11-28-changing-ownership-to-mounted-volumes.org" "2022-11-27-asynchronous-org-babel-sessions.org" "2022-11-24-Nice-code-formatting-in-org-babel.org" "2022-11-20-own-environements-in-org.org" "3000-01-01-Handful-of-helpful-links.org" "2022-11-06-org-mode-book-chapters.org" "2022-11-24-nice-code/" "2022-11-16-miktex-hyphenation.org" "2022-11-14-setting-code-block-parameters.org" "2022-11-10-tailoring-org-mode-export.org" "2022-09-30-different-SSH-identities-for-different-repos.org" "2022-09-30-how-to-definitively-kill-zombie-process.org" "auto/" "2022-09-22-adding-support-for-language-in-doconce.org" "2022-09-16-org-timestamp-language.org" "2022-09-06-dolphin-opens-.desktop-files-in-kate.org" "2022-09-06-dolphin-does-not-read-bashrc.org" "2022-09-06-debian-migration-Buster-to-Bullseye.org" "2022-09-05-language-of-git-commit-message.org" "2021-02-22-Anaconda+jupyter+nbextenstions.org" "../" "./")
+ ("/home/mb/" (25533 10946 497305 884000) "LINKI-FEM.txt" "Protokół z publicznej obrony rozprawy doktorskiej mgr. inż. Grzegorza Piecucha_0_3,5.docx" ".emacs.d_CPY(2022.12.28)/" ".bash_history" ".bash_logout" "BHP.org" "LINKI.txt" "texmfOLDVersions/" ".texlive2020/" "met_komp_wyklad_21_konwekcja i dyfuzja.pdf" "Moje źródła danych/" "Recordings/" "sleepd-umounted.txt" "IP FOR LAN.txt" ".org-timestamps/" ".elfeed/" "NoMachine/" "MuseScore3/" ".yarn/" ".PlayOnLinux/" ".gnome/" ".aspell.en.pws" "Download/" "AAAAAAAWykladMono/" "org-db/" ".xpra/" "src/" "melodia.mp3" ".aspell.en.prepl" ".emacs.d_CPY(2022.12.20)/" ".qt/" ".ash_history" "Chen_F - emacs, org-mode.pdf" ".gtkrc-2.0-kde4" ".lesshst" ".qmplay2/" "MATLAB Add-Ons/" "VirtualBox VMs/" ".newsrc.eld" ".wget-hsts" ".sage/" ".xcasrc" ".smpd" ".sdcv_history" "andrzej.m" ".recently-used" ".python_history" ".local/" ".rnd" ".ipynb_checkpoints/" ".fop/" ".sshCPY/" ".FreeCAD/" ".profile" ".odbc.ini" ".octaverc" ".octave_hist" ".nanorc" ".isomaster" ".install4j" ".ICEauthority" ".hugin" ".gnuplot-wxt" ".gntpositions" ".gmshrc" ".gitconfig" ".dmrc" ".defaults-0.1.0.ini" ".emacs.d.pre-prelude.tar" "binmb/" ".nx/" ".condarc" ".bashrcOLD" ".thunderbird/" ".Xresources" ".xsession-errors" ".Xdefaults" ".miktex/" ".zotero/" ".xournal/" ".wine/" ".wicd/" ".vim/" ".tor/" ".thumbnails/" ".texmf-var/" ".texlive2018/" ".swt/" ".ssr/" ".ssh/" ".sphinx/" ".aliases" "ZZZPri/" ".gimp-2.8BKP/" ".sane/" ".pylint.d/" ".PyCharmCE2019.3/" ".pki/" ".oracle_jre_usage/" ".cddb/" ".MSfonts/" ".mozilla/" ".matlabCOPY/" ".matlab/" ".macromedia/" ".gitkraken/" ".vimrc_MB" ".kipa/" ".kde/" ".jupyter/" "org/" ".jpicedt/" ".jd/" ".java/" ".ipython/" ".ipe/" ".idlerc/" "SEarch/" ".hplip/" ".gstreamer-0.10/" ".anaconda/" ".gramps/" ".gphoto/" ".goldendict/" ".gnupg/" ".tig_history" ".gconf/" ".fontsCPY/" ".fonts/" ".fltk/" ".eteks/" ".epspdf/" ".vimrc" ".docker/" ".dbus/" ".directory" ".cups/" ".audacity-data/" ".aptitude/" ".AppImages-Portable/" ".adobe/" ".acitivities.conf/" ".!OLDhomefolders/" "Zotero/" ".Xauthority" ".screenlayout/" ".gitignore" ".npm/" "orgpriv/" ".conda/" ".var/" "snap/" ".emacs.d/" ".sbd/" ".julia/" ".bashrc" ".icedove/" "workspace/" "Wideo/" ".singularity/" "texmf/" "temp/" ".git/" "Shortcuts/" "samba/" "Pulpit/" "projects/" "Pobrane/" "PDF/" "pcloud/" "Obrazy/" "Music/" "media/" "html/" "ftpserver/" "Documents/" "bin/" ".viminfo" "AppImages-Portable/" "!OLDHome/" ".gtkrc-2.0" ".cache/" ".config/" "../" "./")
 
- ("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/" (25491 14893 798780 864000) "Preamble_acousing.org~" "manual_acousing.pdf" "manual_acousing.tex~" "manual_acousing.tex" "manual_acousing.org~" ".#manual_docker.org" "manual_acousing.org" "Preamble_acousing.org" "tempDir/" "org-macros/" "auto/" "../" "./")
+ ("/home/mb/projects/cissic.github.io/_posts/" (25530 54241 799932 897000) "2022-12-27-filtering-packages-list.md" "2022-12-23-emacs27.1-and-org9.6.md" "2022-12-23-bibtex-with-org-mode.md" "2022-12-22-emacs-via-flatpak.md" "2022-12-27-configuring-and-installing-emacs.md" "2022-12-17-sequences-for-keyboard-shortcuts.md" "2022-12-01-newline-in-document-title-org-mode.md" "2022-11-30-latex-class-options-in-org-mode.md" "2022-11-29-problems-with-export-to-beamer.md" "2022-11-28-changing-ownership-to-mounted-volumes.md" "2022-11-27-asynchronous-org-babel-sessions.md" "2022-12-20-installing-pdf-cups.md" "2022-11-24-Nice-code-formatting-in-org-babel.md" "3000-01-01-Handful-of-helpful-links.md" "2022-11-20-own-environements-in-org.md" "2022-11-14-setting-code-block-parameters.md" "2022-11-10-tailoring-org-mode-export.md" "2022-11-06-org-mode-book-chapters-EmacsExported.md" "2022-11-06-org-mode-book-chapters.md" "2022-11-16-miktex-hyphenation.md" "2022-09-30-different-SSH-identities-for-different-repos.md" "2022-09-30-how-to-definitively-kill-zombie-process.md" "2022-12-27-b-test.md" "2022-09-22-adding-support-for-language-in-doconce.md" "2022-09-16-org-timestamp-language.md" "2022-09-06-dolphin-opens-.desktop-files-in-kate.md" "2022-09-06-dolphin-does-not-read-bashrc.md" "2022-09-06-debian-migration-Buster-to-Bullseye.md" "2022-09-05-language-of-git-commit-message.md" "2021-02-22-Anaconda+jupyter+nbextenstions.md" "../" "./")
 
- ("/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/" (25490 58976 636513 68000) "#manual_docker.org_archive#" "#manual_docker.org#" "manual_venvs.org~" ".#manual_docker.org_archive" ".#manual_docker.org" "org-macros/" "manual_docker.pdf" "manual_docker.tex~" "manual_docker.org~" "manual_docker.tex" "tempDir/" "auto/" "Preamble_docker.org" "Preamble_venvs.org" "manual_make.org" "manual_docker.org" "manual_venvs.org" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/" (25487 48121 130156 165000) "README.md" "PreambleBook.org" "Preamble.org" "Preamble_latex.sty" "org-macros.setup" "manual_dependencies.org" "Makefile" "src_py/" "Figs/" "chapters/" "aux/" "auto/" "../" "./")
-
- ("/home/mb/orgpriv/" (25489 63853 843316 834000) "2022.11.29-dzieckowszech.org~" "#2022.11.29-dzieckowszech.org#" "2022.11.29-dzieckowszech.org" ".#2022.11.29-dzieckowszech.org" "!TODO.org~" "2022. 2021 - Klasowy Ksiegowy/" "!TODO.org" "mailKlasa_Prezent.txt" "reddit_webos.txt" "2021.09.01 - zgoda na wychodzenie dziecka ze szkoly.odt" "2021.06.24 - biega.org" "2021.06.16 - bieganie.org" "2021.06.16 - zapytanie o konkursy.org" "2021.06.07 - usprawiedliwienie Maciej2.odt" "2021.06.07 - usprawiedliwienie Maciej.odt" "2021.05.13 - odwolanie od mandatu.org" "2021.05.13 - odwolanie od mandatu.odt" "2020.09.27 - mail do Czajki.org~" "2021.05.13 - usprawiedliwienie Maciej.odt" "2020.11 - koronawirus/" "2020.09.27 - mail do Czajki.org" "pismo_A.odt" "pismo.odt" "planMac.odt" "pismo_B.odt" "pismo_v2.odt" "2020.09.24 - usprawiedliwienie Maciej.org" "2020.09.24 - pismo.org" "../" "./")
-
- ("/home/mb/org/RDITiT/!TODO 2022.12.14 - 22 posiedzenie/org/" (25480 31975 27707 188000) "lista_repondentow.csv" "#glosowania.org#" "glosowania.org~" "RDITiT.sty" "glosowaniaOLD.org" "glosowania.tex~" "glosowania.tex" "glosowania.pdf" "auto/" "glosowania.org" ".#glosowania.org" "images/" "../" "./")
-
- ("/home/mb/org/RDITiT/2022.12.14 - 22 posiedzenie/" (25479 22520 662670 899000) "glosowania.pdf" "glosowania.tex~" "glosowania.tex" "glosowania.org~" "auto/" "glosowania.org" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/Wyklad mono/org/" (25478 33834 54339 292000) ".#examp.org" "examp.snm" "examp.toc" "examp.nav" "examp.out" "examp.aux" "examp.pdf" "examp.tex" "BeamerStencil.org~" "auto/" "examp.log" "BeamerStencil.org" "examp.org" "../" "./")
-
- ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-11-20-Admonitions/" (25466 14206 840386 881000) "Ex1.pdf" "Ex1.tex" "auto/" "Ex1.org" "../" "./")
-
- ("/home/mb/projects/OnDemand_4Others/Rozwiazywalnosc_RR2rz_war_brzegowe/" (25459 33692 72213 238000) ".#rozwiazywalnosc.org" "rozwiazywalnosc.pdf" "rozwiazywalnosc.tex~" "rozwiazywalnosc.org~" "rozwiazywalnosc.tex" "auto/" "ltximg/" "rozwiazywalnosc.org" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/" (25456 8883 537233 125000) "! 2021_22_sem1_Z_org_wyklady_EFZI_instrukcja/" "manual_0_przygotowanie_srodowiska_pracy/" "manual_2_podstawy_python (TODO)/" "manual_1_podstawy_git/" "manual_projekt_w_pythonie_git_venv_zamrażanie_docker/" "manual_emacs_lisp/" "manual_4_make_venv_docker/" "manual_3_podstawy_numpy/" "FEMwRobotyce/" "USB/" "Wyklad mono/" "ZZZ_OLD/" "Projekty dla studentów/" "TODO/" "AiSD/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/manual_emacs_lisp/" (25458 10003 497969 237000) "manual_emacs_lisp.pdf" "manual_emacs_lisp.org~" "manual_emacs_lisp.tex" "auto/" ".#manual_emacs_lisp.org" "manual_emacs_lisp.org" "../" "./")
-
- ("/home/mb/org/2022.11.06-org-mode-book/" (25448 57155 915469 663000) "main-book.pdf" "main-book.tex~" "main-book.tex" "auto/" "bookPreamble.org" "main-book.org" ".main-book.org.kate-swp" ".#main-book.org" "chapters/" "../" "./")
-
- ("/home/mb/org/2022.11.06-org-mode-book/chapters/" (25448 56141 817260 444000) "ch2_main.org" "ch1_main.org" "artPreamble.org" "../" "./")
-
- ("/home/mb/projects/ZZZ_Testy/!Emacs/" (25439 57820 313743 663000) "org-mode-tutorial/" "Magit-test/" "org-basics/" "Org2Beamer/" "org-babel/" "orgmime/" "LaTeXandBibTeX/" "LaTeX/" "Octave/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/org-downloaded-images/Docker/" (25443 46872 384388 227000) "#2022-11-03_13-41-15_manual_docker.org#" ".#2022-11-03_13-41-15_manual_docker.org" "2022-11-03_13-41-15_manual_docker.org" "../" "./")
-
- ("/home/mb/projects/ZZZ_Testy/!Emacs/LaTeXandBibTeX/" (24423 46382 661398 112000) "biblio.bib" "Lat+Bib.bbl" "Lat+Bib.tex~" "auto/" "Lat+Bib.synctex.gz" "Lat+Bib.pdf" "Lat+Bib.out" "Lat+Bib.aux" "Lat+Bib.blg" "Lat+Bib.tex" "Lat+Bib.log" "../" "./")
-
- ("/home/mb/projects/ZZZ_Testy/!Emacs/org-basics/" (25388 12720 683827 296000) "org-basics.tex~" "org-basics.md" "org-basics.tex" "auto/" "org-basics.org~" "link_do_zrodel.html" "superman_cluster.png" "org-basics.pdf" "org-basics.org" "org-basics.html" "../" "./")
-
- ("/home/mb/projects/ZZZ_Testy/" (25414 47457 892271 146000) "doconceConditionalBeamer2/" ".dlog" "doconceConditionalBeamer/" "doconce-test-quiz/" "doconce2/" "doconce/" "julia_test_package/" "!testyMatlab/" "LaTeX_fixme_package_test/" "!testyTeX/" "HankelBessel/" "pythontex/" "Cpp-piaskownica/" "Jupyter/" "temp/" "py-opti-tests/" "Prosty dokument w LaTeXu/" "!Emacs/" "pythonMailSender/" "LaTeXClass-switch_do_wyboru_klasy_dokumentu/" "Docker/" "wikipedia2latex/" "testgitlabfeatures/" "pythonEnvTests/" "pythonEnvTestsCPY/" "linuxShellTests/" "numba/" "Komentarze_w_pythonie/" "Oryginalny plikMatWeave/" "OctaveMatWeave/" "MatlabMatWeave/" "LaTeXLuaTex/" "../" "./")
-
- ("/home/mb/projects/" (25435 50279 414704 795000) "cissic.github.ioBKP2DEL (2022.09.30) /" "mynotesBKP/" "mynotesCPY2/" "cissic.github.io/" "DocOnceMBTutorial/" "DocOnceMBsTutorialCPY/" "TathamPuzzles/" "Plan godzin WEII (html->html)/" "python_snippets/" "DocOnceBook_TLExact/" "mynotesCPY/" "DocOnceOnceAgain/" "zobib2pubib/" "Ksiazki-tlumaczenia/" "acomuffImpulseArticle/" "pdevideofig/" "acomuffProjectCPYOLD_VERSION/" "Ward Computational Physics/" "muff_2021/" "AAA_TODO_plan_zajec/" "meshless2DEL-only github/" "RDITiT-Beamer/" "Conjugate Gradient Method Schewchuk/" "PythonTeX_ProjectStencil/" "MetNum-Egz-Zad/" "fuzzymesh/" "BoundaryMethodsReport/" "acoDocs (CPY of Ansys-muff-_!source_muffler)/" "TODO.md" "OLDBMs2DToolboxRevitalized/" "pythonmuff (DO NOT MODIFY IT NOW - DO EVERYTHING ON PCLOUD)/" "ZZZ_Testy/" "ZZZ_HiatusAbandoned/" "Karageorghis/" "MetodyNumeryczne/" "auxiliaryprojects/" "acoptiOnPCloud" "muff3D/" "meshless/" "FreeHyTE/" "Ansys-muff-i-okolice/" "ZZZ_2DELETE_SOON/" "acomuffProject/" "papers/" "OnDemand_4Others/" "EXTERNAL_REPOS/" "ZZZ_Archived/" "Dydaktyka/" "mynotes/" "../" "./")
-
- ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book-doconce/doc/.src/chapters/softeng/" (25438 61055 955547 389000) "softeng-4screenORIG.pdf" ".#softeng1.do.txt" "make.bat" "Makefile" "index.rst" "conf.py" "_static/" "_templates/" "sphinx-rootdir/" "tmp_sphinx_gen.sh" "._main_softeng002.rst" "._main_softeng001.rst" "._main_softeng000.rst" "._softeng-sol002.html" "._softeng-sol001.html" "._softeng-sol000.html" ".softeng-sol.html_html_file_collection" "softeng-sol.html" "._softeng002.html" "._softeng001.html" "._softeng000.html" ".softeng.html_html_file_collection" "._softeng-solarized002.html" "._softeng-solarized001.html" "._softeng-solarized000.html" ".softeng-solarized.html_html_file_collection" "softeng-solarized.html" "_build/" "main_softeng.rst" "softeng-4screen.pdf" "softeng-4print.pdf" "#softeng1.do.txt#" "softeng-sol.pdf" "main_softeng.bbl" "main_softeng.blg" "main_softeng.ilg" "main_softeng.ind" "main_softeng.toc" "softeng.html" "main_softeng.out" "main_softeng.aux" "main_softeng.idx" "main_softeng.log" "main_softeng.tex.old~~" "main_softeng.tex" ".main_softeng.exerinfo" "tmp_mako__main_softeng.do.txt" "tmp_preprocess__main_softeng.do.txt" "main_softeng.dlog" "new_dictionary.txt~" "misspellings.txt~" "newcommands_keep.tex" "src-softeng/" "softeng1.do.txt" "slides_softeng.do.txt" "slides-softeng/" "report_generation/" "make.sh" "main_softeng.do.txt" "latex_figs/" "fig-softeng/" "distribution/" ".dict4spell.txt" "../" "./")
-
- ("/home/mb/SEarch/Dydaktyka/Prace dyplomowe/_!Tematy/" (25435 35562 317496 204000) "Tematy.org-zalaczniki/" "Tematy.org~" "_Tematy 2019-20/" "Tematy.org" "OLD2020/" "OLD/" "../" "./")
-
- ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book-doconce/doc/.src/chapters/genz/" (25421 17730 521575 80000) "#decay_fd2.do.txt#" ".#decay_fd2.do.txt" "genz-4screen.pdf" "genz-4print.pdf" "main_genzENG.pdf" "genz-sol.pdf" "main_genz.bbl" "main_genz.blg" "main_genz.ilg" "main_genz.ind" "main_genz.toc" "main_genz.out" "main_genz.aux" "main_genz.idx" "main_genz.log" "main_genz.tex.old~~" "main_genz.tex" ".main_genz.exerinfo" "tmp_mako__main_genz.do.txt" "tmp_preprocess__main_genz.do.txt" "main_genz.dlog" "new_dictionary.txt~" "misspellings.txt~" "newcommands_keep.tex" "src-genz/" "slides_genz.do.txt" "slides-genz/" "make.sh" "main_genz.do.txt" "latex_figs/" "fig-genz/" "exer-genz/" "decay_fd2.do.txt" "automake_sphinx.py" "_minted-slides_genz/" ".dict4spell.txt" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/AiSD/!AiSD - 2022_23/Zajecia wstepne i zadanie 1/" (24982 49933 0 0) "Zasady pracy dla nauczycieli akademickich wyciąg.pdf" "Sprawy_org.tex~" "Sprawy_org.pdf" "Sprawy_org.org" "README.md" ".gitignore" "Sprawy_org.tex" "AiSD_2021_22-zadania_projektowe_i_oceny - TODEL po rozdaniu projektu 3/" "Przyklady_sprawozdan/" "auto/" ".git/" "../" "./")
-
- ("/home/mb/projects/Ksiazki-tlumaczenia/Książka-3PL/ComputationalPhysics430/" (25414 47815 686938 134000) "test.tex" "#main.tex#" ".#main.tex" "main.bbl" "main.synctex.gz" "main.toc" "main.pdf" "main.out" "main.aux" "auto/" "main.blg" "main.log" "main.tex" "main.sty" "ch9/" "ch8/" "ch7/" "ch6/" "ch5/" "ch4/" "ch3/" "ch2/" "ch15/" "ch14/" "ch13/" "ch12/" "ch11/" "ch10/" "ch1/" "assets/" ".gitignore" ".DS_Store" ".git/" "../" "./")
-
- ("/home/mb/projects/ZZZ_Testy/LateXQuestionMarks/" (25414 47384 171654 752000) "fixtest.tex~" "auto/" "fixtest.tex" "../" "./")
-
- ("/home/mb/projects/Ksiazki-tlumaczenia/Książka-3PL/ComputationalPhysics430/ch1/" (25414 47016 340003 230000) "auto/" "cha.tex" "ch1.tex" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/Wyklad mono/LaTeX/src-oct/FDM/parabolic/" (25412 34192 945839 692000) ".#mainD1_1.m" "mainD1_1.m" "../" "./")
-
- ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/analysis/src-analysisMB/" (25405 30144 839318 978000) "DecimalTests.py" "../" "./")
-
- ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/analysis/" (25405 14931 92845 420000) "make.bat" "Makefile" "index.rst" "conf.py" "_static/" "_templates/" "analysis-4screen.pdf" "_build/" ".#errors.do.txt" "analysis-4print.pdf" "main_analysis.bbl" "main_analysis.blg" "main_analysis.ilg" "main_analysis.ind" "main_analysis.toc" "#errors.do.txt#" "main_analysis.out" "main_analysis.aux" "main_analysis.idx" "main_analysis.log" "main_analysis.tex.old~~" "main_analysis.tex" "latex_figs/" "analysis-sol.pdf" ".main_analysis.exerinfo" "tmp_mako__main_analysis.do.txt" "Trash/" "tmp_preprocess__main_analysis.do.txt" ".dlog" "main_analysis.dlog" "newcommands_keep.tex" "src-analysis/" "slides_analysis.do.txt" "slides-analysis/" "make.sh" "main_analysis.do.txt" "fig-analysis/" "exer.do.txt" "exer-analysis/" "errors.do.txt" "decay_analysis.do.txt" ".dict4spell.txt" "../" "./")
-
- ("/home/mb/projects/MetodyNumeryczne/ZZZ_OLD_sources/MN_wyklady(COPY)/W12-RRCz/" (22218 58152 0 0) "w12.toc" "w12.tex" "w12.snm" "w12.pdf" "w12.out" "w12.nav" "w12.log" "w12.blg" "w12.bbl" "w12.aux" "w12.synctex.gz" "CP1250w12.tex" "w12 — kopia.tex" "texfigs/" "texfigs KOSZ/" "kody/" "Rys/" "../" "./")
-
- ("/home/mb/projects/MetodyNumeryczne/" (25400 16410 419270 712000) "WSkrypt (incorporated into PythonTeXVersion)/" "Materialy z internetu - Metody numeryczne" "kondensatorJakoZbiornik.m" ".directory" "Zeszyt MN z podzialem na dzialy" "MN_wyklady/" "ZZZ_OLD_sources/" "MetNum - TODO AGH kore/" "OLD/" "Projekty MN 2021-22/" "PythonTeX/" "Jupyter/" "../" "./")
-
- ("/home/mb/projects/ZZZ_2DELETE_SOON/decay-book-WORK-MONO/doc/.src/chapters/bmethods/slides-bmethods/" (25402 39446 334118 176000) "#about.do.txt#" ".#about.do.txt" "slides_bmethods.pdf" "slides_bmethods.out" "slides_bmethods.aux" "slides_bmethods.idx" "slides_bmethods.log" "newcommands_keep.tex" "make.sh" "tmp.log" "decay_prog_basic.do.txt" "decay_fd1.do.txt" "about.do.txt" "../" "./")
-
- ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/alg/" (25389 45703 718672 10000) "beamerthemered_shadow.sty" ".dict4spell.txtCPY" "make.bat" "Makefile" "index.rst" "conf.py" "_static/" "_templates/" "_build/" ".main_alg.quiz.html" ".main_alg.quiz" "main_alg.bbl" "main_alg.blg" "main_alg.ilg" "main_alg.ind" "main_alg.toc" "main_alg.out" "main_alg.aux" "main_alg.idx" "main_alg.log" "main_alg.tex.old~~" "main_alg.tex" ".main_alg.exerinfo" "tmp_mako__main_alg.do.txt" "tmp_preprocess__main_alg.do.txt" "main_alg.dlog" "newcommands_keep.tex" "Trash/" "latex_figs/" "alg-sol.pdf" "alg-4screen.pdf" "alg-4print.pdf" "src-alg/" "slides_alg.do.txt" "slides-alg/" "make.sh" "main_alg.do.txt" "fig-alg/" "exer-alg/" "decay_prog_exer.do.txt" "decay_prog_basic.do.txt" "decay_fd1.do.txt" ".dict4spell.txt" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/Wyklad mono/chapters/bmethods/slides-bmethods/" (25396 17425 297956 150000) ".#about.do.txt" "make.sh" "decay_prog_basic.do.txt" "decay_fd1.do.txt" "about.do.txt" "../" "./")
-
- ("/home/mb/projects/DocOnceMBTutorial/" (25396 7029 414136 491000) "#tutorial.do.txt#" "tutorial.p.tex" "tmp_missing_labels.sh" ".tutorial.copyright" "tutorial.out" "tutorial.pdf" "tutorial.aux" "tutorial.idx" "tutorial.log" "tutorial.tex" "latex_figs/" "tmp_preprocess__tutorial.do.txt" ".#tutorial.do.txt" "tutorial.dlog" "README.md" "tutorial.do.txt" "scripts/" "Makefile" "LICENSE" ".git/" "../" "./")
-
- ("/home/mb/temp/scimacs/" (25396 5063 914885 174000) ".ipynb-slideshow.org.~undo-tree~" "ipynb-slideshow.org" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/Wyklad mono/TeX2DocOnce/DocOnce/" (25395 64850 367692 988000) "tmp_missing_labels.sh" "BMSurv.do.txt~" "auto/" ".#BMSurv.do.txt" "BMSurv.dlog" "newcommands_keep.tex" "BMSurv.do.txt" "../" "./")
-
- ("/home/mb/projects/ZZZ_Testy/doconce-test-quiz/" (25393 25473 235631 335000) ".doconceTest.exerinfo" "doconceTest.pdf" "doconceTest.out" ".tutorial.quiz.html" "ZZZZ_test_doconce_script2Send.sh" "ZZZZ_test_doconce_script.sh" "doconceTest.aux" "doconceTest.idx" "doconceTest.log" "doconceTest.tex" "doconceTest.p.tex" ".doconceTest.quiz.html" ".dlog" "doconceTest.do.txt~" ".doconceTest.copyright" "tmp_preprocess__doconceTest.do.txt" "Makefile" ".doconceTest.quiz" "doconceTest.dlog" ".tutorial.copyright" ".log" "doconceTest.do.txt" ".tutorial.quiz" "make.sh" "latex_figs/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/Wyklad mono/decay-book/doc/.src/chapters/" (25388 23088 296694 69000) "make_temporary.sh~" "DELmodels/" "DELanalysis/" "make_temporary.sh" "venues.list" "papers.pub" "papers.bib" "newcommands_keep.p.tex" "mako_code.txt" "make_slides.sh" "make.sh" "index_files.do.txt" "clean.sh" "AUTHOR.txt" "DELarchive/" "DELsofteng/" "DELquiz/" "DELgenz/" "alg/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/Wyklad mono/decay-book/doc/.src/" (25273 36883 0 0) "chapters/" "book/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/Wyklad mono/decay-book/doc/" (25273 36884 0 0) "web/" "pub/" ".src/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/Wyklad mono/decay-book/" (25354 30656 0 0) "README.sh" "README.md" "README.do.txt" ".nojekyll" ".gitignore" "src/" "doc/" ".git/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/Wyklad mono/" (25388 9385 129829 210000) "decay-book/" "example5.md" "BMsSurvey.tex" "Figures/" "../" "./")
-
- ("/home/mb/projects/mynotes/mysource/public-notes-org/" (25375 35156 930356 67000) "2022-09-06-dolphin-opens-.desktop-files-in-kate.org~" ".2022-09-06-dolphin-does-not-read-bashrc.org.kate-swp" "2022-09-06-dolphin-does-not-read-bashrc.org~" "2022-09-06-dolphin-opens-.desktop-files-in-kate.org" "2022-09-05-language-of-git-commit-message.mdORIG" "2022-09-05-language-of-git-commit-message.org" "2022-09-06-dolphin-does-not-read-bashrc.md" "2022-09-06-dolphin-does-not-read-bashrc.org" "../" "./")
-
- ("/home/mb/projects/mynotes/mysource/public-notes-doconce/" (25375 13816 684847 728000) "tutorial.do.txt" "../" "./")
-
- ("/home/mb/projects/mynotes/mysource/" (25375 14942 851249 336000) "draft-notes-org(Local)/" "make.shOLD" "Project-Template-For-OrgMode/" "makeo.sh" "Makefile" "maked.sh" "make.sh" "todo/" "public-notes-org/" "public-notes-doconce/" "gists/" "../" "./")
-
- ("/home/mb/projects/mynotes/" (25375 15181 735874 519000) "tag_index.html" "robots.txt" "posts_chrono.html" "index.html" "Gemfile.lock" "Gemfile" "feed.xml" "browserconfig.xml" "about.md" ".gitignore" "_config.yml" "webfonts/" "mathjax/" "js/" "mysource/" "images/" "css/" "build_info/" "assets/" ".git/" "_posts/" "_layouts/" "_includes/" "../" "./")
-
- ("/home/mb/projects/ZZZ_2DELETE_SOON/makefileTest/" (25370 15226 283019 502000) ".aa.org.markdown_strict.pandoc" "aa.org" "makefileB" "makefile" "../" "./")
-
- ("/home/mb/projects/ZZZ_2DELETE_SOON/happyblogger/sample/_org/posts/" (25369 42998 377912 17000) "#2022-09-08-mb-test.org#" "2022-09-08-mb-test.org~" ".#2022-09-08-mb-test.org" "2022-09-08-mb-test.org" "2007-10-29-why-every-programmer-should-play-nethack.org" "../" "./")
-
- ("/home/mb/projects/org-Project-Template-For-OrgMode/my_notes/" (25369 42309 807936 231000) "2022-09-06-debian-migration-Buster-to-Bullseye.org~" "2022-09-06-dolphin-opens-.desktop-files-in-kate.org" "2020-12-09-Making_Linux_iso_for_Live_USB_Booting.org" "2022-09-07-reinstallation-of-DisplayLink.org" "2022-09-05-language-of-git-commit-message.org" "2020-12-02-Teams_on_Debian.org" "2022-09-06-dolphin-does-not-read-bashrc.org" "2022-09-06-dolphin-does-not-read-bashrc.md" "2022-09-05-language-of-git-commit-message.md" "2022-09-06-debian-migration-Buster-to-Bullseye.org" "2021-02-22-Anaconda+jupyter+nbextenstions.org" "2021-02-04-Zotero-database-migrating.org" "2020-12-22-Matlab_Add-ons.org" "../" "./")
-
- ("//home/mb/projects/org-Project-Template-For-OrgMode/my_notes/" (25368 27069 931021 400000) "#2022-09-06-debian-migration-Buster-to-Bullseye.org#" "2022-09-06-dolphin-opens-.desktop-files-in-kate.org" "2022-09-06-TODO!!!-reinstallation-of-DisplayLink.org" "2020-12-09-Making_Linux_iso_for_Live_USB_Booting.org" "2022-09-06-dolphin-does-not-read-bashrc.org" "2022-09-05-language-of-git-commit-message.org" "2020-12-02-Teams_on_Debian.org" ".#2022-09-06-debian-migration-Buster-to-Bullseye.org" "2022-09-06-dolphin-does-not-read-bashrc.md" "2022-09-05-language-of-git-commit-message.md" "2022-09-06-debian-migration-Buster-to-Bullseye.org" "2021-02-22-Anaconda+jupyter+nbextenstions.org" "2021-02-04-Zotero-database-migrating.org" "2020-12-22-Matlab_Add-ons.org" "gist/" "../" "./")
-
- ("/home/" (25251 38421 514595 178000) ".Trash-0/" "mb/" "lost+found/" "../" "./")
-
- ("/home/mb/SEarch/Dydaktyka/Prace dyplomowe/Recenzje/! 2021-22/Kamil Madej (całkowanie Jupyter)/" (25365 43773 997737 391000) "pytania na obrone.txt" "Kamil Madej - raport antyplagiatowy(do dziekanatu).pdf" "Analiza_i_realizacja_wybranych_metod_całkowania_numerycznego.pdf" "MB.org" "Kamil Madej - raport antyplagiatowy.pdf.xoj" "Kamil Madej - raport antyplagiatowy.pdf" "../" "./")
-
- ("/home/mb/AAAAAAAAAAAAAAAAA/Project-Template-For-OrgMode/example/" (25366 26855 268712 392000) "example2.org" "figures/" "example.org" "../" "./")
-
- ("/home/mb/org/Debian Upgrade/" (25359 51234 110590 131000) "debianBusterToBullseyeToSid.pdf" "debianBusterToBullseyeToSid.tex~" "debianBusterToBullseyeToSid.tex" "debianBusterToBullseyeToSid.org~" "auto/" "debianBusterToBullseyeToSid.org" "../" "./")
-
- ("/home/mb/org/! Recenzje artykułów/2022.08.01 - EABE/" (25319 45331 951411 570000) "EABE-Elsheikh.org" "EABE-D-22-00439_reviewer.pdf" "../" "./")
-
- ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book/doc/" (25273 36884 494430 619000) "web/" "pub/" ".src/" "../" "./")
-
- ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/" (25273 36883 274428 25000) "chapters/" "book/" "../" "./")
-
- ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/" (25296 22365 129175 41000) "make_temporary.sh" "venues.list" "softeng/" "quiz/" "papers.pub" "papers.bib" "newcommands_keep.p.tex" "models/" "mako_code.txt" "make_slides.sh" "make.sh" "index_files.do.txt" "genz/" "clean.sh" "archive/" "analysis/" "alg/" "AUTHOR.txt" "../" "./")
-
- ("/home/mb/projects/DocOnceBook_TLExact/doc/src/chapters/" (25273 21994 243002 2000) "main_rules.dlog" "Bibliography-Trash/" "mako_code.txt~" "main_chTLExact.dlog" ".dlog" "papers.bib" "newcommands_keep.tex" "chTLExact/" "venues.list" "template/" "rules/" "preface/" "papers.pub" "newcommands.p.tex" "mkdir.sh" "mako_code.txt" "mako/" "make_slides.sh" "make_html.sh" "make.sh" "index_html_files.do.txt" "index_files.do.txt" "fake/" "clean.sh" "../" "./")
-
- ("/home/mb/projects/DocOnceBook_TLExact/doc/src/chapters/chTLExact/" (25273 35251 439194 302000) "main_chTLExact.ind" "texput.log" "chTLExact.pdf" "chTLExact-4print.pdf" "main_chTLExact.ilg" "main_chTLExact.bbl" "main_chTLExact.toc" "main_chTLExact.blg" "chTLExact.dlog" "main_chTLExact.out" "main_chTLExact.aux" "main_chTLExact.idx" "main_chTLExact.log" "main_chTLExact.tex" "tmp_mako__main_chTLExact.do.txt" "tmp_preprocess__main_chTLExact.do.txt" "Makefile" "main_chTLExact.dlog" "newcommands_keep.tex" "src-chTLExact/" "fig-chTLExact/" "main_chTLExact.do.txt" "chTLExact.do.txt" "make.sh" "src-mako/" "slides-chTLExact/" "../" "./")
-
- ("/home/mb/.emacs.d/manual-download/" (25270 8169 493619 874000) ".doconce-mode.el~" ".doconce-mode.elORIG" "..doconce-mode.el.kate-swp" ".doconce-mode.el" "sunrise/" "nc.el" "../" "./")
-
- ("/home/mb/SEarch/Dydaktyka/Prace dyplomowe/Recenzje/! 2021-22/Łukasz Miłoś/" (25268 32445 876487 498000) "MB.org~" "#AB.org#" "AB.org" "pytania na obrone.txt" "Łukasz_Miłoś_EF-161883_-_Praca_Dyplomowa.pdf" "#MB.org#" ".#AB.org" "MB.org" "Łukasz Miłoś - raport antyplagiatowy (do dziekanatu).pdf" "Łukasz Miłoś - raport antyplagiatowy.pdf.xoj" "Łukasz Miłoś - raport antyplagiatowy.pdf" "../" "./")
-
- ("/home/mb/SEarch/Dydaktyka/Prace dyplomowe/Recenzje/! 2021-22/Kuś Jakub/" (25191 47427 417174 414000) "LaTeX - rownania_nieliniowe_Jakub_Kuś_157760 2.zip" "Żródła Jupyter.zip" "Jakub Kuś - raport antyplagiatowy - do dziekanatu.pdf" "MB_wzor.org" "Jakub Kuś - raport antyplagiatowy.pdf.xoj" "JK-praca.pdf" "Jakub Kuś - raport antyplagiatowy.pdf" "pytania na obrone.txt" "MB.org" "AB.org" "../" "./")
-
- ("/home/mb/SEarch/Dydaktyka/Prace dyplomowe/Recenzje/! 2021-22/" (25247 11528 203813 826000) "Łukasz Miłoś/" "Materna Piotr/" "Kuś Jakub/" "../" "./")
-
- ("/home/mb/projects/ZZZ_Testy/py-opti-tests/" (24399 34257 284872 728000) "mysli.org~" "main.py~" "mysli.org" "requirements.txt" "main.py" "venv/" ".git/" "../" "./")
-
- ("/home/mb/bin/OLD-szukajTuJesliCzegosCiBrakuje/" (25263 10894 451748 752000) "simonTathamsCmdLine.sh" "renameBunchOfFilenames.sh" "workScreenLayoutDP2&HDMI.sh.old" "ppa-remove.sh" "pobieranieStronHttp.txt" "nonCopyablePdf.sh" "mergeWhateverGraphicIntoPdfs.sh" "recordPR3.sh" "insertSignature.sh" "katesudo" "mergepdfs.sh" "createWindowsLikeShortcut.sh" "findTextStringInFilesOfFolder.sh" "video/" "epub2pdf/" "OLD_NIEUZYWANE/" "../" "./")
-
- ("/home/mb/projects/DocOnceMBsTutorial/" (25265 33151 210776 140000) "ZZZZ_test_doconce_script.sh" "ZZZZ_test_doconce_script2Send.sh" "tutorial.pdf" "temp2DEL/" "tutorial.html" "tutorial.out" "tutorial.aux" "tutorial.idx" "tutorial.log" "tutorial.tex" "latex_figs/" "tutorial.p.tex" ".tutorial.copyright" "tmp_preprocess__tutorial.do.txt" "tutorial.dlog" ".git/" "Makefile" "tutorial.do.txt" "tutorial.do.txt~" "../" "./")
-
- ("/home/mb/org/RDITiT/19 posiedzenie 2022.06.08/Protokol (work)/" (25248 63542 184113 849000) "#protokol.org#" ".~lock.Protokol_RD_ITiT_2022_08_06.docx#" "Protokol_RD_ITiT_2022_08_06.docx" "Załącznik 2 - protokoły głosowań (tylko wersja papierowa)" "Załącznik 1 - lista obecności (tylko wersja papierowa)" "StronaDoSegragatora.doc" ".#protokol.org" "b.org" "Nagranie(2022.06.08).m4a" "../" "./")
-
- ("/home/mb/projects/python_snippets/parse_bibfile_line_by_line(for doconce)/AAAAA/BBB/zobib2pubib/" (25241 5706 767520 80000) ".#zobib2pubib.py" "#README.md#" ".#README.md" "ZoteroLibrary.bib" "zobib2pubib.py" "requirements.txt" "README.md" "LICENSE" ".git/" "../" "./")
-
- ("/home/mb/projects/python_snippets/parse_bibfile_line_by_line(for doconce)/" (25240 30554 418343 714000) "README.md~" "#README.md#" "README.md" ".#README.md" "papers.pub.bak" "preprocessed.bib" "venues.list" "papers.pub" "test.bib" "bib1.bib" "My Library_BiBLatex.bib" "venv/" "parse_text_file.py" "My Library.bib" "processed.bib" "../" "./")
-
- ("/home/mb/projects/DocOnceBook_TLExact/doc/src/book/" (25228 45680 184211 65000) "t4do.sty" "svmonodo.cls" "scripts.py" "pack_Springer.sh" "make_html.sh" "make_errata.sh" "make.sh" "grab_stylefiles.py" "clean.sh" "book.do.txt" "README_Springer_dir.txt" "README" "../" "./")
-
- ("/home/mb/projects/DocOnce/" (25227 27743 33427 345000) "report.do.txtORIGINAL" "tutorial.pdf" "tutorial.html" "tutorial.out" "tutorial.aux" "tutorial.idx" "tutorial.log" "tutorial.tex" "latex_figs/" "tutorial.p.tex" ".tutorial.copyright" "tmp_preprocess__tutorial.do.txt" "tutorial.dlog" "Makefile" "tutorial.do.txt" "tutorial.do.txt~" "../" "./")
-
- ("/home/mb/org/2022.04.26 - na szybko email latex do AB/" (25192 9775 476958 817000) "untitled.png" "mail.pdf" "mail.tex~" "mail.tex" "auto/" "mail.org~" "mail.org" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/USB/" (25115 59091 602702 905000) "2021_22_EFZI_Tematy_projektow_Uslugi_sieciowe_w_biznesie.pdf" ".#Sprawy_orgUSB.org" "pytania_do_WP.pdf" ".directory" "pytania_do_WP.tex" "Sprawy_orgUSB.pdf" "pytania_do_WP.org~" "Sprawy_orgUSB.tex~" "Sprawy_orgUSB.tex" "Sprawy_orgUSB.org~" "Projekty/" "2021/" "Sprawy_orgUSB.org" "pytania_do_WP.org" "auto/" "../" "./")
-
- ("/home/mb/projects/RDITiT-Beamer/AAAAAAA_test/Test5beamerOrg/" (25099 45253 416803 875000) "test.org~" "RDITiT.sty" "test.org" "images/" "../" "./")
-
- ("/home/mb/projects/papers/paper-dTM-for-domain-with-cavities/source/" (24988 64445 799965 23000) "ExteriorGeometry-eps-converted-to.pdf" "CylinderResults_dTHM-eps-converted-to.pdf" "CylinderResults_Exact-eps-converted-to.pdf" "CylinderResults_dMFS-eps-converted-to.pdf" "ExteriorGeometry.eps" "CylinderResults_dTHM.eps" "CylinderResults_dMFS.eps" "CylinderResults_dBEM.eps" "LaplaceGeometryOLD.eps" "NumericalTest-eps-converted-to-MB_EDIT2.xcf" "NumericalTestOLD2.eps" "CylinderResults_dBEM-eps-converted-to.pdf" "A_dTM-for-cavities.synctex.gz" "CylinderResults_Exact.eps" "cissic.bibOLD" "A_dTM-for-cavities.bbl" "ZZZ_list_of_changes_from_1st_to_2nd_submission.org" "NumericalTestOLD3.eps" "NumericalTest-eps-converted-toOLD.pdf" "NumericalTest-eps-converted-to.pdf" "NumericalTest-eps-converted-to-MB_EDIT.xcf" "NumericalTest-eps-converted-to-MB_EDIT.pdf" "GUI3-eps-converted-to.pdf" "GUI2-eps-converted-to.pdf" "GUI1-eps-converted-to.pdf" "LaplaceResults_dMFS-eps-converted-to.pdf" "LaplaceResults_dBEM-eps-converted-to.pdf" "LaplaceResults_pdetool-eps-converted-to.pdf" "LaplaceMesh_BE-eps-converted-to.pdf" "LaplaceMesh-eps-converted-to.pdf" "A_dTM-for-cavities.pdf" "A_dTM-for-cavities.out" ".gitignore" "LaplaceGeometry-eps-converted-to.pdf" "LaplaceGeometry.xcf" "Figures/" "A_dTM-for-cavities.aux" "A_dTM-for-cavities.spl" "ZZZ_NextCommitMessage.txt" "A_dTM-for-cavities.tex~" "Helm_dTHM_qy-eps-converted-to.pdf" "Helm_dTHM_qx-eps-converted-to.pdf" "Helm_dTHM_u-eps-converted-to.pdf" "Helm_dMFS_qy-eps-converted-to.pdf" "Helm_dMFS_qx-eps-converted-to.pdf" "Helm_dMFS_u-eps-converted-to.pdf" "Helm_dBEM_qy-eps-converted-to.pdf" "Helm_dBEM_qx-eps-converted-to.pdf" "Helm_dBEM_u-eps-converted-to.pdf" "Helm_exact_qy-eps-converted-to.pdf" "Helm_exact_qx-eps-converted-to.pdf" "Helm_exact_u-eps-converted-to.pdf" "ProbForm3-MFS-lambda-eps-converted-to.pdf" "ProbForm2-geom-eps-converted-to.pdf" "ProbForm1-eps-converted-to.pdf" "arrows,shapes.tex" "A_dTM-for-cavities.tex" "cissic.bibOLD2" "A_dTM-for-cavities.blg" "cissic.bib" "ProbForm3a-MFS-lambda.tikz" "ProbForm3a-MFS-lambda.eps" "ProbForm3-MFS-lambda.tikz" "ProbForm3-MFS-lambda.eps" "ProbForm2-geom.tikz" "ProbForm2-geom.eps" "ProbForm1.tikz" "ProbForm1.eps" "ProbForm.tikz" "ProbForm.eps" "ProbForm-original.tikz" "NumericalTest.eps" "LaplaceResults_pdetool.eps" "LaplaceResults_dMFS.eps" "LaplaceResults_dBEM.eps" "LaplaceMesh_BE.eps" "LaplaceMesh.eps" "LaplaceGeometry.eps" "Helm_exact_u.eps" "Helm_exact_qy.eps" "Helm_exact_qx.eps" "Helm_dTHM_u.eps" "Helm_dTHM_qy.eps" "Helm_dTHM_qx.eps" "Helm_dMFS_u.eps" "Helm_dMFS_qy.eps" "Helm_dMFS_qx.eps" "Helm_dBEM_u.eps" "Helm_dBEM_qy.eps" "Helm_dBEM_qx.eps" "GUIVisualise.eps" "GUI3.eps" "GUI2.eps" "GUI1.eps" "A_dTM-for-cavities.log" "OLD_Figures/" "auto/" ".git/" "../" "./")
-
- ("/home/mb/projects/gist/FFT-octave-babel-org/" (25036 27894 794060 428000) "octave.tex~" "octave.tex" "octave.pdf" "octave.org~" "octave.org" "chart.png" "auto/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/AiSD/! AiSD - 2021_22 - projekty/Zajecia wstepne i zadanie 1/" (24976 9346 322924 720000) "AiSD_2021_22-zadania_projektowe_i_oceny - TODEL po rozdaniu projektu 3/" "Zasady pracy dla nauczycieli akademickich wyciąg.pdf" "Przyklady_sprawozdan/" "Sprawy_org.tex~" "Sprawy_org.pdf" "Sprawy_org.org" "README.md" ".gitignore" "Sprawy_org.tex" "auto/" ".git/" "../" "./")
-
- ("/home/mb/projects/Ford - NumericalAnalysis/projekt/ch1/" (24970 12028 118236 575000) "#ch1.tex#" ".#ch1.tex" "ch1.tex" "auto/" "../" "./")
-
- ("/home/mb/projects/Ford - NumericalAnalysis/projekt/" (24962 36398 858321 421000) "ZZZ_NextCommitMessage.txt" ".gitignore" "main.synctex.gz" ".git/" "main.bbl" "figi/" "main.toc" "main.pdf" "main.blg" "main.tex" "main.out" "main.sty" "auto/" "main.aux" "main.log" "ch9/" "ch8/" "ch7/" "ch6/" "ch5/" "ch4/" "ch3/" "ch23G/" "ch23C/" "ch23B/" "ch23A/" "ch23/" "ch22/" "ch21/" "ch20/" "ch2/" "ch19/" "ch18/" "ch17/" "ch16/" "ch15/" "ch14/" "ch13/" "ch12/" "ch11/" "ch10/" "ch1/" "../" "./")
-
- ("/media/mb/HA/MuzykaA/z! kama/psyxsy/" (24936 35879 50738 0) "xsy/" "Richard Evans Schultes, Albert Hofmann, Christian Rätsch - Plants of the Gods. Their Sacred Healing and Hallucinogenic Powers-Healing Arts (1998).pdf" "psy/" "Afro.epub" "afro-notes.org~" "afro-notes.org" ".#afro-notes.org" "#afro-notes.org#" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/AiSD/! AiSD - 2021_22 - projekty/" (24935 63730 975724 354000) "AiSD_2021_22-zadania_projektowe_i_oceny/" "Przyklady_sprawozdan/" "Sprawy_org.tex~" "Sprawy_org.pdf" "Sprawy_org.org" "README.md" ".gitignore" "Sprawy_org.tex" "auto/" ".git/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/AiSD/! AiSD - 2021_22 - projekty/Przyklady_sprawozdan/" (24531 20791 0 0) "zle3.pdf" "zle2.pdf" "zle1.pdf" "dobre2.pdf" "dobre1.pdf" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/AiSD/" (24932 8220 120373 517000) "AiSD - zajecia wstepne/" "! AiSD - 2021_22 - projekty/" "tematy.txt" "AiSD-zdalne-instrukcja/" "AiSD_2020_21-zadania_projektowe_i_oceny/" "AiSD-Przykładowe instrukcje pobrane z netu/" "OLDKOSZ/" "../" "./")
-
- ("/home/mb/SEarch/Dydaktyka/Prace dyplomowe/Recenzje/2020-21/Żelazko Karol-mgr/" (24908 14493 175114 918000) "AB-Zelazko.txt" "Zelazko_Karol_148925_mgr.pdf" "MB-Zelazko.txt" "../" "./")
-
- ("/home/mb/projects/meshless/" (24734 8745 92171 114000) "run_tests.m" "@momsbvp/" "tests/" "surfScatteredData.m" "ZZZ_NextCommitMessage.txt" "notes/" "chooseGeometry.m" "bcConstants.m" "README.md" "Makefile" "LaplaceExamples.m" ".gitignore" ".git/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/FEMwRobotyce/20-21/py_FEM1D_one_more_time_przepisane_z_matlaba/" (24768 31765 818626 798000) "fem1dSolver.py~" "sympynumpytest.py~" "nodeCondConstants.py" "main.py~" "fem1dSolver.py" "OLD2DEL/" "sympynumpytest.py" "main.py" "exactfun.py" "exactfun.py~" ".git/" "../" "./")
-
- ("/home/mb/projects/FreeHyTE/FreeHyTE_BMToolbox/" (24779 10280 352852 610000) "multi_3_hole_domain.m" "Gen_Matrices_dTHM_Prev.m" ".directory" "clearproject.m" "OldExamples/" "TH2D_Helmholtz.m" "TFunsForTheProblem.m" "TH2D_Laplace.m" "dBMT_StructDef.mat" "dBMT_StructDef.m" "irreg_mesh.mat" "dBMT_StructDef.fig" "dBMT_BC2.mat" "dBMT_BC2.m" "dBMT_BC2.fig" "dBMT_BC1.mat" "dBMT_BC1.m" "dBMT_BC1.fig" "Gen_Matrices_And_Solve_iTHM_PCM_CPY.m" "ZZZ_NextCommitMessage.txt" "ZZZ_IComments.doc" "BCondsForIncidentWaveProblem.m" "AssembleSolutionVector.m" "PlotFieldsOriginatedByLayerPotentials.m" "Gen_Matrices_dTHM.m" "surfScatteredData.m" "ZZZ_TODO.txt" "triquad.m" "shapeFun1D.m" "preProcessing.m" "polygonCentroid.m" "polygonArea.m" "Gen_Matrices_dMFS.m" "Gen_Matrices_And_Solve_iBEM_PCM_CPY.m" "DetectPolygonsInPETMesh.m" "createLine.m" "comp_struct.m" "Visualize.mat" "Visualize.m" "Gen_Matrices_dBEM.m" ".gitignore" "Visualize.fig" "Startup.m" "gauleg.m" "SHOWNODES.m" "SHOWEDGES.m" "Examples/" "Splash.png" "InputProc.m" "GenPlotPoints.m" "CreateRegMesh.m" "CreateEdgeLoop.m" "ComputeFieldsFromLayerPotentials.m" "Gen_Sys.m" "SplashScreen.m" "Check.fig" "Gen_Matrices_iBEM_PCM.m" "Main.m" "CreateBEMesh.m" "Check.m" "AssignParts.m" "2REMOVEFROMTHEPROJECT/" "DevTests/" ".git/" "../" "./")
-
- ("/home/mb/projects/Conjugate Gradient Method Schewchuk/PL/" (24768 40493 600537 980000) "TODO.aux" "main.synctex.gz" "wstep.tex.aux" "main.toc" "main.bbl" "wstep.aux" "main.blg" "ShewchukPL15.bbl" "ShewchukPL15.synctex.gz" "ShewchukPL15.pdf" "ShewchukPL15.blg" "main.out" "main.aux" "main.pdf" ".gitignore" "ShewchukPL15.tex" ".#main.tex" "wstep.tex" "auto/" "main.log" ".git/" "ShewchukPL15.aux" "ShewchukPL15.log" "9.jpg" "8.jpg" "7.jpg" "6.jpg" "5.jpg" "4.jpg" "3.jpg" "2.jpg" "12.jpg" "11.jpg" "10.jpg" "1.jpg" "main.tex" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/FEMwRobotyce/20-21/py_FEM1D/" (24713 9114 575499 628000) "RysujGeometrie.py" "main.py" "generujTabliceGeometrii.py" "fem1DSolver.py" ".git/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/FEMwRobotyce/20-21/FEMwRobotyce-teoria/" (24704 2816 769643 247000) "MAIN_FEMwR.synctex.gz" "MAIN_FEMwR.out" "README.md~" "Makefile" "MAIN_FEMwR.aux" "ZZZ_NextCommitMessage.txt" "biblio.bib" "auto/" "MAIN_FEMwR.tex" "MAIN_FEMwR.log" "MAIN_FEMwR.pdf" "README.md" ".gitignore" ".directory" "mTests/" "mFunctions/" "figures/" "auxMFilesAndTeXFiles/" "Trash/" "PDFs/" "MatlabSpecializedToolboxes/" ".git/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/2020_21_sem2_L_EFDI_projekt/" (24687 27925 923981 884000) "Zadanie.org~" "podzial.org~" "Zadanie.org" "[276] Ford W - Numerical Linear Algebra with Applications Using MATLAB (2014)-CORRECTIONS-MB.pdf" ".#podzial.org" "podzial.org" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/manual_3_podstawy_numpy/../manual_2_podstawy_python (TODO)/" (24686 51198 510685 657000) "#manual_python.org#" "manual_python.pdf" ".#manual_python.org" "manual_python.tex~" "manual_python.org~" "manual_python.tex" "manual_python.org" ".gitignore" "README.md~" "README.md" ".git/" "aux/" "Figs/" "auto/" "../" "./")
-
- ("/home/mb/projects/Dydaktyka/manual_3_podstawy_numpy/../" (24664 28326 883997 837000) "2020_21_sem2_L_org_FEM_EADI_instrukcja/" "2020_21_sem2_L_org_wyklady_EEZI_instrukcja/" "manual_0_przygotowanie_srodowiska_pracy/" "manual_2_podstawy_python (TODO)/" "manual_1_podstawy_git/" "manual_projekt_w_pythonie_git_venv_zamrażanie_docker/" "2020_21_sem1_Z_org_wyklady_EFZI_instrukcja/" "manual_3_podstawy_numpy/" "FEMwRobotyce/" "2020_21_sem2_L_EFDI_projekt/" "ZZZ_OLD/" "Projekty dla studentów/" "TODO/" "AiSD/" "../" "./")
+ ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/" (25533 62144 106609 945000) "2023-01-10-command-line-printing-and-pdf-operations.md" "2023-01-10-command-line-printing-and-pdf-operations.org~" "2022-12-27-configuring-and-installing-emacs.md" "2023-01-10-command-line-printing-and-pdf-operations.org" "2022-12-27-init-and-setup-Emacs/" "2022-12-23-emacs27.1-and-org9.6.org" "2022-12-27-filtering-packages-list.md~" "init.el" "2022-12-01-newline-in-document-title-org-mode.org" "install-packages.el" "2022-12-27-configuring-and-installing-emacs.org" "2022-12-27-filtering-packages-list.org" "2022-12-23-bibtex-and-org/" "2022-11-30-latex-class-options-in-org-mode.org" "2022-12-20-installing-pdf-cups.org" "2022-12-27-b-test.org" "2022-12-23-bibtex-with-org-mode.org" "2022-12-17-sequences-for-keyboard-shortcuts.org" "2022-11-29-problems-with-export-to-beamer.org" "2022-11-28-changing-ownership-to-mounted-volumes.org" "2022-11-27-asynchronous-org-babel-sessions.org" "2022-11-24-Nice-code-formatting-in-org-babel.org" "2022-11-20-own-environements-in-org.org" "3000-01-01-Handful-of-helpful-links.org" "2022-11-06-org-mode-book-chapters.org" "2022-12-22-emacs-via-flatpak.org" "2022-11-24-nice-code/" "2022-11-16-miktex-hyphenation.org" "2022-11-14-setting-code-block-parameters.org" "2022-11-10-tailoring-org-mode-export.org" "2022-09-30-different-SSH-identities-for-different-repos.org" "2022-09-30-how-to-definitively-kill-zombie-process.org" "~.emacs.d/" "auto/" "2022-09-22-adding-support-for-language-in-doconce.org" "2022-09-16-org-timestamp-language.org" "2022-09-06-dolphin-opens-.desktop-files-in-kate.org" "2022-09-06-dolphin-does-not-read-bashrc.org" "2022-09-06-debian-migration-Buster-to-Bullseye.org" "2022-09-05-language-of-git-commit-message.org" "2021-02-22-Anaconda+jupyter+nbextenstions.org" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

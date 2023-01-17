@@ -2,198 +2,42 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Tue Dec 13 13:27:50 2022
+;; Created Mon Jan 16 20:18:12 2023
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25496 28614 860112 759000) (desktop . "208") "mb@debi" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "liberation mono 11") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "WhiteSmoke") (background-color . "black") (mouse-color . "OrangeRed") (border-color . "gold") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "WhiteSmoke") (scroll-bar-background . "grey75") (menu-bar-lines . 1) (tab-bar-lines . 0) (height . 52) (tool-bar-lines . 1) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "orchid") (sticky) (environment) (last-focus-update) (frameset--id . "F9DB-ACA7-8925-6AC5") (frameset--mini t . t) (modeline . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (tabs (current-tab (name . "init.el") (explicit-name))) (width . 106) (left . 0) (top . 0)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 9) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 81) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 986) (pixel-height . 918) (total-width . 109) (total-height . 51) (normal-height . 1.0) (normal-width . 1.0) (buffer "manual_acousing.org" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins 3) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 261) (start . 1)) (prev-buffers ("init.el" 420 1474) ("manual_acousing.org" 1 260) ("pionierConnectVM.sh" 1 357) ("initializeVM.sh" 1 455) ("manual_docker.org" 6288 7264) ("!TODO.org<org>" 1 657))))])
+(setq desktop-saved-frameset nil)
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("darktooth" 0 9 (isearch-regexp-function nil isearch-case-fold-search t)) #("moe" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("sanit" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("gruvbox" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("theme" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("color-th" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("hyss" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("tramp" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("{{{" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("skó" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("skórz" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("subli" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("zenburn" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("zenbur" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("color" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("color-theme" 0 11 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq search-ring '(#("last l" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("abbre" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("anythin" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("org-" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("tramp" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("ssh" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("org cit" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("require 'oc" 0 11 (isearch-regexp-function nil isearch-case-fold-search t)) #("'oc" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("oc" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("flyspe" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("flyma" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("req" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("9.6" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("oc-" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("org" 0 3 (isearch-regexp-function nil isearch-case-fold-search t))))
 (setq regexp-search-ring nil)
-(setq register-alist (list (desktop-list* 120 (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk))))
-(setq file-name-history '("/ssh:debian@62.93.61.19" "/ssh:marbor@hyssopus.man.poznan.pl" #("/sshfs:marbor@hyssopus.man.poznan.pl" 7 13 (tramp-default t)) "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/manual_docker.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/manual_docker.pdf" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/.#manual_docker.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/manual_venvs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/3000-01-01-Handful-of-helpful-links.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/manual_docker.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/3000-01-01-Handful-of-helpful-links.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/manual_docker.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/tailoring-org-mode-export.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-11-20-Admonitions/Ex1.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-11-10-tailoring-org-mode-export.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/bookPreamble.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/manual_venvs.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/manual_make.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/manual_docker.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/manual_venvs.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/manual_docker.org" "/home/mb/.emacs.d/.emacs.desktop" "/home/mb/projects/Dydaktyka/Wyklad mono/decay-book/doc/.src/chapters/Makefile" "/home/mb/.emacs.d/install-mb-packages.el" "~/bin/backupy/GTX_TO_T440s_2_SDhome-sync.sh" "~/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/analysis/decay_analysis.do.txt" "~/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/alg/main_alg.do.txt" "~/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/book/preface.do.txt" "~/projects/DocOnceBook_TLExact/doc/src/chapters/mako/make.sh" "~/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/alg/decay_fd1.do.txt" "~/.emacs.d/manual-download/.doconce-mode.el" "~/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/alg/decay_prog_basic.do.txt" "~/projects/DocOnceMBTutorial/tutorial.do.txt" "~/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/analysis/src-analysis/decay_analysis.py" "~/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/book/book.do.txt" "~/projects/DocOnceBook_TLExact/doc/src/chapters/chTLExact/chTLExact.do.txt" "~/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/analysis/errors.do.txt" "~/.emacs.d/init.el" "~/.emacs.d/useful-shortcuts.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-05-language-of-git-commit-message.org" "~/.emacs.d/install-mb-packages.el" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-06-dolphin-does-not-read-bashrc.org" "~/projects/mynotes/mysource/public-notes-org/2022-09-06-dolphin-opens-.desktop-files-in-kate.org" "~/projects/mynotesCPY/org-draft-notes/2022-09-06-dolphin-opens-.desktop-files-in-kate.org" "~/projects/mynotes/mysource/public-notes-org/2022-09-05-language-of-git-commit-message.org" "~/projects/mynotes/mysource/draft-notes-org(Local)/2021-02-04-Zotero-database-migrating.org" "~/projects/mynotes/mysource/draft-notes-org(Local)/2020-12-02-Teams_on_Debian.org" "~/projects/mynotes/mysource/public-notes-org/2022-09-06-dolphin-does-not-read-bashrc.org" "~/projects/DocOnceBook_TLExact/doc/src/chapters/mako_code.txt" "~/projects/ZZZ_2DELETE_SOON/makefileTest/aa.org" "~/org/Debian Upgrade/debianBullseyeToSid.org" "~/projects/ZZZ_2DELETE_SOON/happyblogger/sample/_org/posts/2022-09-08-mb-test.org" "~/projects/ZZZ_2DELETE_SOON/happyblogger/sample/_org/posts/2022-09-08-mb-test.md" "~/org/2022.09.08-emacs-org-mode-to-markdwon.org" "~/org/Debian Upgrade/debianBusterToBullseye.org" "~/org/2022.07.13 -Madej-uwagi.org" "~/.emacs.d/url/cookies" "~/projects/Ksiazki-tlumaczenia/decay-book/doc/.src/chapters/alg/decay_prog_exer.do.txt" "~/org/2022.06.19 - DocOnce Book mail o pomoc.org" "~/projects/TathamPuzzles/README.md" "~/projects/DocOnceBook_TLExact/doc/src/chapters/papers.pub" "~/SEarch/Dydaktyka/Prace dyplomowe/_!Tematy/Tematy.org" "~/projects/DocOnceBook_TLExact/doc/src/chapters/preface/preface.do.txt" "~/projects/DocOnceBook_TLExact/doc/src/book/book.do.txt" "~/projects/DocOnceBook_TLExact/doc/src/chapters/chTLExact/main_chTLExact.do.txt" "~/.emacs.d/session.1064656269000165330886400000017640037" "~/projects/DocOnceBook_TLExact/doc/src/chapters/rules/rules.do.txt" "~/projects/DocOnceBook_TLExact/doc/src/chapters/make.sh" "~/projects/Ford - NumericalAnalysis/projekt/main.sty" "~/projects/muff_2021/signalAnalysis/README.org" "~/org/2022.01.16-granty-przeglad.org" "~/projects/Dydaktyka/AiSD/! AiSD - 2021_22 - projekty/Pytania na test/pytania.org" "~/projects/Ford - NumericalAnalysis/projekt/main.tex" "~/projects/Dydaktyka/USB/Sprawy_orgUSB.org" "~/org/2022.04.26 - na szybko email latex do AB/mail.org" "~/projects/ZZZ_Testy/doconce2/tutorial/Latex/report.tex" "~/projects/ZZZ_Testy/doconce2/tutorial/report.do.txt" "~/org/2022.04.26 - na szybko email latex do AB/mail.tex" "~/projects/Dydaktyka/USB/Sprawy_orgUSB.tex" "~/projects/Dydaktyka/AiSD/! AiSD - 2021_22 - projekty/Pytania na test/pytania.tex" "~/projects/MetNum-Egz-Zad/MNExam/pythonAutomaticEmailSender/main.py" "~/projects/MetNum-Egz-Zad/MNExam/pythonAutomaticEmailSender/Makefile" "~/projects/Dydaktyka/! 2021_22_sem1_Z_org_wyklady_EFZI_instrukcja/Sprawy_org.org" "~/projects/Dydaktyka/USB/pytania_do_WP.org" "/media/mb/HA/MuzykaA/z! kama/psyxsy/afro-notes.org" "~/projects/Ford - NumericalAnalysis/projekt/ch1/ch1.tex" "~/projects/Dydaktyka/AiSD/! AiSD - 2021_22 - projekty/Zajecia wstepne i zadanie 1/Sprawy_org.org" "~/org/2021.11.14-mail_do_wydawnictwa_Ford_algebra_liniowa.org" "~/org/2021.12.09-mail_do_wydawnictwa_Ford_algebra_liniowa_odpowiedz.org" "~/projects/Dydaktyka/AiSD/! AiSD - 2021_22 - projekty/Zajecia wstepne i zadanie 1/Sprawy_org.tex" "~/org/2021.10.31-mail_Posiewala_Num_Alg_Lin.org" "~/projects/Dydaktyka/FEMwRobotyce/20-21/py_FEM1D_one_more_time_przepisane_z_matlaba/fem1dSolver.py" "~/projects/Dydaktyka/FEMwRobotyce/20-21/py_FEM1D_one_more_time_przepisane_z_matlaba/main.py" "~/projects/meshless/tests/test_multiOrderSource.m" "~/projects/ZZZ_Archived/przproxyczasopisma/README.md" "~/projects/Dydaktyka/manual_3_podstawy_numpy/manual_numpy.tex" "~/projects/Dydaktyka/manual_3_podstawy_numpy/manual_numpy.org" "~/projects/Dydaktyka/manual_3_podstawy_numpy/Figs/Wykres1.png" "~/projects/Dydaktyka/manual_1_podstawy_git/podstawy_git.tex" "~/projects/Dydaktyka/manual_1_podstawy_git/podstawy_git.org" "~/projects/Dydaktyka/manual_2_podstawy_python (TODO)/manual_python.org"))
+(setq register-alist nil)
+(setq file-name-history '("/home/mb/.emacs.d" #("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/tempDir/Makefile" 0 87 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder/test.org" 0 74 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder" 0 65 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/manual_5_acoustics_in_singularity/manual_dependencies.org" 0 112 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/" 0 36 (ivy-index 6)) #("/" 0 1 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19:~/" 0 34 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19" 0 31 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19 -p 40008" 0 40 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibliography-and-org-mode.org" 0 101 (ivy-index 32)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/AAAAAAAA.org" 0 99 (ivy-index 4)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/Ex2.org" 0 94 (ivy-index 14)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/" 0 87 (ivy-index 3)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" 0 96 (ivy-index 1)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-11-tramp.org" 0 81 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/" 0 44 (ivy-index 1)) #("/home/mb/.emacs.d/2023" 0 22 (ivy-index 0)) #("/home/mb/.emacs.d/useful-shortcuts.org" 0 38 (ivy-index 30)) "~/.emacs.d/init.el" "~/.emacs.d/recentf" "~/.emacs.d/install-packages.el" "~/.emacs.d/useful-shortcuts.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-20-installing-pdf-cups.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-init-and-setup-Emacs/init.el" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-30-how-to-definitively-kill-zombie-process.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-22-adding-support-for-language-in-doconce.org" "~/.emacs_workgroups" "~/org/RDITiT/!2023.01.04 - 23 posiedzenie (obrona Piecuch)/Piecuch Grzegorz_obrona/Protokoły-sprawozdania/watpliwosci.org" "~/.emacs.d_CPY(2022.12.20)/init(2022.12.20 BACKUP).el" "~/.emacs.d/elpa/workgroups2-20220702.842/workgroups2-autoloads.el" "~/.emacs.d/elpa/smex-20151212.2209/smex-autoloads.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
-(desktop-create-buffer 208
-  "/home/mb/pcloud/home/manual_5_acoustics_in_singularity/chapters/manual_acousing.org"
-  "manual_acousing.org"
-  'org-mode
-  '(visual-line-mode override-global-mode org-cdlatex-mode linum-mode projectile-mode reftex-mode)
-  261
-  '(19201 nil)
-  nil
-  nil
-  '((buffer-display-time 25496 28578 96883 702000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (260 261))))
-
 (desktop-create-buffer 208
   "/home/mb/.emacs.d/init.el"
   "init.el"
   'emacs-lisp-mode
-  '(visual-line-mode eldoc-mode override-global-mode auto-revert-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  1474
-  '(1300 nil)
+  '(visual-line-mode eldoc-mode ivy-mode auto-revert-mode global-auto-revert-mode linum-mode flyspell-mode flymake-mode)
+  12955
+  '(12425 nil)
   nil
   nil
-  '((buffer-display-time 25496 28574 909481 704000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (60294 60317 60295 60272 60093 60041 60231 59961 60272 60294 60294 62362 59854 60353 59827 1474))))
+  '((buffer-display-time 25541 41656 960394 293000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
+  '((mark-ring (326 13586 549 663 549 326 12425 12638 12955))))
 
 (desktop-create-buffer 208
-  "/home/mb/binmb/pionierScripts/pionierConnectVM.sh"
-  "pionierConnectVM.sh"
-  'sh-mode
-  '(visual-line-mode override-global-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  357
-  '(768 nil)
-  nil
-  nil
-  '((buffer-display-time 25495 13066 366875 812000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (742 845 795 542 98 134 1109 203 742 850 795 771 768 209))))
-
-(desktop-create-buffer 208
-  "/home/mb/binmb/pionierScripts/initializeVM.sh"
-  "initializeVM.sh"
-  'sh-mode
-  '(visual-line-mode override-global-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  455
-  '(812 nil)
-  nil
-  nil
-  '((buffer-display-time 25496 28538 324736 986000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (627 53 53 53 255 53 53 812))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/manual_docker.org"
-  "manual_docker.org"
+  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
+  "2022-12-27-configuring-and-installing-emacs.org"
   'org-mode
-  '(visual-line-mode override-global-mode org-cdlatex-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  7264
-  '(7706 nil)
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode)
+  39284
+  '(46644 nil)
   nil
   nil
-  '((buffer-display-time 25495 2558 413776 610000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (7651 7584 17663 18280 18127 14619 14566 14566 12907 13772 19375 18479 18479 18479 18479 6706))))
-
-(desktop-create-buffer 208
-  "/home/mb/org/!TODO.org"
-  "!TODO.org"
-  'org-mode
-  '(visual-line-mode override-global-mode org-cdlatex-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  657
-  '(695 nil)
-  nil
-  nil
-  '((buffer-display-time 25494 65489 43167 426000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (868 945 98 97 147 37 582 165 869 363 363 97 116 98 865 657))))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/install-mb-packages.el"
-  "install-mb-packages.el"
-  'emacs-lisp-mode
-  '(visual-line-mode eldoc-mode override-global-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  827
-  '(1687 nil)
-  nil
-  nil
-  '((buffer-display-time 25494 64469 916185 148000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (1226 1614 1377 957 1348 1769 1336 1769 1109 1175 1154 1388 1402 1348 1336 370))))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/useful-shortcuts.org"
-  "useful-shortcuts.org"
-  'org-mode
-  '(visual-line-mode override-global-mode org-cdlatex-mode auto-revert-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  8882
-  '(6287 nil)
-  nil
-  nil
-  '((buffer-display-time 25496 28542 456933 853000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (8882 8713 8630 8773 8831 8696 8666 8665 8645 8611 8634 8634 8610 8573 733 9074))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/3000-01-01-Handful-of-helpful-links.org"
-  "3000-01-01-Handful-of-helpful-links.org"
-  'org-mode
-  '(visual-line-mode override-global-mode org-cdlatex-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  1302
-  '(265 nil)
-  nil
-  nil
-  '((buffer-display-time 25494 10536 853425 373000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (786 838 899 998 1080 1160 692 840 1171 1170 1190 1291 1190 223 1302))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/Preamble_acousing.org"
-  "Preamble_acousing.org"
-  'org-mode
-  '(visual-line-mode override-global-mode org-cdlatex-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  146
-  '(nil nil)
-  nil
-  nil
-  '((buffer-display-time 25491 15784 658862 971000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/Preamble.org"
-  "Preamble.org"
-  'org-mode
-  '(visual-line-mode override-global-mode org-cdlatex-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  2934
-  '(2922 nil)
-  nil
-  nil
-  '((buffer-display-time 25490 1256 870078 320000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (692 2927 2922))))
-
-(desktop-create-buffer 208
-  "/home/mb/orgpriv/!TODO.org"
-  "!TODO.org"
-  'org-mode
-  '(visual-line-mode override-global-mode org-cdlatex-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  557
-  '(105 nil)
-  nil
-  nil
-  '((buffer-display-time 25489 65041 516024 231000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (105 104 81 163 81 400 400 519 361 361 106 106 106 106 106 390))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/Preamble_docker.org"
-  "Preamble_docker.org"
-  'org-mode
-  '(visual-line-mode override-global-mode org-cdlatex-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  95
-  '(99 nil)
-  nil
-  nil
-  '((buffer-display-time 25483 49639 140775 944000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (53 2 53 53 53 2 1 99 18 19 19 1 99 99 1 95))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/Dydaktyka/manual_emacs_lisp/manual_emacs_lisp.org"
-  "manual_emacs_lisp.org"
-  'org-mode
-  '(visual-line-mode override-global-mode org-cdlatex-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  5897
-  '(5869 t)
-  nil
-  nil
-  '((buffer-display-time 25471 45372 839167 240000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (3674 6304 6320 3529 1388 1388 1340 1340 1194 1340 1136 1571 1340 1340 1571 1340))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/manual_docker.org_archive"
-  "manual_docker.org_archive"
-  'org-mode
-  '(visual-line-mode override-global-mode org-cdlatex-mode linum-mode projectile-mode reftex-mode undo-tree-mode)
-  136
-  '(nil nil)
-  nil
-  nil
-  '((buffer-display-time 25496 28554 740214 335000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring nil)))
+  '((buffer-display-time 25541 41513 847480 210000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (46080))))
 
