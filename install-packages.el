@@ -30,6 +30,8 @@
 	))
 
 ;; Refresh the repositories to have the newest versions of the packages
+(require 'package)
+(package-initialize)
 (package-refresh-contents)
 
 (setq my-packages
