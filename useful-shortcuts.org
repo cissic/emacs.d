@@ -141,86 +141,86 @@
 
 * OLD
 
-2. Wykonanie operacji na kilku slowach
+1. Wykonanie operacji na kilku slowach
    : C-3 M-D  ; usunie trzy slowa w przod
    : C-2 M-DEL # usunie dwa slowa w tyl 
 
-3. winner-mode - poprzednie widoki okien
+2. winner-mode - poprzednie widoki okien
    : C-c left
    : C-c right
 
-4. zaznacz tekst co slowo
+3. zaznacz tekst co slowo
    M-S left/right
 
-5. Znajdowanie i otwieranie pliku pod kursorem (find-file-at-point):
+4. Znajdowanie i otwieranie pliku pod kursorem (find-file-at-point):
    : M-x ffap
    (albo w org-modzie):
    : C-c '     # czyli (org-edit-special)
 
-6. Zamiana tekstu:
+5. Zamiana tekstu:
    M-%    (Alt+Shift+5)
    a potem 
    ! ; zeby zamienic wszystkie wystapienia danego wyrazu
 
-7. Show keybindings for the current major-mode (skróty klawiaturowe):
+6. Show keybindings for the current major-mode (skróty klawiaturowe):
    C-h b
 
-8. Reselect last selection (zaznaczanie obszaru po tym jak Emacs usunie zaznaczenie, np. po zakomentowaniu regionu)
+7. Reselect last selection (zaznaczanie obszaru po tym jak Emacs usunie zaznaczenie, np. po zakomentowaniu regionu)
    C-x C-x
 
-9. Reload the buffer
+8. Reload the buffer
    M-x revert-buffer
 
-10. Column mode:
-    C-x r t
+9. Column mode:
+   C-x r t
 
-    (M-x string-insert-rectangle)
+   (M-x string-insert-rectangle)
 
-11. Zaznacz wszystko:
+10. Zaznacz wszystko:
     C-x C-p
 
-12. Idź do poprzedniego widoku: (albo pakiet: https://github.com/rolandwalker/back-button )
+11. Idź do poprzedniego widoku: (albo pakiet: https://github.com/rolandwalker/back-button )
     C-u C-SPC (w celu poruszania się po aktualnym pliku)
     C-x C-SPC (w celu poruszania się między buforami)
 
-13. Przeszukiwanie dokumentu:
+12. Przeszukiwanie dokumentu:
     C-s    # w przod
     C-r    # w tyl
 
-14. Kompilowanie (makefile):
+13. Kompilowanie (makefile):
     M-x compile 
 
-15. Zaznacz ostatnie zaznaczenie (przydatne po M-w) https://www.reddit.com/r/emacs/comments/43wh2c/how_to_keep_region_marked_after_copying/
+14. Zaznacz ostatnie zaznaczenie (przydatne po M-w) https://www.reddit.com/r/emacs/comments/43wh2c/how_to_keep_region_marked_after_copying/
     C-x C-x 
 
-16. Przełączanie pomiedzy zwijaniem/nie zwijaniem wierszy
+15. Przełączanie pomiedzy zwijaniem/nie zwijaniem wierszy
     M-x toggle-truncate-lines
     albo 
     (define-key org-mode-map "\M-q" 'toggle-truncate-lines) ; w init file'u
 
-17. Czysci listę buforów ostatnio nieużywanych https://superuser.com/questions/895920/how-can-i-close-all-buffers-in-emacs
+16. Czysci listę buforów ostatnio nieużywanych https://superuser.com/questions/895920/how-can-i-close-all-buffers-in-emacs
     M-x clean-buffer-list
 
-18. Porzadki w buforach:
+17. Porzadki w buforach:
     C-x C-b 
     d ; zeby zaznaczyc wybrane pozycje na liscie
     x ; zeby je usunac z listy
 
-19. Powiększanie/pomniejszanie czcionki
+18. Powiększanie/pomniejszanie czcionki
     C-x C-+/C-x C--
 
-20. Zwięszkanie/zmniejszanie wcięcia bloku tekstu:
+19. Zwięszkanie/zmniejszanie wcięcia bloku tekstu:
     M-<left> / M-<right>  ; obowiazuje w ORG-MODE
     C-x <TAB> <left>/<right> or S-<left>/<right>
     ALBO!!!
     M-S-<left>/<right>
 
-21. Komentarz
+20. Komentarz
     M-;
     lub
     C-x C-;
 
-22. Undo changes
+21. Undo changes
     C-/
     C-x u
     C-_
@@ -228,24 +228,29 @@
     Redo:
     C-g a potem C-/ 
 
-23. Przelaczanie pomiedzy line mode/char mode w shellu 
+22. Przelaczanie pomiedzy line mode/char mode w shellu 
     (zeby moc wklejac tekst do shella) https://stackoverflow.com/questions/2886184/copy-paste-in-emacs-ansi-term-shell
     C-c C-j
     C-c C-k
 
-24. Polecenie <-> skrót
+23. Polecenie <-> skrót
     M-x describe-key <-> M-x where-is <RET> polecenie <RET>
     C-h k     <-> C-h w
 
-25. Wywolywanie polecen systemowych https://www.masteringemacs.org/article/executing-shell-commands-emacs
+24. Wywolywanie polecen systemowych https://www.masteringemacs.org/article/executing-shell-commands-emacs
     M-!
 
-26. Tryb kolumnowy:
+25. Tryb kolumnowy:
     C-x r t    - insert string 
     Zaznaczasz "prostokat"
     C-x r k    - kill
     C-x r d    - delete
     C-x r y    - yank (paste last killed rectangle at cursor position)
+
+26. Scrolling/poruszanie się po dokumencie:
+ : C-v # == PageDown  scroll-up-command
+ : M-v # == PageUp scroll-down-command
+ : M-r # zmien pozycje kursora bez przewijania (gora/srodek/dol strony)
 
 
 

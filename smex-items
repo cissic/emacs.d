@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
+ revert-buffer
+ list-packages
  eval-buffer
  abbrev-mode
  wg-open-workgroup
  wg-kill-workgroup
  wg-create-workgroup
- eval-expression
- abbrev-edit-save-buffer
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 15)
- (eval-buffer . 79)
- (list-packages . 15)
+ (revert-buffer . 16)
+ (eval-buffer . 86)
+ (list-packages . 16)
  (package-refresh-contents . 1)
  (eval-expression . 17)
  (eval-region . 1)

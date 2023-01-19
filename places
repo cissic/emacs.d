@@ -1,10 +1,11 @@
 ;;; -*- coding: utf-8 -*-
-(("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" . 39284)
- ("/home/mb/.emacs.d/init.el" . 12955)
+(("/home/mb/.emacs.d/install-packages.el" . 1029)
+ ("/home/mb/.emacs.d/useful-shortcuts.org" . 8951)
+ ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-17-open-org-file-without-being-asked-about-variables.org" . 920)
+ ("/home/mb/.emacs.d/init.el" . 1532)
+ ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" . 658)
  ("/home/mb/.emacs.d/ido.last" . 8406)
  ("/home/mb/.emacs.d/recentf" . 2783)
- ("/home/mb/.emacs.d/install-packages.el" . 934)
- ("/home/mb/.emacs.d/useful-shortcuts.org" . 9006)
  ("/home/"
   (dired-filename . "/home/mb"))
  ("/"

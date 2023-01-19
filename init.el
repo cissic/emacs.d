@@ -10,18 +10,23 @@
 
 (load-file custom-file)
 
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Global emacs customization
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (auto-revert-mode 1)       ; Automatically reload file from a disk after change
-(global-auto-revert-mode) 
+(global-auto-revert-mode 1) 
 
 (delete-selection-mode 1)  ; Replace selected text
 
 (show-paren-mode 1)        ; Highlight matching parenthesis
 
 (global-linum-mode 1)      ; Enable line numbering
+
+(scroll-bar-mode 1)        ; Enable scrollbar
+(menu-bar-mode 1)          ; Enable menubar
+(tool-bar-mode -1)          ; Disable toolbar since it's rather useless
 
 (setq line-number-mode t)  ; Show line number
 
@@ -31,11 +36,11 @@
 
 (desktop-save-mode 1)      ; Save windows layout on closing
 (setq desktop-load-locked-desktop t) ; and don't ask for confirmation when 
-                           ; opening locked desktop
+			   ; opening locked desktop
 (setq desktop-save t)
 
 (save-place-mode t)        ; When re-entering a file, return to the place, 
-                           ; where I was when I left it the last time.
+			   ; where I was when I left it the last time.
 
 (savehist-mode 1)          ; Save history for future sessions
 
@@ -107,9 +112,16 @@
 ;; (setq ivy-display-style 'fancy)
 ;; (setq ivy-use-virtual-buffers t)
 ;; (setq ivy-case-fold-search-default t)
+
 ;; (setq ivy-re-builders-alist '((t . ivy--regex-ignore-order)))
 ;; (setq enable-recursive-minibuffers t)
 ;; (ivy-mode t)
+
+;; abbrev-mode ->
+  (setq-default abbrev-mode t)          
+  (read-abbrev-file "~/.emacs.d/abbrev_defs")
+  (setq save-abbrevs t)  
+;; <- abbrev-mode
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ;; *** Auto-completing
@@ -142,6 +154,7 @@
  'org-babel-load-languages '(
 			     (C . t)
 			     (matlab . t)
+			     (makefile . t)
 			     ;;(perl . t)
 			     (octave . t)
 			     (org . t)
