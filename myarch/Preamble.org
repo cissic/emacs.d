@@ -1,0 +1,118 @@
+# #345678901###1####01###2####01###3####01###4####01###5####01###6####01######79
+
+#+AUTHOR: MB
+
+#+LATEX_HEADER:\usepackage{hyperref} 
+#+LATEX_HEADER:\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=blue}
+
+#+LATEX_HEADER:\usepackage[a4paper,left=3.5cm,right=2cm,top=2cm,bottom=3.5cm,includefoot=false,includehead=false,footskip=1.16cm]{geometry} 
+
+
+# #+LATEX_HEADER:\usepackage{hyphenat}
+#+LATEX_HEADER:\usepackage{babel}
+#+LATEX_HEADER:\usepackage{polski}
+#+LATEX_HEADER:\sloppy               % make hyphenation a bit easier for latex
+
+
+# Kropka po numerze rozdziałów...
+# # w HTML
+#+HTML_HEAD_EXTRA: <style>span[class^="section-number-"]:after { content: '.'; }</style>
+# # w LaTeX
+#+LATEX_HEADER: \usepackage{titlesec}
+#+LATEX_HEADER: \titlelabel{\thetitle.\quad}
+
+# ############ FORMATOWANIE BLOKÓW KODU I BLOKÓW Z WYNIKAMI
+# 1. Formatowanie kodów przy pomocy minted (jak na razie nie działa)
+#+LaTeX_HEADER: \usepackage{minted}
+#+LaTeX_HEADER: \newenvironment{resultsminted}{\begin{minted}[,frame=single]{sh}}{\end{minted}} 
+
+
+# #+ATTR_LATEX: :options frame=single
+ 
+# 2. Formatowanie kodów przy pomocy minted (jak na razie nie działa)
+#+LaTeX_HEADER: \usepackage{listings}
+#+LaTeX_HEADER: \lstnewenvironment{common-lispcode}
+#+LaTeX_HEADER: {\lstset{language={Lisp},basicstyle={\ttfamily\footnotesize},frame=single,breaklines=true}}
+#+LaTeX_HEADER: {}
+#+LaTeX_HEADER: \newcommand{\python}[1]{\lstset{language={Python},basicstyle={\ttfamily\small}}\lstinline{#1}}
+ 
+#+LaTeX_HEADER: \usepackage{framed}
+#+LaTeX_HEADER: \usepackage{xcolor}
+#+LaTeX_HEADER: \definecolor{shadecolor}{gray}{.95}
+
+
+# #+LaTeX_HEADER: \newenvironment{resultsblock}{\begin{shaded}}{\end{shaded}} 
+
+# TO PONIZEJ NIE DZIALA
+# #+LaTeX_HEADER: \lstnewenvironment{resultsblock}[1][]{
+# #+LaTeX_HEADER:                   \lstset{frame=lines,
+# #+LaTeX_HEADER:                           basicstyle=\footnotesize,
+# #+LaTeX_HEADER:                           numbers=left,
+# #+LaTeX_HEADER:                           numberstyle=\tiny,
+# #+LaTeX_HEADER:                           language= ,
+# #+LaTeX_HEADER:                           label= ,
+# #+LaTeX_HEADER:                           caption= ,
+# #+LaTeX_HEADER:                           captionpos=b
+# #+LaTeX_HEADER:                           #1}
+# #+LaTeX_HEADER:                     }
+# #+LaTeX_HEADER: 
+
+#+LaTeX_HEADER: \lstnewenvironment{resultsblock}{\lstset{language=bash,backgroundcolor = \color{lightgray}}}{}
+
+
+# TO SAMO TRZEBA ZROBIC DLA HTMLa, MARKDOWN'a itd itp
+
+
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+#+LATEX_HEADER:\usepackage{tcolorbox}   % in order to have org-special-blocks-extras working
+
+# #+LATEX_HEADER:\definecolor{my-c}{cmyk}     {0.25, 0.00, 0.08, 0.04, 1.00}
+#+LATEX_HEADER:\definecolor{my-olive}{cmyk} {0.10, 0.00, 0.34, 0.26, 1.00}
+#+LATEX_HEADER:\definecolor{my-salmon}{cmyk}{0.00, 0.31, 0.10, 0.16, 1.00}
+#+LATEX_HEADER:\definecolor{my-sand}{cmyk}  {0.00, 0.07, 0.39, 0.05, 1.00}
+#+LATEX_HEADER:\definecolor{my-steel}{cmyk} {0.23, 0.08, 0.00, 0.26, 1.00}
+#+LATEX_HEADER:\definecolor{my-mint}{cmyk}  {0.25, 0.00, 0.08, 0.04, 1.00}
+
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# my own macros
+
+#+MACRO: begin_box  #+begin_box :background-color white :shadow black
+#+MACRO: end_box    #+end_box 
+
+#+MACRO: begin_warning  #+begin_box Uwaga! $1 :background-color my-salmon
+#+MACRO: end_warning    #+end_box 
+
+#+MACRO: begin_remark  #+begin_box Uwaga: $1 :background-color my-olive
+#+MACRO: end_remark    #+end_box 
+
+#+MACRO: begin_question  #+begin_box Pytanie: $1 :background-color my-steel  
+#+MACRO: end_question    #+end_box 
+
+#+MACRO: begin_summary  #+begin_box Podsumowanie: $1 :background-color my-mint
+#+MACRO: end_summary    #+end_box 
+
+#+MACRO: begin_hint  #+begin_box Podpowiedź: $1 :background-color my-sand
+#+MACRO: end_hint    #+end_box 
+
+#+MACRO: begin_results  #+begin_box :background-color white
+#+MACRO: end_results    #+end_box
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#    OLD EXPERIMENTS
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# # Latex Class with environments defined in org-macros.setup (LATEX)
+# #+LATEX_HEADER:\usepackage{Preamble_latex}  
+
+# # CSS Class with environments defined in org-macros.setup (HTML)
+# TODO
+
+# # markdown class with environments defined in org-macros.setup (MD) ... etc..
+# TODO
+
+#+INCLUDE: org-macros.setup
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+

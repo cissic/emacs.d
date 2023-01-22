@@ -1,23 +1,23 @@
 
 ;; ----- smex-history -----
 (
- revert-buffer
+ org-cite-insert
+ eval-expression
+ abbrev-mode
  list-packages
  eval-buffer
- abbrev-mode
- wg-open-workgroup
- wg-kill-workgroup
- wg-create-workgroup
+ package-refresh-contents
+ makefile-mode
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 16)
- (eval-buffer . 86)
- (list-packages . 16)
- (package-refresh-contents . 1)
- (eval-expression . 17)
- (eval-region . 1)
+ (revert-buffer . 19)
+ (eval-buffer . 111)
+ (list-packages . 21)
+ (package-refresh-contents . 2)
+ (eval-expression . 21)
+ (eval-region . 3)
  (describe-variable . 2)
  (wg-create-workgroup . 3)
  (org-md-export-to-markdown . 2)
@@ -34,7 +34,7 @@
  (counsel-recentf . 1)
  (recentf-mode . 1)
  (recentf-load-list . 1)
- (recentf-open-files . 2)
+ (recentf-open-files . 3)
  (dired . 1)
  (counsel-dired . 1)
  (sunrise . 6)
@@ -46,15 +46,21 @@
  (sunrise-sort-by-time . 1)
  (buf-move-left . 2)
  (buf-move-right . 1)
- (org-cite-insert . 18)
- (mynet . 2)
+ (org-cite-insert . 26)
+ (mynet . 4)
  (org-version . 4)
  (package-reinstall . 1)
  (flymake-mode . 1)
  (eww . 2)
  (eww-bookmark-browse . 1)
- (abbrev-mode . 2)
- (list-abbrevs . 1)
- (abbrev-edit-save-buffer . 2)
+ (abbrev-mode . 7)
+ (list-abbrevs . 5)
+ (abbrev-edit-save-buffer . 3)
  (wg-kill-workgroup . 1)
+ (dabbrev-expand . 1)
+ (unexpand-abbrev . 1)
+ (scroll-bar-mode . 2)
+ (tool-bar-mode . 3)
+ (menu-bar-mode . 4)
+ (makefile-mode . 1)
 )

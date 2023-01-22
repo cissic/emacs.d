@@ -10,7 +10,6 @@
 
 (load-file custom-file)
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Global emacs customization
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -26,7 +25,7 @@
 
 (scroll-bar-mode 1)        ; Enable scrollbar
 (menu-bar-mode 1)          ; Enable menubar
-(tool-bar-mode -1)          ; Disable toolbar since it's rather useless
+(tool-bar-mode -1)         ; Disable toolbar since it's rather useless
 
 (setq line-number-mode t)  ; Show line number
 
@@ -56,6 +55,19 @@
 ;; <- Do not deselect after M-w copying
 
 (set-frame-font "liberation mono 11" nil t) ; Set default font
+
+;;Highlight an active window/buffer or dim all other windows
+  
+  (defun highlight-selected-window ()
+    "Highlight selected window with a different background color."
+    (walk-windows (lambda (w)
+      (unless (eq w (selected-window)) 
+	(with-current-buffer (window-buffer w)
+	  (buffer-face-set '(:background "#111"))))))
+    (buffer-face-set 'default))
+  
+    (add-hook 'buffer-list-update-hook 'highlight-selected-window)
+;;
 
 (setq system-time-locale "C")         ; Force Emacs to use English timestamps
 
@@ -112,14 +124,16 @@
 ;; (setq ivy-display-style 'fancy)
 ;; (setq ivy-use-virtual-buffers t)
 ;; (setq ivy-case-fold-search-default t)
-
 ;; (setq ivy-re-builders-alist '((t . ivy--regex-ignore-order)))
 ;; (setq enable-recursive-minibuffers t)
 ;; (ivy-mode t)
 
 ;; abbrev-mode ->
   (setq-default abbrev-mode t)          
-  (read-abbrev-file "~/.emacs.d/abbrev_defs")
+  ; (read-abbrev-file "~/.emacs.d/abbrev_defs")
+  (read-abbrev-file "~/.emacs.d/abbrev_defs_autocorrectionEN")
+  (read-abbrev-file "~/.emacs.d/abbrev_defs_autocorrectionPL")  
+  (read-abbrev-file "~/.emacs.d/abbrev_defs_cis")  
   (setq save-abbrevs t)  
 ;; <- abbrev-mode
 
@@ -154,7 +168,6 @@
  'org-babel-load-languages '(
 			     (C . t)
 			     (matlab . t)
-			     (makefile . t)
 			     ;;(perl . t)
 			     (octave . t)
 			     (org . t)
@@ -197,6 +210,17 @@
 (require 'ox-md nil t)
 
 ;; <- **** org-to-markdown exporter customization
+
+;; alphabetical ordered lists
+(setq org-list-allow-alphabetical t)
+
+;; org-to-latex exporter to have nice code formatting
+  (setq org-latex-listings 'minted
+     org-latex-packages-alist '(("" "minted"))
+     org-latex-pdf-process
+     '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+       "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+       "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Flyspell 
