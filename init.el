@@ -150,6 +150,24 @@
   (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 ;; <- Recently opened files
 
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ;; *** Minor mode settings and keybindings
+;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Emacs-Lisp mode...
+(defun my-emacs-lisp-mode-hook ()
+(define-key emacs-lisp-mode-map (kbd "C-e b") 'eval-buffer)
+(define-key emacs-lisp-mode-map (kbd "C-e e") 'eval-expression)
+(define-key emacs-lisp-mode-map (kbd "C-e r") 'eval-region)  
+)
+
+;; Add all of the hooks...
+;(add-hook 'c++-mode-hook 'my-c++-mode-hook)
+;(add-hook 'c-mode-hook 'my-c-mode-hook)
+(add-hook 'emacs-lisp-mode-hook 'my-emacs-lisp-mode-hook)
+; (add-hook 'lisp-mode-hook 'my-lisp-mode-hook)
+;(add-hook 'perl-mode-hook 'my-perl-mode-hook)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Org customization
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -177,6 +195,9 @@
 			     
 ;; no question about confirmation of evaluating babel code block
 (setq org-confirm-babel-evaluate nil)
+
+;; Python in org-babel
+(setq org-babel-python-command "/bin/python3")
 
 ;; **** org-to-markdown exporter customization  -> 
 

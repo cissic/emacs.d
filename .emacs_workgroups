@@ -1,4 +1,4 @@
-#s(wg-session "JP7BIMCEFU9WHC-8LDKL" nil nil
+#s(wg-session "JPU1CGMF7DUBKO-9TR1S" nil nil
 	      (~pickel!~
 		(3 nil 2 frame-list 1
 		   (c)
@@ -7,99 +7,30 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "JPMMAFBKNHB4GO-686T13" "currentsession" t nil #s(wg-wconfig "JPO3GE8JJDCIM8-5NX5WH" nil
-											    ((fullscreen . maximized))
-											    3 0 209 55 right 16 #s(wg-wtree nil nil
-															    (0 0 213 54)
-															    (#s(wg-win nil nil
-																       (0 0 107 54)
-																       18621 17550 0 nil t nil "JPKHK294J7B48-2WU8HK")
-															       #s(wg-win nil nil
-																	 (107 0 213 54)
-																	 400 1 0 nil nil nil "JPKHK294J7B48-2WU8HK"))))
+	      (#s(wg-workgroup "JPU1CGMGZRQID9K-9UKOV" "currentsession" t nil #s(wg-wconfig "JPU1CGMH075BRM0-9UL6Z" nil
+											    ((fullscreen))
+											    0 0 80 36 right 16 #s(wg-win nil nil
+															 (0 0 83 35)
+															 12751 12751 0 nil t nil "JPU1CGMGZPBCR3S-9UKKZ"))
 			       nil nil nil nil)
-		 #s(wg-workgroup "JP7FXSHUMHQW-7THU9" "test2del" nil nil #s(wg-wconfig "JP7FXS1ARA20J4-7TJMK" nil
-										       ((fullscreen . maximized))
-										       3 0 209 53 right 16 #s(wg-wtree nil nil
-														       (0 0 213 52)
-														       (#s(wg-win nil nil
-																  (0 0 89 52)
-																  8367 8367 0 nil t nil "JP7BIMDJ8PIQDS-8M2F9")
-															  #s(wg-win nil nil
-																    (89 0 213 52)
-																    :max 1 0 nil nil nil "JP7FXSHP9ESEO-7THQR"))))
-				 nil nil nil nil)
-		 #s(wg-workgroup "JPAPWS1QTS3BLK-2CSZ8I" "initLayout" nil nil #s(wg-wconfig "JPAPWS3229ADGG-2CT2WC" nil
-											    ((fullscreen . maximized))
-											    0 0 209 53 right 16 #s(wg-wtree nil nil
-															    (0 0 213 52)
-															    (#s(wg-win nil nil
-																       (0 0 107 52)
-																       814 459 0 nil t nil "JP7BIMDJ8PIQDS-8M2F9")
-															       #s(wg-win nil nil
-																	 (107 0 213 52)
-																	 39284 28795 0 nil nil nil "JPAPWS1QM6JF2O-2CSZ4O"))))
-				 nil nil nil nil)
-		 #s(wg-workgroup "JPO3HTD0WJ1IS8-5O20EK" "cissicLayout" t nil #s(wg-wconfig "JPO3HTE5HU1IS8-5O287L" nil
-											    ((fullscreen . maximized))
-											    3 0 210 55 nil 16 #s(wg-wtree nil t
-															  (0 0 213 54)
-															  (#s(wg-wtree nil nil
-																       (0 0 213 44)
-																       (#s(wg-win nil nil
-																		  (0 0 106 44)
-																		  39441 27280 0 nil nil nil "JPAPWS1QM6JF2O-2CSZ4O")
-																	  #s(wg-win nil nil
-																		    (106 0 213 44)
-																		    7681 6714 0 nil t nil "JP7BIMDJ8PIQDS-8M2F9")))
-															     #s(wg-win nil nil
-																       (0 44 213 54)
-																       :max 1 0 nil nil nil "JPAT502UBY95H4-2S89SI"))))
-				 nil nil nil nil)
-		 #s(wg-workgroup "JPI1ALXHN3A7NGO-YL241" "orgpdf" nil nil #s(wg-wconfig "JPI1ALXHO4M1KBS-YL2K2" nil
-											((fullscreen))
-											0 0 102 55 right 16 #s(wg-win nil nil
-														      (0 0 105 54)
-														      3902 2548 0 nil t nil "JPI1ALXHMVRJ0EW-YL205"))
-				 nil nil nil nil)
-		 #s(wg-workgroup "JPKHK29D6FA5K-2WU8L8" "temp" nil nil #s(wg-wconfig "JPKHK3ALZBUP4-2WUAQH" nil
-										     ((fullscreen . maximized))
-										     2 0 209 52 right 16 #s(wg-wtree nil nil
-														     (0 0 213 52)
-														     (#s(wg-win nil nil
-																(0 0 116 52)
-																2917 1698 0 nil nil nil "JPI1ALXHMVRJ0EW-YL205")
-															#s(wg-win nil nil
-																  (116 0 213 52)
-																  10715 9957 0 nil t nil "JPKHK294J7B48-2WU8HK"))))
+		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
+											       ((fullscreen . maximized))
+											       3 0 209 55 right 16 #s(wg-wtree nil nil
+															       (0 0 213 54)
+															       (#s(wg-win nil nil
+																	  (0 0 107 54)
+																	  33119 32660 0 nil t nil "JPU1CMI2URG4S2G-AL7X5")
+																  #s(wg-win nil nil
+																	    (107 0 213 54)
+																	    763 1 0 nil nil nil "JPU1CGMGZPBCR3S-9UKKZ"))))
 				 nil nil nil nil))
-	      (#s(wg-buf "JPAT502UBY95H4-2S89SI" "*shell*" nil 47 nil
-			 ((major-mode . shell-mode)
-			  nil nil nil nil nil nil nil)
-			 (wg-deserialize-shell-mode-buffer
-			  ("/home/mb/projects/cissic.github.io/mysource/" nil))
-			 nil)
-		 #s(wg-buf "JPAPWS1QM6JF2O-2CSZ4O" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 39441 15215
+	      (#s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 763 13928
+			 ((major-mode . emacs-lisp-mode)
+			  (mark-ring 5228 5228 5228 8869 14565 5228 5228 5228 5228 5228 5228 5228 5228 5228 5228 1321)
+			  nil nil nil nil nil nil)
+			 nil nil)
+		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 33119 32658
 			   ((major-mode . org-mode)
-			    (mark-ring 305 305 30029 30029 30028 29966 30100 30149 29964 29914 15229 19907 19549 19549 19549 33716)
+			    (mark-ring 32286 33288 31994 32543 32429 32318 32658 31934 31985 31911 32741 32742 31996 31935 31203 33119)
 			    nil nil nil nil nil nil)
-			   nil nil)
-		 #s(wg-buf "JP7BIMDJ8PIQDS-8M2F9" "init.el" "/home/mb/.emacs.d/init.el" 7681 644
-			   ((major-mode . emacs-lisp-mode)
-			    (mark-ring 4491 4445 4490 814 344 344 344 269 248 344 344 344 344 344 344 7681)
-			    nil nil nil nil nil nil)
-			   nil nil)
-		 #s(wg-buf "JPKHK294J7B48-2WU8HK" "manual_docker.org" "/home/mb/projects/Dydaktyka/manual_4_make_venv_docker/chapters/manual_docker.org" 18621 7409
-			   ((major-mode . org-mode)
-			    (mark-ring 13892 10263 9219 9798 9933 16791 15047 19923 19842 16530 15118 422 422 9989 3341 18334)
-			    nil nil nil nil nil nil)
-			   nil nil)
-		 #s(wg-buf "JPI1ALXHMVRJ0EW-YL205" "manual_acousing.org" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/manual_acousing.org" 2917 6255
-			   ((major-mode . org-mode)
-			    (mark-ring 5451 5341 5446 5432 5431 5420 5235 5217 5344 5324 5324 3208 5298 5285 5209 2917)
-			    nil nil nil nil nil nil)
-			   nil nil)
-		 #s(wg-buf "JP7FXSHP9ESEO-7THQR" "*Messages*" nil 2057 nil
-			   ((major-mode . messages-buffer-mode)
-			    nil nil nil nil nil nil nil)
 			   nil nil)))

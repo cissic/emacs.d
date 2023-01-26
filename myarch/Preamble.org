@@ -5,7 +5,7 @@
 #+LATEX_HEADER:\usepackage{hyperref} 
 #+LATEX_HEADER:\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=blue}
 
-#+LATEX_HEADER:\usepackage[a4paper,left=3.5cm,right=2cm,top=2cm,bottom=3.5cm,includefoot=false,includehead=false,footskip=1.16cm]{geometry} 
+#+LATEX_HEADER:\usepackage[a4paper,left=1.5cm,right=2cm,top=2cm,bottom=3.5cm,includefoot=false,includehead=false,footskip=1.16cm]{geometry} 
 
 
 # #+LATEX_HEADER:\usepackage{hyphenat}
@@ -13,67 +13,100 @@
 #+LATEX_HEADER:\usepackage{polski}
 #+LATEX_HEADER:\sloppy               % make hyphenation a bit easier for latex
 
-
-# Kropka po numerze rozdziałów...
-# # w HTML
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# ############ Full-stop after (sub)section title
+# ## HTML
 #+HTML_HEAD_EXTRA: <style>span[class^="section-number-"]:after { content: '.'; }</style>
-# # w LaTeX
+# ## LaTeX
 #+LATEX_HEADER: \usepackage{titlesec}
 #+LATEX_HEADER: \titlelabel{\thetitle.\quad}
 
-# ############ FORMATOWANIE BLOKÓW KODU I BLOKÓW Z WYNIKAMI
-# 1. Formatowanie kodów przy pomocy minted (jak na razie nie działa)
-#+LaTeX_HEADER: \usepackage{minted}
-#+LaTeX_HEADER: \newenvironment{resultsminted}{\begin{minted}[,frame=single]{sh}}{\end{minted}} 
-
-
-# #+ATTR_LATEX: :options frame=single
- 
-# 2. Formatowanie kodów przy pomocy minted (jak na razie nie działa)
-#+LaTeX_HEADER: \usepackage{listings}
-#+LaTeX_HEADER: \lstnewenvironment{common-lispcode}
-#+LaTeX_HEADER: {\lstset{language={Lisp},basicstyle={\ttfamily\footnotesize},frame=single,breaklines=true}}
-#+LaTeX_HEADER: {}
-#+LaTeX_HEADER: \newcommand{\python}[1]{\lstset{language={Python},basicstyle={\ttfamily\small}}\lstinline{#1}}
- 
-#+LaTeX_HEADER: \usepackage{framed}
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #+LaTeX_HEADER: \usepackage{xcolor}
+#+LaTeX_HEADER: \usepackage{framed}
 #+LaTeX_HEADER: \definecolor{shadecolor}{gray}{.95}
-
-
-# #+LaTeX_HEADER: \newenvironment{resultsblock}{\begin{shaded}}{\end{shaded}} 
-
-# TO PONIZEJ NIE DZIALA
-# #+LaTeX_HEADER: \lstnewenvironment{resultsblock}[1][]{
-# #+LaTeX_HEADER:                   \lstset{frame=lines,
-# #+LaTeX_HEADER:                           basicstyle=\footnotesize,
-# #+LaTeX_HEADER:                           numbers=left,
-# #+LaTeX_HEADER:                           numberstyle=\tiny,
-# #+LaTeX_HEADER:                           language= ,
-# #+LaTeX_HEADER:                           label= ,
-# #+LaTeX_HEADER:                           caption= ,
-# #+LaTeX_HEADER:                           captionpos=b
-# #+LaTeX_HEADER:                           #1}
-# #+LaTeX_HEADER:                     }
-# #+LaTeX_HEADER: 
-
-#+LaTeX_HEADER: \lstnewenvironment{resultsblock}{\lstset{language=bash,backgroundcolor = \color{lightgray}}}{}
-
-
-# TO SAMO TRZEBA ZROBIC DLA HTMLa, MARKDOWN'a itd itp
-
-
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 #+LATEX_HEADER:\usepackage{tcolorbox}   % in order to have org-special-blocks-extras working
 
-# #+LATEX_HEADER:\definecolor{my-c}{cmyk}     {0.25, 0.00, 0.08, 0.04, 1.00}
+# #+LATEX_HEADER:\definecolor{my-c}{cmyk}   {0.25, 0.00, 0.08, 0.04, 1.00}
 #+LATEX_HEADER:\definecolor{my-olive}{cmyk} {0.10, 0.00, 0.34, 0.26, 1.00}
 #+LATEX_HEADER:\definecolor{my-salmon}{cmyk}{0.00, 0.31, 0.10, 0.16, 1.00}
 #+LATEX_HEADER:\definecolor{my-sand}{cmyk}  {0.00, 0.07, 0.39, 0.05, 1.00}
 #+LATEX_HEADER:\definecolor{my-steel}{cmyk} {0.23, 0.08, 0.00, 0.26, 1.00}
-#+LATEX_HEADER:\definecolor{my-mint}{cmyk}  {0.25, 0.00, 0.08, 0.04, 1.00}
+#+LATEX_HEADER:\definecolor{my-sky}{cmyk}  {0.25, 0.00, 0.08, 0.04, 1.00}
+#+LATEX_HEADER:\definecolor{my-gray}{cmyk}  {0.20, 0.20, 0.20, 0.20, 1.00}
+
+# ############ FORMATOWANIE BLOKÓW KODU I BLOKÓW Z WYNIKAMI
+# 1. Formatowanie kodów przy pomocy minted (jak na razie nie działa)
+# #+LaTeX_HEADER: \usepackage{minted} # This is added by default by Emacs exporter
+# #+LaTeX_HEADER: \newenvironment{resultsminted}{{\begin{minted}[,frame=single]}{\end{minted}}}}
+
+#+LaTeX_HEADER: \usepackage{color}
+#+LaTeX_HEADER: \definecolor{my-mint}{cmyk}  {0.20, 0.00, 0.16, 0.06, 1.00}
+#+LaTeX_HEADER: \newenvironment{resultsminted}
+#+LaTeX_HEADER: {\VerbatimEnvironment
+#+LaTeX_HEADER: \begin{minted}[
+#+LaTeX_HEADER: % linenos,
+#+LaTeX_HEADER: % fontfamily=courier,
+#+LaTeX_HEADER: % fontsize=\scriptsize,
+#+LaTeX_HEADER: % xleftmargin=21pt,
+#+LaTeX_HEADER: bgcolor=my-mint,
+#+LaTeX_HEADER: frame=single
+#+LaTeX_HEADER: ]{text}}
+#+LaTeX_HEADER: {\end{minted}}
+
+#+LaTeX_HEADER: \renewenvironment{resultsminted}
+#+LaTeX_HEADER: {\VerbatimEnvironment
+#+LaTeX_HEADER: \begin{minted}[
+#+LaTeX_HEADER: % linenos,
+#+LaTeX_HEADER: % fontfamily=courier,
+#+LaTeX_HEADER: % fontsize=\scriptsize,
+#+LaTeX_HEADER: % xleftmargin=21pt,
+#+LaTeX_HEADER: bgcolor=my-mint,
+#+LaTeX_HEADER: frame=single
+#+LaTeX_HEADER: ]{text}}
+#+LaTeX_HEADER: {\end{minted}}
+
+
+
+
+# #+ATTR_LATEX: :options frame=single
+ 
+# 2. Formatowanie kodów przy pomocy lstlistings
+# #+LaTeX_HEADER: \usepackage{listings}
+# #+LaTeX_HEADER: \lstnewenvironment{common-lispcode}
+# #+LaTeX_HEADER: {\lstset{language={Lisp},basicstyle={\ttfamily\footnotesize},frame=single,breaklines=true}}
+# #+LaTeX_HEADER: {}
+# #+LaTeX_HEADER: \newcommand{\python}[1]{\lstset{language={Python},basicstyle={\ttfamily\small}}\lstinline{#1}}
+ 
+
+
+
+# # #+LaTeX_HEADER: \newenvironment{resultsblock}{\begin{shaded}}{\end{shaded}} 
+
+# # TO PONIZEJ NIE DZIALA
+# # #+LaTeX_HEADER: \lstnewenvironment{resultsblock}[1][]{
+# # #+LaTeX_HEADER:                   \lstset{frame=lines,
+# # #+LaTeX_HEADER:                           basicstyle=\footnotesize,
+# # #+LaTeX_HEADER:                           numbers=left,
+# # #+LaTeX_HEADER:                           numberstyle=\tiny,
+# # #+LaTeX_HEADER:                           language= ,
+# # #+LaTeX_HEADER:                           label= ,
+# # #+LaTeX_HEADER:                           caption= ,
+# # #+LaTeX_HEADER:                           captionpos=b
+# # #+LaTeX_HEADER:                           #1}
+# # #+LaTeX_HEADER:                     }
+# # #+LaTeX_HEADER: 
+
+# #+LaTeX_HEADER: \lstnewenvironment{resultsblock}{\lstset{language=bash,backgroundcolor = \color{lightgray}}}{}
+
+
+# # TO SAMO TRZEBA ZROBIC DLA HTMLa, MARKDOWN'a itd itp
+
+
+
 
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -91,7 +124,7 @@
 #+MACRO: begin_question  #+begin_box Pytanie: $1 :background-color my-steel  
 #+MACRO: end_question    #+end_box 
 
-#+MACRO: begin_summary  #+begin_box Podsumowanie: $1 :background-color my-mint
+#+MACRO: begin_summary  #+begin_box Podsumowanie: $1 :background-color my-sky
 #+MACRO: end_summary    #+end_box 
 
 #+MACRO: begin_hint  #+begin_box Podpowiedź: $1 :background-color my-sand
