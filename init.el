@@ -155,7 +155,7 @@
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Emacs-Lisp mode...
-(defun my-emacs-lisp-mode-hook ()
+(defun my-emacs-lisp-mode-hook ()e
 (define-key emacs-lisp-mode-map (kbd "C-e b") 'eval-buffer)
 (define-key emacs-lisp-mode-map (kbd "C-e e") 'eval-expression)
 (define-key emacs-lisp-mode-map (kbd "C-e r") 'eval-region)  
@@ -362,6 +362,12 @@
 
 ;; buffer-move - swap buffers easily
 (require 'buffer-move)
+
+;; column-marker, mark 80-th column in editor
+(require 'column-marker)
+
+(column-marker-2)
+(add-hook 'emacs-lisp-mode-hook (lambda () (interactive) (column-marker-1 81)))
 
 ;; [DEPRECATED] - use sunrise instead of this
 ;; midnight-commander emulation
