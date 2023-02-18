@@ -946,16 +946,16 @@
 	       ("Markus Triska" . "triska@metalevel.at"))
 	      (:commit . "cfcdf9e42821d246b7fbc84877aa4ecacc184a1c"))])
  (eev .
-      [(20230102)
+      [(20230127)
        ((emacs
 	 (24 4)))
        "Support for e-scripts (eepitch blocks, elisp hyperlinks, etc)" tar
-       ((:url . "http://angg.twu.net/#eev")
+       ((:url . "http://anggtwu.net/#eev")
 	(:keywords "lisp" "e-scripts")
 	(:maintainer "Eduardo Ochs" . "eduardoochs@gmail.com")
 	(:authors
 	 ("Eduardo Ochs" . "eduardoochs@gmail.com"))
-	(:commit . "0df1fb2a0ae9fbffb5f507ab84810bf561710dd7"))])
+	(:commit . "16613c18c5ec17755f083f4839bca7e4e05dd4c7"))])
  (ef-themes .
 	    [(0 10 0)
 	     ((emacs
@@ -2555,6 +2555,24 @@
 	(:authors
 	 ("Adam Porter" . "adam@alphapapa.net"))
 	(:commit . "ecd1de2a7967bd8bc61737078d717d0ee050b344"))])
+ (poke .
+       [(3 0)
+	((emacs
+	  (25)))
+	"Emacs meets GNU poke!" tar
+	((:url . "https://www.jemarch.net/poke")
+	 (:maintainer "Jose E. Marchesi" . "jemarch@gnu.org")
+	 (:authors
+	  ("Jose E. Marchesi" . "jemarch@gnu.org"))
+	 (:commit . "bc0bd9e618a468bbb0d0a68cdc2462db43b5b689"))])
+ (poke-mode .
+	    [(3 0)
+	     nil "Major mode for editing Poke programs" tar
+	     ((:maintainer "Jose E. Marchesi" . "jemarch@gnu.org")
+	      (:authors
+	       ("Aurelien Aptel" . "aaptel@suse.com"))
+	      (:url . "https://elpa.gnu.org/packages/poke-mode.html")
+	      (:commit . "488a44cf462b7c98a2e7f3146afcffc9ba208bb0"))])
  (poker .
 	[(0 2)
 	 nil "Texas hold 'em poker" single
@@ -2875,6 +2893,15 @@
 		  (:authors
 		   ("Yoni Rabkin" . "yrk@gnu.org"))
 		  (:commit . "b76ae2828b12efc5f45f51ba873489e049a70924"))])
+ (ruby-end .
+	   [(0 4 3)
+	    nil "Automatic insertion of end blocks for Ruby" tar
+	    ((:url . "http://github.com/rejeep/ruby-end")
+	     (:keywords "speed" "convenience" "ruby")
+	     (:maintainer "Dmitry Gutov" . "dgutov@yandex.ru")
+	     (:authors
+	      ("Johan Andersson" . "johan.rejeep@gmail.com"))
+	     (:commit . "fe39d34ba7a43d522c7bdc47406935611e782ca3"))])
  (rudel .
 	[(0 3 2)
 	 ((emacs

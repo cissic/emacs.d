@@ -8,7 +8,7 @@
  '(org-agenda-files
    '("/home/mb/org/2023.01.11-org-mode-bibliography-email.org"))
  '(package-selected-packages
-   '(org company yasnippet counsel bash-completion ivy perspective workgroups2 smex org-special-block-extras org-ac modus-themes markdown-mode magit)))
+   '(fill-column-indicator org company yasnippet counsel bash-completion ivy perspective workgroups2 smex org-special-block-extras org-ac modus-themes markdown-mode magit)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

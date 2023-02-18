@@ -7,11 +7,11 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "JPU1CGMGZRQID9K-9UKOV" "currentsession" t nil #s(wg-wconfig "JPU1CGMH075BRM0-9UL6Z" nil
+	      (#s(wg-workgroup "JQMZI3C68FHSFK-43MQ57" "currentsession" t nil #s(wg-wconfig "JQMZI3C8MFDUGG-43MQP0" nil
 											    ((fullscreen))
-											    0 0 80 36 right 16 #s(wg-win nil nil
-															 (0 0 83 35)
-															 12751 12751 0 nil t nil "JPU1CGMGZPBCR3S-9UKKZ"))
+											    0 0 102 55 right 16 #s(wg-win nil nil
+															  (0 0 106 54)
+															  5492 5492 0 nil t nil "JQK1LLAFJ07WQ0-GUA8QE"))
 			       nil nil nil nil)
 		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
@@ -24,13 +24,18 @@
 																	    (107 0 213 54)
 																	    763 1 0 nil nil nil "JPU1CGMGZPBCR3S-9UKKZ"))))
 				 nil nil nil nil))
-	      (#s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 763 13928
-			 ((major-mode . emacs-lisp-mode)
-			  (mark-ring 5228 5228 5228 8869 14565 5228 5228 5228 5228 5228 5228 5228 5228 5228 5228 1321)
+	      (#s(wg-buf "JQK1LLAFJ07WQ0-GUA8QE" "manual_vagrant.org" "/home/mb/projects/Dydaktyka/manual_6_vagrant/chapters/manual_vagrant.org" 5492 5160
+			 ((major-mode . org-mode)
+			  (mark-ring 9710 9710 9710 9553 6879 8909 8764 8669 8669 8898 7750 7750 7772 7772 7772 4828)
 			  nil nil nil nil nil nil)
 			 nil nil)
-		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 33119 32658
+		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 27697 27791
 			   ((major-mode . org-mode)
-			    (mark-ring 32286 33288 31994 32543 32429 32318 32658 31934 31985 31911 32741 32742 31996 31935 31203 33119)
+			    (mark-ring 27596 27595 27543 27321 27485 27542 27543 31666 27702 27702 27458 27484 27484 27484 27484 27676)
+			    nil nil nil nil nil nil)
+			   nil nil)
+		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 3855 4982
+			   ((major-mode . emacs-lisp-mode)
+			    (mark-ring 4982 3515 3811 4191 4191 4191 4191 3711 3646 855 13743 13741 13740 13738 13738 3855)
 			    nil nil nil nil nil nil)
 			   nil nil)))

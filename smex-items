@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
+ eww
  eval-buffer
- wg-open-workgroup
- revert-buffer
- workgroups-mode
- org-require-autoloaded-modules
- describe-variable
+ recentf-open-files
  mynet
+ abbrev-mode
+ org-babel-remove-result
+ revert-buffer
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 83)
- (eval-buffer . 144)
- (list-packages . 23)
+ (revert-buffer . 96)
+ (eval-buffer . 252)
+ (list-packages . 24)
  (package-refresh-contents . 2)
  (eval-expression . 28)
  (eval-region . 9)
@@ -34,30 +34,30 @@
  (counsel-recentf . 1)
  (recentf-mode . 1)
  (recentf-load-list . 1)
- (recentf-open-files . 5)
+ (recentf-open-files . 9)
  (dired . 1)
  (counsel-dired . 1)
  (sunrise . 6)
  (list-faces-display . 1)
  (nc . 1)
- (ffap . 2)
- (org-babel-remove-result . 2)
+ (ffap . 3)
+ (org-babel-remove-result . 4)
  (kill-sexp . 1)
  (sunrise-sort-by-time . 1)
  (buf-move-left . 2)
  (buf-move-right . 1)
  (org-cite-insert . 26)
- (mynet . 6)
+ (mynet . 21)
  (org-version . 4)
  (package-reinstall . 1)
  (flymake-mode . 1)
- (eww . 2)
+ (eww . 3)
  (eww-bookmark-browse . 1)
- (abbrev-mode . 7)
+ (abbrev-mode . 18)
  (list-abbrevs . 5)
  (abbrev-edit-save-buffer . 3)
  (wg-kill-workgroup . 2)
- (dabbrev-expand . 3)
+ (dabbrev-expand . 4)
  (unexpand-abbrev . 1)
  (scroll-bar-mode . 2)
  (tool-bar-mode . 3)
@@ -67,4 +67,10 @@
  (auto-revert-mode . 1)
  (org-require-autoloaded-modules . 1)
  (workgroups-mode . 4)
+ (vline-mode . 2)
+ (column-marker-1 . 9)
+ (column-marker-2 . 6)
+ (column-marker-3 . 3)
+ (display-fill-column-indicator-mode . 1)
+ (eww-toggle-colors . 3)
 )

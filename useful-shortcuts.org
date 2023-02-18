@@ -137,6 +137,11 @@
 26. Kopiowanie nazwy pliku otwartego w buforze do schowka:
   : copy-file-name-to-clipboard
    
+27. Usuwanie wyników działania bloku kodu (RESULTS) (Focus musi być na bloku kodu,
+    a nie na bloku RESULTS!)
+  : org-babel-remove-result
+  : C-c C-v k
+
 
 
 * OLD

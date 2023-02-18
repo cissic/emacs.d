@@ -102,6 +102,14 @@
   (global-set-key        (kbd "C-s-<up>") 'enlarge-window)
 ;; <- Easy windows resize
 
+;; Fill column indicator -> 
+(require 'fill-column-indicator)
+(setq fci-rule-column 81)
+; (add-hook 'after-change-major-mode-hook 'fci-mode)
+(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
+(global-fci-mode 1)
+;; <- Fill column indicator
+
 ;; ido-mode ->
   (ido-mode 1)          
   (setq ido-enable-flex-matching t)
@@ -167,6 +175,12 @@
 (add-hook 'emacs-lisp-mode-hook 'my-emacs-lisp-mode-hook)
 ; (add-hook 'lisp-mode-hook 'my-lisp-mode-hook)
 ;(add-hook 'perl-mode-hook 'my-perl-mode-hook)
+
+;; Change font color for eww
+(defun my-eww-mode-faces ()
+  (face-remap-add-relative 'default '(:foreground "#BD8700")))
+
+(add-hook 'eww-mode-hook 'my-eww-mode-faces)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Org customization
@@ -285,7 +299,7 @@
         (message "Dictionary switched from %s to %s" dic change)
         ))
     
-      (global-set-key (kbd "<f8>")   'fd-switch-dictionary)
+      (global-set-key (kbd "C-c s")   'fd-switch-dictionary)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Flymake
@@ -309,6 +323,13 @@
 
 (global-set-key (kbd "C-C C-e C-w C-w") 'eww-list-bookmarks) ; Open eww bookmarks
 (defun mynet ()  (interactive) (eww-list-bookmarks))
+
+;; fast copy-line-comment-it-and-paste-below
+(global-set-key "\C-c\C-k"        "\C-a\C- \C-e\M-w\M-;\C-e\C-m\C-y")
+
+;; copy-selection-comment-it-and-paste-below (works ok provided selection is
+;; performed from left to right....
+(global-set-key "\C-c\C-l" "\M-w\M-;\C-e\C-m\C-y")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Emacs theme
@@ -353,6 +374,8 @@
               auto-mode-alist))
 ;; <- doconce
 
+(global-set-key "\C-c\C-j" "\C-k =====")
+
 ;; sunrise
 (add-to-list 'load-path "~/.emacs.d/manual-download/sunrise")
 (require 'sunrise)
@@ -362,12 +385,6 @@
 
 ;; buffer-move - swap buffers easily
 (require 'buffer-move)
-
-;; column-marker, mark 80-th column in editor
-(require 'column-marker)
-
-(column-marker-2)
-(add-hook 'emacs-lisp-mode-hook (lambda () (interactive) (column-marker-1 81)))
 
 ;; [DEPRECATED] - use sunrise instead of this
 ;; midnight-commander emulation
