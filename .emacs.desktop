@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Feb 17 22:45:35 2023
+;; Created Sat Feb 18 20:53:36 2023
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
@@ -18,16 +18,28 @@
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
+  "/home/mb/.emacs.d/install-packages.el"
+  "install-packages.el"
+  'emacs-lisp-mode
+  '(abbrev-mode visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  976
+  '(1342 nil)
+  nil
+  nil
+  '((buffer-display-time 25585 11410 199208 175000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (1241 1241 1241 738 1241 1241 1197 1241 1342 924 1197 1071 1241 1471 1809 976))))
+
+(desktop-create-buffer 208
   "/home/mb/projects/Ksiazki-tlumaczenia/A_Langtangen-fem-book/doc/.src/book/slides/approx.do.txt"
   "approx.do.txt"
   'DocOnce
   '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  73273
+  73803
   '(71591 nil)
   nil
   nil
-  '((buffer-display-time 25583 62761 44912 264000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
-  '((mark-ring (74011 72524 71628 65436 65738 65716 65667 65547 65486 65528 65486 65248 65248 64751 63620 63620))))
+  '((buffer-display-time 25585 11400 945341 235000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (74011 72524 71628 65436 65738 65716 65667 65547 65486 65528 65486 65248 65248 64751 63620 73803))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/Dydaktyka/manual_6_vagrant/chapters/manual_vagrant.org"
@@ -172,18 +184,6 @@
   nil
   '((buffer-display-time 25558 7253 865673 968000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/install-packages.el"
-  "install-packages.el"
-  'emacs-lisp-mode
-  '(abbrev-mode visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  1530
-  '(1342 nil)
-  nil
-  nil
-  '((buffer-display-time 25570 36617 213166 142000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (1241 1241 1241 738 1241 1241 1197 1241 1342 924 1197 1071 1241 1471 1809 1530))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/Preamble_acousing.org"
