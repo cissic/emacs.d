@@ -34,8 +34,9 @@
 
 (setq my-packages
   '(
-
-; counsel ; for ivy
+  auto-complete
+  bash-completion
+  ; counsel ; for ivy
   company
   ;dockerfile-mode
   fill-column-indicator
