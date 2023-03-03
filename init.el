@@ -286,28 +286,28 @@
 	      (flyspell-mode 1)))
 	  ;; I tried putting (flyspell-buffer) here but it didn't seem to work
 	  )))
-    
-    (defun flyspell-toggle ()
-      "Turn Flyspell on if it is off, or off if it is on.  When turning on, it uses `flyspell-on-for-buffer-type' so code-vs-text is handled appropriately."
-      (interactive)
-      (if (symbol-value flyspell-mode)
-	  (progn ; flyspell is on, turn it off
-	    (message "Flyspell off")
-	    (flyspell-mode -1))
-	  ; else - flyspell is off, turn it on
-	  (flyspell-on-for-buffer-type)))
 
- (global-set-key (kbd "C-c f") 'flyspell-toggle )
+;;     (defun flyspell-toggle ()
+;;       "Turn Flyspell on if it is off, or off if it is on.  When turning on, it uses `flyspell-on-for-buffer-type' so code-vs-text is handled appropriately."
+;;       (interactive)
+;;       (if (symbol-value flyspell-mode)
+;; 	  (progn ; flyspell is on, turn it off
+;; 	    (message "Flyspell off")
+;; 	    (flyspell-mode -1))
+;; 	  ; else - flyspell is off, turn it on
+;; 	  (flyspell-on-for-buffer-type)))
 
-(defun fd-switch-dictionary()
-      (interactive)
-      (let* ((dic ispell-current-dictionary)
-    	 (change (if (string= dic "polish") "english" "polish")))
-        (ispell-change-dictionary change)
-        (message "Dictionary switched from %s to %s" dic change)
-        ))
+;;  (global-set-key (kbd "C-c f") 'flyspell-toggle)
+
+;; (defun fd-switch-dictionary()
+;;       (interactive)
+;;       (let* ((dic ispell-current-dictionary)
+;;     	 (change (if (string= dic "polish") "english" "polish")))
+;;         (ispell-change-dictionary change)
+;;         (message "Dictionary switched from %s to %s" dic change)
+;;         ))
     
-      (global-set-key (kbd "C-c s")   'fd-switch-dictionary)
+;;       (global-set-key (kbd "C-c s")   'fd-switch-dictionary)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Flymake

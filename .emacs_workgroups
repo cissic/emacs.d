@@ -7,16 +7,11 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "JR4OZ4CX0Z2C3S-4Z339Q" "currentsession" t nil #s(wg-wconfig "JR4OZ4EDRTFR4O-4Z34ZY" nil
-											    ((fullscreen))
-											    0 0 102 55 right 16 #s(wg-wtree nil t
-															    (0 0 106 54)
-															    (#s(wg-win nil nil
-																       (0 0 106 46)
-																       785 207 0 nil t nil "JR4OYREFLC6QA8-4YOPL3")
-															       #s(wg-win nil nil
-																	 (0 46 106 54)
-																	 :max 1 0 nil nil nil "JR4OYREFRUF7U8-4YOPNE"))))
+	      (#s(wg-workgroup "JR6LFZGWGZEQV4-BVX47" "currentsession" t nil #s(wg-wconfig "JR6LFZH23QN5C-BVXMW" nil
+											   ((fullscreen))
+											   0 0 111 52 right 16 #s(wg-win nil nil
+															 (0 0 114 51)
+															 10451 9625 0 nil t nil "JPU1CGMGZPBCR3S-9UKKZ"))
 			       nil nil nil nil)
 		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
@@ -29,21 +24,11 @@
 																	    (107 0 213 54)
 																	    763 1 0 nil nil nil "JPU1CGMGZPBCR3S-9UKKZ"))))
 				 nil nil nil nil))
-	      (#s(wg-buf "JR4OYREFRUF7U8-4YOPNE" "*scratch*" nil 41 1
-			 ((major-mode . lisp-interaction-mode)
-			  (mark-ring 13 14 41 41)
+	      (#s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 10451 10484
+			 ((major-mode . emacs-lisp-mode)
+			  (mark-ring 12785 10472 10946 11724 10946 10472 10484 10451)
 			  nil nil nil nil nil nil)
 			 nil nil)
-		 #s(wg-buf "JR4OYREFLC6QA8-4YOPL3" "manual_jupyterhub.org" "/home/mb/projects/Dydaktyka/manual_8_manuale_rozne/chapters/manual_jupyterhub.org" 785 785
-			   ((major-mode . org-mode)
-			    (mark-ring 4758 882 794 400 798 548 548 508 243 2567 2566 2527 2566 2570 548 785)
-			    nil nil nil nil nil nil)
-			   nil nil)
-		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 4656 4656
-			   ((major-mode . emacs-lisp-mode)
-			    (mark-ring 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656)
-			    nil nil nil nil nil nil)
-			   nil nil)
 		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 27697 27791
 			   ((major-mode . org-mode)
 			    (mark-ring 27596 27595 27543 27321 27485 27542 27543 31666 27702 27702 27458 27484 27484 27484 27484 27676)

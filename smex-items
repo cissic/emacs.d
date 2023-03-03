@@ -1,11 +1,11 @@
 
 ;; ----- smex-history -----
 (
+ eval-buffer
+ list-packages
  mynet
  revert-buffer
  abbrev-mode
- eval-buffer
- list-packages
  package-install
  eval-expression
 )
@@ -13,8 +13,8 @@
 ;; ----- smex-data -----
 (
  (revert-buffer . 97)
- (eval-buffer . 256)
- (list-packages . 26)
+ (eval-buffer . 260)
+ (list-packages . 28)
  (package-refresh-contents . 2)
  (eval-expression . 28)
  (eval-region . 9)
@@ -47,7 +47,7 @@
  (buf-move-left . 2)
  (buf-move-right . 1)
  (org-cite-insert . 26)
- (mynet . 27)
+ (mynet . 28)
  (org-version . 4)
  (package-reinstall . 1)
  (flymake-mode . 1)
