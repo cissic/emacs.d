@@ -9,6 +9,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/mb/.emacs.d/"
  "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/"
  "/home/mb/projects/Dydaktyka/AiSD/Teoria-org/"
  "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/tempDir/"
@@ -16,6 +17,8 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "install-packages.el"
+ "init.el"
  "manual_acousing.org"
  "Preamble_acousing.org"
  "Preamble.org"
@@ -24,9 +27,11 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/mb/projects/Dydaktyka/manual_6_vagrant/chapters/" (25582 11399 672349 484000) "manual_vagrant.tex~" "manual_vagrant.pdf" "src-org-out/" "_minted-manual_vagrant/" "manual_vagrant.org~" "manual_vagrant.org" "manual_vagrant.tex" "src/" ".#manual_vagrant.org" "Preamble_vagrant.org" "org-macros/" "auto/" "../" "./")
+ ("/home/mb/projects/Ksiazki-tlumaczenia/A_Langtangen-fem-book/doc/.src/book/slides/" (25597 9702 602098 623000) "#approx.do.txt#" "approx-beamer.tex" "approx-beamer.pdf" "approx.snm" "approx.toc" "approx.nav" "approx.vrb" "approx.aux" "README_TODO(MB).txt" "beamerthemered_shadow.sty" ".#approx.do.txt" "approx-1.html.old~~" ".approx-deck.html_html_file_collection" "deck.js-latest/" "approx-1.html" "approx-deck.html.old~~" "approx-deck.html" ".approx-reveal-dark.html_html_file_collection" "approx-reveal-dark.html.old~~" "approx-reveal-dark.html" ".approx-reveal.html_html_file_collection" "approx-reveal.html.old~~" "approx-reveal.html" "_minted-approx/" "approx-plain.pdf" "reveal.js/" "approx.out" "approx.idx" "approx.log" "approx.tex.old~~" "tmp.log" "approx.tex" "tmp_mako__approx.do.txt" "tmp_preprocess__approx.do.txt" "newcommands_keep.tex" ".dlog" "approx.dlog" "tmp.p.tex" "newcommands_keep.p.tex" "Trash/" "varform.do.txt" "femtime.do.txt" "femsys.do.txt" "approx.do.txt" "../" "./")
 
- ("/home/mb/projects/Ksiazki-tlumaczenia/A_Langtangen-fem-book/doc/.src/book/slides/" (25572 51241 403966 499000) "tmp_missing_labels.sh" "approx-reveal-beige.html.old~~" "approx-reveal.html.old~~" "README_TODO(MB).txt" "approx-beamer-ORIG.pdf" "_minted-approx/" "approx.aux" "approx-beamer.tex" "approx-beamer.pdf" "approx.snm" "approx.toc" "approx.nav" "approx.vrb" "beamerthemered_shadow.sty" "approx-solarized.html.old~~" "approx-solarized.html" "approx-1.html.old~~" "approx-1.html" ".approx-reveal-beige.html_html_file_collection" "approx-reveal-beige.html" ".approx-reveal.html_html_file_collection" "approx-reveal.html" "newcommands_keep.p.tex" "approx-plain.pdf" "tmp_mako__approx.do.txt" "reveal.js/" "approx.out" "tmp.p.tex" "approx.idx" "approx.log" "approx.tex.old~~" "tmp.log" "approx.tex" "approx.do.txtCPYORIG" ".dlog" "tmp_preprocess__approx.do.txt" "approx.dlog" "newcommands_keep.tex" "varform.do.txt" "femtime.do.txt" "femsys.do.txt" "approx.do.txt" "../" "./")
+ ("/home/mb/.emacs.d/" (25592 64283 678664 656000) "session.1064656269000167575514000000018930026" "#install-packages.el#" ".emacs_workgroupsOKD" ".emacs_workgroups~" ".emacs_workgroupsOLD" "abbrev_defs_autocorrectionPL" "abbrev_defs_cis" "abbrev_defs_autocorrectionEN" "ido.last~" "recentf~" "myarch/" "ZZZ_NextCommitMessage.txt" "useful-shortcuts.org" "tramp" "srecode-map.el" "smex-items" "recentf" "places" ".gitignore" "install-packages.el" "init.el" "ido.last" "history" "eww-bookmarks" ".git/" "custom-file.el" "abbrev_defs" ".emacs.desktop" ".emacs_workgroups" "url/" "transient/" "snippets/" "manual-download/" "elpa/" "auto-save-list/" "../" "./")
+
+ ("/home/mb/projects/Dydaktyka/manual_6_vagrant/chapters/" (25582 11399 672349 484000) "manual_vagrant.tex~" "manual_vagrant.pdf" "src-org-out/" "_minted-manual_vagrant/" "manual_vagrant.org~" "manual_vagrant.org" "manual_vagrant.tex" "src/" ".#manual_vagrant.org" "Preamble_vagrant.org" "org-macros/" "auto/" "../" "./")
 
  ("/home/mb/projects/Ksiazki-tlumaczenia/decay-book-doconce/doc/.src/chapters/analysis/slides-analysis/" (25562 9020 12466 582000) ".#decay_analysis.do.txt" "decay_analysis.do.txt" "../" "./")
 
@@ -39,8 +44,6 @@
  ("/home/mb/projects/Dydaktyka/AiSD/Teoria-org/" (25543 50473 707903 747000) "#PreambleBook.org#" ".#PreambleBook.org" "README.md" "PreambleBook.org" "Preamble.tex" "Preamble.org~" "Preamble.org" "Preamble_latex.sty" "org-macros.setup" "manual_dependencies.org" "Makefile" "src_py/" "Figs/" "chapters/" "aux/" "auto/" "../" "./")
 
  ("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/tempDir/" (25543 5480 239255 325000) "SingularityMyExample.def" "Makefile" "Singularity.def" "hello.py" "FEMenv.def" "hellotest.py" "../" "./")
-
- ("/home/mb/.emacs.d/" (25542 60165 681426 209000) "abbrev_defs_cis" "abbrev_defs_autocorrection" "#init.el#" ".emacs_workgroups~" ".emacs.desktop.lock" "ido.last~" "recentf~" ".#init.el" "ZZZ_NextCommitMessage.txt" "useful-shortcuts.org" "tramp" "srecode-map.el" "smex-items" "recentf" "places" ".gitignore" "install-packages.el" "init.el" "ido.last" "history" "eww-bookmarks" ".git/" "custom-file.el" "abbrev_defs" ".emacs.desktop" ".emacs_workgroups" "url/" "transient/" "snippets/" "manual-download/" "elpa/" "auto-save-list/" "../" "./")
 
  ("/home/mb/projects/cissic.github.io/mysource/" (25529 22775 161313 813000) "todo/" "draft-notes-org(Local)/" "gists/" "Project-Template-For-OrgMode/" "public-notes-org/" "public-notes-doconce/" "makeo.sh" "maked.sh" "make.sh" "Makefile" "../" "./")
 

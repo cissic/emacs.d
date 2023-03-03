@@ -2,116 +2,224 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Wed Feb 22 09:22:07 2023
+;; Created Fri Mar  3 22:47:44 2023
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (25589 53423 33846 953000) (desktop . "208") "mb@debi" nil nil ((((minibuffer . t) (undecorated) (override-redirect) (font . "-1ASC-Liberation Mono-normal-normal-normal-*-15-*-*-*-m-0-iso10646-1") (font-parameter . "liberation mono 11") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (horizontal-scroll-bars) (foreground-color . "#eff0f1") (background-color . "#232629") (mouse-color . "red") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (no-special-glyphs) (scroll-bar-foreground . "#eff0f1") (scroll-bar-background . "#eff0f1") (menu-bar-lines . 1) (tab-bar-lines . 0) (height . 36) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (inhibit-double-buffering) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 16) (scroll-bar-height . 16) (alpha) (no-focus-on-map) (no-accept-focus) (fullscreen) (visibility . t) (skip-taskbar) (z-group) (display-type . color) (background-mode . dark) (cursor-color . "red") (sticky) (environment) (last-focus-update . t) (frameset--id . "28E8-E720-C973-4A5D") (frameset--mini t . t) (width . 80) (modeline . t) (unsplittable) (left . 0) (top . 302) (icon-name) (display . ":0") (explicit-name)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 10) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 90) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 752) (pixel-height . 630) (total-width . 83) (total-height . 35) (normal-height . 1.0) (normal-width . 1.0) (buffer "new_style.css" (selected . t) (hscroll . 0) (fringes 8 8 nil nil) (margins 4) (scroll-bars nil 2 t nil 0 t nil) (vscroll . 0) (dedicated) (point . 2) (start . 1)) (prev-buffers ("fem_oct.org" 766 1077))))])
+(setq desktop-saved-frameset nil)
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("global-set" 0 10 (isearch-case-fold-search t isearch-regexp-function nil)) #("pdflate" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("slidec" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("slide" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("cell" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("nodes " 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("resul" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("wolności" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("u_glob" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("\\sum" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("install-pac" 0 11 (isearch-case-fold-search t isearch-regexp-function nil)) #("abbre" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("różnic" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("Szczeg" 0 6 (isearch-case-fold-search nil isearch-regexp-function nil)) #("selec" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("loso" 0 4 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq search-ring '(#("Odwzo" 0 5 (isearch-case-fold-search nil isearch-regexp-function nil)) #("pewny" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("sens " 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("są prostopadłe" 0 14 (isearch-regexp-function nil isearch-case-fold-search t)) #("są prostopadłev" 0 15 (isearch-case-fold-search t isearch-regexp-function nil)) #("vf1" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("ex:si" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("fem:sys:vform:" 0 14 (isearch-case-fold-search t isearch-regexp-function nil)) #("\\if" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("fe_mesh" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("${fem" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("format" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("format_" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("${form" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("orgo" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("płaszczyznie" 0 12 (isearch-regexp-function nil isearch-case-fold-search t))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/manual_acousing.org" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/Preamble_acousing.org" "/home/mb/projects/Dydaktyka/AiSD/Teoria-org/Preamble.org" #("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/tempDir/Makefile" 0 87 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder/test.org" 0 74 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder" 0 65 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/manual_5_acoustics_in_singularity/manual_dependencies.org" 0 112 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/" 0 36 (ivy-index 6)) #("/" 0 1 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19:~/" 0 34 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19" 0 31 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19 -p 40008" 0 40 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibliography-and-org-mode.org" 0 101 (ivy-index 32)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/AAAAAAAA.org" 0 99 (ivy-index 4)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/Ex2.org" 0 94 (ivy-index 14)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/" 0 87 (ivy-index 3)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" 0 96 (ivy-index 1)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-11-tramp.org" 0 81 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/" 0 44 (ivy-index 1)) #("/home/mb/.emacs.d/2023" 0 22 (ivy-index 0)) #("/home/mb/.emacs.d/useful-shortcuts.org" 0 38 (ivy-index 30)) "~/.emacs.d/init.el" "~/.emacs.d/recentf" "~/.emacs.d/install-packages.el" "~/.emacs.d/useful-shortcuts.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-20-installing-pdf-cups.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-init-and-setup-Emacs/init.el" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-30-how-to-definitively-kill-zombie-process.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-22-adding-support-for-language-in-doconce.org" "~/.emacs_workgroups" "~/org/RDITiT/!2023.01.04 - 23 posiedzenie (obrona Piecuch)/Piecuch Grzegorz_obrona/Protokoły-sprawozdania/watpliwosci.org" "~/.emacs.d_CPY(2022.12.20)/init(2022.12.20 BACKUP).el" "~/.emacs.d/elpa/workgroups2-20220702.842/workgroups2-autoloads.el" "~/.emacs.d/elpa/smex-20151212.2209/smex-autoloads.el"))
+(setq file-name-history '("/home/mb/.emacs.d/install-packages.el" "/home/mb/.emacs.d/init.el" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/manual_acousing.org" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/Preamble_acousing.org" "/home/mb/projects/Dydaktyka/AiSD/Teoria-org/Preamble.org" #("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/tempDir/Makefile" 0 87 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder/test.org" 0 74 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder" 0 65 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/manual_5_acoustics_in_singularity/manual_dependencies.org" 0 112 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/" 0 36 (ivy-index 6)) #("/" 0 1 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19:~/" 0 34 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19" 0 31 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19 -p 40008" 0 40 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibliography-and-org-mode.org" 0 101 (ivy-index 32)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/AAAAAAAA.org" 0 99 (ivy-index 4)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/Ex2.org" 0 94 (ivy-index 14)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/" 0 87 (ivy-index 3)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" 0 96 (ivy-index 1)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-11-tramp.org" 0 81 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/" 0 44 (ivy-index 1)) #("/home/mb/.emacs.d/2023" 0 22 (ivy-index 0)) #("/home/mb/.emacs.d/useful-shortcuts.org" 0 38 (ivy-index 30)) "~/.emacs.d/init.el" "~/.emacs.d/recentf" "~/.emacs.d/install-packages.el" "~/.emacs.d/useful-shortcuts.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-20-installing-pdf-cups.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-init-and-setup-Emacs/init.el" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-30-how-to-definitively-kill-zombie-process.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-22-adding-support-for-language-in-doconce.org" "~/.emacs_workgroups" "~/org/RDITiT/!2023.01.04 - 23 posiedzenie (obrona Piecuch)/Piecuch Grzegorz_obrona/Protokoły-sprawozdania/watpliwosci.org" "~/.emacs.d_CPY(2022.12.20)/init(2022.12.20 BACKUP).el" "~/.emacs.d/elpa/workgroups2-20220702.842/workgroups2-autoloads.el" "~/.emacs.d/elpa/smex-20151212.2209/smex-autoloads.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/tmp/fz3temp-2/new_style.css"
-  "new_style.css"
-  'css-mode
-  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode)
-  2
-  '(nil nil)
+  "/home/mb/projects/jupyterhubLittlest2/Dockerfile"
+  "Dockerfile"
+  'fundamental-mode
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  263
+  '(1 nil)
   nil
   nil
-  '((buffer-display-time 25589 53416 947942 599000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring nil)))
+  '((buffer-display-time 25602 27362 624887 792000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (724 695 263))))
 
 (desktop-create-buffer 208
-  "/home/mb/projects/OnDemand_4Others/FEM/fem_oct.org"
-  "fem_oct.org"
+  "/home/mb/projects/Dydaktyka/manual_8_manuale_rozne/chapters/manual_jupyterhub.org"
+  "manual_jupyterhub.org"
   'org-mode
   '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  1077
-  '(994 nil)
+  1665
+  '(785 nil)
   nil
   nil
-  '((buffer-display-time 25589 53416 801437 847000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (1069 999 888 585 967 16 59 59 31 1108 1121 819 756 658 1554 1077))))
+  '((buffer-display-time 25602 27258 467807 920000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (4754 878 794 400 798 548 548 508 243 2563 2562 2523 2562 2566 548 799))))
 
 (desktop-create-buffer 208
-  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
-  "2022-12-27-configuring-and-installing-emacs.org"
+  "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/manual_acousing.org"
+  "manual_acousing.org"
   'org-mode
-  '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode flyspell-mode)
-  11504
-  '(31100 nil)
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  1413
+  '(3076 nil)
   nil
   nil
-  '((buffer-display-time 25589 52868 927606 930000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (31245 30008 30070 30069 612 305 53755 53705 53623 53389 53610 53746 53705 53753 53705 11504))))
+  '((buffer-display-time 25599 52412 104045 799000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (3188 3176 3188 3040 3087 3087 3087 7210 9705 7210 3087 3087 3188 3176 3176 1413))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/Dydaktyka/manual_8_manuale_rozne/PreambleBook.org"
+  "PreambleBook.org"
+  'org-mode
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  75
+  '(10 nil)
+  nil
+  nil
+  '((buffer-display-time 25598 17551 122103 201000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (9))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/Ksiazki-tlumaczenia/A_Langtangen-fem-book/doc/.src/book/slides/approx.do.txt"
   "approx.do.txt"
-  'text-mode
+  'DocOnce
   '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  84719
-  '(84793 nil)
+  91340
+  '(9534 nil)
   nil
   nil
-  '((buffer-display-time 25589 19014 473295 428000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
-  '((mark-ring (84720 84605 84580 84534 84534 84522 84075 85112 84040 83937 83937 83823 83707 83057 82977 82944))))
+  '((buffer-display-time 25597 55820 154555 318000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (5487 5655 5827 8388 8012 5514 8012 5514 5512 8421 5186 5201 5771 5793 5794 5655))))
 
 (desktop-create-buffer 208
-  "/home/mb/.emacs.d/init.el"
-  "init.el"
-  'emacs-lisp-mode
-  '(abbrev-mode visual-line-mode eldoc-mode ivy-mode auto-revert-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode flyspell-mode flymake-mode)
-  4656
-  '(4656 nil)
+  "/home/mb/projects/Ksiazki-tlumaczenia/A_Langtangen-fem-book/doc/.src/book/slides/femsys.do.txt"
+  "femsys.do.txt"
+  'DocOnce
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  8067
+  '(7825 nil)
   nil
   nil
-  '((buffer-display-time 25589 18446 500212 627000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656 4656))))
+  '((buffer-display-time 25597 55819 318935 481000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (7825 3190 2319 2227 330 330 2151 2319 3187 7965 7983 8067))))
 
 (desktop-create-buffer 208
-  "/home/mb/.emacs.d/install-packages.el"
-  "install-packages.el"
-  'emacs-lisp-mode
-  '(abbrev-mode visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  1366
-  '(1366 nil)
+  "/home/mb/projects/Ksiazki-tlumaczenia/A_Langtangen-fem-book/doc/.src/book/slides/varform.do.txt"
+  "varform.do.txt"
+  'DocOnce
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  367
+  '(581 nil)
   nil
   nil
-  '((buffer-display-time 25587 26901 160890 59000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (1342 1241 1241 1241 738 1241 1241 1197 1241 1342 924 1197 1071 1241 1471 1366))))
+  '((buffer-display-time 25597 18487 22532 917000) (buffer-file-coding-system . no-conversion) (truncate-lines))
+  '((mark-ring (691 581 1755))))
 
 (desktop-create-buffer 208
   "/home/mb/.emacs.d/useful-shortcuts.org"
   "useful-shortcuts.org"
   'org-mode
   '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  5701
+  5871
   '(5701 nil)
   nil
   nil
-  '((buffer-display-time 25589 53412 679881 301000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (5056 7223 8716 5101 3428))))
+  '((buffer-display-time 25596 54414 669709 7000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (5701 5056 7223 8716 5101 3428))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/Dydaktyka/USB/Sprawy_orgUSB.org"
+  "Sprawy_orgUSB.org"
+  'org-mode
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  1795
+  '(127 nil)
+  nil
+  nil
+  '((buffer-display-time 25600 38776 375079 101000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (635 1948 1915 4151 1783 1852 3891 3891 127 603 2000 1408 1879 1851 2081 1795))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/Plan godzin WEII (html->html)/README.org"
+  "README.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  1611
+  '(1907 nil)
+  nil
+  nil
+  '((buffer-display-time 25595 53907 918333 208000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (1907 1777 1864 1419 1840 1840 1362 1778 1777 1777 1705 1278 1250 1258 1183 1611))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
+  "2022-12-27-configuring-and-installing-emacs.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  53469
+  '(41737 nil)
+  nil
+  nil
+  '((buffer-display-time 25595 28956 68604 103000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (42008 41834 41834 41834 41834 41706 42259 41597 41560 31465 29779 29715 29736 12287 9736 53469))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/Dydaktyka/USB/.gitignore"
+  ".gitignore"
+  'fundamental-mode
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  3
+  '(3 nil)
+  nil
+  nil
+  '((buffer-display-time 25594 37810 936994 990000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/manual-download/.doconce-mode.el"
+  ".doconce-mode.el"
+  'emacs-lisp-mode
+  '(abbrev-mode visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  619
+  '(6229 nil)
+  nil
+  nil
+  '((buffer-display-time 25600 38777 875985 628000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (6229 6186 619))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/Dydaktyka/manual_6_vagrant/chapters/manual_vagrant.org"
   "manual_vagrant.org"
   'org-mode
   '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  10168
-  '(9988 nil)
+  9919
+  '(9862 t)
   nil
   nil
-  '((buffer-display-time 25583 62141 94637 215000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (10198 9483 9055 8860 7088 7078 5602 5822 5683 5188 9920 9920 9920 9762 7088 10168))))
+  '((buffer-display-time 25593 16861 234162 914000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (9862 9988 10198 9483 9055 8860 7088 7078 5602 5822 5683 5188 9920 9920 9920 9762))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/install-packages.el"
+  "install-packages.el"
+  'emacs-lisp-mode
+  '(abbrev-mode visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  1342
+  '(1341 nil)
+  nil
+  nil
+  '((buffer-display-time 25600 38780 29376 42000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (1365 1342 1241 1241 1241 738 1241 1241 1197 1241 1342 924 1197 1071 1241 1342))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/3000-01-01-Handful-of-helpful-links.org"
+  "3000-01-01-Handful-of-helpful-links.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  368
+  '(2845 nil)
+  nil
+  nil
+  '((buffer-display-time 25593 5789 376492 596000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (2845 645 360 369 368 368))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/OnDemand_4Others/FEM/fem_oct.org"
+  "fem_oct.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  9535
+  '(8415 nil)
+  nil
+  nil
+  '((buffer-display-time 25591 30340 866494 842000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1404 8027 8027 8414 8978 8026 8978 8026 9507 9480 9420 9289 9205 9205 9206 9535))))
 
 (desktop-create-buffer 208
   "/home/mb/.emacs.d/myarch/Preamble.org"
@@ -122,20 +230,8 @@
   '(2654 nil)
   nil
   nil
-  '((buffer-display-time 25582 21498 642068 210000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25582 28421 617989 376000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (2654 2652 2932 2588 2586 2549 2549 2549 2549 3007 2172 2172 1750 1756 2549 4469))))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/manual-download/.doconce-mode.el"
-  ".doconce-mode.el"
-  'emacs-lisp-mode
-  '(abbrev-mode visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  6186
-  '(6229 nil)
-  nil
-  nil
-  '((buffer-display-time 25574 24370 192676 529000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (6229 6186))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/Ksiazki-tlumaczenia/decay-book-doconce/doc/.src/book/book.do.txt"
@@ -146,7 +242,7 @@
   '(2883 nil)
   nil
   nil
-  '((buffer-display-time 25563 9805 968009 176000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25563 16729 237421 865000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (2677 1187 1414))))
 
 (desktop-create-buffer 208
@@ -158,7 +254,7 @@
   '(4417 nil)
   nil
   nil
-  '((buffer-display-time 25560 46579 536679 888000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25560 53502 894927 851000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (4417))))
 
 (desktop-create-buffer 208
@@ -170,7 +266,7 @@
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 25558 7633 186761 747000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25558 14556 629711 565000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -182,6 +278,6 @@
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 25552 20787 373312 999000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25552 27711 87466 110000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring nil)))
 

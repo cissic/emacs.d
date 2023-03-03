@@ -34,8 +34,8 @@
 
 (setq my-packages
   '(
-  auto-complete
-  bash-completion
+
+bash-completion
   ; counsel ; for ivy
   company
   ;dockerfile-mode
