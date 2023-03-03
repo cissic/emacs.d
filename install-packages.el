@@ -38,7 +38,7 @@
 bash-completion
   ; counsel ; for ivy
   company
-  ;dockerfile-mode
+  dockerfile-mode
   fill-column-indicator
   ;flycheck
   ;flycheck-pos-tip
