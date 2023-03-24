@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Mar 24 11:20:25 2023
+;; Created Fri Mar 24 11:23:29 2023
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
@@ -22,12 +22,12 @@
   "install-packages.el"
   'emacs-lisp-mode
   '(abbrev-mode visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  1341
-  '(1341 nil)
+  1455
+  '(1340 nil)
   nil
   nil
-  '((buffer-display-time 25629 30982 354070 58000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (1365 1342 1241 1241 1241 738 1241 1241 1197 1241 1342 924 1197 1071 1241 1341))))
+  '((buffer-display-time 25629 31187 976029 821000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (1364 1341 1240 1240 1240 738 1240 1240 1196 1240 1341 924 1196 1071 1240 1455))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/TSdistributed/TSdistributed.org"

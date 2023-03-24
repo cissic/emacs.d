@@ -1,21 +1,21 @@
 
 ;; ----- smex-history -----
 (
- revert-buffer
  eval-buffer
- run-python
- emacs-lisp-mode
- pylint
+ revert-buffer
+ package-refresh-contents
+ package-list-packages
+ list-packages
  mynet
- DocOnce
+ eww
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 101)
- (eval-buffer . 282)
- (list-packages . 30)
- (package-refresh-contents . 2)
+ (revert-buffer . 111)
+ (eval-buffer . 301)
+ (list-packages . 33)
+ (package-refresh-contents . 3)
  (eval-expression . 28)
  (eval-region . 9)
  (describe-variable . 5)
@@ -47,11 +47,11 @@
  (buf-move-left . 2)
  (buf-move-right . 1)
  (org-cite-insert . 26)
- (mynet . 37)
+ (mynet . 42)
  (org-version . 4)
  (package-reinstall . 1)
  (flymake-mode . 1)
- (eww . 3)
+ (eww . 5)
  (eww-bookmark-browse . 1)
  (abbrev-mode . 24)
  (list-abbrevs . 5)
@@ -81,4 +81,5 @@
  (run-python . 6)
  (pylint . 1)
  (emacs-lisp-mode . 1)
+ (package-list-packages . 3)
 )

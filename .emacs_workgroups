@@ -7,16 +7,11 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "JRU3M3A94IDAE8-3Q5JBW" "currentsession" t nil #s(wg-wconfig "JRU3M3CK4Y5LE0-3Q5LHD" nil
-											    ((fullscreen . maximized))
-											    3 0 209 55 right 16 #s(wg-wtree nil nil
-															    (0 0 213 54)
-															    (#s(wg-win nil nil
-																       (0 0 107 54)
-																       429 1 0 nil t nil "JRU3M3A8QYEW9K-3Q5J5R")
-															       #s(wg-win nil nil
-																	 (107 0 213 54)
-																	 32800 32664 0 nil nil nil "JRU3M3A8ZN74Y0-3Q5J82"))))
+	      (#s(wg-workgroup "JRXO4H95A0JHE0-8UQSDG" "currentsession" t nil #s(wg-wconfig "JRXO4HASER9HTK-8UQSVA" nil
+											    ((fullscreen))
+											    207 10 165 53 right 16 #s(wg-win nil nil
+															     (0 0 169 52)
+															     4586 4586 0 nil t nil "JRXO4H95188ZAW-8UQS9M"))
 			       nil nil nil nil)
 		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
@@ -29,16 +24,11 @@
 																	    (107 0 213 54)
 																	    763 1 0 nil nil nil "JPU1CGMGZPBCR3S-9UKKZ"))))
 				 nil nil nil nil))
-	      (#s(wg-buf "JRU3M3A8ZN74Y0-3Q5J82" "moft.org" "/home/mb/projects/Dydaktyka/MetodyOblFizykiMat/moft.org" 32800 31503
-			 ((major-mode . org-mode)
-			  (mark-ring 31412 33536 31412 34195 34573 31914 46862 46863 46732 46863 46731 46401 46148 45967 45967 45935)
+	      (#s(wg-buf "JRXO4H95188ZAW-8UQS9M" "*Packages*" nil 4586 1
+			 ((major-mode . package-menu-mode)
+			  (mark-ring 1 1 1 2969 2809 3062 2237)
 			  nil nil nil nil nil nil)
 			 nil nil)
-		 #s(wg-buf "JRU3M3A8QYEW9K-3Q5J5R" "TSdistributed.org" "/home/mb/projects/TSdistributed/TSdistributed.org" 429 120
-			   ((major-mode . org-mode)
-			    (mark-ring 120 120 23 640 431 583 230 229 583 229 229 583 583 90 89 429)
-			    nil nil nil nil nil nil)
-			   nil nil)
 		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 9109 10714
 			   ((major-mode . dockerfile-mode)
 			    (mark-ring 10514 5791 5791 5791 5791 5791 5791 5791 5791 5791 5791 10714 9109)
