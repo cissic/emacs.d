@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Mar 24 10:56:18 2023
+;; Created Fri Mar 24 11:20:25 2023
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
@@ -11,23 +11,35 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("inte" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("feli" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("org-mode" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("setq" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("<" 0 1 (isearch-regexp-function nil isearch-case-fold-search t)) #("F5" 0 2 (isearch-regexp-function nil isearch-case-fold-search nil)) #("5" 0 1 (isearch-regexp-function nil isearch-case-fold-search nil)) #("set-key" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("shortcu" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("integr" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("plt" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("emacs-li" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("python" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("Przykład zasto" 0 14 (isearch-case-fold-search nil isearch-regexp-function nil)) #("docon" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("pdfla" 0 5 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq search-ring '(#("matlab" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("inte" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("feli" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("org-mode" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("setq" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("<" 0 1 (isearch-regexp-function nil isearch-case-fold-search t)) #("F5" 0 2 (isearch-regexp-function nil isearch-case-fold-search nil)) #("5" 0 1 (isearch-regexp-function nil isearch-case-fold-search nil)) #("set-key" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("shortcu" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("integr" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("plt" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("emacs-li" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("python" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("Przykład zasto" 0 14 (isearch-case-fold-search nil isearch-regexp-function nil)) #("docon" 0 5 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
 (setq file-name-history '("/home/mb/projects/MetodyNumeryczne/MN_wyklady/W00-SzeregiTaylora/mTestFiles/xsinx2.m" "/home/mb/projects/Dydaktyka/MetodyOblFizykiMat/moft.org" "/home/mb/.emacs.d/init.el" "/home/mb/.emacs.d/install-packages.el" "/home/mb/.emacs.d/init.el" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/manual_acousing.org" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/Preamble_acousing.org" "/home/mb/projects/Dydaktyka/AiSD/Teoria-org/Preamble.org" #("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/tempDir/Makefile" 0 87 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder/test.org" 0 74 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder" 0 65 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/manual_5_acoustics_in_singularity/manual_dependencies.org" 0 112 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/" 0 36 (ivy-index 6)) #("/" 0 1 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19:~/" 0 34 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19" 0 31 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19 -p 40008" 0 40 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibliography-and-org-mode.org" 0 101 (ivy-index 32)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/AAAAAAAA.org" 0 99 (ivy-index 4)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/Ex2.org" 0 94 (ivy-index 14)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/" 0 87 (ivy-index 3)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" 0 96 (ivy-index 1)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-11-tramp.org" 0 81 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/" 0 44 (ivy-index 1)) #("/home/mb/.emacs.d/2023" 0 22 (ivy-index 0)) #("/home/mb/.emacs.d/useful-shortcuts.org" 0 38 (ivy-index 30)) "~/.emacs.d/init.el" "~/.emacs.d/recentf" "~/.emacs.d/install-packages.el" "~/.emacs.d/useful-shortcuts.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-20-installing-pdf-cups.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-init-and-setup-Emacs/init.el" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-30-how-to-definitively-kill-zombie-process.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-22-adding-support-for-language-in-doconce.org" "~/.emacs_workgroups" "~/org/RDITiT/!2023.01.04 - 23 posiedzenie (obrona Piecuch)/Piecuch Grzegorz_obrona/Protokoły-sprawozdania/watpliwosci.org" "~/.emacs.d_CPY(2022.12.20)/init(2022.12.20 BACKUP).el" "~/.emacs.d/elpa/workgroups2-20220702.842/workgroups2-autoloads.el" "~/.emacs.d/elpa/smex-20151212.2209/smex-autoloads.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
+  "/home/mb/.emacs.d/install-packages.el"
+  "install-packages.el"
+  'emacs-lisp-mode
+  '(abbrev-mode visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  1341
+  '(1341 nil)
+  nil
+  nil
+  '((buffer-display-time 25629 30982 354070 58000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (1365 1342 1241 1241 1241 738 1241 1241 1197 1241 1342 924 1197 1071 1241 1341))))
+
+(desktop-create-buffer 208
   "/home/mb/projects/TSdistributed/TSdistributed.org"
   "TSdistributed.org"
   'org-mode
   '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  3316
+  3444
   '(3543 nil)
   nil
   nil
-  '((buffer-display-time 25629 29600 767175 136000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (3639 3783 3607 3569 3733 3527 3525 3501 3317 3526 3486 3474 3459 3226 3076 3316))))
+  '((buffer-display-time 25629 29677 662982 685000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (3639 3783 3607 3569 3733 3527 3525 3501 3317 3526 3486 3474 3459 3226 3076 3444))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/Dydaktyka/MetodyOblFizykiMat/moft.org"
@@ -172,18 +184,6 @@
   nil
   '((buffer-display-time 25612 3539 917079 638000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (56 56))))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/install-packages.el"
-  "install-packages.el"
-  'emacs-lisp-mode
-  '(abbrev-mode visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  1360
-  '(1341 nil)
-  nil
-  nil
-  '((buffer-display-time 25626 4694 522528 152000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (1365 1342 1241 1241 1241 738 1241 1241 1197 1241 1342 924 1197 1071 1241 1360))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/Dydaktyka/manual_8_manuale_rozne/PreambleBook.org"

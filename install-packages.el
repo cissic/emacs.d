@@ -25,7 +25,7 @@
 ;;first, declare repositories
 (setq package-archives
       '(("gnu" . "http://elpa.gnu.org/packages/")  ;; default value of package-archives in Emacs 27.1
-        ("melpa" . "https://melpa.org/packages/")
+        ("melpa" . "http://melpa.org/packages/")
 	("melpa-stable" . "http://stable.melpa.org/packages/")
 	))
 
