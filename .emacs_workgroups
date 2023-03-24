@@ -7,11 +7,16 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "JR6LFZGWGZEQV4-BVX47" "currentsession" t nil #s(wg-wconfig "JR6LFZH23QN5C-BVXMW" nil
-											   ((fullscreen))
-											   0 0 111 52 right 16 #s(wg-win nil nil
-															 (0 0 114 51)
-															 10451 9625 0 nil t nil "JPU1CGMGZPBCR3S-9UKKZ"))
+	      (#s(wg-workgroup "JRU3M3A94IDAE8-3Q5JBW" "currentsession" t nil #s(wg-wconfig "JRU3M3CK4Y5LE0-3Q5LHD" nil
+											    ((fullscreen . maximized))
+											    3 0 209 55 right 16 #s(wg-wtree nil nil
+															    (0 0 213 54)
+															    (#s(wg-win nil nil
+																       (0 0 107 54)
+																       429 1 0 nil t nil "JRU3M3A8QYEW9K-3Q5J5R")
+															       #s(wg-win nil nil
+																	 (107 0 213 54)
+																	 32800 32664 0 nil nil nil "JRU3M3A8ZN74Y0-3Q5J82"))))
 			       nil nil nil nil)
 		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
@@ -24,11 +29,21 @@
 																	    (107 0 213 54)
 																	    763 1 0 nil nil nil "JPU1CGMGZPBCR3S-9UKKZ"))))
 				 nil nil nil nil))
-	      (#s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 10451 10484
-			 ((major-mode . emacs-lisp-mode)
-			  (mark-ring 12785 10472 10946 11724 10946 10472 10484 10451)
+	      (#s(wg-buf "JRU3M3A8ZN74Y0-3Q5J82" "moft.org" "/home/mb/projects/Dydaktyka/MetodyOblFizykiMat/moft.org" 32800 31503
+			 ((major-mode . org-mode)
+			  (mark-ring 31412 33536 31412 34195 34573 31914 46862 46863 46732 46863 46731 46401 46148 45967 45967 45935)
 			  nil nil nil nil nil nil)
 			 nil nil)
+		 #s(wg-buf "JRU3M3A8QYEW9K-3Q5J5R" "TSdistributed.org" "/home/mb/projects/TSdistributed/TSdistributed.org" 429 120
+			   ((major-mode . org-mode)
+			    (mark-ring 120 120 23 640 431 583 230 229 583 229 229 583 583 90 89 429)
+			    nil nil nil nil nil nil)
+			   nil nil)
+		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 9109 10714
+			   ((major-mode . dockerfile-mode)
+			    (mark-ring 10514 5791 5791 5791 5791 5791 5791 5791 5791 5791 5791 10714 9109)
+			    nil nil nil nil nil nil)
+			   nil nil)
 		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 27697 27791
 			   ((major-mode . org-mode)
 			    (mark-ring 27596 27595 27543 27321 27485 27542 27543 31666 27702 27702 27458 27484 27484 27484 27484 27676)

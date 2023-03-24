@@ -163,16 +163,45 @@
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; Emacs-Lisp mode...
-(defun my-emacs-lisp-mode-hook ()e
+(defun my-emacs-lisp-mode-hook ()
 (define-key emacs-lisp-mode-map (kbd "C-e b") 'eval-buffer)
 (define-key emacs-lisp-mode-map (kbd "C-e e") 'eval-expression)
 (define-key emacs-lisp-mode-map (kbd "C-e r") 'eval-region)  
 )
 
+;; Emacs-Lisp mode...
+(defun my-octave-mode-hook()
+          (lambda ()
+            (abbrev-mode 1)
+            (auto-fill-mode 1)
+            (if (eq window-system 'x)
+                (font-lock-mode 1))))
+
+;; Python mode...
+
+(defun my-python-mode-hook()
+           (lambda ()
+             (setq python-shell-interpreter "python3") ))
+
+;; Org mode...
+
+(defun my-org-mode-hook()
+	   (lambda ()
+	     ;; (local-set-key (kbd "<f9>") "\C-x\C-s\C-c\C-e\C-a l p")
+	     ;; (define-key org-mode-map (kbd "<f9>") "\C-x\C-s\C-c\C-e l p")
+	     ))
+
+(setq org-export-in-background t)
+
+;; (global-set-key (kbd "<f9>") "\C-x\C-s\C-c\C-e l p")
+
 ;; Add all of the hooks...
 ;(add-hook 'c++-mode-hook 'my-c++-mode-hook)
 ;(add-hook 'c-mode-hook 'my-c-mode-hook)
 (add-hook 'emacs-lisp-mode-hook 'my-emacs-lisp-mode-hook)
+(add-hook 'octave-mode-hook 'my-octave-mode-hook)
+(add-hook 'python-mode-hook 'my-python-mode-hook)
+(add-hook 'org-mode-hook 'my-org-mode-hook)
 ; (add-hook 'lisp-mode-hook 'my-lisp-mode-hook)
 ;(add-hook 'perl-mode-hook 'my-perl-mode-hook)
 
@@ -217,30 +246,30 @@
 
 (defun org-export-md-format-front-matter ()
   (let* ((kv-alist (org-element-map (org-element-parse-buffer 'greater-element)
-                       'keyword
-                     (lambda (keyword)
-                       (cons (intern (downcase (org-element-property :key keyword)))
-                             (org-element-property :value keyword)))))
-         (lines (mapcar (lambda (kw)
-                          (let ((val (alist-get kw kv-alist)))
-                            (format (pcase kw
-                                      ('author "%s: %s")
-                                      ((or 'tags 'title) "%s: '%s'")
-                                      (_ "%s: %s"))
-                                    (downcase (symbol-name kw))
-                                    (pcase kw
-                                      ('date (substring val 1 -1))
-                                      (_ val)))))
-                        '(author date tags title))))
+		       'keyword
+		     (lambda (keyword)
+		       (cons (intern (downcase (org-element-property :key keyword)))
+			     (org-element-property :value keyword)))))
+	 (lines (mapcar (lambda (kw)
+			  (let ((val (alist-get kw kv-alist)))
+			    (format (pcase kw
+				      ('author "%s: %s")
+				      ((or 'tags 'title) "%s: '%s'")
+				      (_ "%s: %s"))
+				    (downcase (symbol-name kw))
+				    (pcase kw
+				      ('date (substring val 1 -1))
+				      (_ val)))))
+			'(author date tags title))))
     (concat "---\n" (concat (mapconcat #'identity lines "\n")) "\n---")))
 
 (defun my/org-export-markdown-hook-function (backend)
     (if (eq backend 'md)
-        (insert (org-export-md-format-front-matter) "\n")))
+	(insert (org-export-md-format-front-matter) "\n")))
 
 ;; This hook should be added per file in my org posts. Unfortunately, so far I don't know
 ;; how to do this.
-(add-hook 'org-export-before-processing-hook #'my/org-export-markdown-hook-function)
+;; (add-hook 'org-export-before-processing-hook #'my/org-export-markdown-hook-function)
 
 (require 'ox-md nil t)
 
@@ -286,28 +315,28 @@
 	      (flyspell-mode 1)))
 	  ;; I tried putting (flyspell-buffer) here but it didn't seem to work
 	  )))
-
-;;     (defun flyspell-toggle ()
-;;       "Turn Flyspell on if it is off, or off if it is on.  When turning on, it uses `flyspell-on-for-buffer-type' so code-vs-text is handled appropriately."
-;;       (interactive)
-;;       (if (symbol-value flyspell-mode)
-;; 	  (progn ; flyspell is on, turn it off
-;; 	    (message "Flyspell off")
-;; 	    (flyspell-mode -1))
-;; 	  ; else - flyspell is off, turn it on
-;; 	  (flyspell-on-for-buffer-type)))
-
-;;  (global-set-key (kbd "C-c f") 'flyspell-toggle)
-
-;; (defun fd-switch-dictionary()
-;;       (interactive)
-;;       (let* ((dic ispell-current-dictionary)
-;;     	 (change (if (string= dic "polish") "english" "polish")))
-;;         (ispell-change-dictionary change)
-;;         (message "Dictionary switched from %s to %s" dic change)
-;;         ))
     
-;;       (global-set-key (kbd "C-c s")   'fd-switch-dictionary)
+    (defun flyspell-toggle ()
+      "Turn Flyspell on if it is off, or off if it is on.  When turning on, it uses `flyspell-on-for-buffer-type' so code-vs-text is handled appropriately."
+      (interactive)
+      (if (symbol-value flyspell-mode)
+	  (progn ; flyspell is on, turn it off
+	    (message "Flyspell off")
+	    (flyspell-mode -1))
+	  ; else - flyspell is off, turn it on
+	  (flyspell-on-for-buffer-type)))
+
+ (global-set-key (kbd "C-c f") 'flyspell-toggle )
+
+(defun fd-switch-dictionary()
+      (interactive)
+      (let* ((dic ispell-current-dictionary)
+    	 (change (if (string= dic "polish") "english" "polish")))
+        (ispell-change-dictionary change)
+        (message "Dictionary switched from %s to %s" dic change)
+        ))
+    
+      (global-set-key (kbd "C-c s")   'fd-switch-dictionary)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Flymake
@@ -371,8 +400,9 @@
 ;; Set location for external packages.
 (add-to-list 'load-path "~/.emacs.d/manual-download/")
 
-;; doconce -> 
+;; doconce (M-x DocOnce) may be needed to activate it -> 
 (load-file "~/.emacs.d/manual-download/.doconce-mode.el")
+
 
 ;; activating org-mode for doconce pub files:
 ;; https://github.com/doconce/publish/blob/master/doc/manual/publish-user-manual.pdf

@@ -130,8 +130,14 @@
 #+MACRO: begin_hint  #+begin_box Podpowiedź: $1 :background-color my-sand
 #+MACRO: end_hint    #+end_box 
 
+#+MACRO: begin_resume  #+begin_box Przypomnienie: $1 :background-color my-sand
+#+MACRO: end_resume    #+end_box 
+
 #+MACRO: begin_results  #+begin_box :background-color white
 #+MACRO: end_results    #+end_box
+
+#+MACRO: begin_example  #+begin_example Uwaga: $1 :background-color my-olive
+#+MACRO: end_example    #+end_example 
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #    OLD EXPERIMENTS
