@@ -49,7 +49,7 @@ bash-completion
   ; jedi
   magit
   markdown-mode
-  ;matlab-mode 
+  matlab-mode 
   modus-themes ; theme by Protesilaos Stavrou
   ;moe-theme ; https://github.com/kuanyui/moe-theme.el
   ;mh
