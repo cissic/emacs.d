@@ -64,7 +64,7 @@ bash-completion
   ;ox-pandoc
   ; ox-ipynb -> manual-download
   ;pandoc-mode
-  ;pdf-tools
+  pdf-tools
   popup   ; for yasnippet
   ;projectile
   ;pyenv-mode
