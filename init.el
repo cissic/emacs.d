@@ -103,12 +103,12 @@
 ;; <- Easy windows resize
 
 ;; Fill column indicator -> 
-(require 'fill-column-indicator)
-(setq fci-rule-column 81)
-; (add-hook 'after-change-major-mode-hook 'fci-mode)
-(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
-(global-fci-mode 1)
-;; <- Fill column indicator
+(setq display-fill-column-indicator-column 81)
+
+(defun my-default-text-buffer-settings-mode-hook()
+  (display-fill-column-indicator-mode 1)
+  )
+  ;; <- Fill column indicator
 
 ;; ido-mode ->
   (ido-mode 1)          
@@ -169,13 +169,23 @@
 (define-key emacs-lisp-mode-map (kbd "C-e r") 'eval-region)  
 )
 
-;; Emacs-Lisp mode...
+;; Octave mode...
 (defun my-octave-mode-hook()
+  (define-key octave-mode-map (kbd "C-c C-s") 'octave-send-buffer)
+  (define-key octave-mode-map (kbd "<f8>") 'octave-send-buffer)
           (lambda ()
             (abbrev-mode 1)
             (auto-fill-mode 1)
             (if (eq window-system 'x)
                 (font-lock-mode 1))))
+
+; Matlab mode...
+(defun my-matlab-mode-hook()
+  (define-key matlab-mode-map (kbd "<f8>")
+    '(lambda () (interactive)
+      (matlab-shell-send-command "emacsrun('/home/mb/projects/TSdistributed/srcMTLB/Logemann2/main')" ))
+     )
+)
 
 ;; Python mode...
 
@@ -186,24 +196,48 @@
 ;; Org mode...
 
 (defun my-org-mode-hook()
-	   (lambda ()
-	     ;; (local-set-key (kbd "<f9>") "\C-x\C-s\C-c\C-e\C-a l p")
-	     ;; (define-key org-mode-map (kbd "<f9>") "\C-x\C-s\C-c\C-e l p")
-	     ))
-
-(setq org-export-in-background t)
-
+  (define-key org-mode-map (kbd "<f9>")
+    '(lambda () (interactive)
+      (org-latex-export-to-pdf :async t))
+     )  
+	   ;; (lambda () (interactive)
+	   ;;    (local-set-key (kbd "<f9>") "\C-x\C-s\C-c\C-e\C-a l p")
+	   ;;   ;; (define-key org-mode-map (kbd "<f9>") "\C-x\C-s\C-c\C-e l p")
+	   ;;    )
+)
 ;; (global-set-key (kbd "<f9>") "\C-x\C-s\C-c\C-e l p")
+(setq org-export-in-background t)
 
 ;; Add all of the hooks...
 ;(add-hook 'c++-mode-hook 'my-c++-mode-hook)
 ;(add-hook 'c-mode-hook 'my-c-mode-hook)
 (add-hook 'emacs-lisp-mode-hook 'my-emacs-lisp-mode-hook)
 (add-hook 'octave-mode-hook 'my-octave-mode-hook)
+(add-hook 'matlab-mode-hook 'my-matlab-mode-hook)
 (add-hook 'python-mode-hook 'my-python-mode-hook)
 (add-hook 'org-mode-hook 'my-org-mode-hook)
+
 ; (add-hook 'lisp-mode-hook 'my-lisp-mode-hook)
 ;(add-hook 'perl-mode-hook 'my-perl-mode-hook)
+
+;; Add a hook to the list of modes
+(defun my-add-to-multiple-hooks (function hooks)
+  (mapc (lambda (hook)
+	  (add-hook hook function))
+	hooks))
+
+(defun my-turn-on-auto-fill ()
+    my-default-text-buffer-settings-mode-hook  )
+
+(my-add-to-multiple-hooks
+ 'my-default-text-buffer-settings-mode-hook         ;; my-turn-on-auto-fill
+ '(DocOnce-hook
+   emacs-lisp-mode-hook
+   matlab-mode-hook
+   octave-mode-hook
+   org-mode-hook
+   python-mode-hook
+ ))
 
 ;; Change font color for eww
 (defun my-eww-mode-faces ()

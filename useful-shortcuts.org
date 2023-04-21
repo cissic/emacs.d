@@ -28,6 +28,8 @@
    - Inline comments wrap @@comment:like so@@.
    - Block comments are wrapped with #+BEGIN_COMMENT and #+END_COMMENT.
    - Section comments can be created by adding the COMMENT keyword to a heading * COMMENT like so
+     Keyboard shortcut for it is:
+     : C-c ; 
    
 6. Dołączanie (polecenie ~#+INCLUDE~ ) plików ([[https://orgmode.org/manual/Include-Files.html][link]]).
 

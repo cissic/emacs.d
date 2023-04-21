@@ -7,11 +7,16 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "JRXO4H95A0JHE0-8UQSDG" "currentsession" t nil #s(wg-wconfig "JRXO4HASER9HTK-8UQSVA" nil
-											    ((fullscreen))
-											    207 10 165 53 right 16 #s(wg-win nil nil
-															     (0 0 169 52)
-															     4586 4586 0 nil t nil "JRXO4H95188ZAW-8UQS9M"))
+	      (#s(wg-workgroup "JSYKZGAJOABKO-AXTLYH" "currentsession" t nil #s(wg-wconfig "JSYKZGCF5OH9WW-AXTNY4" nil
+											   ((fullscreen))
+											   798 0 109 54 right 16 #s(wg-wtree nil nil
+															     (0 0 113 54)
+															     (#s(wg-win nil nil
+																	(0 0 29 54)
+																	:max 6631 0 nil nil nil "JSYKZGAIT7H3QO-AXTLSE")
+																#s(wg-win nil nil
+																	  (29 0 113 54)
+																	  99 79 0 nil t nil "JSYKZGAJCG591K-AXTLUP"))))
 			       nil nil nil nil)
 		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
@@ -24,18 +29,25 @@
 																	    (107 0 213 54)
 																	    763 1 0 nil nil nil "JPU1CGMGZPBCR3S-9UKKZ"))))
 				 nil nil nil nil))
-	      (#s(wg-buf "JRXO4H95188ZAW-8UQS9M" "*Packages*" nil 4586 1
-			 ((major-mode . package-menu-mode)
-			  (mark-ring 1 1 1 2969 2809 3062 2237)
+	      (#s(wg-buf "JSYKZGAIT7H3QO-AXTLSE" "*octave*" nil 7361 5917
+			 ((major-mode . inferior-octave-mode)
+			  (mark-ring 2332 945 973 2421 2439 2318 2332 2332 2452 2452 4504 5917 5917 6639 6656)
 			  nil nil nil nil nil nil)
-			 nil nil)
-		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 9109 10714
-			   ((major-mode . dockerfile-mode)
-			    (mark-ring 10514 5791 5791 5791 5791 5791 5791 5791 5791 5791 5791 10714 9109)
+			 (wg-deserialize-inferior-octave-mode-buffer
+			  ("/home/mb/org/" nil))
+			 nil)
+		 #s(wg-buf "JSYKZGAJCG591K-AXTLUP" "2023.04.20-przestrzenie-wektory-kolory.org" "/home/mb/org/2023.04.20-przestrzenie-wektory-kolory.org" 99 93
+			   ((major-mode . org-mode)
+			    (mark-ring 578 536 322 78 566 556 500 449 449 400 556 449 449 402 289 273)
 			    nil nil nil nil nil nil)
 			   nil nil)
-		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 27697 27791
+		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 5021 5991
+			   ((major-mode . emacs-lisp-mode)
+			    (mark-ring 5702 5708 3736 3736 3693 3642 4118 4118 1604 3602 3602 11426 3602 3602 3602 3708)
+			    nil nil nil nil nil nil)
+			   nil nil)
+		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 28182 28328
 			   ((major-mode . org-mode)
-			    (mark-ring 27596 27595 27543 27321 27485 27542 27543 31666 27702 27702 27458 27484 27484 27484 27484 27676)
+			    (mark-ring 30613 28528 28414 29099 30568 29588 29588 29089 30596 29470 29099 30834 28182 28182 29401 28182)
 			    nil nil nil nil nil nil)
 			   nil nil)))

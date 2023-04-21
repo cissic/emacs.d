@@ -1,22 +1,22 @@
 
 ;; ----- smex-history -----
 (
- eval-buffer
- revert-buffer
- package-refresh-contents
- package-list-packages
- list-packages
  mynet
- eww
+ matlab-shell
+ octave-mode
+ revert-buffer
+ eval-buffer
+ octave-send-buffer
+ run-octave
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 111)
- (eval-buffer . 301)
- (list-packages . 33)
+ (revert-buffer . 155)
+ (eval-buffer . 367)
+ (list-packages . 34)
  (package-refresh-contents . 3)
- (eval-expression . 28)
+ (eval-expression . 33)
  (eval-region . 9)
  (describe-variable . 5)
  (wg-create-workgroup . 3)
@@ -40,20 +40,20 @@
  (sunrise . 6)
  (list-faces-display . 1)
  (nc . 1)
- (ffap . 3)
+ (ffap . 12)
  (org-babel-remove-result . 4)
  (kill-sexp . 1)
  (sunrise-sort-by-time . 1)
  (buf-move-left . 2)
  (buf-move-right . 1)
  (org-cite-insert . 26)
- (mynet . 42)
+ (mynet . 65)
  (org-version . 4)
  (package-reinstall . 1)
  (flymake-mode . 1)
- (eww . 5)
+ (eww . 8)
  (eww-bookmark-browse . 1)
- (abbrev-mode . 24)
+ (abbrev-mode . 25)
  (list-abbrevs . 5)
  (abbrev-edit-save-buffer . 3)
  (wg-kill-workgroup . 2)
@@ -71,15 +71,35 @@
  (column-marker-1 . 9)
  (column-marker-2 . 6)
  (column-marker-3 . 3)
- (display-fill-column-indicator-mode . 1)
+ (display-fill-column-indicator-mode . 6)
  (eww-toggle-colors . 3)
  (magit-init . 1)
- (package-install . 1)
+ (package-install . 2)
  (dockerfile-mode . 3)
- (octave-mode . 1)
+ (octave-mode . 6)
  (DocOnce . 6)
  (run-python . 6)
  (pylint . 1)
  (emacs-lisp-mode . 1)
- (package-list-packages . 3)
+ (package-list-packages . 4)
+ (matlab-shell . 13)
+ (matlab-mode . 10)
+ (matlab-shell-run-command . 6)
+ (matlab-generate-latex . 1)
+ (matlab-shell-run-cell . 1)
+ (matlab-shell-set-save-and-go-command . 4)
+ (matlab-shell-save-and-go . 2)
+ (magit . 1)
+ (magit-commit-amend . 2)
+ (fci-mode . 2)
+ (turn-on-fci-mode . 4)
+ (turn-off-fci-mode . 36)
+ (linum-mode . 2)
+ (global-visual-line-mode . 2)
+ (whitespace-mode . 6)
+ (tex-insert-quote . 1)
+ (list-prog-modes . 1)
+ (list-text-modes . 3)
+ (run-octave . 1)
+ (octave-send-buffer . 1)
 )
