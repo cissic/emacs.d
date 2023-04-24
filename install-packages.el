@@ -74,6 +74,7 @@ bash-completion
   ;session-async
   ;shell-pop
   smex
+  ssh
   ; tramp  ; ver. 2.4.2 built-in in Emacs 27.1
   ;tao-theme ; https://github.com/11111000000/tao-theme-emacs
   ;treemacs

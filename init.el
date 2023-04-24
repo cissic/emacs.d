@@ -183,7 +183,7 @@
 (defun my-matlab-mode-hook()
   (define-key matlab-mode-map (kbd "<f8>")
     '(lambda () (interactive)
-      (matlab-shell-send-command "emacsrun('/home/mb/projects/TSdistributed/srcMTLB/Logemann2/main')" ))
+      (matlab-shell-send-command "emacsrun('/home/mb/projects/TSdistributed/srcMTLB/main')" ))
      )
 )
 
@@ -193,20 +193,14 @@
            (lambda ()
              (setq python-shell-interpreter "python3") ))
 
-;; Org mode...
+(setq org-export-in-background t)
 
 (defun my-org-mode-hook()
   (define-key org-mode-map (kbd "<f9>")
     '(lambda () (interactive)
       (org-latex-export-to-pdf :async t))
      )  
-	   ;; (lambda () (interactive)
-	   ;;    (local-set-key (kbd "<f9>") "\C-x\C-s\C-c\C-e\C-a l p")
-	   ;;   ;; (define-key org-mode-map (kbd "<f9>") "\C-x\C-s\C-c\C-e l p")
-	   ;;    )
 )
-;; (global-set-key (kbd "<f9>") "\C-x\C-s\C-c\C-e l p")
-(setq org-export-in-background t)
 
 ;; Add all of the hooks...
 ;(add-hook 'c++-mode-hook 'my-c++-mode-hook)
@@ -383,6 +377,26 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (bash-completion-setup)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; Add this hook in order to run pdf-tools without a warning message.
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; TRAMP
+;;;; Auxiliary function - useful for TRAMP editing
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun dired-do-local-command ()
+  (interactive)
+  (let* ((marked-files (dired-get-marked-files nil current-prefix-arg))
+         (local-tmp-files (mapcar #'file-local-copy marked-files))
+         (num-files (length local-tmp-files))
+         (default-directory temporary-file-directory)
+         (command (dired-read-shell-command "! on %s: " num-files marked-files)))
+    (dired-do-shell-command command num-files local-tmp-files)))
+
+(define-key dired-mode-map (kbd "\"") 'dired-do-local-command)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful global shortcuts (text operations)

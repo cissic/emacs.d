@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Apr 21 13:31:03 2023
+;; Created Fri Apr 21 22:49:11 2023
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
@@ -11,10 +11,10 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("helper" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("Każdą" 0 5 (isearch-case-fold-search nil isearch-regexp-function nil)) #("org" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("legend" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("lambdi" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("I_C" 0 3 (isearch-case-fold-search nil isearch-regexp-function nil)) #("TODO" 0 4 (isearch-case-fold-search nil isearch-regexp-function nil)) #("sunri" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("sunris" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("sunr" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("buff" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("fig_al" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("A = \\left" 0 9 (isearch-case-fold-search nil isearch-regexp-function nil)) #("A = \\;eft" 0 9 (isearch-case-fold-search nil isearch-regexp-function nil)) #("$A" 0 2 (isearch-case-fold-search nil isearch-regexp-function nil)) #("interac" 0 7 (isearch-regexp-function nil isearch-case-fold-search t))))
+(setq search-ring '(#("pdf-to" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("init.el" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("pdf-tool" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("music" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("eaf" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("ea" 0 2 (isearch-case-fold-search t isearch-regexp-function nil)) #("pdf-" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("install" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("pdf" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("helper" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("Każdą" 0 5 (isearch-regexp-function nil isearch-case-fold-search nil)) #("org" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("legend" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("lambdi" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("I_C" 0 3 (isearch-regexp-function nil isearch-case-fold-search nil)) #("TODO" 0 4 (isearch-regexp-function nil isearch-case-fold-search nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("/home/mb/projects/TSdistributed/srcMTLB/Logemann/pdepeENCAPSULATED4Logemann.m" "/home/mb/bin/MATLAB/R2022a/toolbox/matlab/graph3d/view.m" "/home/mb/bin/MATLAB/R2022a/toolbox/matlab/specgraph/surfc.m" "/home/mb/bin/MATLAB/R2022a/toolbox/pde/squareg.m" "/home/mb/pdedemo6.m" "/home/mb/.matlab/R2019b/work/Examples/R2022a/pde/pdedemo6/pdedemo6.m" "/home/mb/bin/MATLAB/R2022a/toolbox/pde/pdedemo6.m" "/home/mb/projects/MetodyNumeryczne/MN_wyklady/W00-SzeregiTaylora/mTestFiles/xsinx2.m" "/home/mb/projects/Dydaktyka/MetodyOblFizykiMat/moft.org" "/home/mb/.emacs.d/init.el" "/home/mb/.emacs.d/install-packages.el" "/home/mb/.emacs.d/init.el" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/manual_acousing.org" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/Preamble_acousing.org" "/home/mb/projects/Dydaktyka/AiSD/Teoria-org/Preamble.org" #("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/tempDir/Makefile" 0 87 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder/test.org" 0 74 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder" 0 65 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/manual_5_acoustics_in_singularity/manual_dependencies.org" 0 112 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/" 0 36 (ivy-index 6)) #("/" 0 1 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19:~/" 0 34 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19" 0 31 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19 -p 40008" 0 40 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibliography-and-org-mode.org" 0 101 (ivy-index 32)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/AAAAAAAA.org" 0 99 (ivy-index 4)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/Ex2.org" 0 94 (ivy-index 14)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/" 0 87 (ivy-index 3)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" 0 96 (ivy-index 1)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-11-tramp.org" 0 81 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/" 0 44 (ivy-index 1)) #("/home/mb/.emacs.d/2023" 0 22 (ivy-index 0)) #("/home/mb/.emacs.d/useful-shortcuts.org" 0 38 (ivy-index 30)) "~/.emacs.d/init.el" "~/.emacs.d/recentf" "~/.emacs.d/install-packages.el" "~/.emacs.d/useful-shortcuts.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-20-installing-pdf-cups.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-init-and-setup-Emacs/init.el" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-30-how-to-definitively-kill-zombie-process.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-22-adding-support-for-language-in-doconce.org" "~/.emacs_workgroups" "~/org/RDITiT/!2023.01.04 - 23 posiedzenie (obrona Piecuch)/Piecuch Grzegorz_obrona/Protokoły-sprawozdania/watpliwosci.org" "~/.emacs.d_CPY(2022.12.20)/init(2022.12.20 BACKUP).el" "~/.emacs.d/elpa/workgroups2-20220702.842/workgroups2-autoloads.el" "~/.emacs.d/elpa/smex-20151212.2209/smex-autoloads.el"))
+(setq file-name-history '("/home/mb/Chen_F - emacs, org-mode.pdf" "/home/mb/projects/TSdistributed/srcMTLB/Logemann/pdepeENCAPSULATED4Logemann.m" "/home/mb/bin/MATLAB/R2022a/toolbox/matlab/graph3d/view.m" "/home/mb/bin/MATLAB/R2022a/toolbox/matlab/specgraph/surfc.m" "/home/mb/bin/MATLAB/R2022a/toolbox/pde/squareg.m" "/home/mb/pdedemo6.m" "/home/mb/.matlab/R2019b/work/Examples/R2022a/pde/pdedemo6/pdedemo6.m" "/home/mb/bin/MATLAB/R2022a/toolbox/pde/pdedemo6.m" "/home/mb/projects/MetodyNumeryczne/MN_wyklady/W00-SzeregiTaylora/mTestFiles/xsinx2.m" "/home/mb/projects/Dydaktyka/MetodyOblFizykiMat/moft.org" "/home/mb/.emacs.d/init.el" "/home/mb/.emacs.d/install-packages.el" "/home/mb/.emacs.d/init.el" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/manual_acousing.org" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/Preamble_acousing.org" "/home/mb/projects/Dydaktyka/AiSD/Teoria-org/Preamble.org" #("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/tempDir/Makefile" 0 87 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder/test.org" 0 74 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder" 0 65 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/manual_5_acoustics_in_singularity/manual_dependencies.org" 0 112 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/" 0 36 (ivy-index 6)) #("/" 0 1 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19:~/" 0 34 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19" 0 31 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19 -p 40008" 0 40 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibliography-and-org-mode.org" 0 101 (ivy-index 32)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/AAAAAAAA.org" 0 99 (ivy-index 4)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/Ex2.org" 0 94 (ivy-index 14)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/" 0 87 (ivy-index 3)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" 0 96 (ivy-index 1)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-11-tramp.org" 0 81 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/" 0 44 (ivy-index 1)) #("/home/mb/.emacs.d/2023" 0 22 (ivy-index 0)) #("/home/mb/.emacs.d/useful-shortcuts.org" 0 38 (ivy-index 30)) "~/.emacs.d/init.el" "~/.emacs.d/recentf" "~/.emacs.d/install-packages.el" "~/.emacs.d/useful-shortcuts.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-20-installing-pdf-cups.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-init-and-setup-Emacs/init.el" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-30-how-to-definitively-kill-zombie-process.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-22-adding-support-for-language-in-doconce.org" "~/.emacs_workgroups" "~/org/RDITiT/!2023.01.04 - 23 posiedzenie (obrona Piecuch)/Piecuch Grzegorz_obrona/Protokoły-sprawozdania/watpliwosci.org" "~/.emacs.d_CPY(2022.12.20)/init(2022.12.20 BACKUP).el" "~/.emacs.d/elpa/workgroups2-20220702.842/workgroups2-autoloads.el" "~/.emacs.d/elpa/smex-20151212.2209/smex-autoloads.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
@@ -22,12 +22,48 @@
   "2023.04.20-przestrzenie-wektory-kolory.org"
   'org-mode
   '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  592
+  99
   '(796 nil)
   nil
   nil
-  '((buffer-display-time 25666 29632 73976 458000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (795 580 110 93 81 93 93 603 561 322 78 591 581 518 460 592))))
+  '((buffer-display-time 25666 63175 454321 689000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (795 580 110 93 81 93 93 603 561 322 78 591 581 518 460 393))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(visual-line-mode eldoc-mode ivy-mode auto-revert-mode global-auto-revert-mode linum-mode buffer-face-mode flyspell-mode flymake-mode company-mode)
+  12792
+  '(5583 nil)
+  nil
+  nil
+  '((buffer-display-time 25666 63051 313889 576000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
+  '((mark-ring (12792))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
+  "2022-12-27-configuring-and-installing-emacs.org"
+  'org-mode
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  57383
+  '(57317 nil)
+  nil
+  nil
+  '((buffer-display-time 25666 37634 679323 353000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (57526 58295 57145 57903 57688 57468 56981 56981 56824 56981 56787 56733 39710 42662 42465 42442))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/install-packages.el"
+  "install-packages.el"
+  'emacs-lisp-mode
+  '(visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  2086
+  '(975 nil)
+  nil
+  nil
+  '((buffer-display-time 25666 31157 910029 860000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
+  '((mark-ring (1785 1933 1891 2086))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/TSdistributed/srcMTLB/Logemann3/main_Loge3.m"
@@ -38,7 +74,7 @@
   '(3440 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25666 27208 56635 152000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25666 63084 642341 679000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (1159 5291 5293 5290 5292 5292 5292 5292 5299 5280 5244 4781 1360 660 1292 7567))))
 
 (desktop-create-buffer 208
@@ -50,7 +86,7 @@
   '(4652 t)
   nil
   nil
-  '((buffer-display-time 25665 43130 67663 849000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25665 44286 333687 789000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (52654 52600 52600 52581 52581 52814 52581 52581 52581 52581 52581 52276 52265 52167 52115 52112))))
 
 (desktop-create-buffer 208
@@ -62,7 +98,7 @@
   '(5188 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25665 20764 498942 670000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25665 21920 787180 749000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (224 289 96 5431 3610 4054 3267 3000 2565 2503 1869 1869 2149 2087 2068 4583))))
 
 (desktop-create-buffer 208
@@ -74,7 +110,7 @@
   '(21821 nil)
   nil
   nil
-  '((buffer-display-time 25664 61498 635938 762000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25664 62654 955964 990000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (21821 21730 21640 21261 21135 20553 20486 20553 20486 20486 20405 17334 20486 20420 20420 22233))))
 
 (desktop-create-buffer 208
@@ -86,7 +122,7 @@
   '(736 nil)
   t
   '((dirs "/home/mb/projects/Dydaktyka/moft - Metody obliczeniowe w fizyce i technice/Ćwiczenia - materiały własne /") (right . t) (sorting-order . "NAME"))
-  '((buffer-display-time 25664 19697 887441 207000) (truncate-lines))
+  '((buffer-display-time 25664 20854 276956 505000) (truncate-lines))
   '((mark-ring (429))))
 
 (desktop-create-buffer 208
@@ -98,32 +134,8 @@
   '(nil nil)
   t
   '((dirs "/home/mb/projects/Dydaktyka/moft - Metody obliczeniowe w fizyce i technice/Ćwiczenia - materiały własne /src/") (right . t) (sorting-order . "NAME"))
-  '((buffer-display-time 25666 27211 541235 404000) (truncate-lines))
+  '((buffer-display-time 25666 28368 13790 362000) (truncate-lines))
   '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
-  "2022-12-27-configuring-and-installing-emacs.org"
-  'org-mode
-  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  39487
-  '(39711 nil)
-  nil
-  nil
-  '((buffer-display-time 25664 19120 527367 888000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (42663 42466 42443 42443 42022 42040 42740 41556 41556 41556 41190 41556 41555 41556 41266 39487))))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/init.el"
-  "init.el"
-  'emacs-lisp-mode
-  '(visual-line-mode eldoc-mode ivy-mode auto-revert-mode global-auto-revert-mode linum-mode buffer-face-mode flyspell-mode flymake-mode company-mode)
-  5961
-  '(6091 t)
-  nil
-  nil
-  '((buffer-display-time 25664 18054 559113 696000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (5961 5961 6112 6112 6112 6731 7050 6958 6731 6731 6731 6945 6654 6958 6479 6790))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/TSdistributed/srcMTLB/Logemann2/u_t.m"
@@ -134,7 +146,7 @@
   '(684 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25663 42813 229682 774000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25663 43969 727032 545000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (690))))
 
 (desktop-create-buffer 208
@@ -146,7 +158,7 @@
   '(1053 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25663 40151 425450 91000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25663 41307 947871 915000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (1102 1136 1135 1135 943 941 940 720 941 924 923 2364 2579 2223 2213 1044))))
 
 (desktop-create-buffer 208
@@ -158,7 +170,7 @@
   '(2023 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25663 298 893163 841000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25663 1455 436195 445000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (1404 1404 1811 250 238 1491 1491 279 331 1896 1461 1458 1448 1441 271 603))))
 
 (desktop-create-buffer 208
@@ -170,7 +182,7 @@
   '(419 nil)
   nil
   nil
-  '((buffer-display-time 25662 49565 754239 277000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25662 50722 311391 752000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (344 551 169 551 79 1 1 551 551 79 551 169 169 300 551 552))))
 
 (desktop-create-buffer 208
@@ -182,7 +194,7 @@
   '(5919 nil)
   nil
   nil
-  '((buffer-display-time 25658 61583 297984 925000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25658 62739 876333 55000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (5749 5749 5104 7271 8764 5149 3476 1335 532))))
 
 (desktop-create-buffer 208
@@ -194,7 +206,7 @@
   '(500 t)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25656 42037 255178 867000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25656 43193 849923 197000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (479 592 649 71 635 616 608 608 499 479 350 329 328 328 500 484))))
 
 (desktop-create-buffer 208
@@ -206,7 +218,7 @@
   '(382 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25656 41917 607575 812000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25656 43074 221122 452000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (711 711 711 706))))
 
 (desktop-create-buffer 208
@@ -218,7 +230,7 @@
   '(282 nil)
   nil
   nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 25654 7559 887856 35000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 25654 8716 514242 619000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (354 530 622 622))))
 
 (desktop-create-buffer 208
@@ -230,7 +242,7 @@
   '(472 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25644 1059 344620 914000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25644 2216 45236 452000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (335))))
 
 (desktop-create-buffer 208
@@ -242,7 +254,7 @@
   '(1 t)
   nil
   nil
-  '((buffer-display-time 25628 64387 224639 399000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25629 7 949467 501000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1))))
 
 (desktop-create-buffer 208
@@ -254,7 +266,7 @@
   '(7825 nil)
   nil
   nil
-  '((buffer-display-time 25627 45260 550342 448000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25627 46417 301787 502000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (7825 3190 2319 2227 330 330 2151 2319 3187 7965 7983 8067 471 315))))
 
 (desktop-create-buffer 208
@@ -266,7 +278,7 @@
   '(5305 nil)
   nil
   nil
-  '((buffer-display-time 25618 57257 1121 563000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25618 58413 773877 688000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (4758 2654 2654 2652 2932 2588 2586 2549 2549 2549 2549 3007 2172 2172 1750 5320))))
 
 (desktop-create-buffer 208
@@ -278,7 +290,7 @@
   '(10 nil)
   nil
   nil
-  '((buffer-display-time 25666 27212 785884 386000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25666 63085 993498 658000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (9))))
 
 (desktop-create-buffer 208
@@ -290,7 +302,7 @@
   '(9862 t)
   nil
   nil
-  '((buffer-display-time 25666 27213 656553 702000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25666 63086 543341 598000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (9862 9988 10198 9483 9055 8860 7088 7078 5602 5822 5683 5188 9920 9920 9920 9762))))
 
 (desktop-create-buffer 208
@@ -302,7 +314,7 @@
   '(2845 nil)
   nil
   nil
-  '((buffer-display-time 25597 49613 607119 399000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25597 50771 827204 448000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (2845 645 360 369 368 368))))
 
 (desktop-create-buffer 208
@@ -314,7 +326,7 @@
   '(8415 nil)
   nil
   nil
-  '((buffer-display-time 25596 8630 198209 552000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25596 9788 443688 572000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (1404 8027 8027 8414 8978 8026 8978 8026 9507 9480 9420 9289 9205 9205 9206 9535))))
 
 (desktop-create-buffer 208
@@ -326,7 +338,7 @@
   '(2883 nil)
   nil
   nil
-  '((buffer-display-time 25567 60555 822968 825000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25567 61714 110583 590000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (2677 1187 1414))))
 
 (desktop-create-buffer 208
@@ -338,7 +350,7 @@
   '(4417 nil)
   nil
   nil
-  '((buffer-display-time 25565 31794 228464 914000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25565 32952 542707 955000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (4417))))
 
 (desktop-create-buffer 208
@@ -350,7 +362,7 @@
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 25562 58384 518692 425000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25562 59542 864289 560000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -362,6 +374,6 @@
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 25666 27214 891331 433000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25666 28373 262688 956000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring nil)))
 
