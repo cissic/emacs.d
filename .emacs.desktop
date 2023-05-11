@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Thu May 11 14:11:01 2023
+;; Created Thu May 11 14:22:10 2023
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
@@ -11,7 +11,7 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("F'" 0 2 (isearch-regexp-function nil isearch-case-fold-search nil)) #("latex" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("FIGUR" 0 5 (isearch-regexp-function nil isearch-case-fold-search nil)) #("principl" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("ograniczni" 0 10 (isearch-regexp-function nil isearch-case-fold-search t)) #("wymyśle" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("p- punk" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("niezerow" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("kroku" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("Przypomnienie" 0 13 (isearch-regexp-function nil isearch-case-fold-search nil)) #("Funkcje bazowe P" 0 16 (isearch-regexp-function nil isearch-case-fold-search nil)) #("C-x C-t" 0 7 (isearch-regexp-function nil isearch-case-fold-search nil)) #("o globalnym " 0 12 (isearch-regexp-function nil isearch-case-fold-search t)) #("org-bab" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("dired-mode" 0 10 (isearch-case-fold-search t isearch-regexp-function nil)) #("async" 0 5 (isearch-regexp-function nil isearch-case-fold-search t))))
+(setq search-ring '(#("cdlate" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("cd" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("cdla" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("F'" 0 2 (isearch-regexp-function nil isearch-case-fold-search nil)) #("latex" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("FIGUR" 0 5 (isearch-regexp-function nil isearch-case-fold-search nil)) #("principl" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("ograniczni" 0 10 (isearch-regexp-function nil isearch-case-fold-search t)) #("wymyśle" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("p- punk" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("niezerow" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("kroku" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("Przypomnienie" 0 13 (isearch-regexp-function nil isearch-case-fold-search nil)) #("Funkcje bazowe P" 0 16 (isearch-regexp-function nil isearch-case-fold-search nil)) #("C-x C-t" 0 7 (isearch-regexp-function nil isearch-case-fold-search nil)) #("o globalnym " 0 12 (isearch-regexp-function nil isearch-case-fold-search t))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
 (setq file-name-history '("/home/mb/projects/TSdistributed/srcMTLB/Logemann3/pdex1bcsol.m" "/home/mb/bin/MATLAB/R2023a/toolbox/matlab/demos/pdex1ic.m" "/home/mb/bin/MATLAB/R2023a/toolbox/matlab/demos/pdex1bc.m" "/home/mb/bin/MATLAB/R2023a/toolbox/matlab/demos/pdex1pde.m" "/home/mb/.emacs.d/install-packages.el" "/ssh:marbor@jupyterhub.prz.edu.pl:temp/FEMwR.org" "/ssh:marbor@jupyterhub.prz.edu.pl:ChenFemacs.pdf" "/home/mb/Chen_F - emacs, org-mode.pdf" "/ssh:marbor@jupyterhub.prz.edu.pl:ChenFemacs.pdf" "/home/mb/Chen_F - emacs, org-mode.pdf" "/home/mb/projects/TSdistributed/srcMTLB/Logemann/pdepeENCAPSULATED4Logemann.m" "/home/mb/bin/MATLAB/R2022a/toolbox/matlab/graph3d/view.m" "/home/mb/bin/MATLAB/R2022a/toolbox/matlab/specgraph/surfc.m" "/home/mb/bin/MATLAB/R2022a/toolbox/pde/squareg.m" "/home/mb/pdedemo6.m" "/home/mb/.matlab/R2019b/work/Examples/R2022a/pde/pdedemo6/pdedemo6.m" "/home/mb/bin/MATLAB/R2022a/toolbox/pde/pdedemo6.m" "/home/mb/projects/MetodyNumeryczne/MN_wyklady/W00-SzeregiTaylora/mTestFiles/xsinx2.m" "/home/mb/projects/Dydaktyka/MetodyOblFizykiMat/moft.org" "/home/mb/.emacs.d/init.el" "/home/mb/.emacs.d/install-packages.el" "/home/mb/.emacs.d/init.el" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/manual_acousing.org" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/Preamble_acousing.org" "/home/mb/projects/Dydaktyka/AiSD/Teoria-org/Preamble.org" #("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/tempDir/Makefile" 0 87 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder/test.org" 0 74 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder" 0 65 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/manual_5_acoustics_in_singularity/manual_dependencies.org" 0 112 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/" 0 36 (ivy-index 6)) #("/" 0 1 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19:~/" 0 34 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19" 0 31 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19 -p 40008" 0 40 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibliography-and-org-mode.org" 0 101 (ivy-index 32)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/AAAAAAAA.org" 0 99 (ivy-index 4)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/Ex2.org" 0 94 (ivy-index 14)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/" 0 87 (ivy-index 3)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" 0 96 (ivy-index 1)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-11-tramp.org" 0 81 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/" 0 44 (ivy-index 1)) #("/home/mb/.emacs.d/2023" 0 22 (ivy-index 0)) #("/home/mb/.emacs.d/useful-shortcuts.org" 0 38 (ivy-index 30)) "~/.emacs.d/init.el" "~/.emacs.d/recentf" "~/.emacs.d/install-packages.el" "~/.emacs.d/useful-shortcuts.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-20-installing-pdf-cups.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-init-and-setup-Emacs/init.el" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-30-how-to-definitively-kill-zombie-process.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-22-adding-support-for-language-in-doconce.org" "~/.emacs_workgroups" "~/org/RDITiT/!2023.01.04 - 23 posiedzenie (obrona Piecuch)/Piecuch Grzegorz_obrona/Protokoły-sprawozdania/watpliwosci.org" "~/.emacs.d_CPY(2022.12.20)/init(2022.12.20 BACKUP).el" "~/.emacs.d/elpa/workgroups2-20220702.842/workgroups2-autoloads.el" "~/.emacs.d/elpa/smex-20151212.2209/smex-autoloads.el"))
@@ -21,13 +21,37 @@
   "/home/mb/projects/Dydaktyka/moft - Metody obliczeniowe w fizyce i technice/Ćwiczenia - materiały własne /moft.org"
   "moft.org"
   'org-mode
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode org-cdlatex-mode company-mode)
+  62686
+  '(63267 nil)
+  nil
+  nil
+  '((buffer-display-time 25692 56771 874280 443000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (63033 63020 63017 62987 62978 62907 62384 147 130 93 62685 62508 62620 62549 62546 62686))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
+  "2022-12-27-configuring-and-installing-emacs.org"
+  'org-mode
   '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  62866
-  '(63266 nil)
+  53382
+  '(53323 nil)
   nil
   nil
-  '((buffer-display-time 25692 56119 733687 49000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (63032 63019 63016 62986 62977 62906 62384 147 130 93 62685 62508 62620 62549 62546 62866))))
+  '((buffer-display-time 25692 56690 856761 662000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (53390 53472 53384 53139 58230 59052 42413 12322 58485 58398 58988 58485 58485 58485 58485 58392))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/install-packages.el"
+  "install-packages.el"
+  'emacs-lisp-mode
+  '(visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  1341
+  '(1340 nil)
+  nil
+  nil
+  '((buffer-display-time 25692 56240 446770 315000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
+  '((mark-ring (1240 975 1785 1933 1891 2086 2122 2106 2086 1240 1258 1340 1341))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/Ksiazki-tlumaczenia/A_Langtangen-fem-book/doc/.src/book/slides/approx.do.txt"
@@ -88,18 +112,6 @@
   nil
   '((buffer-display-time 25686 45761 510185 486000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (6636 6636 6636 15822 16870 13769 5583 6636 6636 6636 13606 13872 13918 6636 6636 17104))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
-  "2022-12-27-configuring-and-installing-emacs.org"
-  'org-mode
-  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  58632
-  '(57876 nil)
-  nil
-  nil
-  '((buffer-display-time 25686 45738 892234 239000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (58698 42413 12322 58131 58044 58634 58131 58131 58131 58131 58038 57861 57538 57861 57777 58632))))
 
 (desktop-create-buffer 208
   "/home/mb/org/2023.04.20-przestrzenie-wektory-kolory.org"
@@ -196,18 +208,6 @@
   nil
   '((indent-tabs-mode) (buffer-display-time 25685 24471 580936 960000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/install-packages.el"
-  "install-packages.el"
-  'emacs-lisp-mode
-  '(visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  2086
-  '(975 nil)
-  nil
-  nil
-  '((buffer-display-time 25670 40102 217237 574000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
-  '((mark-ring (1785 1933 1891 2086 2122 2106 2086))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/TSdistributed/srcMTLB/Logemann2/main.m"

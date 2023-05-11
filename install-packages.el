@@ -37,6 +37,7 @@
 
 bash-completion
   ; counsel ; for ivy
+  cdlatex
   company
   dockerfile-mode
   fill-column-indicator
