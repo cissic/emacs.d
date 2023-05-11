@@ -7,16 +7,16 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "JSY1CQV9JRGL7W0-C5G64" "currentsession" t nil #s(wg-wconfig "JSY1CQVAPC9EHLS-C5HXD" nil
-											    ((fullscreen))
-											    798 0 80 36 right 16 #s(wg-wtree nil nil
-															     (0 0 84 35)
-															     (#s(wg-win nil nil
-																	(0 0 42 35)
-																	3294 2916 0 nil nil nil "JSY1CQV9JFI1PQ8-C5G1J")
-																#s(wg-win nil nil
-																	  (42 0 84 35)
-																	  99 79 0 nil t nil "JSYKZGAJCG591K-AXTLUP"))))
+	      (#s(wg-workgroup "JTIZ298HAX4B3C-E7932" "currentsession" t nil #s(wg-wconfig "JTIZ299B90BLFS-E7AYU" nil
+											   ((fullscreen . maximized))
+											   3 0 209 55 right 16 #s(wg-wtree nil nil
+															   (0 0 213 54)
+															   (#s(wg-win nil nil
+																      (0 0 105 54)
+																      :max 1065 0 nil nil nil "JTIZ298H4KCSNC-E78YK")
+															      #s(wg-win nil nil
+																	(105 0 213 54)
+																	17560 16561 0 nil t nil "JPU1CGMGZPBCR3S-9UKKZ"))))
 			       nil nil nil nil)
 		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
@@ -28,27 +28,42 @@
 																  #s(wg-win nil nil
 																	    (107 0 213 54)
 																	    763 1 0 nil nil nil "JPU1CGMGZPBCR3S-9UKKZ"))))
+				 nil nil nil nil)
+		 #s(wg-workgroup "JTE1203DG5L69B4-AJ5RPS" "jupyterhub-shell-connection" t nil #s(wg-wconfig "JTE1204592443DK-AJ5THU" nil
+													    ((fullscreen))
+													    (+ -14)
+													    0 161 54 right 16 #s(wg-wtree nil nil
+																	  (0 0 165 53)
+																	  (#s(wg-win nil nil
+																		     (0 0 83 53)
+																		     :max 1 0 nil nil nil "JTE1203DFPS6FHC-AJ5RJE")
+																	     #s(wg-win nil nil
+																		       (83 0 165 53)
+																		       :max 14501 0 nil t nil "JTE1203DFZ8IPM0-AJ5RLS"))))
 				 nil nil nil nil))
-	      (#s(wg-buf "JSYKZGAIT7H3QO-AXTLSE" "*octave*" nil 674 nil
-			 ((major-mode . inferior-octave-mode)
+	      (#s(wg-buf "JTIZ298H4KCSNC-E78YK" "*Org Export Process*" nil 1697 nil
+			 ((major-mode . fundamental-mode)
 			  nil nil nil nil nil nil nil)
-			 (wg-deserialize-inferior-octave-mode-buffer
-			  ("/home/mb/org/" nil))
-			 nil)
-		 #s(wg-buf "JSY1CQV9JFI1PQ8-C5G1J" "*Messages*" nil 3294 3654
-			   ((major-mode . messages-buffer-mode)
-			    nil nil nil nil nil nil nil)
-			   nil nil)
-		 #s(wg-buf "JSYKZGAJCG591K-AXTLUP" "2023.04.20-przestrzenie-wektory-kolory.org" "/home/mb/org/2023.04.20-przestrzenie-wektory-kolory.org" 99 796
-			   ((major-mode . org-mode)
-			    (mark-ring 795 580 110 93 81 93 93 603 561 322 78 591 581 518 460 393)
-			    nil nil nil nil nil nil)
-			   nil nil)
-		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 5021 5991
+			 nil nil)
+		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 17560 6636
 			   ((major-mode . emacs-lisp-mode)
-			    (mark-ring 5702 5708 3736 3736 3693 3642 4118 4118 1604 3602 3602 11426 3602 3602 3602 3708)
+			    (mark-ring 6886 10092 16587 17635 14534 5583 12827 12615 13154 14371 14637 14683 13272 13190 13368 17560)
 			    nil nil nil nil nil nil)
 			   nil nil)
+		 #s(wg-buf "JTE1203DFPS6FHC-AJ5RJE" "*shell*<2>" nil 1100 84
+			   ((major-mode . shell-mode)
+			    (mark-ring 84 84)
+			    nil nil nil nil nil nil)
+			   (wg-deserialize-shell-mode-buffer
+			    ("/home/mb/projects/Ksiazki-tlumaczenia/A_Langtangen-fem-book/doc/.src/book/slides/" nil))
+			   nil)
+		 #s(wg-buf "JTE1203DFZ8IPM0-AJ5RLS" "*shell*" nil 16680 15323
+			   ((major-mode . shell-mode)
+			    (mark-ring 84 84 15156 15347 15097)
+			    nil nil nil nil nil nil)
+			   (wg-deserialize-shell-mode-buffer
+			    ("/home/mb/projects/Ksiazki-tlumaczenia/A_Langtangen-fem-book/doc/.src/book/slides/" nil))
+			   nil)
 		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 28182 28328
 			   ((major-mode . org-mode)
 			    (mark-ring 30613 28528 28414 29099 30568 29588 29588 29089 30596 29470 29099 30834 28182 28182 29401 28182)

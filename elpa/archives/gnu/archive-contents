@@ -164,14 +164,14 @@
 	   ("John Wiegley" . "jwiegley@gmail.com"))
 	  (:commit . "53addd02fbad33765f508f8e6254ebd44e1f81e5"))])
  (auctex .
-	 [(13 1 10)
+	 [(13 2 0)
 	  ((emacs
 	    (25 1)))
 	  "Integrated environment for *TeX*" tar
 	  ((:url . "https://www.gnu.org/software/auctex/")
 	   (:keywords "tex" "latex" "texinfo" "context" "doctex" "preview-latex")
 	   (:maintainer nil . "auctex-devel@gnu.org")
-	   (:commit . "658832b8a228f072e6a5a760e7d9fba1ae9808a6"))])
+	   (:commit . "9d47b0a1bdffb8e01a83bf507dac7677ecca92f7"))])
  (aumix-mode .
 	     [(7)
 	      nil "run the aumix program in a buffer" single
@@ -1024,7 +1024,7 @@
 	       ("Protesilaos Stavrou" . "info@protesilaos.com"))
 	      (:commit . "1d7e6e78df914e8829e6511a935616b0895403ae"))])
  (eglot .
-	[(1 14)
+	[(1 15)
 	 ((emacs
 	   (26 3))
 	  (jsonrpc
@@ -1047,7 +1047,7 @@
 	  (:maintainer "João Távora" . "joaotavora@gmail.com")
 	  (:authors
 	   ("João Távora" . "joaotavora@gmail.com"))
-	  (:commit . "8125d4cfc5605ead9102b7d823c4241029eb76cc"))])
+	  (:commit . "30892cbd330ace125454a056ca86d85e2a860bf5"))])
  (el-search .
 	    [(1 12 6 1)
 	     ((emacs
@@ -1277,6 +1277,17 @@
 			   ("Lawrence Mitchell" . "wence@gmx.li"))
 			  (:maintainer "Lawrence Mitchell" . "wence@gmx.li")
 			  (:url . "http://github.com/wence-/f90-iface/"))])
+ (face-shift .
+	     [(0 2 1)
+	      ((emacs
+		(24 1)))
+	      "Shift the colour of certain faces" tar
+	      ((:url . "https://git.sr.ht/~pkal/face-shift")
+	       (:keywords "faces")
+	       (:maintainer "Philip Kaludercic" . "philipk@posteo.net")
+	       (:authors
+		("Philip Kaludercic" . "philipk@posteo.net"))
+	       (:commit . "671e53fdef9ed3fdb9ee768216d05b90e3ce592a"))])
  (filladapt .
 	    [(2 12 2)
 	     ((emacs
@@ -1668,7 +1679,7 @@
 	   ("Durand" . "mmemmew@gmail.com"))
 	  (:url . "https://elpa.gnu.org/packages/ilist.html"))])
  (inspector .
-	    [(0 28)
+	    [(0 30)
 	     ((emacs
 	       (27 1)))
 	     "Tool for inspection of Emacs Lisp objects" tar
@@ -1677,7 +1688,7 @@
 	      (:maintainer "Mariano Montone" . "marianomontone@gmail.com")
 	      (:authors
 	       ("Mariano Montone" . "marianomontone@gmail.com"))
-	      (:commit . "0b2cf2f00a827f06bda717da8250eafec4108fb3"))])
+	      (:commit . "f06e3490cb3fba9335dfca9022d3cc8babaa8654"))])
  (ioccur .
 	 [(2 6)
 	  ((emacs
@@ -1807,7 +1818,7 @@
 		 ("Stefan Monnier" . "monnier@iro.umontreal.ca"))
 		(:maintainer "Stefan Monnier" . "monnier@iro.umontreal.ca"))])
  (jinx .
-       [(0 7)
+       [(0 8)
 	((emacs
 	  (27 1))
 	 (compat
@@ -1818,7 +1829,7 @@
 	 (:maintainer "Daniel Mendler" . "mail@daniel-mendler.de")
 	 (:authors
 	  ("Daniel Mendler" . "mail@daniel-mendler.de"))
-	 (:commit . "25a39dfc57b5819d9e5317ac61ecbdcd112234f7"))])
+	 (:commit . "7fced90fdaca5a482cd08b80967e0eac5ee8d885"))])
  (jit-spell .
 	    [(0 3)
 	     ((emacs
@@ -2403,7 +2414,7 @@
 	       ("Omar Antolín Camarena" . "omar@matem.unam.mx"))
 	      (:commit . "847694e78c12d903d5e3f6cb365a5d3b984db537"))])
  (org .
-      [(9 6 4)
+      [(9 6 5)
        ((emacs
 	 (26 1)))
        "Outline-based notes management and organizer" tar
@@ -2412,7 +2423,7 @@
 	(:maintainer "Bastien Guerry" . "bzg@gnu.org")
 	(:authors
 	 ("Carsten Dominik" . "carsten.dominik@gmail.com"))
-	(:commit . "f1fd1f22f42aece448dcf2d5e1037064a9ce2437"))])
+	(:commit . "921e0e8bc1158736313db77c2ebc503b50211b89"))])
  (org-contacts .
 	       [(1 1)
 		((emacs
@@ -2535,7 +2546,7 @@
 	(:keywords "comm" "processes" "multimedia")
 	(:url . "https://elpa.gnu.org/packages/osc.html"))])
  (osm .
-      [(0 11)
+      [(0 12)
        ((emacs
 	 (27 1))
 	(compat
@@ -2546,7 +2557,7 @@
 	(:maintainer "Daniel Mendler" . "mail@daniel-mendler.de")
 	(:authors
 	 ("Daniel Mendler" . "mail@daniel-mendler.de"))
-	(:commit . "ce8512d793cbe99f2406551bc84ad534a7a37893"))])
+	(:commit . "f08f03860021fa334708829d705370614e383880"))])
  (other-frame-window .
 		     [(1 0 6)
 		      ((emacs
@@ -2695,7 +2706,7 @@
 	   ("Mario Lang" . "mlang@delysid.org"))
 	  (:maintainer "Mario Lang" . "mlang@delysid.org"))])
  (posframe .
-	   [(1 4 1)
+	   [(1 4 2)
 	    ((emacs
 	      (26 1)))
 	    "Pop a posframe (just a frame) at point" tar
@@ -2704,7 +2715,7 @@
 	     (:maintainer "Feng Shu" . "tumashu@163.com")
 	     (:authors
 	      ("Feng Shu" . "tumashu@163.com"))
-	     (:commit . "b00f1386ca4e251a5c3d8985d313217e56e42a7e"))])
+	     (:commit . "3b97dc180b03498103cfcc7f44e64150df440bf0"))])
  (project .
 	  [(0 9 8)
 	   ((emacs
@@ -3569,7 +3580,7 @@
 	      ("Trevor Edwin Pogue" . "trevor.pogue@gmail.com"))
 	     (:commit . "33c2a6f0a11d1d88cdb2065c5a897e33507f4c86"))])
  (tramp .
-	[(2 6 0 3)
+	[(2 6 0 4)
 	 ((emacs
 	   (26 1)))
 	 "Transparent Remote Access, Multiple Protocol" tar
@@ -3578,7 +3589,7 @@
 	  (:maintainer "Michael Albinus" . "michael.albinus@gmx.de")
 	  (:authors
 	   ("Kai Großjohann" . "kai.grossjohann@gmx.net"))
-	  (:commit . "1e5bbe5eca67973c26f4e4e62d42ba30ba01584b"))])
+	  (:commit . "9f4a6ac09014318bc6283438574a411a034ff1a3"))])
  (tramp-nspawn .
 	       [(1 0 1)
 		((emacs
@@ -3608,15 +3619,18 @@
 		("David Gonzalez Gandara" . "dggandara@member.fsf.org"))
 	       (:maintainer "David Gonzalez Gandara" . "dggandara@member.fsf.org"))])
  (transient .
-	    [(0 3 7)
+	    [(0 4 0)
 	     ((emacs
-	       (25 1)))
+	       (25 1))
+	      (compat
+	       (29 1 4 1)))
 	     "Transient commands" tar
 	     ((:url . "https://github.com/magit/transient")
-	      (:keywords "bindings")
+	      (:keywords "extensions")
 	      (:maintainer "Jonas Bernoulli" . "jonas@bernoul.li")
 	      (:authors
-	       ("Jonas Bernoulli" . "jonas@bernoul.li")))])
+	       ("Jonas Bernoulli" . "jonas@bernoul.li"))
+	      (:commit . "b4127842f200848817103e8d4c45c36bc8fdf3b8"))])
  (transient-cycles .
 		   [(1 0)
 		    ((emacs
@@ -3628,6 +3642,19 @@
 		     (:authors
 		      ("Sean Whitton" . "spwhitton@spwhitton.name"))
 		     (:commit . "a5b86dd04e84e7ff1cf8c4062843fccb92991145"))])
+ (tree-inspector .
+		 [(0 3)
+		  ((emacs
+		    (27 1))
+		   (treeview
+		    (1 1 0)))
+		  "Inspector tool for Emacs Lisp object that uses a treeview" tar
+		  ((:url . "https://github.com/mmontone/emacs-inspector")
+		   (:keywords "debugging" "tool" "lisp" "development")
+		   (:maintainer "Mariano Montone" . "marianomontone@gmail.com")
+		   (:authors
+		    ("Mariano Montone" . "marianomontone@gmail.com"))
+		   (:commit . "e76898353a16d0d7a53c76e3d9c44f989f439fc8"))])
  (trie .
        [(0 5)
 	((tNFA
@@ -3706,6 +3733,15 @@
 		   ("Tom Schutzer-Weissmann" . "tom.weissmann@gmail.com"))
 		  (:maintainer "Thomas Fitzsimmons" . "fitzsim@fitzsim.org")
 		  (:url . "https://code.google.com/p/url-http-ntlm/"))])
+ (url-http-oauth .
+		 [(0 8 3)
+		  nil "OAuth 2.0 for URL library" tar
+		  ((:keywords "comm" "data" "processes" "hypermedia")
+		   (:maintainer "Thomas Fitzsimmons" . "fitzsim@fitzsim.org")
+		   (:authors
+		    ("Thomas Fitzsimmons" . "fitzsim@fitzsim.org"))
+		   (:url . "https://elpa.gnu.org/packages/url-http-oauth.html")
+		   (:commit . "c2d06036f22ce61f5a1e3084c8b265d897b7fcab"))])
  (url-scgi .
 	   [(0 9)
 	    ((emacs
@@ -3826,17 +3862,18 @@
 		  ("Wilson Snyder" . "wsnyder@wsnyder.org"))
 		 (:commit . "2c2ecb46b0ad3e841ac9551e3a80d02893cdf6ec"))])
  (vertico .
-	  [(1 2)
+	  [(1 3)
 	   ((emacs
 	     (27 1))
 	    (compat
 	     (29 1 4 0)))
 	   "VERTical Interactive COmpletion" tar
 	   ((:url . "https://github.com/minad/vertico")
+	    (:keywords "convenience" "files" "matching" "completion")
 	    (:maintainer "Daniel Mendler" . "mail@daniel-mendler.de")
 	    (:authors
 	     ("Daniel Mendler" . "mail@daniel-mendler.de"))
-	    (:commit . "3386763b717415840fd58929cc2ca056e0eb10d5"))])
+	    (:commit . "5aeff1e3464dbede5d3969fff088191c1a6d84a3"))])
  (vertico-posframe .
 		   [(0 7 2)
 		    ((emacs
@@ -3887,7 +3924,7 @@
 	(:maintainer "Andrey Kotlarski" . "m00naticus@gmail.com")
 	(:keywords "large files" "utilities"))])
  (vundo .
-	[(2 0 0)
+	[(2 1 0)
 	 ((emacs
 	   (28 1)))
 	 "Visual undo tree" tar
@@ -3896,7 +3933,7 @@
 	  (:maintainer "Yuan Fu" . "casouri@gmail.com")
 	  (:authors
 	   ("Yuan Fu" . "casouri@gmail.com"))
-	  (:commit . "10d5debe317b2244d19085151040f955dda4a9ab"))])
+	  (:commit . "ce986105a7819b288f57b381168605791aa4fcec"))])
  (wcheck-mode .
 	      [(2021)
 	       nil "General interface for text checkers" tar

@@ -144,6 +144,10 @@
   : org-babel-remove-result
   : C-c C-v k
 
+28. Zamiana kolejności dwóch sąsiadujących linii (aktualna linię zamienia z górną)
+  : C-x C-t
+  : transpose-lines
+
 
 
 * OLD
@@ -244,20 +248,32 @@
     M-x describe-key <-> M-x where-is <RET> polecenie <RET>
     C-h k     <-> C-h w
 
-24. Wywolywanie polecen systemowych https://www.masteringemacs.org/article/executing-shell-commands-emacs
-    M-!
+24. Wywolywanie polecen systemowych:
+    https://www.masteringemacs.org/article/executing-shell-commands-emacs
+    : M-!
 
-25. Tryb kolumnowy:
+25. Wywołanie linii poleceń Emacsa:
+    a. W tym shellu można wywołać wyłącznie interaktywne funkcje 
+       : M-x
+    b. W tym shellu można wywołać *dowolną* funkcję lispową (również
+       nieinteraktywną) -> ~buffer-file-name~
+       : M-:
+
+26. Tryb kolumnowy:
     C-x r t    - insert string 
     Zaznaczasz "prostokat"
     C-x r k    - kill
     C-x r d    - delete
     C-x r y    - yank (paste last killed rectangle at cursor position)
 
-26. Scrolling/poruszanie się po dokumencie:
+27. Scrolling/poruszanie się po dokumencie:
  : C-v # == PageDown  scroll-up-command
  : M-v # == PageUp scroll-down-command
  : M-r # zmien pozycje kursora bez przewijania (gora/srodek/dol strony)
+
+28. Nowe okno shella:
+    https://stackoverflow.com/questions/6532998/how-to-run-multiple-shells-on-emacs
+ : C-u M-x shell
 
 
 

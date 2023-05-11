@@ -384,21 +384,6 @@
 (add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; TRAMP
-;;;; Auxiliary function - useful for TRAMP editing
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(defun dired-do-local-command ()
-  (interactive)
-  (let* ((marked-files (dired-get-marked-files nil current-prefix-arg))
-         (local-tmp-files (mapcar #'file-local-copy marked-files))
-         (num-files (length local-tmp-files))
-         (default-directory temporary-file-directory)
-         (command (dired-read-shell-command "! on %s: " num-files marked-files)))
-    (dired-do-shell-command command num-files local-tmp-files)))
-
-(define-key dired-mode-map (kbd "\"") 'dired-do-local-command)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful global shortcuts (text operations)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key (kbd "C-d") 'delete-forward-char)    ; Backspace/Insert remapping
