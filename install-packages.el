@@ -29,13 +29,12 @@
 	("melpa-stable" . "http://stable.melpa.org/packages/")
 	))
 
-;; Refresh the repositories to have the newest versions of the packages
-(package-refresh-contents)
+
 
 (setq my-packages
   '(
-
-bash-completion
+  auctex ; in order to have reftex working
+  bash-completion
   ; counsel ; for ivy
   cdlatex
   company

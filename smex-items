@@ -1,23 +1,23 @@
 
 ;; ----- smex-history -----
 (
- eval-expression
  eval-buffer
+ org-cdlatex-mode
  revert-buffer
- matlab-mode
- matlab-shell
- wg-open-workgroup
- shell
+ eval-region
+ list-packages
+ org-comment-dwim
+ comment-region
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 158)
- (eval-buffer . 372)
- (list-packages . 36)
+ (revert-buffer . 159)
+ (eval-buffer . 375)
+ (list-packages . 37)
  (package-refresh-contents . 3)
  (eval-expression . 34)
- (eval-region . 9)
+ (eval-region . 11)
  (describe-variable . 5)
  (wg-create-workgroup . 4)
  (org-md-export-to-markdown . 2)
@@ -77,7 +77,7 @@
  (package-install . 2)
  (dockerfile-mode . 3)
  (octave-mode . 6)
- (DocOnce . 6)
+ (DocOnce . 7)
  (run-python . 6)
  (pylint . 1)
  (emacs-lisp-mode . 1)
@@ -107,4 +107,7 @@
  (pdf-view-mode . 2)
  (bs-show . 1)
  (ssh . 1)
+ (comment-region . 1)
+ (org-comment-dwim . 1)
+ (org-cdlatex-mode . 7)
 )

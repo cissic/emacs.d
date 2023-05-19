@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Thu May 11 14:22:10 2023
+;; Created Fri May 19 13:18:29 2023
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
@@ -11,47 +11,107 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("cdlate" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("cd" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("cdla" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("F'" 0 2 (isearch-regexp-function nil isearch-case-fold-search nil)) #("latex" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("FIGUR" 0 5 (isearch-regexp-function nil isearch-case-fold-search nil)) #("principl" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("ograniczni" 0 10 (isearch-regexp-function nil isearch-case-fold-search t)) #("wymyśle" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("p- punk" 0 7 (isearch-regexp-function nil isearch-case-fold-search t)) #("niezerow" 0 8 (isearch-regexp-function nil isearch-case-fold-search t)) #("kroku" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("Przypomnienie" 0 13 (isearch-regexp-function nil isearch-case-fold-search nil)) #("Funkcje bazowe P" 0 16 (isearch-regexp-function nil isearch-case-fold-search nil)) #("C-x C-t" 0 7 (isearch-regexp-function nil isearch-case-fold-search nil)) #("o globalnym " 0 12 (isearch-regexp-function nil isearch-case-fold-search t))))
+(setq search-ring '(#("reftex" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("reft" 0 4 (isearch-regexp-function nil isearch-case-fold-search t)) #("ref" 0 3 (isearch-regexp-function nil isearch-case-fold-search t)) #("A teraz zob" 0 11 (isearch-regexp-function nil isearch-case-fold-search nil)) #("Metoda " 0 7 (isearch-regexp-function nil isearch-case-fold-search nil)) #("f9" 0 2 (isearch-regexp-function nil isearch-case-fold-search t)) #("\\dotp" 0 5 (isearch-regexp-function nil isearch-case-fold-search t)) #("buffer" 0 6 (isearch-regexp-function nil isearch-case-fold-search t)) #("buffer-move" 0 11 (isearch-regexp-function nil isearch-case-fold-search t)) #("cdlat" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("png" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("bo skoro" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("Skoro" 0 5 (isearch-regexp-function nil isearch-case-fold-search nil)) #("skoro" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("{{{" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("cdlate" 0 6 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
 (setq file-name-history '("/home/mb/projects/TSdistributed/srcMTLB/Logemann3/pdex1bcsol.m" "/home/mb/bin/MATLAB/R2023a/toolbox/matlab/demos/pdex1ic.m" "/home/mb/bin/MATLAB/R2023a/toolbox/matlab/demos/pdex1bc.m" "/home/mb/bin/MATLAB/R2023a/toolbox/matlab/demos/pdex1pde.m" "/home/mb/.emacs.d/install-packages.el" "/ssh:marbor@jupyterhub.prz.edu.pl:temp/FEMwR.org" "/ssh:marbor@jupyterhub.prz.edu.pl:ChenFemacs.pdf" "/home/mb/Chen_F - emacs, org-mode.pdf" "/ssh:marbor@jupyterhub.prz.edu.pl:ChenFemacs.pdf" "/home/mb/Chen_F - emacs, org-mode.pdf" "/home/mb/projects/TSdistributed/srcMTLB/Logemann/pdepeENCAPSULATED4Logemann.m" "/home/mb/bin/MATLAB/R2022a/toolbox/matlab/graph3d/view.m" "/home/mb/bin/MATLAB/R2022a/toolbox/matlab/specgraph/surfc.m" "/home/mb/bin/MATLAB/R2022a/toolbox/pde/squareg.m" "/home/mb/pdedemo6.m" "/home/mb/.matlab/R2019b/work/Examples/R2022a/pde/pdedemo6/pdedemo6.m" "/home/mb/bin/MATLAB/R2022a/toolbox/pde/pdedemo6.m" "/home/mb/projects/MetodyNumeryczne/MN_wyklady/W00-SzeregiTaylora/mTestFiles/xsinx2.m" "/home/mb/projects/Dydaktyka/MetodyOblFizykiMat/moft.org" "/home/mb/.emacs.d/init.el" "/home/mb/.emacs.d/install-packages.el" "/home/mb/.emacs.d/init.el" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/manual_acousing.org" "/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/Preamble_acousing.org" "/home/mb/projects/Dydaktyka/AiSD/Teoria-org/Preamble.org" #("/home/mb/projects/Dydaktyka/manual_5_acoustics_in_singularity/chapters/tempDir/Makefile" 0 87 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder/test.org" 0 74 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/testFolder" 0 65 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/debian/pcloud/home/manual_5_acoustics_in_singularity/manual_dependencies.org" 0 112 (ivy-index 0)) #("/ssh:debian@62.93.61.19#40008:/home/" 0 36 (ivy-index 6)) #("/" 0 1 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19:~/" 0 34 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19" 0 31 (ivy-index 0)) #("/home/mb/ssh:debian@62.93.61.19 -p 40008" 0 40 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibliography-and-org-mode.org" 0 101 (ivy-index 32)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/AAAAAAAA.org" 0 99 (ivy-index 4)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/Ex2.org" 0 94 (ivy-index 14)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-and-org/" 0 87 (ivy-index 3)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" 0 96 (ivy-index 1)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-01-11-tramp.org" 0 81 (ivy-index 0)) #("/home/mb/projects/cissic.github.io/mysource/" 0 44 (ivy-index 1)) #("/home/mb/.emacs.d/2023" 0 22 (ivy-index 0)) #("/home/mb/.emacs.d/useful-shortcuts.org" 0 38 (ivy-index 30)) "~/.emacs.d/init.el" "~/.emacs.d/recentf" "~/.emacs.d/install-packages.el" "~/.emacs.d/useful-shortcuts.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-20-installing-pdf-cups.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-init-and-setup-Emacs/init.el" "~/projects/cissic.github.io/mysource/public-notes-org/2022-12-23-bibtex-with-org-mode.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-30-how-to-definitively-kill-zombie-process.org" "~/projects/cissic.github.io/mysource/public-notes-org/2022-09-22-adding-support-for-language-in-doconce.org" "~/.emacs_workgroups" "~/org/RDITiT/!2023.01.04 - 23 posiedzenie (obrona Piecuch)/Piecuch Grzegorz_obrona/Protokoły-sprawozdania/watpliwosci.org" "~/.emacs.d_CPY(2022.12.20)/init(2022.12.20 BACKUP).el" "~/.emacs.d/elpa/workgroups2-20220702.842/workgroups2-autoloads.el" "~/.emacs.d/elpa/smex-20151212.2209/smex-autoloads.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/mb/projects/Dydaktyka/moft - Metody obliczeniowe w fizyce i technice/Ćwiczenia - materiały własne /moft.org"
-  "moft.org"
+  "/home/mb/projects/TSdistributed/TSdistributed.org"
+  "TSdistributed.org"
   'org-mode
-  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode org-cdlatex-mode company-mode)
-  62686
-  '(63267 nil)
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode text-scale-mode buffer-face-mode org-cdlatex-mode company-mode reftex-mode cdlatex-mode)
+  5577
+  '(5577 nil)
   nil
   nil
-  '((buffer-display-time 25692 56771 874280 443000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (63033 63020 63017 62987 62978 62907 62384 147 130 93 62685 62508 62620 62549 62546 62686))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
-  "2022-12-27-configuring-and-installing-emacs.org"
-  'org-mode
-  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  53382
-  '(53323 nil)
-  nil
-  nil
-  '((buffer-display-time 25692 56690 856761 662000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (53390 53472 53384 53139 58230 59052 42413 12322 58485 58398 58988 58485 58485 58485 58485 58392))))
+  '((buffer-display-time 25703 23257 285195 520000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (5576 5479 5637 4521 3778 655 3362 3379 3354 3354 2710 2609 2589 5489 5489 5577))))
 
 (desktop-create-buffer 208
   "/home/mb/.emacs.d/install-packages.el"
   "install-packages.el"
   'emacs-lisp-mode
   '(visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  1341
-  '(1340 nil)
+  1243
+  '(1242 nil)
   nil
   nil
-  '((buffer-display-time 25692 56240 446770 315000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
-  '((mark-ring (1240 975 1785 1933 1891 2086 2122 2106 2086 1240 1258 1340 1341))))
+  '((buffer-display-time 25703 23082 516080 393000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
+  '((mark-ring (1240 1242 1240 975 1697 1845 1803 1998 2034 2018 1998 1240 1242 1242 1242 1240))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/myarch/Preamble.org"
+  "Preamble.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  5827
+  '(5819 nil)
+  nil
+  nil
+  '((buffer-display-time 25703 20630 214671 204000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (5783 5236 2654 2654 2652 2932 2588 2586 2549 2549 2549 2549 3007 2172 2172 1750))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/Dydaktyka/moft - Metody obliczeniowe w fizyce i technice/Ćwiczenia - materiały własne /moft.org"
+  "moft.org"
+  'org-mode
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode org-cdlatex-mode company-mode)
+  95634
+  '(73202 nil)
+  nil
+  nil
+  '((buffer-display-time 25703 15863 955703 207000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (67714 73202 93525 77575 82156 65987 241 184 288 38114 26271 76615 76912 77028 76891 95634))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
+  "2022-12-27-configuring-and-installing-emacs.org"
+  'org-mode
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  42987
+  '(53170 nil)
+  nil
+  nil
+  '((buffer-display-time 25701 5663 164825 126000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (53686 53652 53648 53645 53421 53421 53387 10887 53556 11906 53225 53495 53556 53556 53556 42987))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/useful-shortcuts.org"
+  "useful-shortcuts.org"
+  'org-mode
+  '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  8400
+  '(7761 nil)
+  nil
+  nil
+  '((buffer-display-time 25700 33166 608572 634000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (5262 5148 9618 7306 5693 7892 8678 7897 1676 4044 4044 6041 5871 5871 4993 8400))))
+
+(desktop-create-buffer 208
+  "/home/mb/Pobrane/FUZZY/doc/fuzzyApprox.org"
+  "fuzzyApprox.org"
+  'org-mode
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  1436
+  '(939 nil)
+  nil
+  nil
+  '((buffer-display-time 25699 46481 551111 285000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (872 1169 5451 5439 1 1771 1183 1767 4792 106 24 4791 3333 3353 24 1685))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(visual-line-mode eldoc-mode ivy-mode auto-revert-mode global-auto-revert-mode linum-mode buffer-face-mode flyspell-mode flymake-mode company-mode)
+  16390
+  '(16008 nil)
+  nil
+  nil
+  '((buffer-display-time 25699 46259 9781 464000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (15978 16758 6636 6636 6636 15822 16902 13769 5583 6636 6636 6636 13606 13872 13918 6636))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/Ksiazki-tlumaczenia/A_Langtangen-fem-book/doc/.src/book/slides/approx.do.txt"
@@ -62,7 +122,7 @@
   '(85303 nil)
   nil
   nil
-  '((buffer-display-time 25691 58025 135483 492000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25692 5821 479419 973000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (76718 76107 72316 69808 62279 53880 42955 42908 50536 38338 92640 1 1 1 1 85294))))
 
 (desktop-create-buffer 208
@@ -74,44 +134,8 @@
   '(917 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25690 4220 949768 758000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25698 51086 849500 232000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (5152 4656 3992 2138 1718 1608 1498 1313 1197 1100 406 3975 3048 3048 3975 5378))))
-
-(desktop-create-buffer 208
-  "/home/mb/Pobrane/FUZZY/doc/fuzzyApprox.org"
-  "fuzzyApprox.org"
-  'org-mode
-  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  924
-  '(939 t)
-  nil
-  nil
-  '((buffer-display-time 25690 973 668615 995000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (872 1169 5451 5439 1 1771 1183 1767 4792 106 24 4791 3333 3353 24 277))))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/useful-shortcuts.org"
-  "useful-shortcuts.org"
-  'org-mode
-  '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  5262
-  '(9443 nil)
-  nil
-  nil
-  '((buffer-display-time 25689 62719 116558 882000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (7300 5687 7717 8503 7718 1676 4044 4044 6035 5865 5865 4993 7387 9255 5265 5247))))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/init.el"
-  "init.el"
-  'emacs-lisp-mode
-  '(visual-line-mode eldoc-mode ivy-mode auto-revert-mode global-auto-revert-mode linum-mode buffer-face-mode flyspell-mode flymake-mode company-mode)
-  17104
-  '(16726 nil)
-  nil
-  nil
-  '((buffer-display-time 25686 45761 510185 486000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (6636 6636 6636 15822 16870 13769 5583 6636 6636 6636 13606 13872 13918 6636 6636 17104))))
 
 (desktop-create-buffer 208
   "/home/mb/org/2023.04.20-przestrzenie-wektory-kolory.org"
@@ -122,7 +146,7 @@
   '(796 nil)
   nil
   nil
-  '((buffer-display-time 25686 45739 685355 889000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25686 47404 565270 234000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (795 580 110 93 81 93 93 603 561 322 78 591 581 518 460 1885))))
 
 (desktop-create-buffer 208
@@ -134,7 +158,7 @@
   '(1583 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25685 12444 417690 532000) (buffer-file-coding-system . utf-8-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25685 14109 349869 654000) (buffer-file-coding-system . utf-8-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (1538 1537 1171 1160 1016 830 405 511 405 405 502 508 509 355 179 147))))
 
 (desktop-create-buffer 208
@@ -146,7 +170,7 @@
   '(353 nil)
   nil
   nil
-  '((buffer-display-time 25685 10608 865573 388000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25685 12273 880796 94000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (766 376 353 14505 670 623 665 666 611 666 666 615 757 790 721 898))))
 
 (desktop-create-buffer 208
@@ -158,7 +182,7 @@
   '(182 nil)
   nil
   nil
-  '((buffer-display-time 25682 34130 339080 673000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25682 35795 480062 195000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (3507 3750 4181 4539 4545 5071 5037 11410 5071 5270 5265 5071 5033 5071 5102 4544))))
 
 (desktop-create-buffer 208
@@ -170,7 +194,7 @@
   '(4435 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25670 54530 921766 677000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25670 56196 205629 421000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (4398 4378 4528 4856 4717 4717 5505 5503 4377 462 462 4377 2148 4460 4994 3859))))
 
 (desktop-create-buffer 208
@@ -182,7 +206,7 @@
   '(487 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25670 45761 127764 432000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25670 47426 469688 303000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (4099 5575 1635 7438 7479 6512 767 1466 1820 6461 7529 5447 5447 5447 5660 5520))))
 
 (desktop-create-buffer 208
@@ -194,7 +218,7 @@
   '(nil nil)
   t
   nil
-  '((indent-tabs-mode) (buffer-display-time 25670 45749 336616 783000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25670 47414 838813 610000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -206,7 +230,7 @@
   '(nil nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25685 24471 580936 960000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25685 26137 140970 667000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -218,7 +242,7 @@
   '(5188 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25665 20825 411079 506000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25665 22491 55152 597000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (224 289 96 5431 3610 4054 3267 3000 2565 2503 1869 1869 2149 2087 2068 4583))))
 
 (desktop-create-buffer 208
@@ -230,7 +254,7 @@
   '(684 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25663 42874 226127 332000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25663 44539 929122 913000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (690))))
 
 (desktop-create-buffer 208
@@ -242,7 +266,7 @@
   '(1053 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25663 40212 512818 530000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25663 41878 292248 976000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (1102 1136 1135 1135 943 941 940 720 941 924 923 2364 2579 2223 2213 1044))))
 
 (desktop-create-buffer 208
@@ -254,7 +278,7 @@
   '(2023 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25663 360 158156 66000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25663 2026 15360 38000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (1404 1404 1811 250 238 1491 1491 279 331 1896 1461 1458 1448 1441 271 603))))
 
 (desktop-create-buffer 208
@@ -266,7 +290,7 @@
   '(419 nil)
   nil
   nil
-  '((buffer-display-time 25662 49627 102923 740000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25662 51293 137 13000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (344 551 169 551 79 1 1 551 551 79 551 169 169 300 551 552))))
 
 (desktop-create-buffer 208
@@ -278,7 +302,7 @@
   '(500 t)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25656 42098 654771 889000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25656 43764 664456 963000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (479 592 649 71 635 616 608 608 499 479 350 329 328 328 500 484))))
 
 (desktop-create-buffer 208
@@ -290,7 +314,7 @@
   '(382 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25656 41979 69834 229000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25656 43645 193047 894000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (711 711 711 706))))
 
 (desktop-create-buffer 208
@@ -302,7 +326,7 @@
   '(282 nil)
   nil
   nil
-  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 25654 7621 394267 676000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((tab-width . 8) (indent-tabs-mode) (buffer-display-time 25654 9287 557803 57000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (354 530 622 622))))
 
 (desktop-create-buffer 208
@@ -314,7 +338,7 @@
   '(472 nil)
   nil
   nil
-  '((indent-tabs-mode) (buffer-display-time 25644 1120 912726 315000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
+  '((indent-tabs-mode) (buffer-display-time 25644 2787 251884 111000) (buffer-file-coding-system . undecided-unix) (fill-column . 70) (truncate-lines))
   '((mark-ring (335))))
 
 (desktop-create-buffer 208
@@ -326,20 +350,8 @@
   '(7825 nil)
   nil
   nil
-  '((buffer-display-time 25627 45322 252706 462000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25627 46988 678718 677000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (7825 3190 2319 2227 330 330 2151 2319 3187 7965 7983 8067 471 315))))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/myarch/Preamble.org"
-  "Preamble.org"
-  'org-mode
-  '(abbrev-mode visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
-  5402
-  '(5305 nil)
-  nil
-  nil
-  '((buffer-display-time 25618 57318 772036 93000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (4758 2654 2654 2652 2932 2588 2586 2549 2549 2549 2549 3007 2172 2172 1750 5320))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/Dydaktyka/manual_8_manuale_rozne/PreambleBook.org"
@@ -350,7 +362,7 @@
   '(10 nil)
   nil
   nil
-  '((buffer-display-time 25686 45741 589001 550000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25698 39418 630339 687000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (9))))
 
 (desktop-create-buffer 208
@@ -362,7 +374,7 @@
   '(9862 t)
   nil
   nil
-  '((buffer-display-time 25686 45742 337874 849000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25698 39419 159930 827000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (9862 9988 10198 9483 9055 8860 7088 7078 5602 5822 5683 5188 9920 9920 9920 9762))))
 
 (desktop-create-buffer 208
@@ -374,7 +386,7 @@
   '(2845 nil)
   nil
   nil
-  '((buffer-display-time 25597 49681 436740 111000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25597 51352 250842 558000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring (2845 645 360 369 368 368))))
 
 (desktop-create-buffer 208
@@ -386,7 +398,7 @@
   '(8415 nil)
   nil
   nil
-  '((buffer-display-time 25596 8698 220123 751000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25596 10369 171292 561000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (1404 8027 8027 8414 8978 8026 8978 8026 9507 9480 9420 9289 9205 9205 9206 9535))))
 
 (desktop-create-buffer 208
@@ -398,7 +410,7 @@
   '(2883 nil)
   nil
   nil
-  '((buffer-display-time 25567 60623 994788 227000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25567 62295 165898 436000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (2677 1187 1414))))
 
 (desktop-create-buffer 208
@@ -410,7 +422,7 @@
   '(4417 nil)
   nil
   nil
-  '((buffer-display-time 25565 31862 522370 660000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25565 33533 773473 770000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (4417))))
 
 (desktop-create-buffer 208
@@ -422,7 +434,7 @@
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 25562 58452 937447 658000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25562 60124 269705 487000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -434,7 +446,7 @@
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 25666 27283 600651 304000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((buffer-display-time 25666 28954 998464 572000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring nil)))
 
 (desktop-create-buffer 208
@@ -446,6 +458,18 @@
   '(nil nil)
   nil
   nil
-  '((buffer-display-time 25685 24482 95078 690000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((buffer-display-time 25685 26153 532088 858000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/mb/org/2023.01.11-org-mode-bibliography-email.org"
+  "2023.01.11-org-mode-bibliography-email.org"
+  'org-mode
+  '(visual-line-mode ivy-mode global-auto-revert-mode linum-mode buffer-face-mode company-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time) (truncate-lines))
   '((mark-ring nil)))
 

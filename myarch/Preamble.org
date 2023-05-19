@@ -107,7 +107,17 @@
 
 
 
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+#    Math Latex commands
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+#+LATEX_HEADER: \usepackage{amsmath}
+#+LATEX_HEADER: \newcommand{\intab}{\int_{x_a}^{x_b}}
+#+LATEX_HEADER: \newcommand{\dotp}[1]{\langle #1 \rangle}
+
+#+LATEX_HEADER: \newcommand{\dif}{\mathrm{d} }
+#+LATEX_HEADER: \newcommand{\dx}{\mathrm{d} x}
+#+LATEX_HEADER: \newcommand{\dy}{\mathrm{d} y}
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # my own macros
@@ -136,8 +146,8 @@
 #+MACRO: begin_results  #+begin_box :background-color white
 #+MACRO: end_results    #+end_box
 
-#+MACRO: begin_example  #+begin_example Uwaga: $1 :background-color my-olive
-#+MACRO: end_example    #+end_example 
+#+MACRO: begin_example  #+begin_box Przykład: $1 :background-color my-olive
+#+MACRO: end_example    #+end_box 
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #    OLD EXPERIMENTS
