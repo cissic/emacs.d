@@ -125,29 +125,56 @@
 #+MACRO: begin_box  #+begin_box :background-color white :shadow black
 #+MACRO: end_box    #+end_box 
 
-#+MACRO: begin_warning  #+begin_box Uwaga! $1 :background-color my-salmon
-#+MACRO: end_warning    #+end_box 
+# #+MACRO: begin_warning  #+begin_box {{{warning_box_caption}}} $1 :background-color {{{warning_box_col}}} 
+# #+MACRO: end_warning    #+end_box 
 
-#+MACRO: begin_remark  #+begin_box Uwaga: $1 :background-color my-olive
-#+MACRO: end_remark    #+end_box 
+# #+MACRO: begin_remark  #+begin_box {{{remark_box_caption}}} $1 :background-color {{{remark_box_col}}}
+# #+MACRO: end_remark    #+end_box 
 
-#+MACRO: begin_question  #+begin_box Pytanie: $1 :background-color my-steel  
+# #+MACRO: begin_question  #+begin_box {{{question_box_caption}}} $1 :background-color {{{question_box_col}}}  
+# #+MACRO: end_question    #+end_box 
+
+# #+MACRO: begin_summary  #+begin_box {{{summary_box_caption}}} $1 :background-color {{{summary_box_col}}}
+# #+MACRO: end_summary    #+end_box 
+
+# #+MACRO: begin_hint  #+begin_box {{{hint_box_caption}}} $1 :background-color {{{hint_box_col}}}
+# #+MACRO: end_hint    #+end_box 
+
+# #+MACRO: begin_resume  #+begin_box {{{resume_box_caption}}} $1 :background-color {{{resume_box_col}}}
+# #+MACRO: end_resume    #+end_box 
+
+# #+MACRO: begin_results  #+begin_box {{{results_box_caption}}} $1 :background-color {{{results_box_col}}}
+# #+MACRO: end_results    #+end_box
+
+# #+MACRO: begin_example  #+begin_box {{{example_box_caption}}} $1 :background-color {{{example_box_col}}}
+# #+MACRO: end_example    #+end_box 
+
+
+
+#+MACRO: begin_warning  #+begin_cbox {{{warning_box_caption}}} $1 :background-color {{{warning_box_col}}} 
+#+MACRO: end_warning    #+end_cbox 
+
+#+MACRO: begin_remark  #+begin_cbox {{{remark_box_caption}}} $1 :background-color {{{remark_box_col}}}
+#+MACRO: end_remark    #+end_cbox 
+
+#+MACRO: begin_question  #+begin_cbox {{{question_box_caption}}} $1 :background-color {{{question_cbox_col}}}  
 #+MACRO: end_question    #+end_box 
 
-#+MACRO: begin_summary  #+begin_box Podsumowanie: $1 :background-color my-sky
-#+MACRO: end_summary    #+end_box 
+#+MACRO: begin_summary  #+begin_cbox {{{summary_box_caption}}} $1 :background-color {{{summary_box_col}}}
+#+MACRO: end_summary    #+end_cbox 
 
-#+MACRO: begin_hint  #+begin_box Podpowiedź: $1 :background-color my-sand
-#+MACRO: end_hint    #+end_box 
+#+MACRO: begin_hint  #+begin_cbox {{{hint_box_caption}}} $1 :background-color {{{hint_box_col}}}
+#+MACRO: end_hint    #+end_cbox 
 
-#+MACRO: begin_resume  #+begin_box Przypomnienie: $1 :background-color my-sand
-#+MACRO: end_resume    #+end_box 
+#+MACRO: begin_resume  #+begin_cbox {{{resume_box_caption}}} $1 :background-color {{{resume_box_col}}}
+#+MACRO: end_resume    #+end_cbox 
 
-#+MACRO: begin_results  #+begin_box :background-color white
-#+MACRO: end_results    #+end_box
+#+MACRO: begin_results  #+begin_cbox {{{results_box_caption}}} $1 :background-color {{{results_box_col}}}
+#+MACRO: end_results    #+end_cbox
 
-#+MACRO: begin_example  #+begin_box Przykład: $1 :background-color my-olive
-#+MACRO: end_example    #+end_box 
+#+MACRO: begin_example  #+begin_cbox {{{example_box_caption}}} $1 :background-color {{{example_box_col}}}
+#+MACRO: end_example    #+end_cbox 
+
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #    OLD EXPERIMENTS

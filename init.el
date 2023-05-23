@@ -457,8 +457,6 @@
 ;; buffer-move - swap buffers easily
 (require 'buffer-move)
 
-(require 'ob-octave-fix nil t)
-
 ;; [DEPRECATED] - use sunrise instead of this
 ;; midnight-commander emulation
 ;; (require 'mc)

@@ -29,12 +29,14 @@
 	("melpa-stable" . "http://stable.melpa.org/packages/")
 	))
 
-
+;; Refresh the repositories to have the newest versions of the packages
+(package-refresh-contents)
 
 (setq my-packages
   '(
-  auctex ; in order to have reftex working
-  bash-completion
+
+auctex ; in order to have reftex working
+  bash-completion  
   ; counsel ; for ivy
   cdlatex
   company
@@ -58,7 +60,7 @@
   org-ac
   ;org-download
   ;org-mime
-  ;org-ref
+  org-ref ; for handling org-mode references https://emacs.stackexchange.com/questions/9767/can-reftex-be-used-with-org-label
   org-special-block-extras
   ;ox-gfm
   ;ox-pandoc

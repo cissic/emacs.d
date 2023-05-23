@@ -215,9 +215,9 @@
     M-x clean-buffer-list
 
 17. Porzadki w buforach:
-    C-x C-b 
-    d ; zeby zaznaczyc wybrane pozycje na liscie
-    x ; zeby je usunac z listy
+    : C-x C-b 
+    : d ; zeby zaznaczyc wybrane pozycje na liscie
+    : x ; zeby je usunac z listy
 
 18. Powiększanie/pomniejszanie czcionki
     C-x C-+/C-x C--
@@ -229,22 +229,22 @@
     M-S-<left>/<right>
 
 20. Komentarz
-    M-;
+    : M-;
     lub
-    C-x C-;
+    : C-x C-;
 
 21. Undo changes
-    C-/
-    C-x u
-    C-_
+    : C-/
+    : C-x u
+    : C-_
 
     Redo:
-    C-g a potem C-/ 
+    : C-g a potem C-/ 
 
 22. Przelaczanie pomiedzy line mode/char mode w shellu 
     (zeby moc wklejac tekst do shella) https://stackoverflow.com/questions/2886184/copy-paste-in-emacs-ansi-term-shell
-    C-c C-j
-    C-c C-k
+    : C-c C-j
+    : C-c C-k
 
 23. Polecenie <-> skrót
     M-x describe-key <-> M-x where-is <RET> polecenie <RET>
@@ -293,10 +293,10 @@
    (na gorze tego okna jest opis klawiszologii do nawigacji)
    C-c =
 
-2. Automatyczne wstawianie labeli:
+2. Automatyczne wstawianie labeli (W org trzeba uruchomić ~reftex-mode~!):
    C-c (
 
-3. Automatyczne dokanczenie odnosnikow:
+3. Automatyczne dokanczenie odnosnikow  (W org trzeba uruchomić ~reftex-mode~!):
    C-c )
 
 4. Kompilowanie dokumentu

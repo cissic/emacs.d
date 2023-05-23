@@ -1,23 +1,23 @@
 
 ;; ----- smex-history -----
 (
+ DocOnce
  eval-buffer
- org-cdlatex-mode
+ reftex-toc
+ reftex-mode
  revert-buffer
+ reftex-citation
  eval-region
- list-packages
- org-comment-dwim
- comment-region
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 159)
- (eval-buffer . 375)
+ (revert-buffer . 160)
+ (eval-buffer . 389)
  (list-packages . 37)
- (package-refresh-contents . 3)
+ (package-refresh-contents . 4)
  (eval-expression . 34)
- (eval-region . 11)
+ (eval-region . 13)
  (describe-variable . 5)
  (wg-create-workgroup . 4)
  (org-md-export-to-markdown . 2)
@@ -47,7 +47,7 @@
  (buf-move-left . 2)
  (buf-move-right . 1)
  (org-cite-insert . 26)
- (mynet . 71)
+ (mynet . 75)
  (org-version . 4)
  (package-reinstall . 1)
  (flymake-mode . 1)
@@ -77,11 +77,11 @@
  (package-install . 2)
  (dockerfile-mode . 3)
  (octave-mode . 6)
- (DocOnce . 7)
+ (DocOnce . 8)
  (run-python . 6)
  (pylint . 1)
  (emacs-lisp-mode . 1)
- (package-list-packages . 4)
+ (package-list-packages . 5)
  (matlab-shell . 14)
  (matlab-mode . 11)
  (matlab-shell-run-command . 6)
@@ -109,5 +109,11 @@
  (ssh . 1)
  (comment-region . 1)
  (org-comment-dwim . 1)
- (org-cdlatex-mode . 7)
+ (org-cdlatex-mode . 8)
+ (org-latex-export-to-pdf . 5)
+ (cdlatex-mode . 1)
+ (reftex-mode . 2)
+ (reftex-toc . 2)
+ (reftex-label . 1)
+ (reftex-citation . 1)
 )
