@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Wed Jul 19 00:30:28 2023
+;; Created Wed Jul 19 09:59:31 2023
 ;; Desktop file format version 208
 ;; Emacs version 27.1
 
@@ -18,16 +18,28 @@
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
+  "/home/mb/Shortcuts/Places/emacs.d/install-packages.el"
+  "install-packages.el"
+  'emacs-lisp-mode
+  '(visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode buffer-face-mode company-mode TeX-PDF-mode)
+  1522
+  '(1341 nil)
+  nil
+  nil
+  '((buffer-display-time 25783 38824 82317 415000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (1341 1341 1340 1240 1029 1240 1340 1341 1341 1341 1072 1029 1341 1029 1240 1584))))
+
+(desktop-create-buffer 208
   "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
   "2022-12-27-configuring-and-installing-emacs.org"
   'org-mode
   '(visual-line-mode ivy-mode global-auto-revert-mode buffer-face-mode company-mode TeX-PDF-mode)
-  72011
-  '(71791 nil)
+  11871
+  '(85268 nil)
   nil
   nil
-  '((buffer-display-time 25783 4686 287435 50000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (71540 71778 71778 71417 71430 71417 71417 51004 50912 49946 49902 52832 52564 52406 52406 52646))))
+  '((buffer-display-time 25783 38794 912781 542000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (85268 85394 85321 85290 85257 72303 72204 71935 71833 72161 72081 72050 71983 71800 71800 11871))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/Dydaktyka/FEMwRobotyce/Wyklad,nowe materiały/FEM.org"
@@ -52,18 +64,6 @@
   nil
   '((buffer-display-time 25767 52251 661515 850000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
   '((mark-ring (5270 9113 9062 9063 4196 7745 8796 7783 5262 5148 9721 7312 5693 7914 8700 7919))))
-
-(desktop-create-buffer 208
-  "/home/mb/Shortcuts/Places/emacs.d/install-packages.el"
-  "install-packages.el"
-  'emacs-lisp-mode
-  '(visual-line-mode eldoc-mode ivy-mode global-auto-revert-mode buffer-face-mode company-mode TeX-PDF-mode)
-  1522
-  '(1341 nil)
-  nil
-  nil
-  '((buffer-display-time 25776 57928 959117 928000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (1341 1341 1340 1240 1029 1240 1340 1341 1341 1341 1072 1029 1341 1029 1240 1584))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-05-26-inline-source-code-in-org-babel.org"

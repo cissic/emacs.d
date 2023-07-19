@@ -41,6 +41,7 @@ auctex ; in order to have reftex working
   cdlatex
   company
   dockerfile-mode
+  emacs-everywhere
   fill-column-indicator
   ;flycheck
   ;flycheck-pos-tip
