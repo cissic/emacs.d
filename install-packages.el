@@ -59,6 +59,7 @@ auctex ; in order to have reftex working
   org   ; ver. 9.3  built-in in Emacs 27.1; this install version 9.6 from melpa
   org-ac
   ;org-download
+  org-plus-contrib
   ;org-mime
   org-ref ; for handling org-mode references https://emacs.stackexchange.com/questions/9767/can-reftex-be-used-with-org-label
   org-special-block-extras

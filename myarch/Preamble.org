@@ -69,6 +69,7 @@
 #+LaTeX_HEADER: ]{text}}
 #+LaTeX_HEADER: {\end{minted}}
 
+#+LaTeX_HEADER: \usemintedstyle{emacs}
 
 
 
@@ -121,6 +122,14 @@
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # my own macros
+
+
+# # Default settings for macros based on org-special-block
+
+#+SETUPFILE: ~/.emacs.d/myarch/lang_pl.org
+# #+INCLUDE: ~/.emacs.d/myarch/colscheme_bw.org
+#+SETUPFILE: ~/.emacs.d/myarch/colscheme_col.org
+
 
 #+MACRO: begin_box  #+begin_box :background-color white :shadow black
 #+MACRO: end_box    #+end_box 

@@ -21,7 +21,9 @@
 
 (show-paren-mode 1)        ; Highlight matching parenthesis
 
-(global-linum-mode 1)      ; Enable line numbering
+; Enable line numbering
+;; DEPRECATED, CAUSES LAGS WHEN TYPING: (global-linum-mode 1)			
+(global-display-line-numbers-mode 1) 
 
 (scroll-bar-mode 1)        ; Enable scrollbar
 (menu-bar-mode 1)          ; Enable menubar
@@ -110,6 +112,10 @@
   )
   ;; <- Fill column indicator
 
+;; Setring alarms in Emacs -> 
+(setq-default visible-bell t) 
+(setq ring-bell-function 'ignore)
+
 ;; ido-mode ->
   (ido-mode 1)          
   (setq ido-enable-flex-matching t)
@@ -193,14 +199,22 @@
            (lambda ()
              (setq python-shell-interpreter "python3") ))
 
+;; Org mode...
 (setq org-export-in-background t)
 
 (defun my-org-mode-hook()
   (define-key org-mode-map (kbd "<f9>")
     '(lambda () (interactive)
-      (org-latex-export-to-pdf :async t))
+      (org-latex-export-to-pdf :async t)
+      (org-beamer-export-to-pdf :async t)
+      (org-odt-export-to-odt :async t)
+      (org-odt-export-as-pdf :async t)
+      )
      )  
 )
+
+(setq org-export-async-init-file (expand-file-name "~/.emacs.d/myarch/async_init.el"))
+(setq org-export-async-debug t)
 
 ;; Add all of the hooks...
 ;(add-hook 'c++-mode-hook 'my-c++-mode-hook)
@@ -242,6 +256,51 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Org customization
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; customized todo-done sequence
+(setq org-todo-keywords
+  '(
+(sequence "TODO" "????" "POSTPONED" "|" "DONE")
+))
+
+(setq org-todo-keyword-faces
+'(
+("????" . (:foreground "red" :weight bold))
+("POSTPONED" . (:foreground "blue" :weight bold))
+)
+)
+
+;; customized todo-done keywords in latex documents
+(defun org-latex-format-headline-colored-keywords-function
+    (todo _todo-type priority text tags _info)
+  "Default format function for a headline.
+See `org-latex-format-headline-function' for details."
+  (concat
+   ;; (and todo (format "{\\bfseries\\sffamily %s} " todo))
+  (cond
+   ((string= todo "TODO")(and todo (format "{\\color{red}\\bfseries\\sffamily %s} " todo)))
+   ((string= todo "????")(and todo (format "{\\color{red}\\bfseries\\sffamily %s} " todo)))
+   ((string= todo "POSTPONED")(and todo (format "{\\color{blue}\\bfseries\\sffamily %s} " todo)))
+   ((string= todo "DONE")(and todo (format "{\\color{green}\\bfseries\\sffamily %s} " todo)))
+   )
+   (and priority (format "\\framebox{\\#%c} " priority))
+   text
+   (and tags
+	(format "\\hfill{}\\textsc{%s}"
+		(mapconcat #'org-latex--protect-text tags ":")))))
+
+(setq org-latex-format-headline-function 'org-latex-format-headline-colored-keywords-function)
+
+(defun mb/org-toggle-org-keywords-right ()
+    "Toggle between todo-done keywords for all subnodes of the current node."
+    (interactive)
+    (org-map-entries (lambda () (org-shiftright)) nil 'tree)
+  )
+(defun mb/org-toggle-org-keywords-left ()
+    "Toggle between todo-done keywords for all subnodes of the current node."
+    (interactive)
+    (org-map-entries (lambda () (org-shiftleft)) nil 'tree)
+  )
 
 ;; org-agenda activation
 (global-set-key (kbd "C-c l") #'org-store-link)
@@ -321,6 +380,19 @@
      '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
+
+;; Managing org-mode #+NAME properties like in reftex-mode
+(defun my/get-name (e)
+      (org-element-property :name e))
+
+(defun my/latex-environment-names ()
+      (org-element-map (org-element-parse-buffer) 'latex-environment #'my/get-name))
+
+(defun my/report-latex-environment-names ()
+    (interactive)
+    (message (format "%S" (my/latex-environment-names))))
+
+  (define-key org-mode-map (kbd "C-z z") #'my/report-latex-environment-names)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Flyspell 
@@ -415,7 +487,10 @@
       modus-themes-region '(bg-only no-extend))
 
 ;; Load the theme of your choice:
-(load-theme 'modus-vivendi :noconfirm) ;; OR (load-theme 'modus-operandi)
+; (load-theme 'modus-operandi) ;; bright 
+; (load-theme 'modus-vivendi) ;; dark
+
+(load-theme 'modus-vivendi :noconfirm) 
 
 (setq modus-themes-headings ; this is an alist: read the manual or its doc string
       '((1 . (rainbow overline background 1.4))
@@ -425,6 +500,14 @@
 
 (setq modus-themes-scale-headings t)
 (setq modus-themes-org-blocks 'tinted-background)
+
+;; Auxiliary function to toggle betwen bright and dark theme
+(defun toggle-theme ()
+  (interactive)
+  (if (eq (car custom-enabled-themes) 'modus-vivendi)
+      (disable-theme 'modus-vivendi)
+    (load-theme 'modus-vivendi :noconfirm)))
+(global-set-key [f6] 'toggle-theme)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Manually downloaded packages
@@ -456,6 +539,10 @@
 
 ;; buffer-move - swap buffers easily
 (require 'buffer-move)
+
+;; custom org-special-block-extras blocks
+(add-to-list 'load-path "~/.emacs.d/myarch")
+(require 'MB-org-special-block-extras)
 
 ;; [DEPRECATED] - use sunrise instead of this
 ;; midnight-commander emulation
