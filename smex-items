@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
- itit/export-zaproszenia
  eval-buffer
- org-beamer-mode
- mynet
- org-table-convert
- org-table-align
+ recentf-open-files
+ recentf-load-list
+ package-list-packages
  revert-buffer
+ mynet
+ eval-region
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 196)
- (eval-buffer . 504)
+ (revert-buffer . 199)
+ (eval-buffer . 598)
  (list-packages . 37)
  (package-refresh-contents . 5)
  (eval-expression . 35)
@@ -33,8 +33,8 @@
  (reveal-mode . 1)
  (counsel-recentf . 1)
  (recentf-mode . 1)
- (recentf-load-list . 3)
- (recentf-open-files . 15)
+ (recentf-load-list . 4)
+ (recentf-open-files . 16)
  (dired . 2)
  (counsel-dired . 1)
  (sunrise . 6)
@@ -47,7 +47,7 @@
  (buf-move-left . 2)
  (buf-move-right . 1)
  (org-cite-insert . 26)
- (mynet . 96)
+ (mynet . 100)
  (org-version . 4)
  (package-reinstall . 1)
  (flymake-mode . 1)
@@ -81,7 +81,7 @@
  (run-python . 6)
  (pylint . 1)
  (emacs-lisp-mode . 1)
- (package-list-packages . 10)
+ (package-list-packages . 11)
  (matlab-shell . 14)
  (matlab-mode . 11)
  (matlab-shell-run-command . 6)
@@ -133,7 +133,7 @@
  (auto-complete-mode . 1)
  (org-reload . 2)
  (org-beamer-mode . 3)
- (org-mode-restart . 7)
+ (org-mode-restart . 38)
  (org-beamer-export-to-pdf . 2)
  (org-odt-export-to-odt . 1)
  (lisp-interaction-mode . 3)
@@ -177,4 +177,18 @@
  (org-table-create-or-convert-from-region . 3)
  (org-table-align . 1)
  (petla . 3)
+ (itit/export-all . 11)
+ (itit/spakuj-pdfy . 6)
+ (itit/export-4-Komisja . 3)
+ (itit/export-strona-do-segregatora . 1)
+ (itit/export-4-Waldek . 15)
+ (itit/clean-all-aux . 2)
+ (itit/clean-all . 1)
+ (mb/org-toggle-org-keywords-left . 27)
+ (mb/org-add-keyword . 5)
+ (mb/org-remove-keyword . 6)
+ (mb/org-toggle-keyword . 40)
+ (mb/org-toggle-opt . 8)
+ (mb/org-add-next . 2)
+ (mb/org-remove-opt . 1)
 )

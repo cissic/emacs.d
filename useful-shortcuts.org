@@ -148,10 +148,23 @@
   : C-x C-t
   : transpose-lines
 
-29. 
+29. Wcinanie bloków kodu - indentacja (indentation) i cofanie wcinania:
+  https://stackoverflow.com/questions/11713743/indent-several-lines-in-emacs
+  a) Podejście 1
+  : C-u 4 C-x TAB
+  : C-u -4 C-x TAB
 
+  b) Podejście 2
+  : C-x TAB <right-arrow>  
+  : C-x TAB <left-arrow>
+     Wyłączenie tego trybu :
+  : Esc
+  : Ctrl+Go
 
-
+  Sposoby podane na [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Indentation-Commands.html][stronie Emacsa]] nie działają co jest również wspomniane
+  w linku powyżej.
+  
+  
 * OLD
 
 1. Wykonanie operacji na kilku slowach

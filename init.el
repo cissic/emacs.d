@@ -35,7 +35,9 @@
 
 (define-key global-map (kbd "RET") 'newline-and-indent) ; Auto-indent new lines
 
-(desktop-save-mode 1)      ; Save windows layout on closing
+(if (not (daemonp))           ; if this is not a --daemon session -> see: [[emacs-everywhere]] section
+   (desktop-save-mode 1)      ; Save buffers on closing and restore them at startup
+)
 (setq desktop-load-locked-desktop t) ; and don't ask for confirmation when 
 			   ; opening locked desktop
 (setq desktop-save t)
@@ -56,7 +58,9 @@
  (ad-activate 'kill-ring-save)
 ;; <- Do not deselect after M-w copying
 
-(set-frame-font "liberation mono 11" nil t) ; Set default font
+;; now this setting is done much lower in the code due to
+;; problems with fonts in  emacsclient/daemonp instances -> see [[emacs-everywhere]]
+;; (set-frame-font "liberation mono 11" nil t) ; Set default font
 
 ;;Highlight an active window/buffer or dim all other windows
   
@@ -261,12 +265,15 @@
 (setq org-todo-keywords
   '(
 (sequence "TODO" "????" "POSTPONED" "|" "DONE")
+(sequence "TODO" "ABANDONED"  "|" "DONE" "DEPRECATED")
 ))
 
 (setq org-todo-keyword-faces
 '(
 ("????" . (:foreground "red" :weight bold))
 ("POSTPONED" . (:foreground "blue" :weight bold))
+("ABANDONED" . (:foreground "orange" :weight bold))
+("DEPRECATED" . (:foreground "green" :weight bold))
 )
 )
 
@@ -325,6 +332,10 @@ See `org-latex-format-headline-function' for details."
 			     
 ;; no question about confirmation of evaluating babel code block
 (setq org-confirm-babel-evaluate nil)
+
+;; setup matlab in babel
+(setq org-babel-default-header-args:matlab
+  '((:results . "value") (:session . "*MATLAB*")))
 
 ;; Python in org-babel
 (setq org-babel-python-command "/bin/python3")
@@ -472,6 +483,20 @@ See `org-latex-format-headline-function' for details."
 ;; copy-selection-comment-it-and-paste-below (works ok provided selection is
 ;; performed from left to right....
 (global-set-key "\C-c\C-l" "\M-w\M-;\C-e\C-m\C-y")
+
+;; setting up configuration for emacs-everywhere:
+;; 1. font size
+;(if (daemonp)
+;(
+(defun my-after-frame (frame)
+  (if (display-graphic-p frame)
+      (progn
+         (set-frame-font "liberation mono 11" nil t) )))
+
+(mapc 'my-after-frame (frame-list))
+(add-hook 'after-make-frame-functions 'my-after-frame)
+;)
+;)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Emacs theme
