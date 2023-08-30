@@ -27,7 +27,7 @@
       '(("gnu" . "http://elpa.gnu.org/packages/")  ;; default value of package-archives in Emacs 27.1
         ("melpa" . "http://melpa.org/packages/")
 	("melpa-stable" . "http://stable.melpa.org/packages/")
-	  ("nongnu"       . "https://elpa.nongnu.org/nongnu/")
+        ("nongnu"       . "https://elpa.nongnu.org/nongnu/")
 	))
 
 ;; Refresh the repositories to have the newest versions of the packages
@@ -54,7 +54,7 @@ auctex ; in order to have reftex working
   magit
   markdown-mode
   matlab-mode 
-  mediawiki
+  ; mediawiki ; CANNOT install due to 'org-plus-contrib-' unavailable error
   modus-themes ; theme by Protesilaos Stavrou
   ;moe-theme ; https://github.com/kuanyui/moe-theme.el
   ;mh
