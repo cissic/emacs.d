@@ -10,7 +10,7 @@
  '(midnight-mode t)
  '(org-agenda-files nil)
  '(package-selected-packages
-   '(mediawiki emacs-everywhere org-plus-contrib auctex cdlatex ssh pdf-tools matlab-mode dockerfile-mode fill-column-indicator org company yasnippet counsel bash-completion ivy perspective workgroups2 smex org-special-block-extras org-ac modus-themes markdown-mode magit)))
+   '(org-ref mediawiki emacs-everywhere org-plus-contrib auctex cdlatex ssh pdf-tools matlab-mode dockerfile-mode fill-column-indicator org company yasnippet counsel bash-completion ivy perspective workgroups2 smex org-special-block-extras org-ac modus-themes markdown-mode magit)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
