@@ -53,6 +53,7 @@ auctex ; in order to have reftex working
   magit
   markdown-mode
   matlab-mode 
+  mediawiki
   modus-themes ; theme by Protesilaos Stavrou
   ;moe-theme ; https://github.com/kuanyui/moe-theme.el
   ;mh
