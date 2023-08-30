@@ -150,20 +150,23 @@
 
 29. Wcinanie bloków kodu - indentacja (indentation) i cofanie wcinania:
   https://stackoverflow.com/questions/11713743/indent-several-lines-in-emacs
-  a) Podejście 1
-  : C-u 4 C-x TAB
-  : C-u -4 C-x TAB
+    a) Podejście 1
+    : C-u 4 C-x TAB
+    : C-u -4 C-x TAB
 
-  b) Podejście 2
-  : C-x TAB <right-arrow>  
-  : C-x TAB <left-arrow>
-     Wyłączenie tego trybu :
-  : Esc
-  : Ctrl+Go
+    a) Podejście 2
+    : C-x TAB <right-arrow>  
+    : C-x TAB <left-arrow>
+       Wyłączenie tego trybu :
+    : Esc
+    : Ctrl+Go
 
-  Sposoby podane na [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Indentation-Commands.html][stronie Emacsa]] nie działają co jest również wspomniane
-  w linku powyżej.
-  
+    Sposoby podane na [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Indentation-Commands.html][stronie Emacsa]] nie działają co jest również wspomniane
+    w linku powyżej.
+
+30. Odwracanie kolorów pdfa (https://www.reddit.com/r/emacs/comments/opkzxm/view_pdf_in_dark_mode_with_pdftools/):
+    : M-x pdf-view-midnight-mode-minor
+  (być może wcześniej trzeba ~pdf-view-mode~)
   
 * OLD
 

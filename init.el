@@ -335,7 +335,7 @@ See `org-latex-format-headline-function' for details."
 
 ;; setup matlab in babel
 (setq org-babel-default-header-args:matlab
-  '((:results . "value") (:session . "*MATLAB*")))
+  '((:results . "output") (:session . "*MATLAB*")))
 
 ;; Python in org-babel
 (setq org-babel-python-command "/bin/python3")
@@ -484,6 +484,15 @@ See `org-latex-format-headline-function' for details."
 ;; performed from left to right....
 (global-set-key "\C-c\C-l" "\M-w\M-;\C-e\C-m\C-y")
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; Useful global shortcuts (system-wide operations)
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun mb/browse-file-directory()
+  (interactive)
+  (call-process "dolphin" nil 0 nil "."))
+
+(define-key global-map (kbd "<s-f12>") 'mb/browse-file-directory)
+
 ;; setting up configuration for emacs-everywhere:
 ;; 1. font size
 ;(if (daemonp)
@@ -564,6 +573,10 @@ See `org-latex-format-headline-function' for details."
 
 ;; buffer-move - swap buffers easily
 (require 'buffer-move)
+
+;; octave/matlab-fix
+;;;; (require 'ob-octave-fix nil t)    ; This is for older approach
+(require 'ob-octave-fix)
 
 ;; custom org-special-block-extras blocks
 (add-to-list 'load-path "~/.emacs.d/myarch")
