@@ -7,11 +7,11 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "JW8EE3FQCK6ZJK-BVSYI" "currentsession" t nil #s(wg-wconfig "JW8EE3H750LBQW-BVTIB" nil
+	      (#s(wg-workgroup "JYLZF5J8OZH8DC-F0A52" "currentsession" t nil #s(wg-wconfig "JYLZF5J9XAGSXS-F0ANC" nil
 											   ((fullscreen))
-											   0 0 80 36 right 16 #s(wg-win nil nil
-															(0 0 83 35)
-															20028 19595 0 nil t nil "JPU1CGMGZPBCR3S-9UKKZ"))
+											   30 0 91 50 right 16 #s(wg-win nil nil
+															 (0 0 94 49)
+															 :max 21187 0 nil t nil "JPU1CGMGZPBCR3S-9UKKZ"))
 			       nil nil nil nil)
 		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
@@ -42,14 +42,14 @@
 														  (0 0 109 54)
 														  772 157 0 nil t nil "JU8UNTD042HBGG-G54W4F"))
 				 nil nil nil nil))
-	      (#s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 20028 20027
+	      (#s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 21698 7493
 			 ((major-mode . emacs-lisp-mode)
-			  (mark-ring 19655 19628 20348 20348 1318 1315 1449 1251 1232 20286 1149 19457 20035 19244 19458 20028)
+			  (mark-ring 11096 21698 21698)
 			  nil nil nil nil nil nil)
 			 nil nil)
-		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 82439 82040
+		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 92561 90650
 			   ((major-mode . org-mode)
-			    (mark-ring 72352 72467 69156 73209 72961 72803 72932 72928 72928 72928 72910 72778 72779 72596 72779 82439)
+			    (mark-ring 90650 90650 90660 90650 90650 63856 63492 64463 64463 65518 64810 64800 64346 64346 64511 92561)
 			    nil nil nil nil nil nil)
 			   nil nil)
 		 #s(wg-buf "JU8UNTD042HBGG-G54W4F" "e.org" "/home/mb/projects/Dydaktyka/3blue1brown-notes/eulerConstant/e.org" 772 642

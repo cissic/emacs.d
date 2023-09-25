@@ -2,18 +2,18 @@
 ;; ----- smex-history -----
 (
  eval-buffer
- recentf-open-files
- recentf-load-list
- package-list-packages
+ matlab-shell
+ ffap
+ copy-rectangle-as-kill
  revert-buffer
- mynet
- eval-region
+ transpose-lines
+ edmacro-finish-edit
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 199)
- (eval-buffer . 598)
+ (revert-buffer . 252)
+ (eval-buffer . 602)
  (list-packages . 37)
  (package-refresh-contents . 5)
  (eval-expression . 35)
@@ -34,20 +34,20 @@
  (counsel-recentf . 1)
  (recentf-mode . 1)
  (recentf-load-list . 4)
- (recentf-open-files . 16)
+ (recentf-open-files . 24)
  (dired . 2)
  (counsel-dired . 1)
  (sunrise . 6)
  (list-faces-display . 1)
  (nc . 1)
- (ffap . 13)
+ (ffap . 23)
  (org-babel-remove-result . 9)
  (kill-sexp . 1)
  (sunrise-sort-by-time . 1)
  (buf-move-left . 2)
  (buf-move-right . 1)
  (org-cite-insert . 26)
- (mynet . 100)
+ (mynet . 103)
  (org-version . 4)
  (package-reinstall . 1)
  (flymake-mode . 1)
@@ -81,8 +81,8 @@
  (run-python . 6)
  (pylint . 1)
  (emacs-lisp-mode . 1)
- (package-list-packages . 11)
- (matlab-shell . 14)
+ (package-list-packages . 13)
+ (matlab-shell . 19)
  (matlab-mode . 11)
  (matlab-shell-run-command . 6)
  (matlab-generate-latex . 1)
@@ -132,7 +132,7 @@
  (global-linum-mode . 1)
  (auto-complete-mode . 1)
  (org-reload . 2)
- (org-beamer-mode . 3)
+ (org-beamer-mode . 6)
  (org-mode-restart . 38)
  (org-beamer-export-to-pdf . 2)
  (org-odt-export-to-odt . 1)
@@ -177,13 +177,13 @@
  (org-table-create-or-convert-from-region . 3)
  (org-table-align . 1)
  (petla . 3)
- (itit/export-all . 11)
- (itit/spakuj-pdfy . 6)
+ (itit/export-all . 22)
+ (itit/spakuj-pdfy . 14)
  (itit/export-4-Komisja . 3)
  (itit/export-strona-do-segregatora . 1)
- (itit/export-4-Waldek . 15)
+ (itit/export-4-Waldek . 16)
  (itit/clean-all-aux . 2)
- (itit/clean-all . 1)
+ (itit/clean-all . 3)
  (mb/org-toggle-org-keywords-left . 27)
  (mb/org-add-keyword . 5)
  (mb/org-remove-keyword . 6)
@@ -191,4 +191,12 @@
  (mb/org-toggle-opt . 8)
  (mb/org-add-next . 2)
  (mb/org-remove-opt . 1)
+ (org-export-stack . 2)
+ (mb/org-remove-next . 2)
+ (transpose-lines . 2)
+ (diff . 1)
+ (diff-mode . 1)
+ (edmacro-finish-edit . 1)
+ (emacs-everywhere-finish . 1)
+ (copy-rectangle-as-kill . 1)
 )

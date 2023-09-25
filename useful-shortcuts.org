@@ -167,6 +167,11 @@
 30. Odwracanie kolorów pdfa (https://www.reddit.com/r/emacs/comments/opkzxm/view_pdf_in_dark_mode_with_pdftools/):
     : M-x pdf-view-midnight-mode-minor
   (być może wcześniej trzeba ~pdf-view-mode~)
+
+31. Inteligentne zaznaczanie bloku tekstu (Emacs sam zdecyduje o co Ci chodzi)
+    : M-h
+
+    
   
 * OLD
 

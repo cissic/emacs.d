@@ -230,6 +230,18 @@
 #+MACRO: begin_results  #+begin_cbox {{{results_box_caption}}} $1 :background-color {{{results_box_col}}}
 #+MACRO: end_results    #+end_cbox
 
+#+MACRO: begin_definition  #+begin_cbox {{{definition_box_caption}}} $1 :background-color {{{definition_box_col}}}
+#+MACRO: end_definition    #+end_cbox
+
+#+MACRO: begin_task  #+begin_cbox {{{task_box_caption}}} $1 :background-color {{{task_box_col}}}
+#+MACRO: end_task    #+end_cbox
+
+#+MACRO: begin_problem  #+begin_cbox {{{problem_box_caption}}} $1 :background-color {{{problem_box_col}}}
+#+MACRO: end_problem    #+end_cbox
+
+#+MACRO: begin_conclusion  #+begin_cbox {{{conclusion_box_caption}}} $1 :background-color {{{conclusion_box_col}}}
+#+MACRO: end_conclusion    #+end_cbox
+
 # #+MACRO: begin_example  #+begin_cbox {{{example_box_caption}}} $1 :background-color {{{example_box_col}}}
 # #+MACRO: end_example    #+end_cbox 
 
@@ -248,12 +260,12 @@
 # #+LATEX_HEADER:\usepackage{Preamble_latex}  
 
 # # CSS Class with environments defined in org-macros.setup (HTML)
-# TODO
+# # TODO
 
 # # markdown class with environments defined in org-macros.setup (MD) ... etc..
-# TODO
+# # TODO
 
-#+INCLUDE: org-macros.setup
+# #+INCLUDE: org-macros.setup
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 

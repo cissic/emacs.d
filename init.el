@@ -116,9 +116,12 @@
   )
   ;; <- Fill column indicator
 
-;; Setring alarms in Emacs -> 
+;; Setting alarms in Emacs -> 
 (setq-default visible-bell t) 
 (setq ring-bell-function 'ignore)
+
+;; Advanced buffer mode
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 
 ;; ido-mode ->
   (ido-mode 1)          
@@ -218,7 +221,7 @@
 )
 
 (setq org-export-async-init-file (expand-file-name "~/.emacs.d/myarch/async_init.el"))
-(setq org-export-async-debug t)
+(setq org-export-async-debug nil) ;; when set to 't' it stores all "*Org Export Process*" buffers, when set to 'nil' it leaves only the last one in the buffer list, but already killed
 
 ;; Add all of the hooks...
 ;(add-hook 'c++-mode-hook 'my-c++-mode-hook)
@@ -265,7 +268,7 @@
 (setq org-todo-keywords
   '(
 (sequence "TODO" "????" "POSTPONED" "|" "DONE")
-(sequence "TODO" "ABANDONED"  "|" "DONE" "DEPRECATED")
+(sequence "TODO" "ABANDONED"  "|" "DEPRECATED" "DONE")
 ))
 
 (setq org-todo-keyword-faces
@@ -321,7 +324,7 @@ See `org-latex-format-headline-function' for details."
 ;; enabling org-babel
 (org-babel-do-load-languages
  'org-babel-load-languages '(
-			     (C . t)
+			     (C . t) ; enable processing C, C++, and D source blocks
 			     (matlab . t)
 			     ;;(perl . t)
 			     (octave . t)
@@ -385,12 +388,14 @@ See `org-latex-format-headline-function' for details."
 (setq org-list-allow-alphabetical t)
 
 ;; org-to-latex exporter to have nice code formatting
-  (setq org-latex-listings 'minted
-     org-latex-packages-alist '(("" "minted"))
-     org-latex-pdf-process
-     '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
-       "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
-       "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
+(setq org-latex-listings 'minted
+      org-export-with-sub-superscripts 'nil
+      org-latex-minted-options '(("bgcolor=lightgray") ("frame" "lines"))
+      org-latex-packages-alist '(("" "minted"))
+      org-latex-pdf-process
+      '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
+        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
 
 ;; Managing org-mode #+NAME properties like in reftex-mode
 (defun my/get-name (e)
