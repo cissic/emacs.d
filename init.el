@@ -165,8 +165,8 @@
 
 ;; Recently opened files ->
   (recentf-mode 1)
-  (setq recentf-max-menu-items 50)
-  (setq recentf-max-saved-items 50)
+  (setq recentf-max-menu-items 100)
+  (setq recentf-max-saved-items 100)
   ;; in original emacs this binding is for "Find file read-only"
   (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 ;; <- Recently opened files
@@ -269,6 +269,7 @@
   '(
 (sequence "TODO" "????" "POSTPONED" "|" "DONE")
 (sequence "TODO" "ABANDONED"  "|" "DEPRECATED" "DONE")
+(sequence "TODO" "????" "ABANDONED" "POSTPONED" "|" "DEPRECATED" "DONE")
 ))
 
 (setq org-todo-keyword-faces
@@ -330,11 +331,16 @@ See `org-latex-format-headline-function' for details."
 			     (octave . t)
 			     (org . t)
 			     (python . t)
+                             (plantuml . t)
 			     (shell . t)
  			     ))
 			     
 ;; no question about confirmation of evaluating babel code block
 (setq org-confirm-babel-evaluate nil)
+
+;; enabling plantuml
+(setq plantuml-executable-path "plantuml")
+(setq org-plantuml-exec-mode 'plantuml)
 
 ;; setup matlab in babel
 (setq org-babel-default-header-args:matlab
@@ -471,9 +477,9 @@ See `org-latex-format-headline-function' for details."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful global shortcuts (text operations)
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (global-set-key (kbd "C-d") 'delete-forward-char)    ; Backspace/Insert remapping
 (global-set-key (kbd "C-S-d") 'delete-backward-char) 
 ; (global-set-key (kbd "M-S-d") 'backward-kill-word)
@@ -482,12 +488,22 @@ See `org-latex-format-headline-function' for details."
 (global-set-key (kbd "C-C C-e C-w C-w") 'eww-list-bookmarks) ; Open eww bookmarks
 (defun mynet ()  (interactive) (eww-list-bookmarks))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; my own prefix keymap
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(define-prefix-command 'mb-map)
+(global-set-key (kbd "C-p") 'mb-map)
+; (define-key mb-map (kbd "C-k") "\C-a\C- \C-e\M-w\M-;\C-e\C-m\C-y")
+; (define-key mb-map (kbd "C-l")  "\M-w\M-;\C-e\C-m\C-y")
+
 ;; fast copy-line-comment-it-and-paste-below
-(global-set-key "\C-c\C-k"        "\C-a\C- \C-e\M-w\M-;\C-e\C-m\C-y")
+;(global-set-key "\C-c\C-k"        "\C-a\C- \C-e\M-w\M-;\C-e\C-m\C-y")
+(define-key mb-map (kbd "C-k") "\C-a\C- \C-e\M-w\M-;\C-e\C-m\C-y")
 
 ;; copy-selection-comment-it-and-paste-below (works ok provided selection is
 ;; performed from left to right....
-(global-set-key "\C-c\C-l" "\M-w\M-;\C-e\C-m\C-y")
+; (global-set-key "\C-c\C-l" "\M-w\M-;\C-e\C-m\C-y")
+ (define-key mb-map (kbd "C-l")  "\M-w\M-;\C-e\C-m\C-y")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful global shortcuts (system-wide operations)
@@ -511,6 +527,23 @@ See `org-latex-format-headline-function' for details."
 (add-hook 'after-make-frame-functions 'my-after-frame)
 ;)
 ;)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; Diary
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+; 'american’ - month/day/year
+; ‘european’ - day/month/year
+; ‘iso’      - year/month/day
+
+(setq calendar-date-style "iso")
+(setq diary-date-forms diary-iso-date-forms)
+(setq diary-comment-start ";;")
+(setq diary-comment-end "")
+(setq diary-nonmarking-symbol "!")
+; (setq diary-show-holidays-flag t)
+
+(setq calendar-mark-diary-entries-flag t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Emacs theme
@@ -575,6 +608,11 @@ See `org-latex-format-headline-function' for details."
 (require 'sunrise-buttons)
 (require 'sunrise-modeline)
 (add-to-list 'auto-mode-alist '("\\.srvm\\'" . sr-virtual-mode))
+
+(add-hook 'sunrise-mode-hook
+   '(lambda ()
+     (local-set-key (kbd "C-x k") 'kill-buffer)
+     (local-set-key (kbd "C-x j") 'sunrise-kill-pane-buffer)))
 
 ;; buffer-move - swap buffers easily
 (require 'buffer-move)

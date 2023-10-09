@@ -1,23 +1,23 @@
 
 ;; ----- smex-history -----
 (
+ itit/spakuj-pdfy
+ itit/export-all
+ mb/org-add-next
+ org-beamer-mode
  eval-buffer
- matlab-shell
- ffap
- copy-rectangle-as-kill
- revert-buffer
- transpose-lines
- edmacro-finish-edit
+ org-toggle-inline-images
+ org-display-inline-images
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 252)
- (eval-buffer . 602)
+ (revert-buffer . 271)
+ (eval-buffer . 631)
  (list-packages . 37)
  (package-refresh-contents . 5)
  (eval-expression . 35)
- (eval-region . 47)
+ (eval-region . 48)
  (describe-variable . 5)
  (wg-create-workgroup . 4)
  (org-md-export-to-markdown . 2)
@@ -35,12 +35,12 @@
  (recentf-mode . 1)
  (recentf-load-list . 4)
  (recentf-open-files . 24)
- (dired . 2)
+ (dired . 16)
  (counsel-dired . 1)
- (sunrise . 6)
+ (sunrise . 10)
  (list-faces-display . 1)
  (nc . 1)
- (ffap . 23)
+ (ffap . 24)
  (org-babel-remove-result . 9)
  (kill-sexp . 1)
  (sunrise-sort-by-time . 1)
@@ -74,15 +74,15 @@
  (display-fill-column-indicator-mode . 6)
  (eww-toggle-colors . 3)
  (magit-init . 1)
- (package-install . 2)
+ (package-install . 3)
  (dockerfile-mode . 3)
  (octave-mode . 6)
  (DocOnce . 8)
  (run-python . 6)
  (pylint . 1)
  (emacs-lisp-mode . 1)
- (package-list-packages . 13)
- (matlab-shell . 19)
+ (package-list-packages . 14)
+ (matlab-shell . 20)
  (matlab-mode . 11)
  (matlab-shell-run-command . 6)
  (matlab-generate-latex . 1)
@@ -106,7 +106,7 @@
  (pdf-tools-install . 1)
  (pdf-view-mode . 2)
  (bs-show . 1)
- (ssh . 1)
+ (ssh . 4)
  (comment-region . 1)
  (org-comment-dwim . 1)
  (org-cdlatex-mode . 8)
@@ -132,7 +132,7 @@
  (global-linum-mode . 1)
  (auto-complete-mode . 1)
  (org-reload . 2)
- (org-beamer-mode . 6)
+ (org-beamer-mode . 8)
  (org-mode-restart . 38)
  (org-beamer-export-to-pdf . 2)
  (org-odt-export-to-odt . 1)
@@ -169,7 +169,7 @@
  (itit/clean-aux-ListaCzlonkow . 2)
  (itit/clean-aux-ListaObec . 4)
  (itit/get-toc-headlines . 6)
- (itit/export-zaproszenia . 51)
+ (itit/export-zaproszenia . 57)
  (org-cycle-list-bullet . 1)
  (org-table-export . 1)
  (org-table-convert . 19)
@@ -177,8 +177,8 @@
  (org-table-create-or-convert-from-region . 3)
  (org-table-align . 1)
  (petla . 3)
- (itit/export-all . 22)
- (itit/spakuj-pdfy . 14)
+ (itit/export-all . 30)
+ (itit/spakuj-pdfy . 19)
  (itit/export-4-Komisja . 3)
  (itit/export-strona-do-segregatora . 1)
  (itit/export-4-Waldek . 16)
@@ -189,7 +189,7 @@
  (mb/org-remove-keyword . 6)
  (mb/org-toggle-keyword . 40)
  (mb/org-toggle-opt . 8)
- (mb/org-add-next . 2)
+ (mb/org-add-next . 3)
  (mb/org-remove-opt . 1)
  (org-export-stack . 2)
  (mb/org-remove-next . 2)
@@ -199,4 +199,22 @@
  (edmacro-finish-edit . 1)
  (emacs-everywhere-finish . 1)
  (copy-rectangle-as-kill . 1)
+ (ibuffer . 2)
+ (bookmark-menu . 1)
+ (buffer-menu . 1)
+ (list-bookmarks . 1)
+ (sunrise-kill-pane-buffer . 2)
+ (ido-kill-buffer . 2)
+ (open-line . 1)
+ (calendar . 13)
+ (calendar-mode . 5)
+ (diary-print-entries . 1)
+ (diary-view-entries . 1)
+ (diary-mode . 9)
+ (diary-insert-entry . 1)
+ (diary-insert-yearly-entry . 1)
+ (diary . 1)
+ (org-display-inline-images . 31)
+ (org-redisplay-inline-images . 2)
+ (org-toggle-inline-images . 1)
 )

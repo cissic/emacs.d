@@ -1,3 +1,5 @@
+# The first version of the Premble.org. (DEPRECATED, left for backward compatibility purposes)
+
 # #345678901###1####01###2####01###3####01###4####01###5####01###6####01######79
 
 #+AUTHOR: MB
