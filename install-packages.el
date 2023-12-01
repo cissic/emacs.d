@@ -43,6 +43,7 @@ auctex ; in order to have reftex working
   company
   dockerfile-mode
   emacs-everywhere
+  engrave-faces
   fill-column-indicator
   ;flycheck
   ;flycheck-pos-tip

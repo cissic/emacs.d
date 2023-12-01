@@ -171,6 +171,12 @@
 31. Inteligentne zaznaczanie bloku tekstu (Emacs sam zdecyduje o co Ci chodzi)
     : M-h
 
+32. Zamiana akapitów na elementy listy:
+    Zaznacz stosowny tekst a następnie:
+    : C-c -
+    a potem
+    : <S-leftarrow/rightarrow>
+
     
   
 * OLD

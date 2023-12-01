@@ -123,6 +123,30 @@
 ;; Advanced buffer mode
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+;; Resize the whole frame, and not only a window
+;; Adapted from https://stackoverflow.com/a/24714383/5103881
+(defun acg/zoom-frame (&optional amt frame)
+  "Increaze FRAME font size by amount AMT. Defaults to selected
+frame if FRAME is nil, and to 1 if AMT is nil."
+  (interactive "p")
+  (let* ((frame (or frame (selected-frame)))
+         (font (face-attribute 'default :font frame))
+         (size (font-get font :size))
+         (amt (or amt 1))
+         (new-size (+ size amt)))
+    (set-frame-font (font-spec :size new-size) t `(,frame))
+    (message "Frame's font new size: %d" new-size)))
+
+(defun acg/zoom-frame-out (&optional amt frame)
+  "Call `acg/zoom-frame' with negative argument."
+  (interactive "p")
+  (acg/zoom-frame (- (or amt 1)) frame))
+
+(global-set-key (kbd "C-x C-=") 'acg/zoom-frame)
+(global-set-key (kbd "C-x C--") 'acg/zoom-frame-out)
+(global-set-key (kbd "<C-down-mouse-4>") 'acg/zoom-frame)
+(global-set-key (kbd "<C-down-mouse-5>") 'acg/zoom-frame-out)
+
 ;; ido-mode ->
   (ido-mode 1)          
   (setq ido-enable-flex-matching t)
@@ -339,6 +363,7 @@ See `org-latex-format-headline-function' for details."
 (setq org-confirm-babel-evaluate nil)
 
 ;; enabling plantuml
+
 (setq plantuml-executable-path "plantuml")
 (setq org-plantuml-exec-mode 'plantuml)
 
@@ -394,14 +419,7 @@ See `org-latex-format-headline-function' for details."
 (setq org-list-allow-alphabetical t)
 
 ;; org-to-latex exporter to have nice code formatting
-(setq org-latex-listings 'minted
-      org-export-with-sub-superscripts 'nil
-      org-latex-minted-options '(("bgcolor=lightgray") ("frame" "lines"))
-      org-latex-packages-alist '(("" "minted"))
-      org-latex-pdf-process
-      '("pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
-        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"
-        "pdflatex -shell-escape -interaction nonstopmode -output-directory %o %f"))
+(setq org-latex-src-block-backend 'engraved)
 
 ;; Managing org-mode #+NAME properties like in reftex-mode
 (defun my/get-name (e)
@@ -492,7 +510,7 @@ See `org-latex-format-headline-function' for details."
 ;;;; my own prefix keymap
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (define-prefix-command 'mb-map)
-(global-set-key (kbd "C-p") 'mb-map)
+(global-set-key (kbd "C-z") 'mb-map)
 ; (define-key mb-map (kbd "C-k") "\C-a\C- \C-e\M-w\M-;\C-e\C-m\C-y")
 ; (define-key mb-map (kbd "C-l")  "\M-w\M-;\C-e\C-m\C-y")
 

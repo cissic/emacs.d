@@ -7,11 +7,11 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "JZ3117C81WP94PC-P5RZY7" "currentsession" t nil #s(wg-wconfig "JZ3117C9I7SHG34-P5S0I3" nil
-											     ((fullscreen))
-											     0 0 94 54 right 16 #s(wg-win nil nil
-															  (0 0 97 54)
-															  21356 18441 0 nil t nil "JYZ4WIHPF9C71K-6QEL75"))
+	      (#s(wg-workgroup "K0ZLN441LQD2OG-MZQV2" "currentsession" t nil #s(wg-wconfig "K0ZLN444AKF8M0-MZRET" nil
+											   ((fullscreen))
+											   12 13 166 53 right 16 #s(wg-win nil nil
+															   (0 0 170 52)
+															   531 494 0 nil t nil "K0ZLN441IH5QSG-MZQQV"))
 			       nil nil nil nil)
 		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
@@ -42,14 +42,14 @@
 														  (0 0 109 54)
 														  772 157 0 nil t nil "JU8UNTD042HBGG-G54W4F"))
 				 nil nil nil nil))
-	      (#s(wg-buf "JYZ4WIHPF9C71K-6QEL75" "jak_poprawnie_rozwiazac_zadanie.org" "/home/mb/projects/Dydaktyka/AiSD/Zadanie1-algorytmika/jak_poprawnie_rozwiazac_zadanie.org" 21356 21357
+	      (#s(wg-buf "K0ZLN441IH5QSG-MZQQV" "RDmain.org" "/home/mb/org/RDITiT/orgSzablon2.1/RDmain.org" 531 4863
 			 ((major-mode . org-mode)
-			  (mark-ring 21240 21038 21302 21302 21038 21038 21038 20968 20968 16282 19331 19297 19297 10715 10715 10716)
+			  (mark-ring 5005 2560 2362 2560 877 773 5605 709 4962 2224 1821 249 2560 1161 1159 1131)
 			  nil nil nil nil nil nil)
 			 nil nil)
-		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 18613 16385
+		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 14623 14429
 			   ((major-mode . emacs-lisp-mode)
-			    (mark-ring 12483 19337 16385 20947 20947 20947 20947 20915 12922 4134 4134 22465 22465 22465 19717 18613)
+			    (mark-ring 12445 14429 14872 14871 7744 7165 7165 19784 19784 24132 23101 17039 17039 17039 19784 14623)
 			    nil nil nil nil nil nil)
 			   nil nil)
 		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 92377 92286
