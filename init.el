@@ -407,19 +407,12 @@ See `org-latex-format-headline-function' for details."
 
 ;; <- **** org-to-markdown exporter customization
 
-;; colorting ~code~ on org to latex export
-(defun tmp-latex-code-filter (text backend info)
-  "red inline code"
-  (when (org-export-derived-backend-p backend 'latex) 
-    (format "{\\color{red} %s }" text)))
-
-(defun tmp-f-strike-through (s backend info) "")
-
 ;; alphabetical ordered lists
 (setq org-list-allow-alphabetical t)
 
 ;; org-to-latex exporter to have nice code formatting
 (setq org-latex-src-block-backend 'engraved)
+(setq org-latex-engraved-theme 'doom-one-light)  
 
 ;; Managing org-mode #+NAME properties like in reftex-mode
 (defun my/get-name (e)
@@ -580,7 +573,7 @@ See `org-latex-format-headline-function' for details."
 ; (load-theme 'modus-operandi) ;; bright 
 ; (load-theme 'modus-vivendi) ;; dark
 
-(load-theme 'modus-vivendi :noconfirm) 
+
 
 (setq modus-themes-headings ; this is an alist: read the manual or its doc string
       '((1 . (rainbow overline background 1.4))
@@ -598,6 +591,9 @@ See `org-latex-format-headline-function' for details."
       (disable-theme 'modus-vivendi)
     (load-theme 'modus-vivendi :noconfirm)))
 (global-set-key [f6] 'toggle-theme)
+
+;; load theme after defining 
+(load-theme 'modus-vivendi :noconfirm)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Manually downloaded packages

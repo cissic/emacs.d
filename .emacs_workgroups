@@ -7,11 +7,11 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "K0ZLN441LQD2OG-MZQV2" "currentsession" t nil #s(wg-wconfig "K0ZLN444AKF8M0-MZRET" nil
-											   ((fullscreen))
-											   12 13 166 53 right 16 #s(wg-win nil nil
-															   (0 0 170 52)
-															   531 494 0 nil t nil "K0ZLN441IH5QSG-MZQQV"))
+	      (#s(wg-workgroup "K1BTV3D1GL6VOO-KSNJ3Y" "currentsession" t nil #s(wg-wconfig "K1BTV3E7R0HVIO-KSNJLS" nil
+											    ((fullscreen))
+											    0 0 119 54 right 16 #s(wg-win nil nil
+															  (0 0 122 53)
+															  76290 76121 0 nil t nil "K1BTV3D1AVBAMW-KSNJ04"))
 			       nil nil nil nil)
 		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
@@ -42,19 +42,19 @@
 														  (0 0 109 54)
 														  772 157 0 nil t nil "JU8UNTD042HBGG-G54W4F"))
 				 nil nil nil nil))
-	      (#s(wg-buf "K0ZLN441IH5QSG-MZQQV" "RDmain.org" "/home/mb/org/RDITiT/orgSzablon2.1/RDmain.org" 531 4863
+	      (#s(wg-buf "K1BTV3D1AVBAMW-KSNJ04" "!RDmain.org" "/home/mb/org/RDITiT/orgSzablon2.1/!RDmain.org" 76290 76539
 			 ((major-mode . org-mode)
-			  (mark-ring 5005 2560 2362 2560 877 773 5605 709 4962 2224 1821 249 2560 1161 1159 1131)
+			  (mark-ring 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76290)
 			  nil nil nil nil nil nil)
 			 nil nil)
-		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 14623 14429
-			   ((major-mode . emacs-lisp-mode)
-			    (mark-ring 12445 14429 14872 14871 7744 7165 7165 19784 19784 24132 23101 17039 17039 17039 19784 14623)
+		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 41994 95072
+			   ((major-mode . org-mode)
+			    (mark-ring 95034 69716 69668 69668 69716 68931 69489 11858 69460 69314 54627 54622 36202 54861 54871 54622)
 			    nil nil nil nil nil nil)
 			   nil nil)
-		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 92377 92286
-			   ((major-mode . org-mode)
-			    (mark-ring 92286 92192 91895 35922 14838 4654 101127 35720 36730 36675 36554 36554 36403 36328 36316 92377)
+		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 19901 1742
+			   ((major-mode . emacs-lisp-mode)
+			    (mark-ring 19803 345 345 345 345 345 1858 1858 14633 14633 20916 14186 14160 14144 14144 121)
 			    nil nil nil nil nil nil)
 			   nil nil)
 		 #s(wg-buf "JU8UNTD042HBGG-G54W4F" "e.org" "/home/mb/projects/Dydaktyka/3blue1brown-notes/eulerConstant/e.org" 772 642
