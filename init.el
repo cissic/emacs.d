@@ -496,6 +496,8 @@ See `org-latex-format-headline-function' for details."
 ;; (setq org-ai-default-chat-model "gpt-4") ; if you are on the gpt-4 beta:
 ;; (org-ai-install-yasnippets) ; if you are using yasnippet and want `ai` snippets
 
+(load-file "../.mysecrets/openaiapi.el")
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful global shortcuts (text operations)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
