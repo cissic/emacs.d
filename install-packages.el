@@ -61,6 +61,7 @@ auctex ; in order to have reftex working
   ;ob-async
   org   ; ver. 9.3  built-in in Emacs 27.1; this install version 9.6 from melpa
   org-ac
+  org-ai
   ;org-download
   org-plus-contrib
   ;org-mime
@@ -85,6 +86,7 @@ auctex ; in order to have reftex working
   ;tao-theme ; https://github.com/11111000000/tao-theme-emacs
   ;treemacs
   ;use-package
+  websocket
   workgroups2
   ;w3m
   yasnippet

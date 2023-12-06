@@ -412,7 +412,6 @@ See `org-latex-format-headline-function' for details."
 
 ;; org-to-latex exporter to have nice code formatting
 (setq org-latex-src-block-backend 'engraved)
-(setq org-latex-engraved-theme 'doom-one-light)  
 
 ;; Managing org-mode #+NAME properties like in reftex-mode
 (defun my/get-name (e)
@@ -487,6 +486,15 @@ See `org-latex-format-headline-function' for details."
 ;;;; Add this hook in order to run pdf-tools without a warning message.
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; AI - ChatGPT, Dall-E, Stable Diffusion and ...
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (require 'org-ai)
+(add-hook 'org-mode-hook #'org-ai-mode)
+(org-ai-global-mode)
+;; (setq org-ai-default-chat-model "gpt-4") ; if you are on the gpt-4 beta:
+;; (org-ai-install-yasnippets) ; if you are using yasnippet and want `ai` snippets
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful global shortcuts (text operations)
