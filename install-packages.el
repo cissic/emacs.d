@@ -41,6 +41,10 @@ auctex ; in order to have reftex working
   ; counsel ; for ivy
   cdlatex
   company
+  chatgpt-shell
+  dall-e-shell
+  ;; ob-chatgpt-shell
+  ;; ob-dall-e-shell
   dockerfile-mode
   emacs-everywhere
   engrave-faces
@@ -48,7 +52,7 @@ auctex ; in order to have reftex working
   ;flycheck
   ;flycheck-pos-tip
   flyspell
-  gptel
+  ;; gptel ;; not working
   ;; google-this
   ido
   ; ivy
