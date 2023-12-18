@@ -362,6 +362,19 @@ See `org-latex-format-headline-function' for details."
 ;; no question about confirmation of evaluating babel code block
 (setq org-confirm-babel-evaluate nil)
 
+(defun mb/org-babel-tangle-block()
+  (interactive)
+  (let ((current-prefix-arg '(4)))
+     (call-interactively 'org-babel-tangle)
+))
+
+(defun mb/org-babel-tangle-named-block(block-name)
+  (interactive)
+  (save-excursion 
+   (org-babel-goto-named-src-block block-name)
+    (mb/org-babel-tangle-block)) 
+)
+
 ;; enabling plantuml
 
 (setq plantuml-executable-path "plantuml")
@@ -496,7 +509,7 @@ See `org-latex-format-headline-function' for details."
 ;; (setq org-ai-default-chat-model "gpt-4") ; if you are on the gpt-4 beta:
 ;; (org-ai-install-yasnippets) ; if you are using yasnippet and want `ai` snippets
 
-(load-file "../.mysecrets/openaiapi.el")
+(load-file (concat user-emacs-directory "../.mysecrets/openaiapi.el"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful global shortcuts (text operations)

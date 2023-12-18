@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
- rd/clean-all-pdfs
- rd/clean-all-aux
- rd/export-all
- rd/export-Zaproszenie
- rd/czy-doktorat
- eval-region
- rd/Prezentacja2pdf
+ org-mode
+ shell
+ revert-buffer
+ mb/org-babel-tangle-block
+ magit
+ org-ai-kill-region-at-point
+ org-ai-mark-block-contents
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 432)
- (eval-buffer . 745)
- (list-packages . 42)
+ (revert-buffer . 453)
+ (eval-buffer . 754)
+ (list-packages . 43)
  (package-refresh-contents . 5)
  (eval-expression . 35)
  (eval-region . 73)
@@ -24,7 +24,7 @@
  (wg-open-workgroup . 4)
  (ivy-mode . 1)
  (flyspell-mode . 3)
- (shell . 10)
+ (shell . 11)
  (counsel-mode . 1)
  (company-mode . 2)
  (yas-minor-mode . 1)
@@ -40,7 +40,7 @@
  (sunrise . 10)
  (list-faces-display . 1)
  (nc . 1)
- (ffap . 40)
+ (ffap . 47)
  (org-babel-remove-result . 9)
  (kill-sexp . 1)
  (sunrise-sort-by-time . 1)
@@ -80,7 +80,7 @@
  (DocOnce . 8)
  (run-python . 6)
  (pylint . 1)
- (emacs-lisp-mode . 1)
+ (emacs-lisp-mode . 2)
  (package-list-packages . 15)
  (matlab-shell . 21)
  (matlab-mode . 12)
@@ -89,7 +89,7 @@
  (matlab-shell-run-cell . 1)
  (matlab-shell-set-save-and-go-command . 4)
  (matlab-shell-save-and-go . 2)
- (magit . 1)
+ (magit . 2)
  (magit-commit-amend . 2)
  (fci-mode . 2)
  (turn-on-fci-mode . 4)
@@ -124,7 +124,7 @@
  (cd . 1)
  (smex-initialize . 1)
  (execute-extended-command . 1)
- (org-mode . 17)
+ (org-mode . 19)
  (my/report-latex-environment-names-values . 9)
  (profiler-start . 1)
  (profiler-report . 1)
@@ -193,7 +193,7 @@
  (mb/org-remove-opt . 3)
  (org-export-stack . 2)
  (mb/org-remove-next . 3)
- (transpose-lines . 2)
+ (transpose-lines . 3)
  (diff . 1)
  (diff-mode . 1)
  (edmacro-finish-edit . 1)
@@ -249,15 +249,32 @@
  (rd/export-ListaCzlonkow . 3)
  (rd/clean-aux-ListaCzlonkow . 1)
  (org-babel-goto-named-src-block . 2)
- (mb/org-babel-tangle-block . 1)
+ (mb/org-babel-tangle-block . 6)
  (rd/export-Zaproszenie-Ogolne . 29)
  (mb/czy-doktorat . 1)
  (rd/load-TabelaCzlonkow-as-list . 5)
  (rd/export-Zaproszenie-Imienne . 3)
- (rd/export-all . 11)
- (rd/clean-all-aux . 3)
+ (rd/export-all . 12)
+ (rd/clean-all-aux . 5)
  (rd/clean-aux-Prezentacja . 1)
  (rd/export-Zaproszenie . 3)
  (rd/czy-doktorat . 1)
- (rd/clean-all-pdfs . 1)
+ (rd/clean-all-pdfs . 2)
+ (markdown-mode . 1)
+ (chatgpt-shell . 3)
+ (convert-properties-to-macros . 10)
+ (mb/org-babel-tangle-named-block . 2)
+ (org-cut-subtree . 2)
+ (org-cut-special . 1)
+ (org-mark-element . 1)
+ (beginning-of-defun . 5)
+ (mark-org-block . 11)
+ (mark-defun . 3)
+ (my/goto-previous-begin-block . 3)
+ (my/goto-next-end-block . 3)
+ (my/mark-begin-end-block . 1)
+ (my/mark-block-between-begin-end . 3)
+ (org-ai-mark-last-region . 1)
+ (org-ai-mark-block-contents . 2)
+ (org-ai-kill-region-at-point . 1)
 )

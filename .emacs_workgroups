@@ -7,11 +7,11 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "K1BTV3D1GL6VOO-KSNJ3Y" "currentsession" t nil #s(wg-wconfig "K1BTV3E7R0HVIO-KSNJLS" nil
-											    ((fullscreen))
-											    0 0 119 54 right 16 #s(wg-win nil nil
-															  (0 0 122 53)
-															  76290 76121 0 nil t nil "K1BTV3D1AVBAMW-KSNJ04"))
+	      (#s(wg-workgroup "K1RRGHEWSP1O6O-T1Z53" "currentsession" t nil #s(wg-wconfig "K1RRGHEXACHG34-T1ZMU" nil
+											   ((fullscreen))
+											   0 0 102 55 right 16 #s(wg-win nil nil
+															 (0 0 105 54)
+															 15890 14774 0 nil t nil "K1OZ607DO39ILC-YMDGSE"))
 			       nil nil nil nil)
 		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
@@ -42,9 +42,9 @@
 														  (0 0 109 54)
 														  772 157 0 nil t nil "JU8UNTD042HBGG-G54W4F"))
 				 nil nil nil nil))
-	      (#s(wg-buf "K1BTV3D1AVBAMW-KSNJ04" "!RDmain.org" "/home/mb/org/RDITiT/orgSzablon2.1/!RDmain.org" 76290 76539
+	      (#s(wg-buf "K1OZ607DO39ILC-YMDGSE" "2023-12-14-debian-installation-on-dell.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-12-14-debian-installation-on-dell.org" 15890 16227
 			 ((major-mode . org-mode)
-			  (mark-ring 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76539 76290)
+			  (mark-ring 16201 16069 16165 16119 16119 16043 16048 16043 16047 14762 14727 14711 14663 14506 6489 15890)
 			  nil nil nil nil nil nil)
 			 nil nil)
 		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 41994 95072
