@@ -45,6 +45,8 @@
 (save-place-mode t)        ; When re-entering a file, return to the place, 
 			   ; where I was when I left it the last time.
 
+(setq list-command-history-max 500) ; no of available commands in  =command-history=
+
 (savehist-mode 1)          ; Save history for future sessions
 
 (winner-mode 1)            ; Toggle between previous window layouts
@@ -153,6 +155,12 @@ frame if FRAME is nil, and to 1 if AMT is nil."
   (setq ido-everywhere t)  ; ido-mode for file searching
 ;; <- ido-mode
 
+(defadvice ido-find-file (after find-file-sudo activate)
+"Find file as root if necessary."
+(unless (and buffer-file-name
+             (file-writable-p buffer-file-name))
+  (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+
 ;; smex ->
 (global-set-key (kbd "M-x") 'smex)
 (global-set-key (kbd "M-X") 'smex-major-mode-commands)
@@ -228,7 +236,7 @@ frame if FRAME is nil, and to 1 if AMT is nil."
 
 (defun my-python-mode-hook()
            (lambda ()
-             (setq python-shell-interpreter "python3") ))
+             (setq python-shell-interpreter "python") ))
 
 ;; Org mode...
 (setq org-export-in-background t)
@@ -283,6 +291,9 @@ frame if FRAME is nil, and to 1 if AMT is nil."
   (face-remap-add-relative 'default '(:foreground "#BD8700")))
 
 (add-hook 'eww-mode-hook 'my-eww-mode-faces)
+
+;; BIBLIOGRAPHY 
+(setq org-cite-csl-styles-dir "~/Zotero/styles")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Org customization
@@ -385,7 +396,7 @@ See `org-latex-format-headline-function' for details."
   '((:results . "output") (:session . "*MATLAB*")))
 
 ;; Python in org-babel
-(setq org-babel-python-command "/bin/python3")
+(setq org-babel-python-command "python")
 
 ;; **** org-to-markdown exporter customization  -> 
 
@@ -425,6 +436,64 @@ See `org-latex-format-headline-function' for details."
 
 ;; org-to-latex exporter to have nice code formatting
 (setq org-latex-src-block-backend 'engraved)
+;; ;; (setq org-latex-packages-alist '((""))) ; there's no need to add minted package anymore here, we're using engraved, special options for engraved are passed in org-latex-engraved-preamble
+
+(setq org-latex-engraved-preamble
+  "\\usepackage{fvextra}
+
+  [FVEXTRA-SETUP]
+
+  % Make line numbers smaller and grey.
+  \\renewcommand\\theFancyVerbLine{\\footnotesize\\color{black!40!white}\\arabic{FancyVerbLine}}
+
+  \\usepackage{xcolor}
+
+  % In case engrave-faces-latex-gen-preamble has not been run.
+  \\providecolor{EfD}{HTML}{f7f7f7}
+  \\providecolor{EFD}{HTML}{28292e}
+
+  % Define a Code environment to prettily wrap the fontified code.
+  \\usepackage[breakable,xparse]{tcolorbox}
+  \\DeclareTColorBox[]{Code}{o}%
+  {colback=EfD!98!EFD, colframe=EfD!95!EFD,
+    fontupper=\\footnotesize\\setlength{\\fboxsep}{0pt},
+    colupper=EFD,
+    IfNoValueTF={#1}%
+    {boxsep=2pt, arc=2.5pt, outer arc=2.5pt,
+      boxrule=0.5pt, left=2pt}%
+    {boxsep=2.5pt, arc=0pt, outer arc=0pt,
+      boxrule=0pt, leftrule=1.5pt, left=0.5pt},
+    right=2pt, top=1pt, bottom=0.5pt,
+    breakable}
+
+  [LISTINGS-SETUP]
+
+  \\newenvironment{ai}
+  {
+  \\begin{Code}
+  }
+  {
+  \\end{Code}
+  }"
+)
+
+(setq org-latex-engraved-options
+  '(
+    ("commandchars" . "\\\\\\{\\}")
+    ("highlightcolor" . "white!95!black!80!blue")
+    ("breaklines" . "true")
+    ("breaksymbol" . "\\color{white!60!black}\\tiny\\ensuremath{\\hookrightarrow}")
+    ("highlightcolor" . "lightgray")
+    ("frame" . "single")
+    ("numbers" . "left")
+    )
+  )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; *** Reftex default bibliography - though it's easier to use org-cite
+;;     This is left in case org-ref doesn't work at all without it....
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'org-ref)
 
 ;; Managing org-mode #+NAME properties like in reftex-mode
 (defun my/get-name (e)

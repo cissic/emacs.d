@@ -92,68 +92,33 @@
 # #+LaTeX_HEADER: \usepackage{minted} # This is added by default by Emacs exporter
 # #+LaTeX_HEADER: \newenvironment{resultsminted}{{\begin{minted}[,frame=single]}{\end{minted}}}}
 
-#+LaTeX_HEADER: \usepackage{color}
-#+LaTeX_HEADER: \definecolor{my-mint}{cmyk}  {0.20, 0.00, 0.16, 0.06, 1.00}
-#+LaTeX_HEADER: \newenvironment{resultsminted}
-#+LaTeX_HEADER: {\VerbatimEnvironment
-#+LaTeX_HEADER: \begin{minted}[
-#+LaTeX_HEADER: % linenos,
-#+LaTeX_HEADER: % fontfamily=courier,
-#+LaTeX_HEADER: % fontsize=\scriptsize,
-#+LaTeX_HEADER: % xleftmargin=21pt,
-#+LaTeX_HEADER: bgcolor=my-mint,
-#+LaTeX_HEADER: frame=single
-#+LaTeX_HEADER: ]{text}}
-#+LaTeX_HEADER: {\end{minted}}
+# #+LaTeX_HEADER: \usepackage{color}
+# #+LaTeX_HEADER: \definecolor{my-mint}{cmyk}  {0.20, 0.00, 0.16, 0.06, 1.00}
+# #+LaTeX_HEADER: \newenvironment{resultsminted}
+# #+LaTeX_HEADER: {\VerbatimEnvironment
+# #+LaTeX_HEADER: \begin{minted}[
+# #+LaTeX_HEADER: % linenos,
+# #+LaTeX_HEADER: % fontfamily=courier,
+# #+LaTeX_HEADER: % fontsize=\scriptsize,
+# #+LaTeX_HEADER: % xleftmargin=21pt,
+# #+LaTeX_HEADER: bgcolor=my-mint,
+# #+LaTeX_HEADER: frame=single
+# #+LaTeX_HEADER: ]{text}}
+# #+LaTeX_HEADER: {\end{minted}}
 
-#+LaTeX_HEADER: \renewenvironment{resultsminted}
-#+LaTeX_HEADER: {\VerbatimEnvironment
-#+LaTeX_HEADER: \begin{minted}[
-#+LaTeX_HEADER: % linenos,
-#+LaTeX_HEADER: % fontfamily=courier,
-#+LaTeX_HEADER: % fontsize=\scriptsize,
-#+LaTeX_HEADER: % xleftmargin=21pt,
-#+LaTeX_HEADER: bgcolor=my-mint,
-#+LaTeX_HEADER: frame=single
-#+LaTeX_HEADER: ]{text}}
-#+LaTeX_HEADER: {\end{minted}}
+# #+LaTeX_HEADER: \renewenvironment{resultsminted}
+# #+LaTeX_HEADER: {\VerbatimEnvironment
+# #+LaTeX_HEADER: \begin{minted}[
+# #+LaTeX_HEADER: % linenos,
+# #+LaTeX_HEADER: % fontfamily=courier,
+# #+LaTeX_HEADER: % fontsize=\scriptsize,
+# #+LaTeX_HEADER: % xleftmargin=21pt,
+# #+LaTeX_HEADER: bgcolor=my-mint,
+# #+LaTeX_HEADER: frame=single
+# #+LaTeX_HEADER: ]{text}}
+# #+LaTeX_HEADER: {\end{minted}}
 
-#+LaTeX_HEADER: \usemintedstyle{emacs}
-
-
-
-# #+ATTR_LATEX: :options frame=single
- 
-# 2. Formatowanie kodów przy pomocy lstlistings
-# #+LaTeX_HEADER: \usepackage{listings}
-# #+LaTeX_HEADER: \lstnewenvironment{common-lispcode}
-# #+LaTeX_HEADER: {\lstset{language={Lisp},basicstyle={\ttfamily\footnotesize},frame=single,breaklines=true}}
-# #+LaTeX_HEADER: {}
-# #+LaTeX_HEADER: \newcommand{\python}[1]{\lstset{language={Python},basicstyle={\ttfamily\small}}\lstinline{#1}}
- 
-
-
-
-# # #+LaTeX_HEADER: \newenvironment{resultsblock}{\begin{shaded}}{\end{shaded}} 
-
-# # TO PONIZEJ NIE DZIALA
-# # #+LaTeX_HEADER: \lstnewenvironment{resultsblock}[1][]{
-# # #+LaTeX_HEADER:                   \lstset{frame=lines,
-# # #+LaTeX_HEADER:                           basicstyle=\footnotesize,
-# # #+LaTeX_HEADER:                           numbers=left,
-# # #+LaTeX_HEADER:                           numberstyle=\tiny,
-# # #+LaTeX_HEADER:                           language= ,
-# # #+LaTeX_HEADER:                           label= ,
-# # #+LaTeX_HEADER:                           caption= ,
-# # #+LaTeX_HEADER:                           captionpos=b
-# # #+LaTeX_HEADER:                           #1}
-# # #+LaTeX_HEADER:                     }
-# # #+LaTeX_HEADER: 
-
-# #+LaTeX_HEADER: \lstnewenvironment{resultsblock}{\lstset{language=bash,backgroundcolor = \color{lightgray}}}{}
-
-
-# # TO SAMO TRZEBA ZROBIC DLA HTMLa, MARKDOWN'a itd itp
+# #+LaTeX_HEADER: \usemintedstyle{emacs}
 
 
 
