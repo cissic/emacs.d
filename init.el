@@ -309,10 +309,13 @@ frame if FRAME is nil, and to 1 if AMT is nil."
 
 (setq org-todo-keyword-faces
 '(
-("????" . (:foreground "red" :weight bold))
-("POSTPONED" . (:foreground "blue" :weight bold))
-("ABANDONED" . (:foreground "orange" :weight bold))
-("DEPRECATED" . (:foreground "green" :weight bold))
+("????"         . (:foreground "red" :weight bold))
+("POSTPONED"    . (:foreground "orange" :weight bold))
+("DONE"         . (:foreground "purple" :weight bold))
+("ABANDONED"    . (:foreground "blue" :weight bold))
+("DEPRECATED"   . (:foreground "blue" :weight bold))
+("[OPTIONALLY]" . (:foreground "violet" :weight bold))
+("[OPCJONALNIE]" . (:foreground "violet" :weight bold))
 )
 )
 
@@ -386,6 +389,122 @@ See `org-latex-format-headline-function' for details."
     (mb/org-babel-tangle-block)) 
 )
 
+(defun mb/tangle-file (tangle-file)
+  (interactive "P")
+  (run-hooks 'org-babel-pre-tangle-hook)
+  ;; Possibly Restrict the buffer to the current code block
+  (save-restriction
+    (save-excursion
+      (let ((block-counter 0)
+        (org-babel-default-header-args org-babel-default-header-args)
+        path-collector)
+    (mapc ;; map over file-names
+     (lambda (by-fn)
+       (let ((file-name (car by-fn)))
+         (when file-name
+               (let ((lspecs (cdr by-fn))
+             (fnd (file-name-directory file-name))
+             modes make-dir she-banged lang)
+             ;; drop source-blocks to file
+             ;; We avoid append-to-file as it does not work with tramp.
+             (with-temp-buffer
+           (mapc
+            (lambda (lspec)
+              (let* ((block-lang (car lspec))
+                 (spec (cdr lspec))
+                 (get-spec (lambda (name) (cdr (assq name (nth 4 spec)))))
+                 (she-bang (let ((sheb (funcall get-spec :shebang)))
+                         (when (> (length sheb) 0) sheb)))
+                 (tangle-mode (funcall get-spec :tangle-mode)))
+                (unless (string-equal block-lang lang)
+              (setq lang block-lang)
+              (let ((lang-f (org-src-get-lang-mode lang)))
+                (when (fboundp lang-f) (ignore-errors (funcall lang-f)))))
+                ;; if file contains she-bangs, then make it executable
+                (when she-bang
+              (unless tangle-mode (setq tangle-mode #o755)))
+                (when tangle-mode
+              (add-to-list 'modes (org-babel-interpret-file-mode tangle-mode)))
+                ;; Possibly create the parent directories for file.
+                (let ((m (funcall get-spec :mkdirp)))
+              (and m fnd (not (string= m "no"))
+                   (setq make-dir t)))
+                ;; Handle :padlines unless first line in file
+                (unless (or (string= "no" (funcall get-spec :padline))
+                    (= (point) (point-min)))
+              (insert "\n"))
+                (when (and she-bang (not she-banged))
+              (insert (concat she-bang "\n"))
+              (setq she-banged t))
+                (org-babel-spec-to-string spec)
+                (setq block-counter (+ 1 block-counter))))
+            lspecs)
+           (when make-dir
+             (make-directory fnd 'parents))
+                   (unless
+                       (and (file-exists-p file-name)
+                            (let ((tangle-buf (current-buffer)))
+                              (with-temp-buffer
+                                (insert-file-contents file-name)
+                                (and
+                                 (equal (buffer-size)
+                                        (buffer-size tangle-buf))
+                                 (= 0
+                                    (let (case-fold-search)
+                                      (compare-buffer-substrings
+                                       nil nil nil
+                                       tangle-buf nil nil)))))))
+                     ;; erase previous file
+                     (when (file-exists-p file-name)
+                       (delete-file file-name))
+             (write-region nil nil file-name)
+             (mapc (lambda (mode) (set-file-modes file-name mode)) modes))
+                   (push file-name path-collector))))))
+       (org-babel-tangle-collect-blocks nil tangle-file))
+    (message "Tangled %d code block%s from %s" block-counter
+         (if (= block-counter 1) "" "s")
+         (file-name-nondirectory
+          (buffer-file-name
+           (or (buffer-base-buffer)
+                       (current-buffer)
+                       (and (org-src-edit-buffer-p)
+                            (org-src-source-buffer))))))
+    ;; run `org-babel-post-tangle-hook' in all tangled files
+    (when org-babel-post-tangle-hook
+      (mapc
+       (lambda (file)
+         (org-babel-with-temp-filebuffer file
+           (run-hooks 'org-babel-post-tangle-hook)))
+       path-collector))
+        (run-hooks 'org-babel-tangle-finished-hook)
+    path-collector))))
+
+(defun mb/org-babel-tangle-to-target-file-from-the-file (file target-file)
+  (interactive "fFile to tangle: \nP")
+    (let* ((visited (find-buffer-visiting file))
+	   (buffer (or visited (find-file-noselect file))))
+      (prog1
+	  (with-current-buffer buffer
+	    (org-with-wide-buffer
+	     (mapcar #'expand-file-name
+		     (mb/tangle-file target-file))))
+	(unless visited (kill-buffer buffer)))))
+
+(defun mb/org-babel-export-org-file-to-latex (filename)
+  (interactive "fFile to export: \nP")
+    (let* ((visited (find-buffer-visiting filename))
+	   (buffer (or visited (find-file-noselect filename))))
+      (prog1
+	  (with-current-buffer buffer
+	     (org-latex-export-to-pdf nil) )
+	(unless visited (kill-buffer buffer)))))
+
+(defun mb/org-babel-tangle-and-export (file target-file)
+  (interactive)
+  (mb/org-babel-tangle-to-target-file-from-the-file file target-file)
+  (mb/org-babel-export-org-file-to-latex target-file)
+  )
+
 ;; enabling plantuml
 
 (setq plantuml-executable-path "plantuml")
@@ -396,7 +515,7 @@ See `org-latex-format-headline-function' for details."
   '((:results . "output") (:session . "*MATLAB*")))
 
 ;; Python in org-babel
-(setq org-babel-python-command "python")
+(setq org-babel-python-command "python3")
 
 ;; **** org-to-markdown exporter customization  -> 
 
@@ -731,6 +850,11 @@ See `org-latex-format-headline-function' for details."
 (add-to-list 'load-path "~/.emacs.d/myarch")
 (require 'MB-org-special-block-extras)
 
+;; sunrise
+(add-to-list 'load-path "~/.emacs.d/manual-download/ox-extra")
+(require 'ox-extra)
+(ox-extras-activate '(ignore-headlines))
+
 ;; [DEPRECATED] - use sunrise instead of this
 ;; midnight-commander emulation
 ;; (require 'mc)
@@ -738,6 +862,82 @@ See `org-latex-format-headline-function' for details."
 ;; org to ipython exporter
 ;;(use-package ox-ipynb
 ;  :load-path "~/.emacs.d/manual-download/ox-ipynb")
+
+(defun cissic-blog-stencil  (title )
+ "Create and open a file with the given stencil."
+ (interactive "sEnter the title: ")
+ (let* ((date (format-time-string "%Y-%m-%d"))
+	(dateDay (format-time-string "%Y-%m-%d %a"))
+	(titleUnspaced (replace-regexp-in-string " " "-" title))
+	(file-name (concat date "-" (downcase titleUnspaced) ".org"))
+	(file-path (concat "~/projects/cissic.github.io/mysource/public-notes-org/" file-name))
+
+	(stencil (concat "#+TITLE: " title "\n"
+			 "#+DESCRIPTION: \n"
+			 "#+AUTHOR: cissic \n"
+			 "#+DATE: <" dateDay ">\n"
+			 "#+TAGS: \n"
+			 "#+OPTIONS: -:nil\n"
+			 "\n"
+			 "* TODO " title "\n"
+			 ":PROPERTIES:\n"
+			 ":PRJ-DIR: ./" date "-" (car (split-string titleUnspaced)) "/\n"
+			 ":END:\n"
+			 "\n"
+			 "** Problem description\n"
+			 "#+begin_src org :tangle (concat (org-entry-get nil \"PRJ-DIR\" t) \"script.org\") :mkdirp yes :exports none :results none\n"
+			 "\n"
+			 "#+end_src\n"
+			 ))) 
+   (with-temp-file file-path
+     (insert stencil))
+   (find-file file-path)))
+
+(defun mb/org-entry-stencil  (title )
+ "Create and open a file with the given stencil."
+ (interactive "sEnter the title: ")
+ (let* ((date (format-time-string "%Y.%m.%d"))
+	(dateDay (format-time-string "%Y-%m-%d %a"))
+	(titleUnspaced (replace-regexp-in-string " " "-" title))
+	(file-name (concat date "-" (downcase titleUnspaced) ".org"))
+	(file-path (concat "~/org/" file-name))
+
+	(stencil (concat "#+TITLE: " title "\n"
+			 "#+DESCRIPTION: \n"
+			 "#+AUTHOR: \n"
+			 "#+DATE: <" dateDay ">\n"
+			 "#+TAGS: \n"
+			 "#+OPTIONS: -:nil\n"
+			 "\n"
+			 ))) 
+   (with-temp-file file-path
+     (insert stencil))
+   (find-file file-path)
+   (goto-char (point-max))
+   ))
+
+(defun mb/orgpriv-entry-stencil  (title )
+ "Create and open a file with the given stencil."
+ (interactive "sEnter the title: ")
+ (let* ((date (format-time-string "%Y.%m.%d"))
+	(dateDay (format-time-string "%Y-%m-%d %a"))
+	(titleUnspaced (replace-regexp-in-string " " "-" title))
+	(file-name (concat date "-" (downcase titleUnspaced) ".org"))
+	(file-path (concat "~/orgpriv/" file-name))
+
+	(stencil (concat "#+TITLE: " title "\n"
+			 "#+DESCRIPTION: \n"
+			 "#+AUTHOR: \n"
+			 "#+DATE: <" dateDay ">\n"
+			 "#+TAGS: \n"
+			 "#+OPTIONS: -:nil\n"
+			 "\n"
+			 ))) 
+   (with-temp-file file-path
+     (insert stencil))
+   (find-file file-path)
+   (goto-char (point-max))
+   ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** The ending
@@ -766,3 +966,4 @@ See `org-latex-format-headline-function' for details."
 
 ;; All done
 (message "All done in init.el.")
+(put 'upcase-region 'disabled nil)

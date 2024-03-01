@@ -7,11 +7,16 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "K2PKSJ5KWM4QIW-A795HB" "currentsession" t nil #s(wg-wconfig "K2PKSJ5LFH9CF4-A795X5" nil
+	      (#s(wg-workgroup "K4CO3TGW3G54EW-F7C7R7" "currentsession" t nil #s(wg-wconfig "K4CO3TH2DVCXA0-F7C8E4" nil
 											    ((fullscreen))
-											    0 0 106 55 right 16 #s(wg-win nil nil
-															  (0 0 110 54)
-															  6836 833 0 nil t nil "K2NWXABL4OIRXC-BBU9CD"))
+											    0 0 177 55 right 16 #s(wg-wtree nil nil
+															    (0 0 181 54)
+															    (#s(wg-win nil nil
+																       (0 0 49 54)
+																       1 1 0 nil nil t "K4CO3TGVX5GSXS-F7C7L7")
+															       #s(wg-win nil nil
+																	 (49 0 181 54)
+																	 1287 662 0 nil t nil "K4CO3TGW22N5C-F7C7NF"))))
 			       nil nil nil nil)
 		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
@@ -41,12 +46,29 @@
 										    0 0 106 55 right 16 #s(wg-win nil nil
 														  (0 0 109 54)
 														  772 157 0 nil t nil "JU8UNTD042HBGG-G54W4F"))
+				 nil nil nil nil)
+		 #s(wg-workgroup "K3C8MAJS4A2TUO-15XU3PQ" "clean-workspace" t nil #s(wg-wconfig "K3C8MAJSLSJ6L4-15XU466" nil
+												((fullscreen))
+												0 0 115 55 right 16 #s(wg-win nil nil
+															      (0 0 119 54)
+															      149 1 0 nil t nil "K3C8JVAV6WAZ28-15XCK8U"))
 				 nil nil nil nil))
-	      (#s(wg-buf "K2NWXABL4OIRXC-BBU9CD" "elsevier.org" "/home/mb/projects/elsevierorg/elsevier.org" 6836 466
-			 ((major-mode . org-mode)
-			  (mark-ring 536 465 7098 7098 524 1243 536 7068 356 6126 6938 6988 7051 6836 6836)
-			  nil nil nil nil nil nil)
-			 nil nil)
+	      (#s(wg-buf "K4CO3TGVX5GSXS-F7C7L7" "*Help*" nil 1 nil
+			 ((major-mode . help-mode)
+			  nil nil nil nil nil nil nil)
+			 (wg-deserialize-help-mode-buffer
+			  ("/home/mb/projects/Plan godzin WEII (html->html)/"
+			   ((describe-function--helper shell-command))))
+			 nil)
+		 #s(wg-buf "K4CO3TGW22N5C-F7C7NF" "README.org" "/home/mb/projects/Plan godzin WEII (html->html)/README.org" 1287 1160
+			   ((major-mode . org-mode)
+			    (mark-ring 1124 1130 1128 1290 1290 831 782 778 1196 1196 1031 1030 1196 1013 1012 1287)
+			    nil nil nil nil nil nil)
+			   nil nil)
+		 #s(wg-buf "K3C8JVAV6WAZ28-15XCK8U" "*Ibuffer*" nil 385 nil
+			   ((major-mode . ibuffer-mode)
+			    nil nil nil nil nil nil nil)
+			   nil nil)
 		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 18546 22696
 			   ((major-mode . emacs-lisp-mode)
 			    (mark-ring 18612 18612 20722 14487 14487 20301 20336 14487 14487 14487 14487 14487 14487 10484 14487 18546)

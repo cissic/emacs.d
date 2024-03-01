@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Mon Jan 22 08:28:49 2024
+;; Created Mon Feb 26 19:03:37 2024
 ;; Desktop file format version 208
 ;; Emacs version 29.1
 
@@ -11,105 +11,141 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("morfik" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("hiber" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("z" 0 1 (isearch-case-fold-search t isearch-regexp-function nil)) #("ssss" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("setup" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("address" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("bibtexstyl" 0 10 (isearch-case-fold-search t isearch-regexp-function nil)) #("bibliogr" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("modifica" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("org-mode" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("at the end of " 0 14 (isearch-case-fold-search t isearch-regexp-function nil)) #("scrat" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("Conclusion" 0 10 (isearch-case-fold-search nil isearch-regexp-function nil)) #("noexport" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("bibtexStyl" 0 10 (isearch-case-fold-search nil isearch-regexp-function nil)) #("pdflate" 0 7 (isearch-case-fold-search t isearch-regexp-function nil))))
-(setq regexp-search-ring '(#("org-mode" 0 8 (isearch-case-fold-search t)) #("diffusion-eq" 0 12 (isearch-case-fold-search t))))
+(setq search-ring '(#("async" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("asyn" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("asynch" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("init" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("shell-com" 0 9 (isearch-case-fold-search t isearch-regexp-function nil)) #("co" 0 2 (isearch-case-fold-search t isearch-regexp-function nil)) #("dir" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("tmp-f-strike" 0 12 (isearch-case-fold-search t isearch-regexp-function nil)) #("ftp" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("ListaGlo" 0 8 (isearch-case-fold-search nil isearch-regexp-function nil)) #("Glosow" 0 6 (isearch-case-fold-search nil isearch-regexp-function nil)) #("doc" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("ListaGlos" 0 9 (isearch-case-fold-search nil isearch-regexp-function nil)) #("o dopuszcze" 0 11 (isearch-case-fold-search t isearch-regexp-function nil)) #("odmowie wsz" 0 11 (isearch-case-fold-search t isearch-regexp-function nil)) #("RD podwa" 0 8 (isearch-case-fold-search nil isearch-regexp-function nil))))
+(setq regexp-search-ring '(#("2023" 0 4 (isearch-case-fold-search t)) #("org-mode" 0 8 (isearch-case-fold-search t)) #("diffusion-eq" 0 12 (isearch-case-fold-search t))))
 (setq register-alist (list (list 24 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk))))
-(setq file-name-history '("~/projects/cissic.github.io/mysource/public-notes-org/2024-01-17-hibernation-on-debian-without-swap-partition.org" "~/projects/elsevierorg/elsarticle.cls" "~/projects/papers/paper-dTM-for-domain-with-cavities/orgFromTemplate/els_dtm_cavities.org" "~/projects/papers/paper-dTM-for-domain-with-cavities/orgFromTheScratch/els_dtm_cavities.org" "~/projects/elsevierorg/README.org" "~/projects/otoczak/P1.org" #("/home/mb/projects/elsevierorg/elsevier.org" 0 42 (ivy-index 12)) "~/projects/papers/paper-dTM-for-domain-with-cavities/orgFromTheScratch/TKMBTM.org" "~/projects/papers/paper-dTM-for-domain-with-cavities/orgFromTheScratch/TKMBTM.tex" "~/projects/papers/paper-dTM-for-domain-with-cavities/orgFromTheScratch/TKMBTM.org" "~/org/2024.01.12 - loops-in-C.org" "~/projects/cissic.github.io/mysource/public-notes-org/2024-01-11-zero-width-space.org" "~/projects/elsevierorg/elsevier.org" "~/projects/papers/paper-dTM-for-domain-with-cavities/elsevierorg-master/elsevier.org" "~/projects/papers/paper-dTM-for-domain-with-cavities/orgFromTheScratch/TKMBTM.org" "~/projects/cissic.github.io/mysource/public-notes-org/2024-01-10-if-conditional-in-elisp.org" "~/projects/cissic.github.io/mysource/public-notes-org/2024-10-01-if-conditional-in-elisp.org" "~/org/RDITiT/PrzewodyDoktorskie/!Uniwersalny-przebieg-przewodu/MetaDokumentOTymKatalogu.org" "~/org/RDITiT/PrzewodyDoktorskie/!Uniwersalny-przebieg-przewodu/Szablony/uniwersalny-przebieg-przewodu.org" "~/org/RDITiT/PrzewodyDoktorskie/!Uniwersalny-przebieg-przewodu/Szablony/Preamble-RD-Scenariusz.org" "~/org/RDITiT/! 2023.xx.xx - 35 posiedzenie orgSzablon2.1/!RDsetup.org" #("/anonymous@RDsetup.org:" 0 23 (ivy-index 0)) "~/org/RDITiT/2023.12.05 - 34 posiedzenie orgSzablon (obrona Stawarz)/Sprawozdanie-protokol/Protokol_RD_ITiT_2023_12_05_wer_0_2=wer_ost.pdf" "~/org/RDITiT/2023.12.05 - 34 posiedzenie orgSzablon (obrona Stawarz)/Sprawozdanie-protokol/Protokol_RD_ITiT_2023_12_05_wer_0_2=wer_ost.docx" "~/org/RDITiT/PrzewodyDoktorskie/Kuras_Pawel/PrzebiegPrzewodu/przebiegPrzewodu.org" "~/org/RDITiT/PrzewodyDoktorskie/Kuras_Pawel/PrzebiegPrzewodu/dane_dot_przewoduPROP.org" "~/org/RDITiT/! 2023.xx.xx - 35 posiedzenie orgSzablon2.1/!RDsetup.org" "~/projects/papers/paper-dTM-for-domain-with-cavities/orgbutLatex/cavities.org" "~/org/RDITiT/! 2023.xx.xx - 35 posiedzenie orgSzablon2.1/!RDsetup.org" "~/org/RDITiT/! 2023.xx.xx - 35 posiedzenie orgSzablon2.1/!RDmain.org" "~/org/RDITiT/! 2023.xx.xx - 35 posiedzenie orgSzablon2.1/!RDsetup.org" "~/org/RDITiT/! 2023.xx.xx - 35 posiedzenie orgSzablon2.1/!RDmain.org" "~/org/2023.11.09-stackexchange-org-macros.org" "~/.emacs.d/elpa/org-ref-20230830.9/org-ref-ref-links.el" "~/.emacs.d/elpa/org-ref-20230830.9/org-ref-utils.el" "~/org/2024.01.08 - links,references.org" "~/temp/scratch-org/Test2DEL/testA.tex" "~/temp/scratch-org/Test2DEL/test.org" "~/org/2024.01.06 - xiaomi-lineageOS.org" "~/temp/scratch-org/scratch.org" "~/projects/papers/paper-dTM-for-domain-with-cavities/org/A_dTM-for-cavities.org" "~/org/ChatGPT-personalities/org-mode-like-prompter.org" "~/projects/fuzzymesh/orgmanu/FUZZMLESS.org" "~/projects/papers/paper-dTM-for-domain-with-cavities/source/A_dTM-for-cavities.tex" "~/org/RDITiT/PrzewodyDoktorskie/!Uniwersalny-przebieg-przewodu/MetaDokumentOTymKatalogu.org" "~/projects/cissic.github.io/mysource/public-notes-org/!AUX-GENERATED/2023-11-14-org-mode-properties-reuse2/globalProps.org" "~/projects/cissic.github.io/mysource/public-notes-org/!AUX-GENERATED/2023-11-14-org-mode-properties-reuse2/globalExtMacros.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-11-27-org-mode-properties-reuse3.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-11-15-org-mode-properties-reuse2.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-11-14-org-mode-properties-reuse.org" "~/org/RDITiT/2023.10.11 - 30 posiedzenie orgSzablon/RDITITmain.org" "~/org/RDITiT/2023.12.05 - 34 posiedzenie orgSzablon (obrona Stawarz)/RDITITmain.org" "~/org/RDITiT/! 2023.xx.xx - 35 posiedzenie orgSzablon2.1/!RDsetup.org" "~/org/RDITiT/! 2023.xx.xx - 35 posiedzenie orgSzablon2.1/!RDmain.org" "~/projects/ZZZ_Testy/!Emacs/mozliwosciEmacsa/sample.org" "~/projects/TSdistributed/pdeSolver.org" "/usr/share/emacs/29.1/lisp/org/ox-latex.el.gz" #("/home/mb/.emacs.d/myarch/Preamble2023_07.org" 0 44 (ivy-index 1)) "~/projects/TSdistributed/Preamble_TSdistributed.org" "~/.emacs.d/myarch/Preamble.org" "~/projects/TSdistributed/pdeSolver.org" "~/projects/TSdistributed/pdeSolverNEW.org" "~/projects/TSdistributed/pdeSolver.org" "~/projects/TSdistributed/pdeSolver.pdf" "~/projects/cissic.github.io/mysource/public-notes-org/2023-12-18-init-and-setup-Emacs-29/engraved-example.org" "~/temp/engraved/engr.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-12-18-configuring-and-installing-emacs-29.org" "~/.config/conky/conky.conf" "~/binmb/systemManagementScripts/! systemPreparation.sh" "~/.config/vivaldi/Profile 20/Bookmarks" "~/.config/vivaldi/Profile 20/Network Persistent State" "~/.config/vivaldi/Profile 16/Preferences" "/home/mb/scratch.org" "/home/mb/org/2023.11.23-mail_Szczepanski.org" #("/home/mb/org/RDITiT/! orgSzablon xx.xx.2023/RDITITsetup.org" 0 59 (ivy-index 1)) #("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-09-30-lenovo-trackpoint-in-debian.org" 0 103 (ivy-index 0)) "/home/mb/org/RDITiT/! orgSzablon xx.xx.2023/*scratch*" "/home/mb/org/RDITiT/! orgSzablon xx.xx.2023/RDITiT.sty" #("/home/mb/.emacs.d/diary" 0 23 (ivy-index 1)) #("/home/mb/.emacs.d/" 0 18 (ivy-index 0)) "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-09.26-2fa-for-github-account.org" #("/home/mb/org/2023.09.26-mail-do-Kubaszka.org" 0 44 (ivy-index 0)) "/home/mb/org/2023.09.25-mail-do-DWE.org" #("/home/mb/projects/TSdistributed/src/pdeSolver/BC_fun_wrapping.m" 0 63 (ivy-index 1)) #("/home/mb/projects/TSdistributed/src/pdeSolver/PDE_fun_wrapping.m" 0 64 (ivy-index 1)) "/home/mb/projects/TSdistributed/src/pdeSolver/mainScript.m" "/home/mb/bin/MATLAB/R2023a/toolbox/matlab/funfun/pdepe.m" #("/home/mb/projects/TSdistributed/Preamble_TSdistributed.org" 0 58 (ivy-index 1)) "/home/mb/projects/TSdistributed/src/Logemann/pdeSolutionScript.m" #("/home/mb/projects/TSdistributed/srcMTLB/Logemann3/main_Loge4.m" 0 62 (ivy-index 9)) #("/home/mb/projects/TSdistributed/srcMTLB/Logemann3/main_Loge3.m" 0 62 (ivy-index 7)) #("/home/mb/.emacs.d/myarch/Preamble.org" 0 37 (ivy-index 1)) #("/home/mb/projects/org-async/Preamble_local.org" 0 46 (ivy-index 1)) #("/home/mb/.emacs.d/myarch/octave_scripts4emacs.m" 0 47 (ivy-index 1)) "/home/mb/org/2023.08.31-mail-do-DWE.org" #("/home/mb/projects/Dydaktyka/moft - Metody obliczeniowe w fizyce i technice/Zadania kolokwium/" 0 93 (ivy-index 0)) "/home/mb/projects/ZZZ_Testy/!Emacs/org-exporter-filters2/source3.org" #("/home/mb/org/RDITiT/orgSzablon 21.06.2023/" 0 42 (ivy-index 0)) #("/home/mb/org/RDITiT/orgSzablon 21.06.2023/Q4Wald-sparse-tree.org" 0 64 (ivy-index 2)) "/home/mb/projects/ZZZ_Testy/!Emacs/org-exporter-filters/test-expSINK.org"))
+(setq file-name-history '("~/projects/Plan godzin WEII (html->html)/README.org" "~/projects/Dydaktyka/USB/Sprawy_orgUSB.org" "/media/mb/arch/HA/MuzykaA/Hidden Orchestra [2010] - Night Walks" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewest/! 2024.xx.xx - 36 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewest/AuxCodeRD.org" "~/projects/Dydaktyka/AiSD/Zadanie1-algorytmika/jak_poprawnie_rozwiazac_zadanie.org" "~/Pobrane/SZABLONY DOKUMENTOW RADY DYSCYPLINY/uwagiMB.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewodu.org" "~/projects/elsevierorg/elsevier.org" "/home/mb/.emacs.d/init.el" "~/org/RDITiTNewestNewest/Notatki, dokumenty/notatki.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/RDmain.pdf" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/org/RDITiTNewestNewest/AuxCodeRD.el" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/ListaObecnosci.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" #("/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/AuxCodeRD.org:org-src-ListaObecnosci()" 0 114 (ivy-index 0)) "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/org/RDITiT/! 2024.xx.xx - 35_B posiedzenie (KD -CzmilAnna - obrona) orgSzablon2.1/!RDmain.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 36 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewodu.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/2023.09.12 - instalacja LineageOS na XperiaXZ1.org" "~/org/2024.01.06 - xiaomi-lineageOS.org" "~/org/#2024.01.06 - xiaomi-lineageOS.org#" "~/projects/Dydaktyka/AiSD/pomysly-na-tematy-projektow.org" "~/projects/Dydaktyka/AiSD/TODO.org" "~/org/RDITiTNewest/PrzewodyDoktorskie/Czmil_Anna/6.9-nadanie-stopnia-doktora-RD-projekt.org" "~/org/RDITiTNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewodu.org" "~/org/RDITiT/! 2024.xx.xx - 35_B posiedzenie (KD -CzmilAnna - obrona) orgSzablon2.1/!RDmain.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewodu.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/9.0-scenariusz.pdf" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/scenariusz.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/#scenariuszOLD.org#" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/scenariuszOLD.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/scenariusz.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/scenariuszOLD.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 36 posiedzenie orgSzablon2.2/Zaproszenie-KD.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/3.0-uchwala-powolanie-komisji-doktorskiej.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewodu.org" "~/org/2024-02-19-auto-title/ex1.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 36 posiedzenie orgSzablon2.2/ListaObecnosci.org" #("/home/mb/org/RDITiTNewestNewest/ListaObecnosci.org" 0 50 (ivy-index 0)) #("/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 36 posiedzenie orgSzablon2.2/ListaObecnosci.org" 0 94 (ivy-index 1)) "~/org/RDITiTNewestNewest/! 2024.xx.xx - 36 posiedzenie orgSzablon2.2/ListaObecnosci.org" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 36 posiedzenie orgSzablon2.2/ListaObecnosci.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "/media/mb/arch/HA/MuzykaA/BLONDE REDHEAD/Blonde Redhead [2004] - Misery Is A Butterfly" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 36 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Doktorant-Testowy/!przebieg-przewodu.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewodu.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewest/AuxCodeRD.org" "~/org/RDITiTNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewodu.org" "/home/mb/org/RDITiTNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewoduUNDELETED.org" "~/org/RDITiTNewest/PrzewodyDoktorskie/Czmil_Anna/4.9-zaproszenia-na-spotkanie-KD.org" "~/org/RDITiTNewest/TEMP POTEM 2DEL/AAAA-Testy/blok-kodu.org" "~/org/RDITiTNewest/TEMP POTEM 2DEL/AAAA-Testy/testy-RD-KD.org" "~/org/RDITiTNewest/TEMP POTEM 2DEL/AAAA-Testy/4.1-pisma-przewodnie-recenzenci-rektor.org" "~/org/RDITiTNewest/TEMP POTEM 2DEL/AAAA-Testy/testy-RD-KD.org" "~/org/RDITiT/PrzewodyDoktorskie/Czmil_Anna/8. Dopuszczenie-do-obrony/1. Zawiadomienie-o-publicznej-obronie-rozprawy.org" "~/org/RDITiTNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewodu.org" "~/org/RDITiT/! 2024.xx.xx - 36 posiedzenie orgSzablon2.1/!RDmain.org" "~/org/RDITiT/! 2024.xx.xx - 35_B posiedzenie (KD -CzmilAnna - obrona) orgSzablon2.1/!RDmain.org" "~/org/RDITiT/! 2024.xx.xx - 36 posiedzenie orgSzablon2.1/!RDmain.org" "~/org/RDITiTNewest/BD_RD.org" "~/org/RDITiTNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewodu.org" "~/org/RDITiTNewest/AuxCodeRD.org" "~/org/RDITiTNewest/BD_RD.org" "~/org/RDITiTNewest/PrzewodyDoktorskie/Czmil_Anna/6.0-uchwala-przyjecie-obrony-KD.org" "~/org/RDITiTNewest/BD_RD.org" "~/org/RDITiTNewest/AuxCodeRD.org" "~/org/RDITiTNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewodu.org" "~/org/RDITiT/! 2024.xx.xx - 36 posiedzenie orgSzablon2.1/!RDmain.org" "~/org/RDITiT/! 2024.xx.xx - 36 posiedzenie orgSzablon2.1/!RDsetup.org" "~/org/RDITiT/! 2024.xx.xx - 36 posiedzenie orgSzablon2.1/!RDmain.org" "~/org/RDITiT/! 2024.xx.xx - 35_B posiedzenie (KD -CzmilAnna - obrona) orgSzablon2.1/!RDmain.org" "~/projects/otoczak/P1.org" "~/org/RDITiT/! 2024.xx.xx - 36 posiedzenie orgSzablon2.1/!RDmain.org" "~/org/RDITiT/! 2024.xx.xx - 35_B posiedzenie (KD -CzmilAnna - obrona) orgSzablon2.1/!RDmain.org" "~/org/RDITiTNewest/AuxCodeRD.org" "~/org/RDITiTNewest/BD_RD.org" "~/org/RDITiT/! 2024.xx.xx - 36 posiedzenie orgSzablon2.1/!RDmain.org" "~/org/RDITiTNewest/PrzewodyDoktorskie/Czmil_Anna/!przebieg-przewodu.org" "~/org/RDITiT/! 2024.xx.xx - 36 posiedzenie orgSzablon2.1/!RDsetup.org" "~/org/RDITiT/! 2024.xx.xx - 36 posiedzenie orgSzablon2.1/!RDmain.org" #("/home/mb/org/RDITiT/! 2024.xx.xx - 35_B posiedzenie (KD -CzmilAnna - obrona) orgSzablon2.1/" 0 91 (ivy-index 0)) #("/home/mb/org/RDITiT/! 2024.xx.xx - 35_B posiedzenie (KD -CzmilAnna - obrona) orgSzablon2.1/ListaObecnosci.tex" 0 109 (ivy-index 0)) "~/org/RDITiT/! 2024.xx.xx - 35_B posiedzenie (KD -CzmilAnna - obrona) orgSzablon2.1/!RDmain.org" #("/home/mb/org/RDITiT/! 2024.xx.xx - 35_B posiedzenie (KD -CzmilAnna - obrona) orgSzablon2.1/!RDmain.tex" 0 102 (ivy-index 2)) "~/org/RDITiT/! 2024.xx.xx - 35_B posiedzenie (KD -CzmilAnna - obrona) orgSzablon2.1/!RDmain.org"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2024-01-17-hibernation-on-debian-without-swap-partition.org"
-  "2024-01-17-hibernation-on-debian-without-swap-partition.org"
-  'org-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  7017
-  '(7106 nil)
-  nil
-  nil
-  '((buffer-display-time 26030 6417 809131 98000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (6617 6617 6617 4736 4666 3981 3171 3293 6730 6730 6730 6730 6685 6648 6619 7017))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/papers/paper-dTM-for-domain-with-cavities/orgFromTemplate/els_dtm_cavities.org"
-  "els_dtm_cavities.org"
-  'org-mode
-  '(buffer-face-mode font-lock-mode org-indent-mode org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode)
-  8172
-  '(8851 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-display-time 26029 45541 925204 507000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (8805 15680 7989 7989 10078 7515 1469 1469 1469 1469 1222 6946 1469 1437 1259 8172))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/elsevierorg/elsevier.org"
-  "elsevier.org"
-  'org-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode org-indent-mode)
-  6836
-  '(466 nil)
-  nil
-  nil
-  '((indent-tabs-mode) (buffer-display-time 26029 44580 390685 838000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (536 465 7098 7098 524 1243 536 7068 356 6126 6938 6988 7051 6836 6836))))
-
-(desktop-create-buffer 208
-  "/home/mb/org/RDITiT/! 2023.xx.xx - 35 posiedzenie orgSzablon2.1/!RDsetup.org"
-  "!RDsetup.org"
-  'org-mode
-  '(org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode font-lock-mode buffer-face-mode)
-  651
-  '(707 t)
-  nil
-  nil
-  '((buffer-display-time 26029 978 1723 228000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (707))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/otoczak/P1.org"
-  "P1.org"
-  'org-mode
-  '(org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode font-lock-mode buffer-face-mode)
-  753
-  '(321 nil)
-  nil
-  nil
-  '((buffer-display-time 26027 45284 560020 14000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
-  '((mark-ring (180 164 753 180 321 321 618 208))))
-
-(desktop-create-buffer 208
-  "/home/mb/temp/scratch-org/scratch.org"
-  "scratch.org"
+  "/home/mb/projects/Plan godzin WEII (html->html)/README.org"
+  "README.org"
   'org-mode
   '(buffer-face-mode org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode font-lock-mode)
-  362
-  '(74 nil)
+  2291
+  '(2247 nil)
   nil
   nil
-  '((buffer-display-time 26029 43194 333881 594000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (192 192 95 95 74 39 102 125 62 192 192 192 72 192 136 93))))
-
-(desktop-create-buffer 208
-  "/home/mb/org/RDITiT/PrzewodyDoktorskie/Kuras_Pawel/PrzebiegPrzewodu/przebiegPrzewodu.org"
-  "przebiegPrzewodu.org"
-  'org-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  5848
-  '(5866 nil)
-  nil
-  nil
-  '((buffer-display-time 26029 44571 840081 333000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (6244 6244 5961 6244 5838 5837 4837 5836 3321 7960 7960 1291 1291 1291 1291 5848))))
+  '((buffer-display-time 26076 53873 875910 837000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (2191 2140 2107 2047 2019 1947 1927 1830 2234 2175 2035 2003 1916 1872 2320 1916))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-12-18-configuring-and-installing-emacs-29.org"
   "2023-12-18-configuring-and-installing-emacs-29.org"
   'org-mode
-  '(visual-line-mode display-line-numbers-mode font-lock-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode buffer-face-mode)
-  91441
-  '(83165 nil)
+  '(buffer-face-mode org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode font-lock-mode)
+  109472
+  '(70338 nil)
   nil
   nil
-  '((buffer-display-time 26026 3691 795744 158000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
-  '((mark-ring (83120 83084 83085 83587 83587 83171 84250 84250 83636 83713 81823 83713 83612 84142 83724 91442))))
+  '((buffer-display-time 26076 42304 853854 25000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (99574 70338 108876 109081 109081 109396 109472))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(buffer-face-mode font-lock-mode eldoc-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode)
+  8832
+  '(26332 nil)
+  nil
+  nil
+  '((buffer-display-time 26076 35975 126353 680000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (25353))))
+
+(desktop-create-buffer 208
+  "/home/mb/org/RDITiTNewestNewest/AuxCodeRD.org"
+  "AuxCodeRD.org"
+  'org-mode
+  '(org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode org-beamer-mode font-lock-mode overwrite-mode buffer-face-mode)
+  122961
+  '(177868 nil)
+  nil
+  nil
+  '((buffer-display-time 26076 31089 625720 336000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode . overwrite-mode-textual) (truncate-lines))
+  '((mark-ring (123851 123521 123521 122312 123393 123393 123757 103929 103914 103914 103812 103624 103624 103624 103510 103595))))
+
+(desktop-create-buffer 208
+  nil
+  "*info*"
+  'Info-mode
+  '(isearch-fold-quotes-mode font-lock-mode company-mode visual-line-mode display-line-numbers-mode buffer-face-mode)
+  1269
+  '(nil nil)
+  t
+  '("/usr/share/info/emacs/efaq" "Top" nil)
+  '((tab-width . 8) (buffer-display-time 26076 30925 121183 732000) (buffer-file-coding-system . utf-8-unix) (case-fold-search . t) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/Dydaktyka/USB/Sprawy_orgUSB.org"
+  "Sprawy_orgUSB.org"
+  'org-mode
+  '(org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode font-lock-mode buffer-face-mode)
+  4892
+  '(2505 nil)
+  nil
+  nil
+  '((buffer-display-time 26076 28765 892551 119000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1952 2066 2544 2317 2414 2485 2485 2485 2472 2455 2442 2309 2301 2502 2310 4830))))
+
+(desktop-create-buffer 208
+  "/home/mb/org/2024.02.24-my-notes-from-=introduction-to-emacs-lisp=.org"
+  "2024.02.24-my-notes-from-=introduction-to-emacs-lisp=.org"
+  'org-mode
+  '(buffer-face-mode org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode font-lock-mode)
+  185
+  '(132 nil)
+  nil
+  nil
+  '((buffer-display-time 26076 31333 841109 622000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (132 185 185 185))))
+
+(desktop-create-buffer 208
+  "/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org"
+  "!RDmain.org"
+  'org-mode
+  '(buffer-face-mode org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode org-beamer-mode font-lock-mode)
+  18845
+  '(18845 nil)
+  nil
+  nil
+  '((buffer-display-time 26076 31334 719916 243000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (18875 18630 18630 18630 18875 18875 18845))))
+
+(desktop-create-buffer 208
+  "/home/mb/org/2024.01.06 - xiaomi-lineageOS.org"
+  "2024.01.06 - xiaomi-lineageOS.org"
+  'org-mode
+  '(font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode buffer-face-mode)
+  233
+  '(173 nil)
+  nil
+  nil
+  '((buffer-display-time 26072 27494 54352 52000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (1 1 1 1 104 158 158 158 188 231 172 231 185 217 231 128))))
+
+(desktop-create-buffer 208
+  "/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/Glosowania-do-systemu.odt"
+  "Glosowania-do-systemu.odt"
+  'archive-mode
+  '(company-mode visual-line-mode display-line-numbers-mode font-lock-mode buffer-face-mode)
+  157
+  '(nil nil)
+  t
+  nil
+  '((buffer-display-time 26076 31335 386415 956000) (buffer-file-coding-system . no-conversion) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/Plan godzin WEII (html->html)/README.org_archive"
+  "README.org_archive"
+  'org-mode
+  '(font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
+  114
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring nil)))
 
