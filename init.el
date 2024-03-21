@@ -197,8 +197,8 @@ frame if FRAME is nil, and to 1 if AMT is nil."
 
 ;; Recently opened files ->
   (recentf-mode 1)
-  (setq recentf-max-menu-items 100)
-  (setq recentf-max-saved-items 100)
+  (setq recentf-max-menu-items 200)
+  (setq recentf-max-saved-items 200)
   ;; in original emacs this binding is for "Find file read-only"
   (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 ;; <- Recently opened files
@@ -335,7 +335,7 @@ See `org-latex-format-headline-function' for details."
    (and priority (format "\\framebox{\\#%c} " priority))
    text
    (and tags
-	(format "\\hfill{}\\textsc{%s}"
+	(format "\\hfill{}\\textsc{ %s}"
 		(mapconcat #'org-latex--protect-text tags ":")))))
 
 (setq org-latex-format-headline-function 'org-latex-format-headline-colored-keywords-function)
@@ -502,6 +502,7 @@ See `org-latex-format-headline-function' for details."
 (defun mb/org-babel-tangle-and-export (file target-file)
   (interactive)
   (mb/org-babel-tangle-to-target-file-from-the-file file target-file)
+  (sleep-for 0.5)
   (mb/org-babel-export-org-file-to-latex target-file)
   )
 
@@ -560,7 +561,7 @@ See `org-latex-format-headline-function' for details."
 (setq org-latex-engraved-preamble
   "\\usepackage{fvextra}
 
-  [FVEXTRA-SETUP]
+  [FVEXTRA-SETUP]http://pei.prz.rzeszow.pl/as/Lato2024_teachers_days_horizontal.html
 
   % Make line numbers smaller and grey.
   \\renewcommand\\theFancyVerbLine{\\footnotesize\\color{black!40!white}\\arabic{FancyVerbLine}}
@@ -736,6 +737,14 @@ See `org-latex-format-headline-function' for details."
 
 (define-key global-map (kbd "<s-f12>") 'mb/browse-file-directory)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; Email configuration >>>>>>>>>>>>
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; <<<<<<<<<<<<<< Email configuration 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
 ;; setting up configuration for emacs-everywhere:
 ;; 1. font size
 ;(if (daemonp)
@@ -749,6 +758,21 @@ See `org-latex-format-headline-function' for details."
 (add-hook 'after-make-frame-functions 'my-after-frame)
 ;)
 ;)
+
+(defun launch-separate-emacs-in-terminal ()
+  (suspend-emacs "fg ; emacs -nw"))
+
+(defun launch-separate-emacs-under-x ()
+  (call-process "sh" nil nil nil "-c" "emacs &"))
+
+(defun restart-emacs ()
+  (interactive)
+  ;; We need the new emacs to be spawned after all kill-emacs-hooks
+  ;; have been processed and there is nothing interesting left
+  (let ((kill-emacs-hook (append kill-emacs-hook (list (if (display-graphic-p)
+                                                           #'launch-separate-emacs-under-x
+                                                         #'launch-separate-emacs-in-terminal)))))
+    (save-buffers-kill-emacs)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Diary
@@ -939,6 +963,13 @@ See `org-latex-format-headline-function' for details."
    (goto-char (point-max))
    ))
 
+(setq easy-hugo-basedir "~/projects/easy-hugo-blog/quickstart/")
+(setq easy-hugo-url "http://marbor.strony.prz.edu.pl/hugo")
+(setq easy-hugo-sshdomain "blogdomain")
+(setq easy-hugo-root "/usr/bin/")
+(setq easy-hugo-previewtime "300")
+;; (define-key global-map (kbd "C-c C-e") 'easy-hugo)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** The ending
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -966,4 +997,3 @@ See `org-latex-format-headline-function' for details."
 
 ;; All done
 (message "All done in init.el.")
-(put 'upcase-region 'disabled nil)

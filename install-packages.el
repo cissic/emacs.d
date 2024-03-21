@@ -63,7 +63,7 @@ auctex ; in order to have reftex working
   modus-themes ; theme by Protesilaos Stavrou
   ;moe-theme ; https://github.com/kuanyui/moe-theme.el
   ;mh
-  ;ob-async
+  ob-async
   org   ; ver. 9.3  built-in in Emacs 27.1; this install version 9.6 from melpa
   org-ac
   org-ai

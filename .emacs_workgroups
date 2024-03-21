@@ -7,18 +7,7 @@
 		(c 1 2 3 c 0 1 3)
 		0)
 	      "~/.emacs.d/.emacs_workgroups" "1.2.1"
-	      (#s(wg-workgroup "K4CO3TGW3G54EW-F7C7R7" "currentsession" t nil #s(wg-wconfig "K4CO3TH2DVCXA0-F7C8E4" nil
-											    ((fullscreen))
-											    0 0 177 55 right 16 #s(wg-wtree nil nil
-															    (0 0 181 54)
-															    (#s(wg-win nil nil
-																       (0 0 49 54)
-																       1 1 0 nil nil t "K4CO3TGVX5GSXS-F7C7L7")
-															       #s(wg-win nil nil
-																	 (49 0 181 54)
-																	 1287 662 0 nil t nil "K4CO3TGW22N5C-F7C7NF"))))
-			       nil nil nil nil)
-		 #s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" t nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
+	      (#s(wg-workgroup "JPU1CMI2VADJAG-AL81R" "initConfigLayout" nil nil #s(wg-wconfig "JPU1CMI42F72KLC-ALAK9" nil
 											       ((fullscreen . maximized))
 											       3 0 209 55 right 16 #s(wg-wtree nil nil
 															       (0 0 213 54)
@@ -28,46 +17,55 @@
 																  #s(wg-win nil nil
 																	    (107 0 213 54)
 																	    763 1 0 nil nil nil "JPU1CGMGZPBCR3S-9UKKZ"))))
+			       nil nil nil nil)
+		 #s(wg-workgroup "JTE1203DG5L69B4-AJ5RPS" "jupyterhub-shell-connection" nil nil #s(wg-wconfig "JTE1204592443DK-AJ5THU" nil
+													      ((fullscreen))
+													      (+ -14)
+													      0 161 54 right 16 #s(wg-wtree nil nil
+																	    (0 0 165 53)
+																	    (#s(wg-win nil nil
+																		       (0 0 83 53)
+																		       :max 1 0 nil nil nil "JTE1203DFPS6FHC-AJ5RJE")
+																	       #s(wg-win nil nil
+																			 (83 0 165 53)
+																			 :max 14501 0 nil t nil "JTE1203DFZ8IPM0-AJ5RLS"))))
 				 nil nil nil nil)
-		 #s(wg-workgroup "JTE1203DG5L69B4-AJ5RPS" "jupyterhub-shell-connection" t nil #s(wg-wconfig "JTE1204592443DK-AJ5THU" nil
-													    ((fullscreen))
-													    (+ -14)
-													    0 161 54 right 16 #s(wg-wtree nil nil
-																	  (0 0 165 53)
-																	  (#s(wg-win nil nil
-																		     (0 0 83 53)
-																		     :max 1 0 nil nil nil "JTE1203DFPS6FHC-AJ5RJE")
-																	     #s(wg-win nil nil
-																		       (83 0 165 53)
-																		       :max 14501 0 nil t nil "JTE1203DFZ8IPM0-AJ5RLS"))))
+		 #s(wg-workgroup "JU57FUKH0ZAPSW-2R219Q" "name" nil nil #s(wg-wconfig "JU8UNTDE53GJOG-G54WHO" nil
+										      ((fullscreen))
+										      0 0 106 55 right 16 #s(wg-win nil nil
+														    (0 0 109 54)
+														    772 157 0 nil t nil "JU8UNTD042HBGG-G54W4F"))
 				 nil nil nil nil)
-		 #s(wg-workgroup "JU57FUKH0ZAPSW-2R219Q" "name" t nil #s(wg-wconfig "JU8UNTDE53GJOG-G54WHO" nil
-										    ((fullscreen))
-										    0 0 106 55 right 16 #s(wg-win nil nil
-														  (0 0 109 54)
-														  772 157 0 nil t nil "JU8UNTD042HBGG-G54W4F"))
+		 #s(wg-workgroup "K3C8MAJS4A2TUO-15XU3PQ" "clean-workspace" nil nil #s(wg-wconfig "K3C8MAJSLSJ6L4-15XU466" nil
+												  ((fullscreen))
+												  0 0 115 55 right 16 #s(wg-win nil nil
+																(0 0 119 54)
+																149 1 0 nil t nil "K3C8JVAV6WAZ28-15XCK8U"))
 				 nil nil nil nil)
-		 #s(wg-workgroup "K3C8MAJS4A2TUO-15XU3PQ" "clean-workspace" t nil #s(wg-wconfig "K3C8MAJSLSJ6L4-15XU466" nil
-												((fullscreen))
-												0 0 115 55 right 16 #s(wg-win nil nil
-															      (0 0 119 54)
-															      149 1 0 nil t nil "K3C8JVAV6WAZ28-15XCK8U"))
+		 #s(wg-workgroup "K5116AA67PG478G-3VSF03" "wg0" nil nil #s(wg-wconfig "K5116AA68FEI6BK-3VSFFW" nil
+										      ((fullscreen))
+										      0 0 102 55 right 16 #s(wg-win nil nil
+														    (0 0 106 54)
+														    1717 1021 0 nil t nil "K51165NBGVT2OG8-3V64LU"))
+				 nil nil nil nil)
+		 #s(wg-workgroup "K5617S1IMHT79KO-S4INP" "currentsession" t nil #s(wg-wconfig "K5617S1IN3O8VG0-S4J42" nil
+											      ((fullscreen))
+											      580 171 80 36 right 16 #s(wg-win nil nil
+															       (0 0 83 33)
+															       :max 1 0 nil t nil "K5617S1IMEO82W8-S4IJU"))
 				 nil nil nil nil))
-	      (#s(wg-buf "K4CO3TGVX5GSXS-F7C7L7" "*Help*" nil 1 nil
-			 ((major-mode . help-mode)
+	      (#s(wg-buf "K5617S1IMEO82W8-S4IJU" "*scratch*" nil 1 nil
+			 ((major-mode . fundamental-mode)
 			  nil nil nil nil nil nil nil)
-			 (wg-deserialize-help-mode-buffer
-			  ("/home/mb/projects/Plan godzin WEII (html->html)/"
-			   ((describe-function--helper shell-command))))
-			 nil)
-		 #s(wg-buf "K4CO3TGW22N5C-F7C7NF" "README.org" "/home/mb/projects/Plan godzin WEII (html->html)/README.org" 1287 1160
-			   ((major-mode . org-mode)
-			    (mark-ring 1124 1130 1128 1290 1290 831 782 778 1196 1196 1031 1030 1196 1013 1012 1287)
-			    nil nil nil nil nil nil)
-			   nil nil)
-		 #s(wg-buf "K3C8JVAV6WAZ28-15XCK8U" "*Ibuffer*" nil 385 nil
+			 nil nil)
+		 #s(wg-buf "K3C8JVAV6WAZ28-15XCK8U" "*Ibuffer*" nil 1191 nil
 			   ((major-mode . ibuffer-mode)
 			    nil nil nil nil nil nil nil)
+			   nil nil)
+		 #s(wg-buf "K51165NBGVT2OG8-3V64LU" "pypdevenv.org" "/home/mb/projects/TSdistributed/pypdevenv.org" 1717 1896
+			   ((major-mode . org-mode)
+			    (mark-ring 1381 1518 1518 1125 1099 1518 1099 1144 1518 1545 1487 1487 1154 1487 950 1717)
+			    nil nil nil nil nil nil)
 			   nil nil)
 		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 18546 22696
 			   ((major-mode . emacs-lisp-mode)
