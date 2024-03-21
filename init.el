@@ -360,6 +360,9 @@ See `org-latex-format-headline-function' for details."
 (add-hook #'org-mode-hook #'org-special-block-extras-mode)
 ;; <- **** org-special-block-extras
 
+;; enabling asynchronous org-babel source block execution
+(require 'ob-async)
+
 ;; enabling org-babel
 (org-babel-do-load-languages
  'org-babel-load-languages '(

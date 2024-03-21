@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Thu Mar 21 07:26:53 2024
+;; Created Thu Mar 21 12:59:47 2024
 ;; Desktop file format version 208
 ;; Emacs version 29.1
 
@@ -11,47 +11,143 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("async" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("plan" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("ListaGlosow" 0 11 (isearch-case-fold-search nil isearch-regexp-function nil)) #("Lista-G" 0 7 (isearch-case-fold-search nil isearch-regexp-function nil)) #("rysujTabele" 0 11 (isearch-case-fold-search nil isearch-regexp-function nil)) #("Obec-listy-" 0 11 (isearch-case-fold-search nil isearch-regexp-function nil)) #("rd/temp" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("org-src-List" 0 12 (isearch-case-fold-search nil isearch-regexp-function nil)) #("Lista-Obecnosci-Na" 0 18 (isearch-case-fold-search nil isearch-regexp-function nil)) #("rd/sortuj" 0 9 (isearch-case-fold-search t isearch-regexp-function nil)) #("rd/sortuj-osoby" 0 15 (isearch-case-fold-search t isearch-regexp-function nil)) #("elisp-dane-do" 0 13 (isearch-case-fold-search t isearch-regexp-function nil)) #("Lista-Obec" 0 10 (isearch-case-fold-search nil isearch-regexp-function nil)) #("Swider" 0 6 (isearch-case-fold-search nil isearch-regexp-function nil)) #("ListaObec" 0 9 (isearch-case-fold-search nil isearch-regexp-function nil)) #("Define a " 0 9 (isearch-case-fold-search nil isearch-regexp-function nil))))
+(setq search-ring '(#("session-a" 0 9 (isearch-case-fold-search t isearch-regexp-function nil)) #("utf" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("ob-async" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("ob-asy" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("async" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("emacs-asy" 0 9 (isearch-case-fold-search t isearch-regexp-function nil)) #("Dec-Grze" 0 8 (isearch-case-fold-search nil isearch-regexp-function nil)) #("scra" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("recenz" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("Jamro" 0 5 (isearch-case-fold-search nil isearch-regexp-function nil)) #("READM" 0 5 (isearch-case-fold-search nil isearch-regexp-function nil)) #("ob-asyn" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("asyncob-asyn" 0 12 (isearch-case-fold-search t isearch-regexp-function nil)) #("install-pac" 0 11 (isearch-case-fold-search t isearch-regexp-function nil)) #("plan" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("ListaGlosow" 0 11 (isearch-case-fold-search nil isearch-regexp-function nil))))
 (setq regexp-search-ring '(#("2023" 0 4 (isearch-case-fold-search t)) #("org-mode" 0 8 (isearch-case-fold-search t)) #("diffusion-eq" 0 12 (isearch-case-fold-search t))))
 (setq register-alist (list (list 24 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk))))
-(setq file-name-history '("~/projects/cissic.github.io/mysource/public-notes-org/2023-10-05-noweb-C-examples.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-10-02-maxima-in-jupyter.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09-30-lenovo-trackpoint-in-debian.org" "~/projects/TSdistributed/srcMTLB/Logemann2/main.m" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09.26-2fa-for-github-account.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09-30-lenovo-trackpoint-in-debian.org" "~/projects/cissic.github.io/mysource/public-notes-org/2024-01-30-converting-pdf-back-to-text-format-doc,txt.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/ListaObecnosci.org" "~/.matlab/R2023b/work/sprintf_r.m" "~/org/RDITiTNewestNewest/BD_RD.org" "~/projects/Plan godzin WEII (html->html)/README.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/projects/Dydaktyka/Wyklad mono/Kod_2023_24_zima/mono23/fdm1d.org" "~/projects/TSdistributed/Logemann-razjeszcze.org" "~/projects/TSdistributed/pdeSolver(engraved).org" "~/projects/TSdistributed/Stability.org" "~/projects/Plan godzin WEII (html->html)/README.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024_UPB.org" "~/projects/TSdistributed/pypdevenv.org" "~/projects/TSdistributed/pdeSolver(engraved).org" "~/projects/TSdistributed/pdeSolverNEW.org" "~/projects/TSdistributed/Preamble_TSdistributed.org" "~/projects/TSdistributed/AA.org" "~/projects/TSdistributed/Stability.org" "~/projects/TODO.org" "~/projects/TODO.md" "~/projects/TSdistributed/pdeSolver.org" "~/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/about-placeholders.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/preview_blogentry.sh" "~/projects/blogs/lazyblorg/lazyblorg2/README_MB.org" "~/projects/blogs/lazyblorg/lazyblorg2/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/about-placeholder.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/about-placeholder.org" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/test.org" "~/projects/blogs/lazyblorg/public_html/metadata.pk" "~/projects/blogs/lazyblorg/lazyblorg2/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/example_invocation.sh" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg2/testdata/end_to_end_test/orgfiles/currently_supported_orgmode_syntax.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/KS-1.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024_UPB.org" "~/projects/blogs/lazyblorg/lazyblorg2/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/test.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/about-placeholder.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg2/example_invocation.sh" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg2/testdata/end_to_end_test/orgfiles/test.org" "~/projects/blogs/lazyblorg/lazyblorg2/src-org-posts/orgfiles/test.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.pyBKP_NOT_WORKING" "~/projects/blogs/lazyblorg/lazyblorg2/config.pyBKPWORKING" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024_UPB.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/!przebieg-przewodu.org" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDsetup.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/projects/Plan godzin WEII (html->html)/README.org" "~/projects/Plan godzin WEII (html->html)/mail.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg2/lazyblorg.py" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg2/example_invocation.sh" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg2/src-org-posts/test.org" "~/projects/blogs/lazyblorg/lazyblorg2/testdata/end_to_end_test/comparison/2014/01/30/full-syntax-test/source.org.txt" "~/projects/blogs/lazyblorg/lazyblorg2/tests/lazyblorg_test.py" "~/projects/blogs/lazyblorg/lazyblorg2/lib/htmlizer.py" "~/projects/blogs/lazyblorg/lazyblorg2/src-org-posts/test.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg2/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg2/example_invocation.sh" "~/projects/blogs/lazyblorg/lazyblorg2/README_MB-Starting this blog.org" "~/projects/blogs/lazyblorg/lazyblorg2/example_invocation.sh" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg/README_MB-Starting this blog.org" "~/projects/blogs/lazyblorg/lazyblorg/config.py" "~/projects/blogs/lazyblorg/lazyblorg/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg/testdata/end_to_end_test/orgfiles/about-placeholder.org" "~/projects/blogs/lazyblorg/lazyblorg/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg/my-posts/posts2.org" "~/projects/blogs/lazyblorg/lazyblorg/testdata/end_to_end_test/orgfiles/about-placeholder.org" "~/projects/blogs/lazyblorg/lazyblorg/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg/lazyblorg.py" "~/projects/blogs/lazyblorg/lazyblorg/my-posts/posts.org" "~/projects/blogs/lazyblorg/lazyblorg/example_invocation.sh" "~/projects/blogs/lazyblorg/lazyblorg/my-posts/2024-03-07-README_MB-Starting this blog.org" "~/projects/blogs/lazyblorg/lazyblorg/config.py"))
+(setq file-name-history '("~/projects/cissic.github.io/mysource/public-notes-org/2022-11-27-asynchronous-org-babel-sessions.org" "~/projects/overleafCE/overleaf-main/README.md" "~/.emacs.d/elpa/ob-async-20210428.2052/ob-async-autoloads.el" "~/.emacs.d/elpa/ob-async-20210428.2052/ob-async.el" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/!przebieg-przewodu.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-10-05-noweb-C-examples.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-10-02-maxima-in-jupyter.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09-30-lenovo-trackpoint-in-debian.org" "~/projects/TSdistributed/srcMTLB/Logemann2/main.m" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09.26-2fa-for-github-account.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09-30-lenovo-trackpoint-in-debian.org" "~/projects/cissic.github.io/mysource/public-notes-org/2024-01-30-converting-pdf-back-to-text-format-doc,txt.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/ListaObecnosci.org" "~/.matlab/R2023b/work/sprintf_r.m" "~/org/RDITiTNewestNewest/BD_RD.org" "~/projects/Plan godzin WEII (html->html)/README.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/projects/Dydaktyka/Wyklad mono/Kod_2023_24_zima/mono23/fdm1d.org" "~/projects/TSdistributed/Logemann-razjeszcze.org" "~/projects/TSdistributed/pdeSolver(engraved).org" "~/projects/TSdistributed/Stability.org" "~/projects/Plan godzin WEII (html->html)/README.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024_UPB.org" "~/projects/TSdistributed/pypdevenv.org" "~/projects/TSdistributed/pdeSolver(engraved).org" "~/projects/TSdistributed/pdeSolverNEW.org" "~/projects/TSdistributed/Preamble_TSdistributed.org" "~/projects/TSdistributed/AA.org" "~/projects/TSdistributed/Stability.org" "~/projects/TODO.org" "~/projects/TODO.md" "~/projects/TSdistributed/pdeSolver.org" "~/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/about-placeholders.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/preview_blogentry.sh" "~/projects/blogs/lazyblorg/lazyblorg2/README_MB.org" "~/projects/blogs/lazyblorg/lazyblorg2/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/about-placeholder.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/about-placeholder.org" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/test.org" "~/projects/blogs/lazyblorg/public_html/metadata.pk" "~/projects/blogs/lazyblorg/lazyblorg2/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/example_invocation.sh" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg2/testdata/end_to_end_test/orgfiles/currently_supported_orgmode_syntax.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/KS-1.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024_UPB.org" "~/projects/blogs/lazyblorg/lazyblorg2/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/test.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/about-placeholder.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg2/example_invocation.sh" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg2/testdata/end_to_end_test/orgfiles/test.org" "~/projects/blogs/lazyblorg/lazyblorg2/src-org-posts/orgfiles/test.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.pyBKP_NOT_WORKING" "~/projects/blogs/lazyblorg/lazyblorg2/config.pyBKPWORKING" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024_UPB.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/!przebieg-przewodu.org" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDsetup.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/projects/Plan godzin WEII (html->html)/README.org" "~/projects/Plan godzin WEII (html->html)/mail.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg2/lazyblorg.py" "~/projects/blogs/lazyblorg/lazyblorg2/mb_process_files.sh" "~/projects/blogs/lazyblorg/lazyblorg2/example_invocation.sh" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg2/src-org-posts/test.org" "~/projects/blogs/lazyblorg/lazyblorg2/testdata/end_to_end_test/comparison/2014/01/30/full-syntax-test/source.org.txt" "~/projects/blogs/lazyblorg/lazyblorg2/tests/lazyblorg_test.py" "~/projects/blogs/lazyblorg/lazyblorg2/lib/htmlizer.py" "~/projects/blogs/lazyblorg/lazyblorg2/src-org-posts/test.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg2/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg2/example_invocation.sh" "~/projects/blogs/lazyblorg/lazyblorg2/README_MB-Starting this blog.org" "~/projects/blogs/lazyblorg/lazyblorg2/example_invocation.sh" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg/README_MB-Starting this blog.org" "~/projects/blogs/lazyblorg/lazyblorg/config.py" "~/projects/blogs/lazyblorg/lazyblorg/templates/blog-format.org" "~/projects/blogs/lazyblorg/lazyblorg/testdata/end_to_end_test/orgfiles/about-placeholder.org"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 208
-  "/home/mb/projects/Plan godzin WEII (html->html)/README.org"
-  "README.org"
+  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-11-27-asynchronous-org-babel-sessions.org"
+  "2022-11-27-asynchronous-org-babel-sessions.org"
   'org-mode
-  '(buffer-face-mode visual-line-mode display-line-numbers-mode font-lock-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  1126
-  '(1382 nil)
+  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
+  1103
+  '(1090 nil)
   nil
   nil
-  '((buffer-display-time 26107 53905 809895 903000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (675 646 632 675 362 1404 1441 3200 1114 3200 2934 1441 1404 304 362 1126))))
+  '((buffer-display-time 26108 8451 329908 401000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (1103 320))))
+
+(desktop-create-buffer 208
+  "/home/mb/org/2024.03.21-overleaf-community-edition.org"
+  "2024.03.21-overleaf-community-edition.org"
+  'org-mode
+  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
+  544
+  '(701 nil)
+  nil
+  nil
+  '((buffer-display-time 26108 8408 745964 999000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
+  '((mark-ring (710 710 686 684 606 606 496 490 350 452 353 168 352 350 338 698))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/elpa/ob-async-20210428.2052/ob-async.el"
+  "ob-async.el"
+  'emacs-lisp-mode
+  '(buffer-face-mode font-lock-mode eldoc-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode)
+  562
+  '(562 nil)
+  nil
+  nil
+  '((buffer-display-time 26108 7867 428108 905000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
+  '((mark-ring (1262 561 1262 562))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/elpa/ob-async-20210428.2052/ob-async-autoloads.el"
+  "ob-async-autoloads.el"
+  'emacs-lisp-mode
+  '(buffer-face-mode font-lock-mode eldoc-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode)
+  635
+  '(635 nil)
+  nil
+  nil
+  '((buffer-display-time 26108 7907 130374 624000) (buffer-file-coding-system . utf-8-emacs-unix) (truncate-lines))
+  '((mark-ring (635 635))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  '(buffer-face-mode font-lock-mode eldoc-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode scroll-bar-mode auto-revert-mode)
+  12777
+  '(8754 nil)
+  nil
+  nil
+  '((buffer-display-time 26108 7354 910288 350000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (8698 20852 763 22842 18691 18691 20868 14566 14566 20380 20415 14566 14566 14566 14566 14566))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org"
   "3023-12-18-configuring-and-installing-emacs-29.org"
   'org-mode
   '(buffer-face-mode visual-line-mode display-line-numbers-mode font-lock-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  14627
-  '(83447 nil)
+  64367
+  '(63974 nil)
   nil
   nil
-  '((buffer-display-time 26107 53903 348949 742000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (84782 84556 80767 40744 85001 84782 83607 83447 14627))))
+  '((buffer-display-time 26108 7341 710215 910000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (64141 64302 64348 64206 65117 64171 64092 109605 75170 84045 85380 85154 81365 40743 85599 64367))))
 
 (desktop-create-buffer 208
-  "/home/mb/.emacs.d/init.el"
-  "init.el"
+  "/home/mb/projects/Plan godzin WEII (html->html)/README.org"
+  "README.org"
+  'org-mode
+  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
+  1446
+  '(925 nil)
+  nil
+  nil
+  '((buffer-display-time 26108 6271 323342 248000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (925 925 1044 1445 1446))))
+
+(desktop-create-buffer 208
+  "/home/mb/temp/scratch-org/scratch.org"
+  "scratch.org"
+  'org-mode
+  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
+  43
+  '(43 nil)
+  nil
+  nil
+  '((buffer-display-time 26108 6092 301646 241000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (43 43 30 29 30 30 30 29 29 29 29 43 29 29 29 29))))
+
+(desktop-create-buffer 208
+  "/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org"
+  "!RDmain.org"
+  'org-mode
+  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
+  40043
+  '(774 nil)
+  nil
+  nil
+  '((buffer-display-time 26107 60467 852165 718000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (774 38099 38335 39712 39542 39549 41144 41203 41225 41227))))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/install-packages.el"
+  "install-packages.el"
   'emacs-lisp-mode
-  '(buffer-face-mode flymake-mode flyspell-mode visual-line-mode scroll-bar-mode display-line-numbers-mode auto-revert-mode display-fill-column-indicator-mode company-mode eldoc-mode font-lock-mode)
-  8754
-  '(8698 nil)
+  '(buffer-face-mode font-lock-mode eldoc-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode)
+  1515
+  '(1642 nil)
   nil
   nil
-  '((buffer-display-time 26107 53903 348950 197000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (20706 763 22696 18612 18612 20722 14487 14487 20301 20336 14487 14487 14487 14487 14487 8754))))
+  '((buffer-display-time 26107 60467 852166 147000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
+  '((mark-ring (1546 1515))))
+
+(desktop-create-buffer 208
+  "/home/mb/projects/blogs/lazyblorg/lazyblorg2/README_MB.org"
+  "README_MB.org"
+  'org-mode
+  '(buffer-face-mode visual-line-mode display-line-numbers-mode org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode font-lock-mode)
+  52655
+  '(10982 nil)
+  nil
+  nil
+  '((buffer-display-time 26107 54861 151417 437000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (51819 51779 36559 51017 50989 51766 51697 51654 51653 51641 51454 1359 50731 50790 50837 52655))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/TSdistributed/srcMTLB/Logemann2/main.m"
@@ -88,18 +184,6 @@
   nil
   '((buffer-display-time 26107 22932 478682 1000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
   '((mark-ring (1406 1418 1414 1418 1416 1418 1390 1387 1401 1418 1012 1128 880 3111 3226 4372))))
-
-(desktop-create-buffer 208
-  "/home/mb/org/RDITiTNewestNewest/BD_RD.org"
-  "BD_RD.org"
-  'org-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  59964
-  '(56678 nil)
-  nil
-  nil
-  '((buffer-display-time 26107 4660 421255 830000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (56678 59964))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
@@ -162,18 +246,6 @@
   '((mark-ring (2588 2588 2589 2631 2589))))
 
 (desktop-create-buffer 208
-  "/home/mb/projects/blogs/lazyblorg/lazyblorg2/README_MB.org"
-  "README_MB.org"
-  'org-mode
-  '(visual-line-mode display-line-numbers-mode buffer-face-mode org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode font-lock-mode)
-  52655
-  '(10982 nil)
-  nil
-  nil
-  '((buffer-display-time 26104 45551 583545 571000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (51819 51779 36559 51017 50989 51766 51697 51654 51653 51641 51454 1359 50731 50790 50837 52655))))
-
-(desktop-create-buffer 208
   "/home/mb/projects/TSdistributed/pypdevenv.org_archive"
   "pypdevenv.org_archive"
   'org-mode
@@ -183,5 +255,17 @@
   nil
   nil
   '((buffer-display-time 26106 56199 528091 451000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring nil)))
+
+(desktop-create-buffer 208
+  "/home/mb/.emacs.d/elpa/ob-async-20210428.2052/ob-async-pkg.el"
+  "ob-async-pkg.el"
+  'emacs-lisp-mode
+  '(font-lock-mode eldoc-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode)
+  1
+  '(nil nil)
+  nil
+  nil
+  '((buffer-display-time) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
   '((mark-ring nil)))
 
