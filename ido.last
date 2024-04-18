@@ -51,6 +51,10 @@
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/mb/projects/TSdistributed/notatki/" (26135 54782 852432 622000) "Stability.pdf" "pdeSolver(engraved).pdf" "Logemann-a-rownanie-Laplacea.org" "Logemann-a-rownanie-Laplacea.pdf" "Logemann-a-rownanie-Laplacea.org~" "pypdevenv.tex" "Logemann-stan-stacjonarny.org~" "TSdistributedOLD.org" "pdeSolver(minted)pdf" "Stability.org" "pdeSolver(engraved).org" "pdeSolver(engraved).org~" "ZZZZZZZZZZZZZZZ.pdf" "./" "../" "Tests3.org" "images/" "Logemann-a-rownanie-Laplacea.tex" "Stability.org~" "Preamble_TSdistributed.org" "pypdevenv.org~" "pypdevenv.org_archive" "pypdevenv.pdf" "pypdevenv.org" "Stability.tex" "pdeSolver(engraved).tex" "pdeSolver(minted).org")
+
+ ("/home/mb/projects/TSdistributed/" (26134 53460 38449 888000) "TSdistributed.pdf" "TSdistributed.org" "TSdistributed.tex" "tests/" "ltximg/" "OLD-BKP-2DEL?/" "Artykuly/" "notatki/" "./" "../" "images/" "srcMTLB/" "Preamble_TSdistributed.org" ".git/" "figures/" ".spyproject/" "babelvenvs/" "src/")
+
  ("/home/mb/.emacs.d/myarch/" (26072 36996 792980 117000) "Preamble2023_07.org" "MB-org-special-block-extras.el" "Preamble2023_12.org" "octave_scripts4emacs.m" "colscheme_col.org" "Preamble.org" "__init__.py" "async_init.el" "lang_en.org" "./" "../" "lang_pl.org" "org-macros.setup" "colscheme_bw.org" "__pycache__/" "pythonscripts4emacs.py" "Preamble2023_07/")
 
  ("/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/" (26098 7619 498316 76000) "zalaczniki/" "ListaObecnosci.pdf" "Kom-Skr-Petla.org" "Zaproszenie.tex" "ProtokolyDlaKomSkr.org~" "ProtokolyDlaKomSkr.org" "!RDmain.org_archive" "PorzadekObrad-temp.org" "ListaObecnosci.org" "dokumentyRD_2024_03_12-08_58.zip" "ListaGlosowan.org" "ProtokolyDlaKomSkr.pdf" ".gitignore" "!RDmain.org" "prezentacja_2x2.pdf" "./" "KOSZ________2DEL_AFTERALL/" "../" "!RDmain.tex" "ListaGlosowan.org~" "Kom-Skr-Petla.org~" "!RDsetup.org" "KS-5.org" "dokumentyRD_2024_03_12-08_41.zip" "Glosowania-do-systemu.org" "PorzadekObrad-temp.org~" "ListaObecnosci.tex" "Glosowania-do-systemu.org~" "Sprawozdanie-protokol/" "Glosowania-do-systemu.odt" "KS-1.org" ".git/" "ListaGlosowan.txt" "KS-3.org" "dokumentyRD_2024_03_13-22_39.zip" "Zaproszenie.pdf" "dokumentyRD_2024_03_13-22_42.zip" "ProtokolyDlaKomSkr.tex" "prezentacja.pdf" "Zaproszenie.org" "ListaGlosowan.docx")
@@ -96,8 +100,6 @@
  ("/home/mb/projects/ZZZ_Testy/!Emacs/mozliwosciEmacsa/" (26004 19825 657371 267000) "sample.org~" "sample.tex" "sample.synctex.gz" "sample.pdf" "./" "../" "images/" "sample.org" "src/" "plik.txt")
 
  ("/home/mb/.emacs.d/myarch/Preamble2023_07/" (25851 6366 682577 816000) "lang_pl_tex.org" "colscheme_bw_tex.org" "./" "../" "colscheme_col_tex.org" "OLD-TRASH-PREV-VERSION/" "lang_en_tex.org")
-
- ("/home/mb/projects/TSdistributed/" (25987 9231 496370 356000) "Stability.pdf" "pdeSolver.org" "pdeSolver.org~" "tests/" "ltximg/" "pdeSolverBKP.tex" "TSdistributedOLD.org" "Stability.org" "pdeSolverNEW.org" "_minted-Preamble_TSdistributed/" "_minted-pdeSolverNEW/" "_minted-TSdistributed/" "./" "../" "Tests3.org" "images/" "_minted-Stability/" "srcMTLB/" "Stability.org~" "_minted-Tests3/" "Preamble_TSdistributed.org" "_minted-Stability2/" ".git/" "pdeSolverNEW.org~" "figures/" ".spyproject/" "pdeSolverNEW.tex" "_minted-pdeSolver/" "Stability.tex" "pdeSolverNEW.pdf" "src/" "pdeSolver.BKPpdf" "pdeSolver.tex" "pdeSolver.pdf")
 
  ("/home/mb/projects/cissic.github.io/mysource/public-notes-org/2023-12-18-init-and-setup-Emacs-29/" (25986 47138 517560 667000) "_minted-engraved-example/" "./" "../" "engraved-example.tex" "engraved-example.org" "engraved-example.pdf")
 

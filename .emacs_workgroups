@@ -48,17 +48,18 @@
 														    (0 0 106 54)
 														    1717 1021 0 nil t nil "K51165NBGVT2OG8-3V64LU"))
 				 nil nil nil nil)
-		 #s(wg-workgroup "K5617S1IMHT79KO-S4INP" "currentsession" t nil #s(wg-wconfig "K5617S1IN3O8VG0-S4J42" nil
+		 #s(wg-workgroup "K693U729KQHXU0-1VJMKI" "currentsession" t nil #s(wg-wconfig "K693U72A8DB93C-1VJN0U" nil
 											      ((fullscreen))
-											      580 171 80 36 right 16 #s(wg-win nil nil
-															       (0 0 83 33)
-															       :max 1 0 nil t nil "K5617S1IMEO82W8-S4IJU"))
+											      0 0 102 55 right 16 #s(wg-win nil nil
+															    (0 0 106 54)
+															    292 1 0 nil t nil "K693U729GQ5RK8-1VJMGP"))
 				 nil nil nil nil))
-	      (#s(wg-buf "K5617S1IMEO82W8-S4IJU" "*scratch*" nil 1 nil
-			 ((major-mode . fundamental-mode)
-			  nil nil nil nil nil nil nil)
+	      (#s(wg-buf "K693U729GQ5RK8-1VJMGP" "2024.04.18-matlab-and-org-babel-font-lock-when-loop.org" "/home/mb/org/2024.04.18-matlab-and-org-babel-font-lock-when-loop.org" 292 212
+			 ((major-mode . org-mode)
+			  (mark-ring 182 212 153 152 226 298 277 277 277 226 226 300 311 244 266 292)
+			  nil nil nil nil nil nil)
 			 nil nil)
-		 #s(wg-buf "K3C8JVAV6WAZ28-15XCK8U" "*Ibuffer*" nil 1191 nil
+		 #s(wg-buf "K3C8JVAV6WAZ28-15XCK8U" "*Ibuffer*" nil 1711 nil
 			   ((major-mode . ibuffer-mode)
 			    nil nil nil nil nil nil nil)
 			   nil nil)

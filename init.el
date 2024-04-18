@@ -564,7 +564,7 @@ See `org-latex-format-headline-function' for details."
 (setq org-latex-engraved-preamble
   "\\usepackage{fvextra}
 
-  [FVEXTRA-SETUP]http://pei.prz.rzeszow.pl/as/Lato2024_teachers_days_horizontal.html
+  [FVEXTRA-SETUP]
 
   % Make line numbers smaller and grey.
   \\renewcommand\\theFancyVerbLine{\\footnotesize\\color{black!40!white}\\arabic{FancyVerbLine}}
@@ -702,6 +702,19 @@ See `org-latex-format-headline-function' for details."
 ;; (org-ai-install-yasnippets) ; if you are using yasnippet and want `ai` snippets
 
 (load-file (concat user-emacs-directory "../.mysecrets/openaiapi.el"))
+
+(setq org-structure-template-alist
+'(("a" . "export ascii\n")
+  ("A" . "ai\n")
+  ("c" . "center\n")
+  ("C" . "comment\n")
+  ("e" . "example\n")
+  ("E" . "export")
+  ("h" . "export html\n")
+  ("l" . "export latex\n")
+  ("q" . "quote\n")
+  ("s" . "src")
+  ("v" . "verse\n")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful global shortcuts (text operations)
