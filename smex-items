@@ -1,23 +1,23 @@
 
 ;; ----- smex-history -----
 (
+ package-delete
+ eval-region
+ list-packages
  restart-emacs
  toggle-debug-on-error
  debug-on-entry
  mb/org-entry-stencil
- org-mode
- LaTeX-mode
- cissic-blog-stencil
 )
 
 ;; ----- smex-data -----
 (
  (revert-buffer . 805)
  (eval-buffer . 816)
- (list-packages . 53)
+ (list-packages . 54)
  (package-refresh-contents . 6)
  (eval-expression . 36)
- (eval-region . 101)
+ (eval-region . 102)
  (describe-variable . 5)
  (wg-create-workgroup . 10)
  (org-md-export-to-markdown . 2)
@@ -388,4 +388,5 @@
  (mb/matlab-octave-org-babel-source-conversion . 9)
  (debug-on-entry . 1)
  (restart-emacs . 1)
+ (package-delete . 1)
 )

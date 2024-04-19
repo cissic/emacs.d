@@ -48,15 +48,15 @@
 														    (0 0 106 54)
 														    1717 1021 0 nil t nil "K51165NBGVT2OG8-3V64LU"))
 				 nil nil nil nil)
-		 #s(wg-workgroup "K693U729KQHXU0-1VJMKI" "currentsession" t nil #s(wg-wconfig "K693U72A8DB93C-1VJN0U" nil
+		 #s(wg-workgroup "K697QH28XHJVA0-1Z9EYB" "currentsession" t nil #s(wg-wconfig "K697QH29I11H8O-1Z9FEN" nil
 											      ((fullscreen))
 											      0 0 102 55 right 16 #s(wg-win nil nil
 															    (0 0 106 54)
-															    292 1 0 nil t nil "K693U729GQ5RK8-1VJMGP"))
+															    131407 128076 0 nil t nil "K697QH28TYFES8-1Z9EUI"))
 				 nil nil nil nil))
-	      (#s(wg-buf "K693U729GQ5RK8-1VJMGP" "2024.04.18-matlab-and-org-babel-font-lock-when-loop.org" "/home/mb/org/2024.04.18-matlab-and-org-babel-font-lock-when-loop.org" 292 212
+	      (#s(wg-buf "K697QH28TYFES8-1Z9EUI" "3023-12-18-configuring-and-installing-emacs-29.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org" 131407 131581
 			 ((major-mode . org-mode)
-			  (mark-ring 182 212 153 152 226 298 277 277 277 226 226 300 311 244 266 292)
+			  (mark-ring 131580 131408 128074 128074 131288 130840 131054 14974 130800 131054 126948 57787 14974 14859 76098 131290)
 			  nil nil nil nil nil nil)
 			 nil nil)
 		 #s(wg-buf "K3C8JVAV6WAZ28-15XCK8U" "*Ibuffer*" nil 1711 nil
