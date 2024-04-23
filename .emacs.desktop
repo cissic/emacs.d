@@ -2,7 +2,7 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-;; Created Fri Apr 19 12:57:21 2024
+;; Created Tue Apr 23 09:32:41 2024
 ;; Desktop file format version 208
 ;; Emacs version 29.1
 
@@ -11,201 +11,57 @@
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '(#("matla" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("table" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("</table" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("table_5" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("scratch" 0 7 (isearch-case-fold-search t isearch-regexp-function nil)) #("README" 0 6 (isearch-case-fold-search nil isearch-regexp-function nil)) #("kappa" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("sb-matlab-solution-plot-2D" 0 26 (isearch-case-fold-search nil isearch-regexp-function nil)) #("ob-" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("org-mode" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("unreco" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #(":session" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("RESU" 0 4 (isearch-case-fold-search nil isearch-regexp-function nil)) #("matlab-mode" 0 11 (isearch-case-fold-search t isearch-regexp-function nil)) #("manual" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("matlb" 0 5 (isearch-case-fold-search t isearch-regexp-function nil))))
+(setq search-ring '(#("nodesk" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("matlab" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("matlab-she" 0 10 (isearch-case-fold-search t isearch-regexp-function nil)) #("arch" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("sb-matlab-init" 0 14 (isearch-case-fold-search t isearch-regexp-function nil)) #("sb-matlab-pid-coeff-script-intro" 0 32 (isearch-case-fold-search t isearch-regexp-function nil)) #("sd-matlab" 0 9 (isearch-case-fold-search t isearch-regexp-function nil)) #("sb-matlab-prj-dir" 0 17 (isearch-case-fold-search t isearch-regexp-function nil)) #("figures/" 0 8 (isearch-case-fold-search t isearch-regexp-function nil)) #("png" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("scrat" 0 5 (isearch-case-fold-search t isearch-regexp-function nil)) #("fix" 0 3 (isearch-case-fold-search t isearch-regexp-function nil)) #("matlab-load" 0 11 (isearch-case-fold-search t isearch-regexp-function nil)) #("load" 0 4 (isearch-case-fold-search t isearch-regexp-function nil)) #("tangle" 0 6 (isearch-case-fold-search t isearch-regexp-function nil)) #("package" 0 7 (isearch-case-fold-search t isearch-regexp-function nil))))
 (setq regexp-search-ring '(#("2023" 0 4 (isearch-case-fold-search t)) #("org-mode" 0 8 (isearch-case-fold-search t)) #("diffusion-eq" 0 12 (isearch-case-fold-search t))))
 (setq register-alist (list (list 24 "Unprintable entity" (let ((mk (make-marker))) (add-hook 'desktop-delay-hook (lambda nil (set-marker mk nil (get-buffer " *temp*")))) mk))))
-(setq file-name-history '("~/org/2024.04.18-matlab-and-org-babel-font-lock-when-loop.org" "~/projects/TSdistributed/notatki/Stability.org" "~/projects/Plan godzin WEII (html->html)/src_Lato2024/AAAA.html" "~/projects/TSdistributed/notatki/AAAAAAAAAAAA.org" "~/projects/TSdistributed/notatki/Stability.org" "~/.emacs.d/manual-download/matlab-emacs-src/examples/matlab-and-org-mode/matlab-and-org-mode.org" "~/.emacs.d/install-packages.el" "~/projects/Plan godzin WEII (html->html)/src_Lato2024_AAAA/style.css" "~/projects/Plan godzin WEII (html->html)/README.org" "~/projects/TSdistributed/notatki/Logemann-a-rownanie-Laplacea.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/4.0-uchwala-wyznaczenie-recenzentow.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_2_04_RDITIT_2024_Dec_dodatkowy_recenzent.org" "~/projects/TSdistributed/notatki/Logemann-a-rownanie-Laplacea.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_04_RDITIT_2024_ocena_Lukiewicz.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDmain.org" "~/projects/RUTMath/TODO.md" "~/projects/TSdistributed/notatki/Logemann-a-rownanie-Laplacea.org" "~/projects/TSdistributed/notatki/Logemann-stan-stacjonarny.org" "~/projects/TSdistributed/Preamble_TSdistributed.org" "~/projects/TSdistributed/src/matlab/loopScript.m" "~/temp/scratch-org/privscratch.org" "~/temp/scratch-org/fifi.pdf" "~/temp/scratch-org/fifi.org" "~/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org" "~/projects/TSdistributed/notatki/pypdevenv.org" "~/org/2024.04.05-prosba-do-rektora-o-logo.org" #("/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/ProtokolyDlaKomSkr.tex" 0 98 (ivy-index 4)) "~/org/RDITiTNewestNewest/Zaproszenie.org" #("/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/" 0 76 (ivy-index 0)) "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDsetup.org" #("/home/mb/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/!przebieg-przewodu.org" 0 92 (ivy-index 3)) "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDsetup.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_04_RDITIT_2024_ocena_Lukiewicz.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024_UPB.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_04_RDITIT_2024_ocena_Lukiewicz.pdf" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_04_RDITIT_2024_ocena_Lukiewicz.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024-ocen-srodokresowana.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDmain.tex" "~/projects/TSdistributed/notatki/pypdevenv.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/!przebieg-przewodu.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/!przebieg-przewodu.org" "~/projects/TSPDE/tspde.org" "~/Pobrane/!phd (1)/thesis.tex" "~/projects/TSdistributed/notatki/Tests3.org" "~/projects/TSdistributed/TSdistributed.org" "~/projects/TSdistributed/Logemann-stan-stacjonarny.org" "~/Pobrane/[16] PhD/thesis.tex" "~/projects/TSdistributed/srcMTLB/Logemann4/TODO.org" "~/projects/overleafCE/overleaf-toolkit/config/variables.env" "~/projects/overleafCE/overleaf-toolkit/config/overleaf.rc" "~/projects/cissic.github.io/mysource/public-notes-org/2022-11-27-asynchronous-org-babel-sessions.org" "~/projects/overleafCE/overleaf-main/README.md" "~/.emacs.d/elpa/ob-async-20210428.2052/ob-async-autoloads.el" "~/.emacs.d/elpa/ob-async-20210428.2052/ob-async.el" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/!przebieg-przewodu.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-10-05-noweb-C-examples.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-10-02-maxima-in-jupyter.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09-30-lenovo-trackpoint-in-debian.org" "~/projects/TSdistributed/srcMTLB/Logemann2/main.m" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09.26-2fa-for-github-account.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09-30-lenovo-trackpoint-in-debian.org" "~/projects/cissic.github.io/mysource/public-notes-org/2024-01-30-converting-pdf-back-to-text-format-doc,txt.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/ListaObecnosci.org" "~/.matlab/R2023b/work/sprintf_r.m" "~/org/RDITiTNewestNewest/BD_RD.org" "~/projects/Plan godzin WEII (html->html)/README.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/projects/Dydaktyka/Wyklad mono/Kod_2023_24_zima/mono23/fdm1d.org" "~/projects/TSdistributed/Logemann-razjeszcze.org" "~/projects/TSdistributed/pdeSolver(engraved).org" "~/projects/TSdistributed/Stability.org" "~/projects/Plan godzin WEII (html->html)/README.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024_UPB.org" "~/projects/TSdistributed/pypdevenv.org" "~/projects/TSdistributed/pdeSolver(engraved).org" "~/projects/TSdistributed/pdeSolverNEW.org" "~/projects/TSdistributed/Preamble_TSdistributed.org" "~/projects/TSdistributed/AA.org" "~/projects/TSdistributed/Stability.org" "~/projects/TODO.org" "~/projects/TODO.md" "~/projects/TSdistributed/pdeSolver.org" "~/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/about-placeholders.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/preview_blogentry.sh" "~/projects/blogs/lazyblorg/lazyblorg2/README_MB.org"))
+(setq file-name-history '("~/projects/TSdistributed/notatki/octave-workspace" "~/binmb/flac2mp3.sh" "~/projects/FreeHyTE/FHyTEBMToolbox-Documentation" "~/org/2024.04.18-matlab-and-org-babel-font-lock-when-loop.org" "~/projects/TSdistributed/notatki/Stability.org" "~/projects/Plan godzin WEII (html->html)/src_Lato2024/AAAA.html" "~/projects/TSdistributed/notatki/AAAAAAAAAAAA.org" "~/projects/TSdistributed/notatki/Stability.org" "~/.emacs.d/manual-download/matlab-emacs-src/examples/matlab-and-org-mode/matlab-and-org-mode.org" "~/.emacs.d/install-packages.el" "~/projects/Plan godzin WEII (html->html)/src_Lato2024_AAAA/style.css" "~/projects/Plan godzin WEII (html->html)/README.org" "~/projects/TSdistributed/notatki/Logemann-a-rownanie-Laplacea.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/4.0-uchwala-wyznaczenie-recenzentow.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_2_04_RDITIT_2024_Dec_dodatkowy_recenzent.org" "~/projects/TSdistributed/notatki/Logemann-a-rownanie-Laplacea.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_04_RDITIT_2024_ocena_Lukiewicz.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDmain.org" "~/projects/RUTMath/TODO.md" "~/projects/TSdistributed/notatki/Logemann-a-rownanie-Laplacea.org" "~/projects/TSdistributed/notatki/Logemann-stan-stacjonarny.org" "~/projects/TSdistributed/Preamble_TSdistributed.org" "~/projects/TSdistributed/src/matlab/loopScript.m" "~/temp/scratch-org/privscratch.org" "~/temp/scratch-org/fifi.pdf" "~/temp/scratch-org/fifi.org" "~/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org" "~/projects/TSdistributed/notatki/pypdevenv.org" "~/org/2024.04.05-prosba-do-rektora-o-logo.org" #("/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/ProtokolyDlaKomSkr.tex" 0 98 (ivy-index 4)) "~/org/RDITiTNewestNewest/Zaproszenie.org" #("/home/mb/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/" 0 76 (ivy-index 0)) "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDsetup.org" #("/home/mb/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/!przebieg-przewodu.org" 0 92 (ivy-index 3)) "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDsetup.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_04_RDITIT_2024_ocena_Lukiewicz.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024_UPB.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_04_RDITIT_2024_ocena_Lukiewicz.pdf" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_04_RDITIT_2024_ocena_Lukiewicz.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024-ocen-srodokresowana.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 38 posiedzenie orgSzablon2.2/!RDmain.tex" "~/projects/TSdistributed/notatki/pypdevenv.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/!przebieg-przewodu.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/!przebieg-przewodu.org" "~/projects/TSPDE/tspde.org" "~/Pobrane/!phd (1)/thesis.tex" "~/projects/TSdistributed/notatki/Tests3.org" "~/projects/TSdistributed/TSdistributed.org" "~/projects/TSdistributed/Logemann-stan-stacjonarny.org" "~/Pobrane/[16] PhD/thesis.tex" "~/projects/TSdistributed/srcMTLB/Logemann4/TODO.org" "~/projects/overleafCE/overleaf-toolkit/config/variables.env" "~/projects/overleafCE/overleaf-toolkit/config/overleaf.rc" "~/projects/cissic.github.io/mysource/public-notes-org/2022-11-27-asynchronous-org-babel-sessions.org" "~/projects/overleafCE/overleaf-main/README.md" "~/.emacs.d/elpa/ob-async-20210428.2052/ob-async-autoloads.el" "~/.emacs.d/elpa/ob-async-20210428.2052/ob-async.el" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewestNewest/PrzewodyDoktorskie/Dec_Grzegorz_Rafal/!przebieg-przewodu.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/BD_RD.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-10-05-noweb-C-examples.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-10-02-maxima-in-jupyter.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09-30-lenovo-trackpoint-in-debian.org" "~/projects/TSdistributed/srcMTLB/Logemann2/main.m" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09.26-2fa-for-github-account.org" "~/projects/cissic.github.io/mysource/public-notes-org/2023-09-30-lenovo-trackpoint-in-debian.org" "~/projects/cissic.github.io/mysource/public-notes-org/2024-01-30-converting-pdf-back-to-text-format-doc,txt.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/ListaObecnosci.org" "~/.matlab/R2023b/work/sprintf_r.m" "~/org/RDITiTNewestNewest/BD_RD.org" "~/projects/Plan godzin WEII (html->html)/README.org" "~/org/RDITiTNewestNewest/AuxCodeRD.org" "~/projects/Dydaktyka/Wyklad mono/Kod_2023_24_zima/mono23/fdm1d.org" "~/projects/TSdistributed/Logemann-razjeszcze.org" "~/projects/TSdistributed/pdeSolver(engraved).org" "~/projects/TSdistributed/Stability.org" "~/projects/Plan godzin WEII (html->html)/README.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/!RDmain.org" "~/org/RDITiTNewestNewest/! 2024.xx.xx - 37 posiedzenie orgSzablon2.2/zalaczniki/uchwala_1_03_RDITIT_2024_UPB.org" "~/projects/TSdistributed/pypdevenv.org" "~/projects/TSdistributed/pdeSolver(engraved).org" "~/projects/TSdistributed/pdeSolverNEW.org" "~/projects/TSdistributed/Preamble_TSdistributed.org" "~/projects/TSdistributed/AA.org" "~/projects/TSdistributed/Stability.org" "~/projects/TODO.org" "~/projects/TODO.md" "~/projects/TSdistributed/pdeSolver.org" "~/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/config.py" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/myposts.org" "~/projects/blogs/lazyblorg/lazyblorg2/src_org_posts/about-placeholders.org"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
-(desktop-create-buffer 208
-  "/home/mb/org/2024.04.18-matlab-and-org-babel-font-lock-when-loop.org"
-  "2024.04.18-matlab-and-org-babel-font-lock-when-loop.org"
-  'org-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  356
-  '(336 nil)
-  nil
-  nil
-  '((buffer-display-time 26146 19953 955560 262000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (326 337 336 356 356))))
-
 (desktop-create-buffer 208
   "/home/mb/.emacs.d/init.el"
   "init.el"
   'emacs-lisp-mode
-  '(buffer-face-mode flymake-mode flyspell-mode visual-line-mode scroll-bar-mode display-line-numbers-mode auto-revert-mode display-fill-column-indicator-mode company-mode eldoc-mode font-lock-mode)
-  32301
-  '(32323 nil)
+  '(buffer-face-mode font-lock-mode eldoc-mode company-mode display-fill-column-indicator-mode auto-revert-mode display-line-numbers-mode scroll-bar-mode visual-line-mode flyspell-mode flymake-mode)
+  8301
+  '(31648 nil)
   nil
   nil
-  '((buffer-display-time 26146 16693 5771 746000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (32323 32323 763 763 1 763 763 763 30329 30483 30601 1142 1130 1208 849 1))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/TSdistributed/TSdistributed.org"
-  "TSdistributed.org"
-  'org-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  26387
-  '(26091 nil)
-  nil
-  nil
-  '((buffer-display-time 26146 16542 261239 885000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (26332 26388 26692 26614 26340 26430 26389 26432 26342 26391 26692 26691 26691 26244 26244 26691))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/TSdistributed/notatki/Stability.org"
-  "Stability.org"
-  'org-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  2526
-  '(1006 nil)
-  nil
-  nil
-  '((buffer-display-time 26146 13782 258995 779000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (2345 2525 2525 2526))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/TSdistributed/notatki/AAAAAAAAAAAA.org"
-  "AAAAAAAAAAAA.org"
-  'org-mode
-  '(buffer-face-mode scroll-lock-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  2460
-  '(640 t)
-  nil
-  nil
-  '((buffer-display-time 26146 12289 331588 732000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (1546 969 958 1546 1887 1546 1536 1739 640))))
+  '((buffer-display-time 26151 25595 230161 330000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (9636 31950 31950 18844 18820 18768 18820 18768 13104 13113 9395 9941 9300 8301 1418 8301))))
 
 (desktop-create-buffer 208
   "/home/mb/temp/scratch-org/scratch.org"
   "scratch.org"
   'org-mode
   '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  744
-  '(682 nil)
+  393
+  '(257 nil)
   nil
   nil
-  '((buffer-display-time 26146 9851 600059 139000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (467 467 461 461 467))))
+  '((buffer-display-time 26150 39914 697050 769000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (257 199 197 209 94 197 109 59 27 27 59 197 113 109 97 393))))
 
 (desktop-create-buffer 208
-  "/home/mb/projects/Plan godzin WEII (html->html)/README.org"
-  "README.org"
+  "/home/mb/projects/TSdistributed/TSdistributed.org"
+  "TSdistributed.org"
   'org-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  259
-  '(744 nil)
+  '(buffer-face-mode org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode font-lock-mode)
+  27807
+  '(46128 nil)
   nil
   nil
-  '((buffer-display-time 26146 5376 76611 638000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (508 3812 3788 630 744 378 3920 1069 1069 983 1018 3920 3622 983 745 282))))
+  '((buffer-display-time 26150 39837 89610 709000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
+  '((mark-ring (46101 45855 46230 46650 46193 46326 46254 46254 46325 46697 45271 45271 45271 46254 46702 45945))))
 
 (desktop-create-buffer 208
   "/home/mb/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org"
   "3023-12-18-configuring-and-installing-emacs-29.org"
   'org-mode
-  '(buffer-face-mode org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode font-lock-mode)
-  131617
-  '(131581 nil)
-  nil
-  nil
-  '((buffer-display-time 26145 10039 541313 825000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
-  '((mark-ring (131580 131408 128074 128074 131288 130840 131054 14974 130800 131054 126948 57787 14974 14859 76098 131617))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org"
-  "2022-12-27-configuring-and-installing-emacs.org"
-  'org-mode
   '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  33119
-  '(95072 nil)
+  14006
+  '(129311 nil)
   nil
   nil
-  '((buffer-display-time 26145 10034 316998 609000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (95034 69716 69668 69668 69716 68931 69489 11858 69460 69314 54627 54622 36202 54861 54871 54622))))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/manual-download/matlab-emacs-src/examples/matlab-and-org-mode/matlab-and-org-mode.org"
-  "matlab-and-org-mode.org"
-  'org-mode
-  '(org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode font-lock-mode buffer-face-mode)
-  2504
-  '(2565 nil)
-  nil
-  nil
-  '((buffer-display-time 26145 9907 419725 616000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring (859 1544 2565 2565 2504))))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/install-packages.el"
-  "install-packages.el"
-  'emacs-lisp-mode
-  '(buffer-face-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode eldoc-mode font-lock-mode)
-  976
-  '(1387 nil)
-  nil
-  nil
-  '((buffer-display-time 26145 10031 580139 137000) (buffer-file-coding-system . prefer-utf-8-unix) (truncate-lines))
-  '((mark-ring (2257 1387 447 447 976))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/TSdistributed/notatki/Logemann-a-rownanie-Laplacea.org"
-  "Logemann-a-rownanie-Laplacea.org"
-  'org-mode
-  '(buffer-face-mode org-ai-mode org-special-block-extras-mode display-fill-column-indicator-mode company-mode visual-line-mode display-line-numbers-mode font-lock-mode)
-  3632
-  '(3495 nil)
-  nil
-  nil
-  '((buffer-display-time 26145 83 883438 773000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (3794 3735 1423 628 2435 3021 3735 3735 3806 3735 3888 3734 3947 3915 3851 3948))))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2024-04-17-octave-matlab-org-blocks.org"
-  "2024-04-17-octave-matlab-org-blocks.org"
-  'org-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  3604
-  '(3553 t)
-  nil
-  nil
-  '((buffer-display-time 26143 47537 555272 387000) (buffer-file-coding-system . undecided-unix) (truncate-lines))
-  '((mark-ring nil)))
-
-(desktop-create-buffer 208
-  "/home/mb/projects/TSPDE/tspde.org"
-  "tspde.org"
-  'org-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  18661
-  '(18597 nil)
-  nil
-  nil
-  '((buffer-display-time 26143 44935 17810 925000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (18559 9080 5604 13323 18475 18493 18489 4193 4684 5144 18491 18502 8453 5596 3035 18661))))
-
-(desktop-create-buffer 208
-  "/home/mb/temp/scratch-org/privscratch.org"
-  "privscratch.org"
-  'org-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode display-fill-column-indicator-mode org-special-block-extras-mode org-ai-mode)
-  315
-  '(315 nil)
-  nil
-  nil
-  '((buffer-display-time 26142 55891 215166 976000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring (315 315 314 314 315 315 315 314 314 315 320 315 315 315 315 317))))
-
-(desktop-create-buffer 208
-  "/home/mb/.emacs.d/diary"
-  "diary"
-  'diary-mode
-  '(buffer-face-mode font-lock-mode display-line-numbers-mode visual-line-mode company-mode)
-  111
-  '(nil nil)
-  nil
-  nil
-  '((buffer-display-time 26145 3493 571208 51000) (buffer-file-coding-system . utf-8-unix) (truncate-lines))
-  '((mark-ring nil)))
+  '((buffer-display-time 26149 23168 947226 363000) (buffer-file-coding-system . utf-8-unix) (overwrite-mode) (truncate-lines))
+  '((mark-ring (129597 129597 75874 75328 75031 50978 48234 205 131597 102381 74611 50068 14751 14751 75873 14006))))
 

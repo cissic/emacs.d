@@ -48,29 +48,29 @@
 														    (0 0 106 54)
 														    1717 1021 0 nil t nil "K51165NBGVT2OG8-3V64LU"))
 				 nil nil nil nil)
-		 #s(wg-workgroup "K697QH28XHJVA0-1Z9EYB" "currentsession" t nil #s(wg-wconfig "K697QH29I11H8O-1Z9FEN" nil
-											      ((fullscreen))
-											      0 0 102 55 right 16 #s(wg-win nil nil
-															    (0 0 106 54)
-															    131407 128076 0 nil t nil "K697QH28TYFES8-1Z9EUI"))
+		 #s(wg-workgroup "K6AFTQIZ61HX28-7YRQWW" "currentsession" t nil #s(wg-wconfig "K6AFTQJ3W15FZK-7YRRKX" nil
+											      ((fullscreen . maximized))
+											      3 0 209 55 right 16 #s(wg-wtree nil nil
+															      (0 0 213 54)
+															      (#s(wg-win nil nil
+																	 (0 0 107 54)
+																	 32214 31084 0 nil t nil "JPU1CGMGZPBCR3S-9UKKZ")
+																 #s(wg-win nil nil
+																	   (107 0 213 54)
+																	   961 1 0 nil nil nil "K3C8JVAV6WAZ28-15XCK8U"))))
 				 nil nil nil nil))
-	      (#s(wg-buf "K697QH28TYFES8-1Z9EUI" "3023-12-18-configuring-and-installing-emacs-29.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org" 131407 131581
-			 ((major-mode . org-mode)
-			  (mark-ring 131580 131408 128074 128074 131288 130840 131054 14974 130800 131054 126948 57787 14974 14859 76098 131290)
-			  nil nil nil nil nil nil)
+	      (#s(wg-buf "K3C8JVAV6WAZ28-15XCK8U" "*Ibuffer*" nil 961 nil
+			 ((major-mode . ibuffer-mode)
+			  nil nil nil nil nil nil nil)
 			 nil nil)
-		 #s(wg-buf "K3C8JVAV6WAZ28-15XCK8U" "*Ibuffer*" nil 1711 nil
-			   ((major-mode . ibuffer-mode)
-			    nil nil nil nil nil nil nil)
+		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 32214 32218
+			   ((major-mode . emacs-lisp-mode)
+			    (mark-ring 32218 32218 763 763 1 763 763 763 30329 30483 30601 1142 1130 1208 849 1)
+			    nil nil nil nil nil nil)
 			   nil nil)
 		 #s(wg-buf "K51165NBGVT2OG8-3V64LU" "pypdevenv.org" "/home/mb/projects/TSdistributed/pypdevenv.org" 1717 1896
 			   ((major-mode . org-mode)
 			    (mark-ring 1381 1518 1518 1125 1099 1518 1099 1144 1518 1545 1487 1487 1154 1487 950 1717)
-			    nil nil nil nil nil nil)
-			   nil nil)
-		 #s(wg-buf "JPU1CGMGZPBCR3S-9UKKZ" "init.el" "/home/mb/.emacs.d/init.el" 18546 22696
-			   ((major-mode . emacs-lisp-mode)
-			    (mark-ring 18612 18612 20722 14487 14487 20301 20336 14487 14487 14487 14487 14487 14487 10484 14487 18546)
 			    nil nil nil nil nil nil)
 			   nil nil)
 		 #s(wg-buf "JPU1CMI2URG4S2G-AL7X5" "2022-12-27-configuring-and-installing-emacs.org" "/home/mb/projects/cissic.github.io/mysource/public-notes-org/2022-12-27-configuring-and-installing-emacs.org" 41994 95072

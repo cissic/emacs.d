@@ -895,10 +895,6 @@ See `org-latex-format-headline-function' for details."
 (require 'ox-extra)
 (ox-extras-activate '(ignore-headlines))
 
-;; matlab-mode
-(add-to-list 'load-path "~/.emacs.d/manual-download/matlab-emacs-src")
-(require 'matlab-load)
-
 ;; [DEPRECATED] - use sunrise instead of this
 ;; midnight-commander emulation
 ;; (require 'mc)
