@@ -4,6 +4,10 @@
 .cache/
 auto-save-list/
 org-downloaded-images/
-
-
-
+# The files below may reveal some information you wouldn't like to share (paths to directories, names...)
+.emacs.desktop
+.emacs_workgroups
+eww-bookmarks
+ido.last
+places 
+recentf
