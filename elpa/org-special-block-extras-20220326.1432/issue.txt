@@ -1,0 +1,40 @@
+ 
+Two issues:
+1) While analysing your code I stumbled upon something I don't understand. 
+Is there any reason to have lines 
+1008-1046
+and
+1048-1086 in org-special-block-extras.el? Both parts of code define the same macro under two different names: 'details' and 'Details' or maybe this redundancy is on some purpose?
+
+2) Basing on your 'box' macro I want to change the default look of box in order to define different looking boxes.
+However, as far as I can tell, the only possible box property I can change now are its 'title' and 'background-color', so my boxes visually 
+can vary in the color of the background, having all the same, orange color of the frames and background of the title area.
+
+I'd like to prepare two versions of boxes for black-and-white and color printing like so:
+
+#+MACRO: warning_box_caption  Warning!
+#+MACRO: remark_box_caption   Remark:
+
+# # black-white paper printing
+# #+MACRO: warning_box_col  white
+# #+MACRO: remark_box_col   white
+
+# # pdf version
+#+MACRO: warning_box_col  red
+#+MACRO: remark_box_col   blue
+
+#+MACRO: begin_warning  #+begin_box {{{warning_box_caption}}} $1 :background-color {{{warning_box_col}}}
+#+MACRO: end_warning    #+end_box 
+
+#+MACRO: begin_remark  #+begin_box {{{remark_box_caption}}} $1 :background-color {{{remark_box_col}}}
+#+MACRO: end_remark    #+end_box
+
+
+but I'd like to redefine other colors of the box. I can do it by editing lines 1120-1126 in org-special-block-extras.el (I'm interested in generating pdfs so far) but it will change them globally.
+My attempts to add support for passing parameters for other properties of the box by patterning the code in line 1121 haven't succeeded so far.
+How can I do this?
+If you provided an example of the proper way of doing this I could try to 
+
+
+provide a 
+
