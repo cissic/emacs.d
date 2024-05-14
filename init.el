@@ -125,6 +125,25 @@
 ;; Advanced buffer mode
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+;; tabs, sessions for buffers
+(setq tabspaces-session t)
+(setq tabspaces-session-auto-restore t)
+
+(tabspaces-mode)
+(defvar tabspaces-command-map
+  (let ((map (make-sparse-keymap)))
+    (define-key map (kbd "C") 'tabspaces-clear-buffers)
+    (define-key map (kbd "b") 'tabspaces-switch-to-buffer)
+    (define-key map (kbd "d") 'tabspaces-close-workspace)
+    (define-key map (kbd "k") 'tabspaces-kill-buffers-close-workspace)
+    (define-key map (kbd "o") 'tabspaces-open-or-create-project-and-workspace)
+    (define-key map (kbd "r") 'tabspaces-remove-current-buffer)
+    (define-key map (kbd "R") 'tabspaces-remove-selected-buffer)
+    (define-key map (kbd "s") 'tabspaces-switch-or-create-workspace)
+    (define-key map (kbd "t") 'tabspaces-switch-buffer-and-tab)
+    map)
+  "Keymap for tabspace/workspace commands after `tabspaces-keymap-prefix'.")
+
 ;; Resize the whole frame, and not only a window
 ;; Adapted from https://stackoverflow.com/a/24714383/5103881
 (defun acg/zoom-frame (&optional amt frame)
@@ -231,6 +250,33 @@ frame if FRAME is nil, and to 1 if AMT is nil."
       (matlab-shell-send-command "emacsrun('/home/mb/projects/TSdistributed/srcMTLB/main')" ))
      )
 )
+
+(defun replace-string-in-buffer (string1 string2)
+  (save-excursion
+    (goto-char (point-min))
+    (while (search-forward string1 nil t)
+      (replace-match string2))))
+
+;; (replace-string-in-buffer "string2" "string2") 
+
+(defun mb/matlab-octave-org-babel-source-conversion()
+  (interactive) 
+  (replace-string-in-buffer "#+begin_src octave" "#+begin_src oct2mat")
+  (replace-string-in-buffer "#+begin_src matlab" "#+begin_src mat2oct")
+  (replace-string-in-buffer "src_octave" "src_oct2mat")        
+  (replace-string-in-buffer "src_matlab" "src_mat2oct")
+  (replace-string-in-buffer "#+begin_src oct2mat" "#+begin_src matlab" )
+  (replace-string-in-buffer "#+begin_src mat2oct" "#+begin_src octave")
+  (replace-string-in-buffer "src_oct2mat" "src_matlab")
+  (replace-string-in-buffer "src_mat2oct" "src_octave")
+  (kill-buffer "*MatOct*")
+  )
+
+(defun mb/matoct-conversion()
+  ;; auxiliary shortcut for an original function
+  (interactive) 
+  (mb/matlab-octave-org-babel-source-conversion)
+  )
 
 ;; Python mode...
 
@@ -715,6 +761,22 @@ See `org-latex-format-headline-function' for details."
   ("q" . "quote\n")
   ("s" . "src")
   ("v" . "verse\n")))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; AI - Whisper for voice recording
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(setq whisper-install-directory "/tmp/"
+      whisper-model "base"
+      whisper-language "en"
+      whisper-translate nil
+      whisper-use-threads (/ (num-processors) 2))
+
+
+(add-to-list 'load-path "~/.emacs.d/manual-download/whisper.el/")
+;; doconce (M-x DocOnce) may be needed to activate it -> 
+(load-file "~/.emacs.d/manual-download/whisper.el/whisper.el")
+
+(global-set-key [f12] 'whisper-run)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful global shortcuts (text operations)

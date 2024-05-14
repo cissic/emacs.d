@@ -59,7 +59,7 @@ auctex ; in order to have reftex working
   ; jedi
   magit
   markdown-mode
-  ; matlab-mode ; a new fix for font-lock-reference-face error is not yet in elpa (2024.04.18), but already in project repo: https://sourceforge.net/p/matlab-emacs/src/ci/f1a709eca260562fea1871fffd3b75b5a2d404ce/ so I downloaded it manually
+  matlab-mode ; 
   modus-themes ; theme by Protesilaos Stavrou
   ;moe-theme ; https://github.com/kuanyui/moe-theme.el
   ;mh
