@@ -77,6 +77,7 @@ auctex ; in order to have reftex working
   ; ox-ipynb -> manual-download
   ;pandoc-mode
   pdf-tools
+  persp-mode
   popup   ; for yasnippet
   ;projectile
   ;pyenv-mode
