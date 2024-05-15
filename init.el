@@ -125,24 +125,25 @@
 ;; Advanced buffer mode
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-;; tabs, sessions for buffers
-(setq tabspaces-session t)
-(setq tabspaces-session-auto-restore t)
+;; ;; tabs, sessions for buffers
+;; (setq tabspaces-session t)
+;; (setq tabspaces-session-auto-restore t)
 
-(tabspaces-mode)
-(defvar tabspaces-command-map
-  (let ((map (make-sparse-keymap)))
-    (define-key map (kbd "C") 'tabspaces-clear-buffers)
-    (define-key map (kbd "b") 'tabspaces-switch-to-buffer)
-    (define-key map (kbd "d") 'tabspaces-close-workspace)
-    (define-key map (kbd "k") 'tabspaces-kill-buffers-close-workspace)
-    (define-key map (kbd "o") 'tabspaces-open-or-create-project-and-workspace)
-    (define-key map (kbd "r") 'tabspaces-remove-current-buffer)
-    (define-key map (kbd "R") 'tabspaces-remove-selected-buffer)
-    (define-key map (kbd "s") 'tabspaces-switch-or-create-workspace)
-    (define-key map (kbd "t") 'tabspaces-switch-buffer-and-tab)
-    map)
-  "Keymap for tabspace/workspace commands after `tabspaces-keymap-prefix'.")
+;; (tabspaces-mode)
+;; (defvar tabspaces-command-map
+;;   (let ((map (make-sparse-keymap)))
+;;     (define-key map (kbd "C") 'tabspaces-clear-buffers)
+;;     (define-key map (kbd "b") 'tabspaces-switch-to-buffer)
+;;     (define-key map (kbd "d") 'tabspaces-close-workspace)
+;;     (define-key map (kbd "k") 'tabspaces-kill-buffers-close-workspace)
+;;     (define-key map (kbd "o") 'tabspaces-open-or-create-project-and-workspace)
+;;     (define-key map (kbd "r") 'tabspaces-remove-current-buffer)
+;;     (define-key map (kbd "R") 'tabspaces-remove-selected-buffer)
+;;     (define-key map (kbd "s") 'tabspaces-switch-or-create-workspace)
+;;     (define-key map (kbd "t") 'tabspaces-switch-buffer-and-tab)
+;;     map)
+;;   "Keymap for tabspace/workspace commands after `tabspaces-keymap-prefix'.")
+
 
 ;; Resize the whole frame, and not only a window
 ;; Adapted from https://stackoverflow.com/a/24714383/5103881

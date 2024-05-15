@@ -1,23 +1,23 @@
 
 ;; ----- smex-history -----
 (
+ bufler-list
+ bufler-mode
  eval-buffer
- rd/pack-and-upload
- rd/export-all
- rd/export-ListaObec
- mb/reloadThisFile
- revert-buffer
- rd/Prezentacja2pdf
+ bufler-workspace-buffer-name-workspace
+ bufler-switch-buffer
+ bufler-workspace-frame-set
+ bufler-workspace-mode
 )
 
 ;; ----- smex-data -----
 (
  (revert-buffer . 875)
- (eval-buffer . 839)
+ (eval-buffer . 844)
  (list-packages . 60)
  (package-refresh-contents . 6)
  (eval-expression . 36)
- (eval-region . 117)
+ (eval-region . 119)
  (describe-variable . 5)
  (wg-create-workgroup . 10)
  (org-md-export-to-markdown . 2)
@@ -81,7 +81,7 @@
  (run-python . 6)
  (pylint . 1)
  (emacs-lisp-mode . 2)
- (package-list-packages . 21)
+ (package-list-packages . 23)
  (matlab-shell . 24)
  (matlab-mode . 13)
  (matlab-shell-run-command . 6)
@@ -392,13 +392,13 @@
  (mb/matoct-conversion . 9)
  (superword-mode . 1)
  (transpose-words . 5)
- (tab-bar-mode . 3)
- (bufler-mode . 4)
- (bufler . 4)
- (bufler-switch-buffer . 2)
- (bufler-list . 2)
+ (tab-bar-mode . 4)
+ (bufler-mode . 10)
+ (bufler . 19)
+ (bufler-switch-buffer . 27)
+ (bufler-list . 13)
  (ibuffer-mode . 3)
- (bufler-workspace-mode . 2)
+ (bufler-workspace-mode . 6)
  (persp-mode . 5)
  (persp-switch-quick . 1)
  (persp-switch-to-buffer . 1)
@@ -417,8 +417,13 @@
  (tabspaces-switch-or-create-workspace . 2)
  (tab-bar-rename-tab . 5)
  (tabspaces-save-current-project-session . 2)
- (tabspaces-open-or-create-project-and-workspace . 3)
+ (tabspaces-open-or-create-project-and-workspace . 4)
  (org-table-transpose-table-at-point . 8)
  (tabspaces-remove-selected-buffer . 1)
  (emacs-lock-mode . 1)
+ (edit-picture . 5)
+ (bufler-tabs-mode . 8)
+ (bufler-workspace-buffer-name-workspace . 4)
+ (bufler-workspace-frame-set . 2)
+ (bufler-list-buffer-name-workspace . 1)
 )
