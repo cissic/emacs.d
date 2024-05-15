@@ -68,7 +68,7 @@ auctex ; in order to have reftex working
   org-ac
   org-ai
   ;org-download
-  org-plus-contrib
+  ; org-plus-contrib
   ;org-mime
   org-ref ; for handling org-mode references https://emacs.stackexchange.com/questions/9767/can-reftex-be-used-with-org-label
   org-special-block-extras
