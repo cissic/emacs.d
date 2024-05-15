@@ -80,7 +80,8 @@ auctex ; in order to have reftex working
   popup   ; for yasnippet
   ;projectile
   ;pyenv-mode
-  ;Pylint  ; zeby dzialal interpreter python'a po:  C-c C-c 
+  ;Pylint  ; zeby dzialal interpreter python'a po:  C-c C-c
+  quelpa
   ;rebox2
   ;recentf
   session-async
