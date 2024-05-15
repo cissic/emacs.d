@@ -82,6 +82,7 @@ auctex ; in order to have reftex working
   ;pyenv-mode
   ;Pylint  ; zeby dzialal interpreter python'a po:  C-c C-c
   quelpa
+  quelpa-use-package
   ;rebox2
   ;recentf
   session-async
