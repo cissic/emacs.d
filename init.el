@@ -968,6 +968,8 @@ See `org-latex-format-headline-function' for details."
  (setq org-refile-targets (quote ((nil :maxlevel . 9)
 				  (org-agenda-files :maxlevel . 9))))
 
+(setq org-agenda-include-diary t)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Manually downloaded packages
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -1016,6 +1018,13 @@ See `org-latex-format-headline-function' for details."
 (add-to-list 'load-path "~/.emacs.d/manual-download/ox-extra")
 (require 'ox-extra)
 (ox-extras-activate '(ignore-headlines))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; Keepass
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-to-list 'load-path "~/.emacs.d/manual-download/counsel-keepassxc")
+(require 'counsel-keepassxc)
+(setq counsel-keepassxc-database-file "~/.kipa/mb.kdbx")
 
 ;; [DEPRECATED] - use sunrise instead of this
 ;; midnight-commander emulation

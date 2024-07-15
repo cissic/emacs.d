@@ -1,5 +1,5 @@
 ;; ____________________________________________________________________________78
-;; install-mb-packages.el
+;; install-packages.el
 ;; The full description of what is done in this file is included in 
 ;; accompanying .org file (configuring-and-installing-emacs.org) that is
 ;; described here:
@@ -16,7 +16,7 @@
   (shell-command "git add -u"))
 (let ((default-directory my-emacs-dir)) ; run command `git commmit` in the context of my-emacs-dir
   (shell-command
-   "git commit -m 'Precautionary commit before running install-mb-packages.el'"))
+   "git commit -m 'Precautionary commit before running install-packages.el'"))
 
 (when (< emacs-major-version 27)
   (package-initialize)) ;  set up the load-paths and autoloads for installed packages
@@ -37,7 +37,8 @@
   '(
 
 auctex ; in order to have reftex working
-  bash-completion  
+  bash-completion
+  calfw
   ; counsel ; for ivy
   cdlatex
   company
