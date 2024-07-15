@@ -47,6 +47,8 @@
 
 (setq list-command-history-max 500) ; no of available commands in  =command-history=
 
+(setq shell-command-switch "-c")
+
 (savehist-mode 1)          ; Save history for future sessions
 
 (winner-mode 1)            ; Toggle between previous window layouts
@@ -78,6 +80,8 @@
 ;;
 
 (setq system-time-locale "C")         ; Force Emacs to use English timestamps
+
+(setq calendar-week-start-day 1)       ; set Monday as the starting day of the week
 
 ;; Calendar ->
 (defun calendar-insert-date ()
@@ -125,25 +129,17 @@
 ;; Advanced buffer mode
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-;; ;; tabs, sessions for buffers
-;; (setq tabspaces-session t)
-;; (setq tabspaces-session-auto-restore t)
+;; emacs-sessions
+(add-to-list 'load-path "~/.emacs.d/manual-download/emacs-sessions/")
+(require 'sessions)
 
-;; (tabspaces-mode)
-;; (defvar tabspaces-command-map
-;;   (let ((map (make-sparse-keymap)))
-;;     (define-key map (kbd "C") 'tabspaces-clear-buffers)
-;;     (define-key map (kbd "b") 'tabspaces-switch-to-buffer)
-;;     (define-key map (kbd "d") 'tabspaces-close-workspace)
-;;     (define-key map (kbd "k") 'tabspaces-kill-buffers-close-workspace)
-;;     (define-key map (kbd "o") 'tabspaces-open-or-create-project-and-workspace)
-;;     (define-key map (kbd "r") 'tabspaces-remove-current-buffer)
-;;     (define-key map (kbd "R") 'tabspaces-remove-selected-buffer)
-;;     (define-key map (kbd "s") 'tabspaces-switch-or-create-workspace)
-;;     (define-key map (kbd "t") 'tabspaces-switch-buffer-and-tab)
-;;     map)
-;;   "Keymap for tabspace/workspace commands after `tabspaces-keymap-prefix'.")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; persp-mode
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(add-to-list 'load-path "~/.emacs.d/manual-download/persp-mode/")
+(require 'persp-mode)
+(persp-mode 1)
 
 ;; Resize the whole frame, and not only a window
 ;; Adapted from https://stackoverflow.com/a/24714383/5103881
@@ -398,11 +394,6 @@ See `org-latex-format-headline-function' for details."
     (org-map-entries (lambda () (org-shiftleft)) nil 'tree)
   )
 
-;; org-agenda activation
-(global-set-key (kbd "C-c l") #'org-store-link)
-(global-set-key (kbd "C-c a") #'org-agenda)
-(global-set-key (kbd "C-c c") #'org-capture)
-
 ;; **** org-special-block-extras -> 
 (add-hook #'org-mode-hook #'org-special-block-extras-mode)
 ;; <- **** org-special-block-extras
@@ -414,15 +405,16 @@ See `org-latex-format-headline-function' for details."
 (org-babel-do-load-languages
  'org-babel-load-languages '(
 			     (C . t) ; enable processing C, C++, and D source blocks
+			     (julia . t)
 			     (matlab . t)
 			     ;;(perl . t)
 			     (octave . t)
 			     (org . t)
 			     (python . t)
-                             (plantuml . t)
+			     (plantuml . t)
 			     (shell . t)
- 			     ))
-			     
+			     ))
+
 ;; no question about confirmation of evaluating babel code block
 (setq org-confirm-babel-evaluate nil)
 
@@ -623,7 +615,7 @@ See `org-latex-format-headline-function' for details."
   \\providecolor{EFD}{HTML}{28292e}
 
   % Define a Code environment to prettily wrap the fontified code.
-  \\usepackage[breakable,xparse]{tcolorbox}
+  \\IfPackageLoadedTF{tcolorbox}{}{\\usepackage[breakable,xparse]{tcolorbox}}
   \\DeclareTColorBox[]{Code}{o}%
   {colback=EfD!98!EFD, colframe=EfD!95!EFD,
     fontupper=\\footnotesize\\setlength{\\fboxsep}{0pt},
@@ -816,6 +808,37 @@ See `org-latex-format-headline-function' for details."
 
 (define-key global-map (kbd "<s-f12>") 'mb/browse-file-directory)
 
+(require 'expand-region)
+(global-set-key (kbd "C-=") 'er/expand-region)
+
+(defun mb/select-current-line ()
+  "Select the entire current line."
+  (interactive)
+  (beginning-of-line)
+  (set-mark-command nil)
+  (end-of-line))
+
+;; (global-set-key (kbd "C-c M-^") 'mb/select-current-line)
+(define-key mb-map (kbd "l") 'mb/select-current-line) ;  -> C-z l
+
+(defun mb/wrap-region-with-tags (begin end)
+  "Wrap the selected region with specific tags given in the body
+      of the function."
+
+  (interactive "r")
+  (save-excursion
+    (goto-char end)
+    (insert "\n\\end{equation}")
+    (insert "\n#+end_export")
+    (goto-char begin)
+    (insert "\n#+begin_export latex")
+    (insert "\n\\begin{equation}\n")
+    )
+  )
+
+;; (global-set-key (kbd "C-c M-%") 'mb/wrap-region-with-tags)
+(define-key mb-map (kbd "w") 'mb/wrap-region-with-tags) ; -> C-z w
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Email configuration >>>>>>>>>>>>
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -856,6 +879,8 @@ See `org-latex-format-headline-function' for details."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Diary
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(setq diary-file "~/org/diary/diary")
 
 ; 'american’ - month/day/year
 ; ‘european’ - day/month/year
@@ -908,6 +933,40 @@ See `org-latex-format-headline-function' for details."
 
 ;; load theme after defining 
 (load-theme 'modus-vivendi :noconfirm)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;; Agenda
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; org-agenda activation
+(global-set-key (kbd "C-c l") #'org-store-link)
+(global-set-key (kbd "C-c a") #'org-agenda)
+(global-set-key (kbd "C-c c") #'org-capture)
+
+;; Set your agenda files/directories (as a list of paths)
+(setq org-agenda-files '("~/org/agenda/" "~/.notes") )
+
+;; ;; Set default column view headings: Task Total-Time Time-Stamp
+ ;; (setq org-columns-default-format "%50ITEM(Task) %10CLOCKSUM %16TIMESTAMP_IA")
+(setq org-columns-default-format "%25ITEM %TODO %3PRIORITY %TAGS")
+
+
+
+ ;; Define the custom capture templates
+ (setq org-capture-templates
+       '(("t" "todo" entry (file org-default-notes-file)
+	  "* TODO %?\n%u\n%a\n" :clock-in t :clock-resume t)
+	 ("m" "Meeting" entry (file org-default-notes-file)
+	  "* MEETING with %? :MEETING:\n%t" :clock-in t :clock-resume t)
+	 ("d" "Diary" entry (file+datetree "~/org/diary.org")
+	  "* %?\n%U\n" :clock-in t :clock-resume t)
+	 ("i" "Idea" entry (file org-default-notes-file)
+	  "* %? :IDEA: \n%t" :clock-in t :clock-resume t)
+	 ("n" "Next Task" entry (file+headline org-default-notes-file "Tasks")
+	  "** NEXT %? \nDEADLINE: %t") ))
+
+ (setq org-refile-targets (quote ((nil :maxlevel . 9)
+				  (org-agenda-files :maxlevel . 9))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Manually downloaded packages

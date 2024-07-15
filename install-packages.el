@@ -48,6 +48,7 @@ auctex ; in order to have reftex working
   dockerfile-mode
   emacs-everywhere
   engrave-faces
+  expand-region
   fill-column-indicator
   ;flycheck
   ;flycheck-pos-tip
@@ -80,7 +81,7 @@ auctex ; in order to have reftex working
   popup   ; for yasnippet
   ;projectile
   ;pyenv-mode
-  ;Pylint  ; zeby dzialal interpreter python'a po:  C-c C-c
+  ;Pylint  ; zeby dzialal interpreter python'a po:  C-c C-c 
   quelpa
   quelpa-use-package
   ;rebox2
@@ -117,3 +118,21 @@ auctex ; in order to have reftex working
 ;; ; (jedi:install-server)
 
 (message "All done in install-packages.")
+
+(require 'quelpa-use-package)
+
+(setq package-archives
+      '(("melpa" . "https://melpa.org/packages/"))
+      use-package-always-ensure t)
+
+(package-initialize)
+
+(require 'use-package-ensure)
+
+(use-package quelpa
+  :ensure)
+
+(use-package quelpa-use-package
+  :demand
+  :config
+  (quelpa-use-package-activate-advice))
