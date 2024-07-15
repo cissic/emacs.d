@@ -39,6 +39,8 @@
 auctex ; in order to have reftex working
   bash-completion
   calfw
+  calfw-org
+  calfw-cal
   ; counsel ; for ivy
   cdlatex
   company
