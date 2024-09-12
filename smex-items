@@ -1,30 +1,30 @@
 
 ;; ----- smex-history -----
 (
- eval-buffer
- eval-region
- revert-buffer
- mb/org-entry-stencil
- calendar
- org-agenda-view-mode-dispatch
- org-cycle-agenda-files
+ untabify
+ shell
+ cissic-blog-stencil
+ cfw:open-mbx-calendar
+ cfw:open-calendar-buffer
+ org-agenda
+ mb/orgpriv-entry-stencil
 )
 
 ;; ----- smex-data -----
 (
  (revert-buffer . 945)
- (eval-buffer . 878)
- (list-packages . 63)
+ (eval-buffer . 891)
+ (list-packages . 66)
  (package-refresh-contents . 6)
  (eval-expression . 36)
- (eval-region . 123)
+ (eval-region . 124)
  (describe-variable . 5)
  (wg-create-workgroup . 14)
  (org-md-export-to-markdown . 2)
  (wg-open-workgroup . 11)
  (ivy-mode . 1)
  (flyspell-mode . 3)
- (shell . 15)
+ (shell . 19)
  (counsel-mode . 1)
  (company-mode . 2)
  (yas-minor-mode . 1)
@@ -40,18 +40,18 @@
  (sunrise . 10)
  (list-faces-display . 1)
  (nc . 1)
- (ffap . 85)
+ (ffap . 87)
  (org-babel-remove-result . 9)
  (kill-sexp . 1)
  (sunrise-sort-by-time . 1)
  (buf-move-left . 2)
  (buf-move-right . 1)
  (org-cite-insert . 55)
- (mynet . 106)
+ (mynet . 107)
  (org-version . 4)
  (package-reinstall . 1)
  (flymake-mode . 1)
- (eww . 9)
+ (eww . 13)
  (eww-bookmark-browse . 1)
  (abbrev-mode . 25)
  (list-abbrevs . 5)
@@ -74,7 +74,7 @@
  (display-fill-column-indicator-mode . 6)
  (eww-toggle-colors . 3)
  (magit-init . 1)
- (package-install . 4)
+ (package-install . 5)
  (dockerfile-mode . 3)
  (octave-mode . 9)
  (DocOnce . 8)
@@ -206,14 +206,14 @@
  (sunrise-kill-pane-buffer . 2)
  (ido-kill-buffer . 2)
  (open-line . 1)
- (calendar . 17)
+ (calendar . 20)
  (calendar-mode . 5)
  (diary-print-entries . 1)
  (diary-view-entries . 1)
- (diary-mode . 10)
+ (diary-mode . 12)
  (diary-insert-entry . 1)
  (diary-insert-yearly-entry . 1)
- (diary . 1)
+ (diary . 3)
  (org-display-inline-images . 35)
  (org-redisplay-inline-images . 2)
  (org-toggle-inline-images . 1)
@@ -249,7 +249,7 @@
  (rd/export-ListaCzlonkow . 3)
  (rd/clean-aux-ListaCzlonkow . 1)
  (org-babel-goto-named-src-block . 2)
- (mb/org-babel-tangle-block . 145)
+ (mb/org-babel-tangle-block . 146)
  (rd/export-Zaproszenie-Ogolne . 29)
  (mb/czy-doktorat . 1)
  (rd/load-TabelaCzlonkow-as-list . 5)
@@ -313,9 +313,9 @@
  (rd/ftp-clean . 13)
  (create-and-open-stencil-file . 2)
  (stencil-file . 8)
- (cissic-blog-stencil . 26)
- (mb/org-entry-stencil . 29)
- (mb/orgpriv-entry-stencil . 2)
+ (cissic-blog-stencil . 29)
+ (mb/org-entry-stencil . 30)
+ (mb/orgpriv-entry-stencil . 4)
  (org-overview . 2)
  (rd/porzadek-obrad-orglist-string-2-org-file . 1)
  (rd/export-Zaproszenia-Imienne . 82)
@@ -440,9 +440,20 @@
  (sessions-name . 4)
  (sessions-set-name . 2)
  (shell-command . 2)
- (org-agenda . 2)
+ (org-agenda . 3)
  (org-agenda-view-mode-dispatch . 4)
- (org-agenda-list . 3)
+ (org-agenda-list . 4)
  (org-agenda-goto-today . 3)
  (org-cycle-agenda-files . 3)
+ (counsel-keepassxc . 3)
+ (org-agenda-mode . 4)
+ (cfw:open-calendar-buffer . 9)
+ (cfw:open-org-calendar . 1)
+ (cfw:open-diary-calendar . 1)
+ (cfw:mb-calendar . 1)
+ (cfw:change-view-month . 1)
+ (cfw:refresh-calendar-buffer . 1)
+ (cfw:mbx-calendar . 3)
+ (cfw:open-mbx-calendar . 7)
+ (untabify . 2)
 )

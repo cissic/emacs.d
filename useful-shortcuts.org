@@ -6,10 +6,12 @@
 
 [[https://www.youtube.com/watch?v=ZMEcb2rpauU][film o org-mode]]
 
+https://www.gnu.org/software/emacs/refcards/pdf/pl-refcard.pdf
+
 1. Wstawianie krótkiego przykładu. Dwukropek poprzedzający inne znaki w linii
    (w ten sposób sa zaznaczane skróty klawiszowe w dokumentacji org-mode):
    : krótki tekst - zostanie napisany inną czcionką zamiast używania #+BEGIN_EXAMPLE
-
+   
 2. Znajdowanie i otwieranie pliku pod kursorem w org-modzie: (raz to dzialalo, ale przestalo)
    : C-c '     # czyli (org-edit-special)
 
@@ -177,8 +179,17 @@
     a potem
     : <S-leftarrow/rightarrow>
 
+33. Usuwanie pustych znaków z początku linii
+https://stackoverflow.com/questions/445225/emacs-command-to-delete-up-to-non-whitespace-character (w simple.el)
+    : delete-indentation 
+    : M-^
     
-  
+34. Czyszczenie podwójnych spacji w okolicy kursora:
+    : fixup-whitespace
+
+35. Czyszczenie podwójnych spacji w regionie:
+    https://stackoverflow.com/questions/8674912/how-to-collapse-whitespaces-in-a-region
+
 * OLD
 
 1. Wykonanie operacji na kilku slowach

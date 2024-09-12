@@ -14,46 +14,50 @@
 ;; *** Global emacs customization
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(auto-revert-mode 1)       ; Automatically reload file from a disk after change
-(global-auto-revert-mode 1) 
+  (auto-revert-mode 1)       ; Automatically reload file from a disk after change
+  (global-auto-revert-mode 1) 
 
-(delete-selection-mode 1)  ; Replace selected text
+  (delete-selection-mode 1)  ; Replace selected text
 
-(show-paren-mode 1)        ; Highlight matching parenthesis
+  (show-paren-mode 1)        ; Highlight matching parenthesis
 
-; Enable line numbering
-;; DEPRECATED, CAUSES LAGS WHEN TYPING: (global-linum-mode 1)			
-(global-display-line-numbers-mode 1) 
+  ; Enable line numbering
+  ;; DEPRECATED, CAUSES LAGS WHEN TYPING: (global-linum-mode 1)			
+  (global-display-line-numbers-mode 1) 
 
-(scroll-bar-mode 1)        ; Enable scrollbar
-(menu-bar-mode 1)          ; Enable menubar
-(tool-bar-mode -1)         ; Disable toolbar since it's rather useless
+  (scroll-bar-mode 1)        ; Enable scrollbar
+  (menu-bar-mode 1)          ; Enable menubar
+  (tool-bar-mode -1)         ; Disable toolbar since it's rather useless
 
-(setq line-number-mode t)  ; Show line number
+  (setq line-number-mode t)  ; Show line number
 
-(setq column-number-mode t); Show column number
+  (setq column-number-mode t); Show column number
 
-(define-key global-map (kbd "RET") 'newline-and-indent) ; Auto-indent new lines
+  (define-key global-map (kbd "RET") 'newline-and-indent) ; Auto-indent new lines
 
-(if (not (daemonp))           ; if this is not a --daemon session -> see: [[emacs-everywhere]] section
-   (desktop-save-mode 1)      ; Save buffers on closing and restore them at startup
-)
-(setq desktop-load-locked-desktop t) ; and don't ask for confirmation when 
-			   ; opening locked desktop
-(setq desktop-save t)
+  (if (not (daemonp))           ; if this is not a --daemon session -> see: [[emacs-everywhere]] section
+     (desktop-save-mode 1)      ; Save buffers on closing and restore them at startup
+  )
+  (setq desktop-load-locked-desktop t) ; and don't ask for confirmation when 
+			     ; opening locked desktop
+  (setq desktop-save t)
 
-(save-place-mode t)        ; When re-entering a file, return to the place, 
-			   ; where I was when I left it the last time.
+  (save-place-mode t)        ; When re-entering a file, return to the place, 
+			     ; where I was when I left it the last time.
 
-(setq list-command-history-max 500) ; no of available commands in  =command-history=
+  (setq list-command-history-max 500) ; no of available commands in  =command-history=
 
-(setq shell-command-switch "-c")
+  (setq shell-command-switch "-c")
 
 (savehist-mode 1)          ; Save history for future sessions
 
 (winner-mode 1)            ; Toggle between previous window layouts
 
 (global-visual-line-mode t) ; Truncate lines
+
+; fix for python indentation problems after tangling of org-babel blocks
+(setq org-src-preserve-indentation     t 
+      org-edit-src-content-indentation 0)
 
 ;; Do not deselect after M-w copying -> 
  (defadvice kill-ring-save (after keep-transient-mark-active ())
@@ -114,7 +118,7 @@
   (global-set-key        (kbd "C-s-<up>") 'enlarge-window)
 ;; <- Easy windows resize
 
-;; Fill column indicator -> 
+  ;; Fill column indicator -> 
 (setq display-fill-column-indicator-column 81)
 
 (defun my-default-text-buffer-settings-mode-hook()
@@ -122,24 +126,24 @@
   )
   ;; <- Fill column indicator
 
-;; Setting alarms in Emacs -> 
+  ;; Setting alarms in Emacs -> 
 (setq-default visible-bell t) 
 (setq ring-bell-function 'ignore)
 
-;; Advanced buffer mode
+  ;; Advanced buffer mode
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-;; emacs-sessions
-(add-to-list 'load-path "~/.emacs.d/manual-download/emacs-sessions/")
-(require 'sessions)
+  ;; emacs-sessions
+  (add-to-list 'load-path "~/.emacs.d/manual-download/emacs-sessions/")
+  (require 'sessions)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; persp-mode
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; persp-mode
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(add-to-list 'load-path "~/.emacs.d/manual-download/persp-mode/")
-(require 'persp-mode)
-(persp-mode 1)
+  (add-to-list 'load-path "~/.emacs.d/manual-download/persp-mode/")
+  (require 'persp-mode)
+  (persp-mode 1)
 
 ;; Resize the whole frame, and not only a window
 ;; Adapted from https://stackoverflow.com/a/24714383/5103881
@@ -165,46 +169,46 @@ frame if FRAME is nil, and to 1 if AMT is nil."
 (global-set-key (kbd "<C-down-mouse-4>") 'acg/zoom-frame)
 (global-set-key (kbd "<C-down-mouse-5>") 'acg/zoom-frame-out)
 
-;; ido-mode ->
-  (ido-mode 1)          
-  (setq ido-enable-flex-matching t)
-  (setq ido-everywhere t)  ; ido-mode for file searching
-;; <- ido-mode
+  ;; ido-mode ->
+    (ido-mode 1)          
+    (setq ido-enable-flex-matching t)
+    (setq ido-everywhere t)  ; ido-mode for file searching
+  ;; <- ido-mode
 
-(defadvice ido-find-file (after find-file-sudo activate)
-"Find file as root if necessary."
-(unless (and buffer-file-name
-             (file-writable-p buffer-file-name))
-  (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
+  (defadvice ido-find-file (after find-file-sudo activate)
+  "Find file as root if necessary."
+  (unless (and buffer-file-name
+               (file-writable-p buffer-file-name))
+    (find-alternate-file (concat "/sudo:root@localhost:" buffer-file-name))))
 
-;; smex ->
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) 
-;; <- smex
+  ;; smex ->
+  (global-set-key (kbd "M-x") 'smex)
+  (global-set-key (kbd "M-X") 'smex-major-mode-commands)
+  ;; This is your old M-x.
+  (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command) 
+  ;; <- smex
 
-;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; ;; *** Ivy
-;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; ;; *** Ivy
+  ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; (setq ivy-wrap t)
-;; (setq ivy-height 8)
-;; (setq ivy-display-style 'fancy)
-;; (setq ivy-use-virtual-buffers t)
-;; (setq ivy-case-fold-search-default t)
-;; (setq ivy-re-builders-alist '((t . ivy--regex-ignore-order)))
-;; (setq enable-recursive-minibuffers t)
-;; (ivy-mode t)
+  ;; (setq ivy-wrap t)
+  ;; (setq ivy-height 8)
+  ;; (setq ivy-display-style 'fancy)
+  ;; (setq ivy-use-virtual-buffers t)
+  ;; (setq ivy-case-fold-search-default t)
+  ;; (setq ivy-re-builders-alist '((t . ivy--regex-ignore-order)))
+  ;; (setq enable-recursive-minibuffers t)
+  ;; (ivy-mode t)
 
-;; ;; abbrev-mode ->
-;;   (setq-default abbrev-mode t)          
-;;   ; (read-abbrev-file "~/.emacs.d/abbrev_defs")
-;;   (read-abbrev-file "~/.emacs.d/abbrev_defs_autocorrectionEN")
-;;   (read-abbrev-file "~/.emacs.d/abbrev_defs_autocorrectionPL")  
-;;   (read-abbrev-file "~/.emacs.d/abbrev_defs_cis")  
-;;   (setq save-abbrevs t)  
-;; ;; <- abbrev-mode
+  ;; ;; abbrev-mode ->
+  ;;   (setq-default abbrev-mode t)          
+  ;;   ; (read-abbrev-file "~/.emacs.d/abbrev_defs")
+  ;;   (read-abbrev-file "~/.emacs.d/abbrev_defs_autocorrectionEN")
+  ;;   (read-abbrev-file "~/.emacs.d/abbrev_defs_autocorrectionPL")  
+  ;;   (read-abbrev-file "~/.emacs.d/abbrev_defs_cis")  
+  ;;   (setq save-abbrevs t)  
+  ;; ;; <- abbrev-mode
 
 ;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ;; *** Auto-completing
@@ -248,55 +252,55 @@ frame if FRAME is nil, and to 1 if AMT is nil."
      )
 )
 
-(defun replace-string-in-buffer (string1 string2)
-  (save-excursion
-    (goto-char (point-min))
-    (while (search-forward string1 nil t)
-      (replace-match string2))))
+  (defun replace-string-in-buffer (string1 string2)
+    (save-excursion
+      (goto-char (point-min))
+      (while (search-forward string1 nil t)
+	(replace-match string2))))
 
-;; (replace-string-in-buffer "string2" "string2") 
+  ;; (replace-string-in-buffer "string2" "string2") 
 
-(defun mb/matlab-octave-org-babel-source-conversion()
-  (interactive) 
-  (replace-string-in-buffer "#+begin_src octave" "#+begin_src oct2mat")
-  (replace-string-in-buffer "#+begin_src matlab" "#+begin_src mat2oct")
-  (replace-string-in-buffer "src_octave" "src_oct2mat")        
-  (replace-string-in-buffer "src_matlab" "src_mat2oct")
-  (replace-string-in-buffer "#+begin_src oct2mat" "#+begin_src matlab" )
-  (replace-string-in-buffer "#+begin_src mat2oct" "#+begin_src octave")
-  (replace-string-in-buffer "src_oct2mat" "src_matlab")
-  (replace-string-in-buffer "src_mat2oct" "src_octave")
-  (kill-buffer "*MatOct*")
+  (defun mb/matlab-octave-org-babel-source-conversion()
+    (interactive) 
+    (replace-string-in-buffer "#+begin_src octave" "#+begin_src oct2mat")
+    (replace-string-in-buffer "#+begin_src matlab" "#+begin_src mat2oct")
+    (replace-string-in-buffer "src_octave" "src_oct2mat")        
+    (replace-string-in-buffer "src_matlab" "src_mat2oct")
+    (replace-string-in-buffer "#+begin_src oct2mat" "#+begin_src matlab" )
+    (replace-string-in-buffer "#+begin_src mat2oct" "#+begin_src octave")
+    (replace-string-in-buffer "src_oct2mat" "src_matlab")
+    (replace-string-in-buffer "src_mat2oct" "src_octave")
+    (kill-buffer "*MatOct*")
+    )
+
+  (defun mb/matoct-conversion()
+    ;; auxiliary shortcut for an original function
+    (interactive) 
+    (mb/matlab-octave-org-babel-source-conversion)
+    )
+
+  ;; Python mode...
+
+  (defun my-python-mode-hook()
+             (lambda ()
+               (setq python-shell-interpreter "python") ))
+
+  ;; Org mode...
+  (setq org-export-in-background t)
+
+  (defun my-org-mode-hook()
+    (define-key org-mode-map (kbd "<f9>")
+      '(lambda () (interactive)
+	(org-latex-export-to-pdf :async t)
+	(org-beamer-export-to-pdf :async t)
+	(org-odt-export-to-odt :async t)
+	(org-odt-export-as-pdf :async t)
+	)
+       )  
   )
 
-(defun mb/matoct-conversion()
-  ;; auxiliary shortcut for an original function
-  (interactive) 
-  (mb/matlab-octave-org-babel-source-conversion)
-  )
-
-;; Python mode...
-
-(defun my-python-mode-hook()
-           (lambda ()
-             (setq python-shell-interpreter "python") ))
-
-;; Org mode...
-(setq org-export-in-background t)
-
-(defun my-org-mode-hook()
-  (define-key org-mode-map (kbd "<f9>")
-    '(lambda () (interactive)
-      (org-latex-export-to-pdf :async t)
-      (org-beamer-export-to-pdf :async t)
-      (org-odt-export-to-odt :async t)
-      (org-odt-export-as-pdf :async t)
-      )
-     )  
-)
-
-(setq org-export-async-init-file (expand-file-name "~/.emacs.d/myarch/async_init.el"))
-(setq org-export-async-debug nil) ;; when set to 't' it stores all "*Org Export Process*" buffers, when set to 'nil' it leaves only the last one in the buffer list, but already killed
+  (setq org-export-async-init-file (expand-file-name "~/.emacs.d/myarch/async_init.el"))
+  (setq org-export-async-debug nil) ;; when set to 't' it stores all "*Org Export Process*" buffers, when set to 'nil' it leaves only the last one in the buffer list, but already killed
 
 ;; Add all of the hooks...
 ;(add-hook 'c++-mode-hook 'my-c++-mode-hook)
@@ -310,24 +314,24 @@ frame if FRAME is nil, and to 1 if AMT is nil."
 ; (add-hook 'lisp-mode-hook 'my-lisp-mode-hook)
 ;(add-hook 'perl-mode-hook 'my-perl-mode-hook)
 
-;; Add a hook to the list of modes
-(defun my-add-to-multiple-hooks (function hooks)
-  (mapc (lambda (hook)
-	  (add-hook hook function))
-	hooks))
+  ;; Add a hook to the list of modes
+  (defun my-add-to-multiple-hooks (function hooks)
+    (mapc (lambda (hook)
+	    (add-hook hook function))
+	  hooks))
 
-(defun my-turn-on-auto-fill ()
-    my-default-text-buffer-settings-mode-hook  )
+  (defun my-turn-on-auto-fill ()
+      my-default-text-buffer-settings-mode-hook  )
 
-(my-add-to-multiple-hooks
- 'my-default-text-buffer-settings-mode-hook         ;; my-turn-on-auto-fill
- '(DocOnce-hook
-   emacs-lisp-mode-hook
-   matlab-mode-hook
-   octave-mode-hook
-   org-mode-hook
-   python-mode-hook
- ))
+  (my-add-to-multiple-hooks
+   'my-default-text-buffer-settings-mode-hook         ;; my-turn-on-auto-fill
+   '(DocOnce-hook
+     emacs-lisp-mode-hook
+     matlab-mode-hook
+     octave-mode-hook
+     org-mode-hook
+     python-mode-hook
+   ))
 
 ;; Change font color for eww
 (defun my-eww-mode-faces ()
@@ -373,6 +377,7 @@ See `org-latex-format-headline-function' for details."
    ((string= todo "TODO")(and todo (format "{\\color{red}\\bfseries\\sffamily %s} " todo)))
    ((string= todo "????")(and todo (format "{\\color{red}\\bfseries\\sffamily %s} " todo)))
    ((string= todo "POSTPONED")(and todo (format "{\\color{blue}\\bfseries\\sffamily %s} " todo)))
+   ((string= todo "DEPRECATED")(and todo (format "{\\color{blue}\\bfseries\\sffamily %s} " todo)))
    ((string= todo "DONE")(and todo (format "{\\color{green}\\bfseries\\sffamily %s} " todo)))
    )
    (and priority (format "\\framebox{\\#%c} " priority))
@@ -401,22 +406,23 @@ See `org-latex-format-headline-function' for details."
 ;; enabling asynchronous org-babel source block execution
 (require 'ob-async)
 
-;; enabling org-babel
-(org-babel-do-load-languages
- 'org-babel-load-languages '(
-			     (C . t) ; enable processing C, C++, and D source blocks
-			     (julia . t)
-			     (matlab . t)
-			     ;;(perl . t)
-			     (octave . t)
-			     (org . t)
-			     (python . t)
-			     (plantuml . t)
-			     (shell . t)
-			     ))
+  ;; enabling org-babel
+  (org-babel-do-load-languages
+   'org-babel-load-languages '(
+			       (C . t) ; enable processing C, C++, and D source blocks
+			       (julia . t)
+			       (matlab . t)
+			       (js . t)
+			       ;;(perl . t)
+			       (octave . t)
+			       (org . t)
+			       (python . t)
+			       (plantuml . t)
+			       (shell . t)
+			       ))
 
-;; no question about confirmation of evaluating babel code block
-(setq org-confirm-babel-evaluate nil)
+  ;; no question about confirmation of evaluating babel code block
+  (setq org-confirm-babel-evaluate nil)
 
 (defun mb/org-babel-tangle-block()
   (interactive)
@@ -521,32 +527,32 @@ See `org-latex-format-headline-function' for details."
         (run-hooks 'org-babel-tangle-finished-hook)
     path-collector))))
 
-(defun mb/org-babel-tangle-to-target-file-from-the-file (file target-file)
-  (interactive "fFile to tangle: \nP")
-    (let* ((visited (find-buffer-visiting file))
-	   (buffer (or visited (find-file-noselect file))))
-      (prog1
-	  (with-current-buffer buffer
-	    (org-with-wide-buffer
-	     (mapcar #'expand-file-name
-		     (mb/tangle-file target-file))))
-	(unless visited (kill-buffer buffer)))))
+  (defun mb/org-babel-tangle-to-target-file-from-the-file (file target-file)
+    (interactive "fFile to tangle: \nP")
+      (let* ((visited (find-buffer-visiting file))
+	     (buffer (or visited (find-file-noselect file))))
+	(prog1
+	    (with-current-buffer buffer
+	      (org-with-wide-buffer
+	       (mapcar #'expand-file-name
+		       (mb/tangle-file target-file))))
+	  (unless visited (kill-buffer buffer)))))
 
-(defun mb/org-babel-export-org-file-to-latex (filename)
-  (interactive "fFile to export: \nP")
-    (let* ((visited (find-buffer-visiting filename))
-	   (buffer (or visited (find-file-noselect filename))))
-      (prog1
-	  (with-current-buffer buffer
-	     (org-latex-export-to-pdf nil) )
-	(unless visited (kill-buffer buffer)))))
+  (defun mb/org-babel-export-org-file-to-latex (filename)
+    (interactive "fFile to export: \nP")
+      (let* ((visited (find-buffer-visiting filename))
+	     (buffer (or visited (find-file-noselect filename))))
+	(prog1
+	    (with-current-buffer buffer
+	       (org-latex-export-to-pdf nil) )
+	  (unless visited (kill-buffer buffer)))))
 
-(defun mb/org-babel-tangle-and-export (file target-file)
-  (interactive)
-  (mb/org-babel-tangle-to-target-file-from-the-file file target-file)
-  (sleep-for 0.5)
-  (mb/org-babel-export-org-file-to-latex target-file)
-  )
+  (defun mb/org-babel-tangle-and-export (file target-file)
+    (interactive)
+    (mb/org-babel-tangle-to-target-file-from-the-file file target-file)
+    (sleep-for 0.5)
+    (mb/org-babel-export-org-file-to-latex target-file)
+    )
 
 ;; enabling plantuml
 
@@ -560,34 +566,34 @@ See `org-latex-format-headline-function' for details."
 ;; Python in org-babel
 (setq org-babel-python-command "python3")
 
-;; **** org-to-markdown exporter customization  -> 
+  ;; **** org-to-markdown exporter customization  -> 
 
-(defun org-export-md-format-front-matter ()
-  (let* ((kv-alist (org-element-map (org-element-parse-buffer 'greater-element)
-		       'keyword
-		     (lambda (keyword)
-		       (cons (intern (downcase (org-element-property :key keyword)))
-			     (org-element-property :value keyword)))))
-	 (lines (mapcar (lambda (kw)
-			  (let ((val (alist-get kw kv-alist)))
-			    (format (pcase kw
-				      ('author "%s: %s")
-				      ((or 'tags 'title) "%s: '%s'")
-				      (_ "%s: %s"))
-				    (downcase (symbol-name kw))
-				    (pcase kw
-				      ('date (substring val 1 -1))
-				      (_ val)))))
-			'(author date tags title))))
-    (concat "---\n" (concat (mapconcat #'identity lines "\n")) "\n---")))
+  (defun org-export-md-format-front-matter ()
+    (let* ((kv-alist (org-element-map (org-element-parse-buffer 'greater-element)
+			 'keyword
+		       (lambda (keyword)
+			 (cons (intern (downcase (org-element-property :key keyword)))
+			       (org-element-property :value keyword)))))
+	   (lines (mapcar (lambda (kw)
+			    (let ((val (alist-get kw kv-alist)))
+			      (format (pcase kw
+					('author "%s: %s")
+					((or 'tags 'title) "%s: '%s'")
+					(_ "%s: %s"))
+				      (downcase (symbol-name kw))
+				      (pcase kw
+					('date (substring val 1 -1))
+					(_ val)))))
+			  '(author date tags title))))
+      (concat "---\n" (concat (mapconcat #'identity lines "\n")) "\n---")))
 
-(defun my/org-export-markdown-hook-function (backend)
-    (if (eq backend 'md)
-	(insert (org-export-md-format-front-matter) "\n")))
+  (defun my/org-export-markdown-hook-function (backend)
+      (if (eq backend 'md)
+	  (insert (org-export-md-format-front-matter) "\n")))
 
-;; This hook should be added per file in my org posts. Unfortunately, so far I don't know
-;; how to do this.
-;; (add-hook 'org-export-before-processing-hook #'my/org-export-markdown-hook-function)
+  ;; This hook should be added per file in my org posts. Unfortunately, so far I don't know
+  ;; how to do this.
+  ;; (add-hook 'org-export-before-processing-hook #'my/org-export-markdown-hook-function)
 
 (require 'ox-md nil t)
 
@@ -600,75 +606,75 @@ See `org-latex-format-headline-function' for details."
 (setq org-latex-src-block-backend 'engraved)
 ;; ;; (setq org-latex-packages-alist '((""))) ; there's no need to add minted package anymore here, we're using engraved, special options for engraved are passed in org-latex-engraved-preamble
 
-(setq org-latex-engraved-preamble
-  "\\usepackage{fvextra}
+      (setq org-latex-engraved-preamble
+	"\\usepackage{fvextra}
 
-  [FVEXTRA-SETUP]
+	[FVEXTRA-SETUP]
 
-  % Make line numbers smaller and grey.
-  \\renewcommand\\theFancyVerbLine{\\footnotesize\\color{black!40!white}\\arabic{FancyVerbLine}}
+	% Make line numbers smaller and grey.
+	\\renewcommand\\theFancyVerbLine{\\footnotesize\\color{black!40!white}\\arabic{FancyVerbLine}}
 
-  \\usepackage{xcolor}
+	\\usepackage{xcolor}
 
-  % In case engrave-faces-latex-gen-preamble has not been run.
-  \\providecolor{EfD}{HTML}{f7f7f7}
-  \\providecolor{EFD}{HTML}{28292e}
+	% In case engrave-faces-latex-gen-preamble has not been run.
+	\\providecolor{EfD}{HTML}{f7f7f7}
+	\\providecolor{EFD}{HTML}{28292e}
 
-  % Define a Code environment to prettily wrap the fontified code.
-  \\IfPackageLoadedTF{tcolorbox}{}{\\usepackage[breakable,xparse]{tcolorbox}}
-  \\DeclareTColorBox[]{Code}{o}%
-  {colback=EfD!98!EFD, colframe=EfD!95!EFD,
-    fontupper=\\footnotesize\\setlength{\\fboxsep}{0pt},
-    colupper=EFD,
-    IfNoValueTF={#1}%
-    {boxsep=2pt, arc=2.5pt, outer arc=2.5pt,
-      boxrule=0.5pt, left=2pt}%
-    {boxsep=2.5pt, arc=0pt, outer arc=0pt,
-      boxrule=0pt, leftrule=1.5pt, left=0.5pt},
-    right=2pt, top=1pt, bottom=0.5pt,
-    breakable}
+	% Define a Code environment to prettily wrap the fontified code.
+	\\IfPackageLoadedTF{tcolorbox}{}{\\usepackage[breakable,xparse]{tcolorbox}}
+	\\DeclareTColorBox[]{Code}{o}%
+	{colback=EfD!98!EFD, colframe=EfD!95!EFD,
+	  fontupper=\\footnotesize\\setlength{\\fboxsep}{0pt},
+	  colupper=EFD,
+	  IfNoValueTF={#1}%
+	  {boxsep=2pt, arc=2.5pt, outer arc=2.5pt,
+	    boxrule=0.5pt, left=2pt}%
+	  {boxsep=2.5pt, arc=0pt, outer arc=0pt,
+	    boxrule=0pt, leftrule=1.5pt, left=0.5pt},
+	  right=2pt, top=1pt, bottom=0.5pt,
+	  breakable}
 
-  [LISTINGS-SETUP]
+	[LISTINGS-SETUP]
 
-  \\newenvironment{ai}
-  {
-  \\begin{Code}
-  }
-  {
-  \\end{Code}
-  }"
-)
+        \\newenvironment{ai}
+        {
+        \\begin{Code}
+        }
+        {
+        \\end{Code}
+        }"
+      )
 
-(setq org-latex-engraved-options
-  '(
-    ("commandchars" . "\\\\\\{\\}")
-    ("highlightcolor" . "white!95!black!80!blue")
-    ("breaklines" . "true")
-    ("breaksymbol" . "\\color{white!60!black}\\tiny\\ensuremath{\\hookrightarrow}")
-    ("highlightcolor" . "lightgray")
-    ("frame" . "single")
-    ("numbers" . "left")
+  (setq org-latex-engraved-options
+    '(
+      ("commandchars" . "\\\\\\{\\}")
+      ("highlightcolor" . "white!95!black!80!blue")
+      ("breaklines" . "true")
+      ("breaksymbol" . "\\color{white!60!black}\\tiny\\ensuremath{\\hookrightarrow}")
+      ("highlightcolor" . "lightgray")
+      ("frame" . "single")
+      ("numbers" . "left")
+      )
     )
-  )
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; *** Reftex default bibliography - though it's easier to use org-cite
-;;     This is left in case org-ref doesn't work at all without it....
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(require 'org-ref)
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; *** Reftex default bibliography - though it's easier to use org-cite
+  ;;     This is left in case org-ref doesn't work at all without it....
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  (require 'org-ref)
 
-;; Managing org-mode #+NAME properties like in reftex-mode
-(defun my/get-name (e)
-      (org-element-property :name e))
+  ;; Managing org-mode #+NAME properties like in reftex-mode
+  (defun my/get-name (e)
+	(org-element-property :name e))
 
-(defun my/latex-environment-names ()
-      (org-element-map (org-element-parse-buffer) 'latex-environment #'my/get-name))
+  (defun my/latex-environment-names ()
+	(org-element-map (org-element-parse-buffer) 'latex-environment #'my/get-name))
 
-(defun my/report-latex-environment-names ()
-    (interactive)
-    (message (format "%S" (my/latex-environment-names))))
+  (defun my/report-latex-environment-names ()
+      (interactive)
+      (message (format "%S" (my/latex-environment-names))))
 
-  (define-key org-mode-map (kbd "C-z z") #'my/report-latex-environment-names)
+    (define-key org-mode-map (kbd "C-z z") #'my/report-latex-environment-names)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Flyspell 
@@ -731,45 +737,45 @@ See `org-latex-format-headline-function' for details."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; AI - ChatGPT, Dall-E, Stable Diffusion and ...
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; (require 'org-ai)
-(add-hook 'org-mode-hook #'org-ai-mode)
-(org-ai-global-mode)
-;; (setq org-ai-default-chat-model "gpt-4") ; if you are on the gpt-4 beta:
-;; (org-ai-install-yasnippets) ; if you are using yasnippet and want `ai` snippets
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;; AI - ChatGPT, Dall-E, Stable Diffusion and ...
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; (require 'org-ai)
+  (add-hook 'org-mode-hook #'org-ai-mode)
+  (org-ai-global-mode)
+  ;; (setq org-ai-default-chat-model "gpt-4") ; if you are on the gpt-4 beta:
+  ;; (org-ai-install-yasnippets) ; if you are using yasnippet and want `ai` snippets
 
-(load-file (concat user-emacs-directory "../.mysecrets/openaiapi.el"))
+  (load-file (concat user-emacs-directory "../.mysecrets/openaiapi.el"))
 
-(setq org-structure-template-alist
-'(("a" . "export ascii\n")
-  ("A" . "ai\n")
-  ("c" . "center\n")
-  ("C" . "comment\n")
-  ("e" . "example\n")
-  ("E" . "export")
-  ("h" . "export html\n")
-  ("l" . "export latex\n")
-  ("q" . "quote\n")
-  ("s" . "src")
-  ("v" . "verse\n")))
+  (setq org-structure-template-alist
+  '(("a" . "export ascii\n")
+    ("A" . "ai\n")
+    ("c" . "center\n")
+    ("C" . "comment\n")
+    ("e" . "example\n")
+    ("E" . "export")
+    ("h" . "export html\n")
+    ("l" . "export latex\n")
+    ("q" . "quote\n")
+    ("s" . "src")
+    ("v" . "verse\n")))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; AI - Whisper for voice recording
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(setq whisper-install-directory "/tmp/"
-      whisper-model "base"
-      whisper-language "en"
-      whisper-translate nil
-      whisper-use-threads (/ (num-processors) 2))
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;; AI - Whisper for voice recording
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  (setq whisper-install-directory "/tmp/"
+	whisper-model "base"
+	whisper-language "en"
+	whisper-translate nil
+	whisper-use-threads (/ (num-processors) 2))
 
 
-(add-to-list 'load-path "~/.emacs.d/manual-download/whisper.el/")
-;; doconce (M-x DocOnce) may be needed to activate it -> 
-(load-file "~/.emacs.d/manual-download/whisper.el/whisper.el")
+  (add-to-list 'load-path "~/.emacs.d/manual-download/whisper.el/")
+  ;; doconce (M-x DocOnce) may be needed to activate it -> 
+  (load-file "~/.emacs.d/manual-download/whisper.el/whisper.el")
 
-(global-set-key [f12] 'whisper-run)
+  (global-set-key [f12] 'whisper-run)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful global shortcuts (text operations)
@@ -808,36 +814,36 @@ See `org-latex-format-headline-function' for details."
 
 (define-key global-map (kbd "<s-f12>") 'mb/browse-file-directory)
 
-(require 'expand-region)
-(global-set-key (kbd "C-=") 'er/expand-region)
+  (require 'expand-region)
+  (global-set-key (kbd "C-=") 'er/expand-region)
 
-(defun mb/select-current-line ()
-  "Select the entire current line."
-  (interactive)
-  (beginning-of-line)
-  (set-mark-command nil)
-  (end-of-line))
+  (defun mb/select-current-line ()
+    "Select the entire current line."
+    (interactive)
+    (beginning-of-line)
+    (set-mark-command nil)
+    (end-of-line))
 
-;; (global-set-key (kbd "C-c M-^") 'mb/select-current-line)
-(define-key mb-map (kbd "l") 'mb/select-current-line) ;  -> C-z l
+  ;; (global-set-key (kbd "C-c M-^") 'mb/select-current-line)
+  (define-key mb-map (kbd "l") 'mb/select-current-line) ;  -> C-z l
 
-(defun mb/wrap-region-with-tags (begin end)
-  "Wrap the selected region with specific tags given in the body
-      of the function."
+  (defun mb/wrap-region-with-tags (begin end)
+    "Wrap the selected region with specific tags given in the body
+	of the function."
 
-  (interactive "r")
-  (save-excursion
-    (goto-char end)
-    (insert "\n\\end{equation}")
-    (insert "\n#+end_export")
-    (goto-char begin)
-    (insert "\n#+begin_export latex")
-    (insert "\n\\begin{equation}\n")
+    (interactive "r")
+    (save-excursion
+      (goto-char end)
+      (insert "\n\\end{equation}")
+      (insert "\n#+end_export")
+      (goto-char begin)
+      (insert "\n#+begin_export latex")
+      (insert "\n\\begin{equation}\n")
+      )
     )
-  )
 
-;; (global-set-key (kbd "C-c M-%") 'mb/wrap-region-with-tags)
-(define-key mb-map (kbd "w") 'mb/wrap-region-with-tags) ; -> C-z w
+  ;; (global-set-key (kbd "C-c M-%") 'mb/wrap-region-with-tags)
+  (define-key mb-map (kbd "w") 'mb/wrap-region-with-tags) ; -> C-z w
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Email configuration >>>>>>>>>>>>
@@ -847,19 +853,19 @@ See `org-latex-format-headline-function' for details."
 ;;;; <<<<<<<<<<<<<< Email configuration 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; setting up configuration for emacs-everywhere:
-;; 1. font size
-;(if (daemonp)
-;(
-(defun my-after-frame (frame)
-  (if (display-graphic-p frame)
-      (progn
-         (set-frame-font "liberation mono 11" nil t) )))
+   ;; setting up configuration for emacs-everywhere:
+   ;; 1. font size
+   ;(if (daemonp)
+   ;(
+   (defun my-after-frame (frame)
+     (if (display-graphic-p frame)
+         (progn
+            (set-frame-font "liberation mono 11" nil t) )))
 
-(mapc 'my-after-frame (frame-list))
-(add-hook 'after-make-frame-functions 'my-after-frame)
-;)
-;)
+   (mapc 'my-after-frame (frame-list))
+   (add-hook 'after-make-frame-functions 'my-after-frame)
+   ;)
+   ;)
 
 (defun launch-separate-emacs-in-terminal ()
   (suspend-emacs "fg ; emacs -nw"))
@@ -876,24 +882,24 @@ See `org-latex-format-headline-function' for details."
                                                          #'launch-separate-emacs-in-terminal)))))
     (save-buffers-kill-emacs)))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; Diary
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;; Diary
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq diary-file "~/org/diary/diary")
+  (setq diary-file "~/org/diary/diary")
 
-; 'american’ - month/day/year
-; ‘european’ - day/month/year
-; ‘iso’      - year/month/day
+  ; 'american’ - month/day/year
+  ; ‘european’ - day/month/year
+  ; ‘iso’      - year/month/day
 
-(setq calendar-date-style "iso")
-(setq diary-date-forms diary-iso-date-forms)
-(setq diary-comment-start ";;")
-(setq diary-comment-end "")
-(setq diary-nonmarking-symbol "!")
-; (setq diary-show-holidays-flag t)
+  (setq calendar-date-style "iso")
+  (setq diary-date-forms diary-iso-date-forms)
+  (setq diary-comment-start ";;")
+  (setq diary-comment-end "")
+  (setq diary-nonmarking-symbol "!")
+  ; (setq diary-show-holidays-flag t)
 
-(setq calendar-mark-diary-entries-flag t)
+  (setq calendar-mark-diary-entries-flag t)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Emacs theme
@@ -934,41 +940,59 @@ See `org-latex-format-headline-function' for details."
 ;; load theme after defining 
 (load-theme 'modus-vivendi :noconfirm)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; Agenda
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;; Agenda
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; org-agenda activation
 (global-set-key (kbd "C-c l") #'org-store-link)
 (global-set-key (kbd "C-c a") #'org-agenda)
 (global-set-key (kbd "C-c c") #'org-capture)
 
-;; Set your agenda files/directories (as a list of paths)
-(setq org-agenda-files '("~/org/agenda/" "~/.notes") )
+   ;; Set your agenda files/directories (as a list of paths)
+   (setq org-agenda-files '("~/org/agenda/" "~/.notes") )
 
-;; ;; Set default column view headings: Task Total-Time Time-Stamp
- ;; (setq org-columns-default-format "%50ITEM(Task) %10CLOCKSUM %16TIMESTAMP_IA")
-(setq org-columns-default-format "%25ITEM %TODO %3PRIORITY %TAGS")
+   ;; ;; Set default column view headings: Task Total-Time Time-Stamp
+   ;; (setq org-columns-default-format "%50ITEM(Task) %10CLOCKSUM %16TIMESTAMP_IA")
+  (setq org-columns-default-format "%25ITEM %TODO %3PRIORITY %TAGS")
 
 
 
- ;; Define the custom capture templates
- (setq org-capture-templates
-       '(("t" "todo" entry (file org-default-notes-file)
-	  "* TODO %?\n%u\n%a\n" :clock-in t :clock-resume t)
-	 ("m" "Meeting" entry (file org-default-notes-file)
-	  "* MEETING with %? :MEETING:\n%t" :clock-in t :clock-resume t)
-	 ("d" "Diary" entry (file+datetree "~/org/diary.org")
-	  "* %?\n%U\n" :clock-in t :clock-resume t)
-	 ("i" "Idea" entry (file org-default-notes-file)
-	  "* %? :IDEA: \n%t" :clock-in t :clock-resume t)
-	 ("n" "Next Task" entry (file+headline org-default-notes-file "Tasks")
-	  "** NEXT %? \nDEADLINE: %t") ))
+   ;; Define the custom capture templates
+   (setq org-capture-templates
+	 '(("t" "todo" entry (file org-default-notes-file)
+	    "* TODO %?\n%u\n%a\n" :clock-in t :clock-resume t)
+	   ("m" "Meeting" entry (file org-default-notes-file)
+	    "* MEETING with %? :MEETING:\n%t" :clock-in t :clock-resume t)
+	   ("d" "Diary" entry (file+datetree "~/org/diary.org")
+	    "* %?\n%U\n" :clock-in t :clock-resume t)
+	   ("i" "Idea" entry (file org-default-notes-file)
+	    "* %? :IDEA: \n%t" :clock-in t :clock-resume t)
+	   ("n" "Next Task" entry (file+headline org-default-notes-file "Tasks")
+	    "** NEXT %? \nDEADLINE: %t") ))
 
- (setq org-refile-targets (quote ((nil :maxlevel . 9)
-				  (org-agenda-files :maxlevel . 9))))
+   (setq org-refile-targets (quote ((nil :maxlevel . 9)
+				    (org-agenda-files :maxlevel . 9))))
 
-(setq org-agenda-include-diary t)
+   (setq org-agenda-include-diary t)
+
+  (require 'calfw)
+  (require 'calfw-cal)
+  (require 'calfw-org)
+
+  (defun cfw:open-mbx-calendar ()
+   (interactive)
+   (cfw:open-calendar-buffer
+   :contents-sources
+   (list
+    (cfw:org-create-source "Green")  ; orgmode source
+    ; (cfw:howm-create-source "Blue")  ; howm source
+    (cfw:cal-create-source "Orange") ; diary source
+    ; (cfw:ical-create-source "Moon" "~/moon.ics" "Gray")  ; ICS source1
+    ; (cfw:ical-create-source "gcal" "https://..../basic.ics" "IndianRed") ; google calendar ICS
+   ))) 
+
+  (cfw:open-mbx-calendar)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Manually downloaded packages
@@ -1006,9 +1030,9 @@ See `org-latex-format-headline-function' for details."
 ;; buffer-move - swap buffers easily
 (require 'buffer-move)
 
-;; octave/matlab-fix
-;;;; (require 'ob-octave-fix nil t)    ; This is for older approach
-(require 'ob-octave-fix)
+  ;; octave/matlab-fix
+  ;;;; (require 'ob-octave-fix nil t)    ; This is for older approach
+  (require 'ob-octave-fix)
 
 ;; custom org-special-block-extras blocks
 (add-to-list 'load-path "~/.emacs.d/myarch")
@@ -1019,12 +1043,12 @@ See `org-latex-format-headline-function' for details."
 (require 'ox-extra)
 (ox-extras-activate '(ignore-headlines))
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; Keepass
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(add-to-list 'load-path "~/.emacs.d/manual-download/counsel-keepassxc")
-(require 'counsel-keepassxc)
-(setq counsel-keepassxc-database-file "~/.kipa/mb.kdbx")
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;; Keepass
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  (add-to-list 'load-path "~/.emacs.d/manual-download/counsel-keepassxc")
+  (require 'counsel-keepassxc)
+  (setq counsel-keepassxc-database-file "~/.kipa/mb.kdbx")
 
 ;; [DEPRECATED] - use sunrise instead of this
 ;; midnight-commander emulation
@@ -1034,88 +1058,135 @@ See `org-latex-format-headline-function' for details."
 ;;(use-package ox-ipynb
 ;  :load-path "~/.emacs.d/manual-download/ox-ipynb")
 
-(defun cissic-blog-stencil  (title )
- "Create and open a file with the given stencil."
- (interactive "sEnter the title: ")
- (let* ((date (format-time-string "%Y-%m-%d"))
-	(dateDay (format-time-string "%Y-%m-%d %a"))
-	(titleUnspaced (replace-regexp-in-string " " "-" title))
-	(file-name (concat date "-" (downcase titleUnspaced) ".org"))
-	(file-path (concat "~/projects/cissic.github.io/mysource/public-notes-org/" file-name))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; *** Auxiliary functions for emacs packages management 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun mb/package-list-refresh-and-show  ()
+  (interactive)
+  ;;first, declare repositories
+  (setq package-archives
+      '(("gnu" . "http://elpa.gnu.org/packages/")  ;; default value of package-archives in Emacs 27.1
+	("melpa" . "http://melpa.org/packages/")
+	("melpa-stable" . "http://stable.melpa.org/packages/")
+	("nongnu"       . "https://elpa.nongnu.org/nongnu/")
+	))
 
-	(stencil (concat "#+TITLE: " title "\n"
-			 "#+DESCRIPTION: \n"
-			 "#+AUTHOR: cissic \n"
-			 "#+DATE: <" dateDay ">\n"
-			 "#+TAGS: \n"
-			 "#+OPTIONS: -:nil\n"
-			 "\n"
-			 "* TODO " title "\n"
-			 ":PROPERTIES:\n"
-			 ":PRJ-DIR: ./" date "-" (car (split-string titleUnspaced)) "/\n"
-			 ":END:\n"
-			 "\n"
-			 "** Problem description\n"
-			 "#+begin_src org :tangle (concat (org-entry-get nil \"PRJ-DIR\" t) \"script.org\") :mkdirp yes :exports none :results none\n"
-			 "\n"
-			 "#+end_src\n"
-			 ))) 
-   (with-temp-file file-path
-     (insert stencil))
-   (find-file file-path)))
+  ;; Refresh the repositories to have the newest versions of the packages
+  (package-refresh-contents)
+  (package-list-packages)
+)
 
-(defun mb/org-entry-stencil  (title )
- "Create and open a file with the given stencil."
- (interactive "sEnter the title: ")
- (let* ((date (format-time-string "%Y.%m.%d"))
-	(dateDay (format-time-string "%Y-%m-%d %a"))
-	(titleUnspaced (replace-regexp-in-string " " "-" title))
-	(file-name (concat date "-" (downcase titleUnspaced) ".org"))
-	(file-path (concat "~/org/" file-name))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; *** Blogging
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-	(stencil (concat "#+TITLE: " title "\n"
-			 "#+DESCRIPTION: \n"
-			 "#+AUTHOR: \n"
-			 "#+DATE: <" dateDay ">\n"
-			 "#+TAGS: \n"
-			 "#+OPTIONS: -:nil\n"
-			 "\n"
-			 ))) 
-   (with-temp-file file-path
-     (insert stencil))
-   (find-file file-path)
-   (goto-char (point-max))
-   ))
+ (defun cissic-blog-stencil  (title )
+  "Create and open a file with the given stencil."
+  (interactive "sEnter the title: ")
+  (let* ((date (format-time-string "%Y-%m-%d"))
+	 (dateDay (format-time-string "%Y-%m-%d %a"))
+	 (titleUnspaced (replace-regexp-in-string " " "-" title))
+	 (file-name (concat date "-" (downcase titleUnspaced) ".org"))
+	 (file-path (concat "~/projects/cissic.github.io/mysource/public-notes-org/" file-name))
 
-(defun mb/orgpriv-entry-stencil  (title )
- "Create and open a file with the given stencil."
- (interactive "sEnter the title: ")
- (let* ((date (format-time-string "%Y.%m.%d"))
-	(dateDay (format-time-string "%Y-%m-%d %a"))
-	(titleUnspaced (replace-regexp-in-string " " "-" title))
-	(file-name (concat date "-" (downcase titleUnspaced) ".org"))
-	(file-path (concat "~/orgpriv/" file-name))
+	 (stencil (concat "#+TITLE: " title "\n"
+			  "#+DESCRIPTION: \n"
+			  "#+AUTHOR: cissic \n"
+			  "#+DATE: <" dateDay ">\n"
+			  "#+TAGS: \n"
+			  "#+OPTIONS: -:nil\n"
+			  "\n"
+			  "* TODO " title "\n"
+			  ":PROPERTIES:\n"
+			  ":PRJ-DIR: ./" date "-" (car (split-string titleUnspaced)) "/\n"
+			  ":END:\n"
+			  "\n"
+			  "** Problem description\n"
+			  "#+begin_src org :tangle (concat (org-entry-get nil \"PRJ-DIR\" t) \"script.org\") :mkdirp yes :exports none :results none\n"
+			  "\n"
+			  "#+end_src\n"
+			  ))) 
+    (with-temp-file file-path
+      (insert stencil))
+    (find-file file-path)
+     (goto-char (point-max))
+     ))
 
-	(stencil (concat "#+TITLE: " title "\n"
-			 "#+DESCRIPTION: \n"
-			 "#+AUTHOR: \n"
-			 "#+DATE: <" dateDay ">\n"
-			 "#+TAGS: \n"
-			 "#+OPTIONS: -:nil\n"
-			 "\n"
-			 ))) 
-   (with-temp-file file-path
-     (insert stencil))
-   (find-file file-path)
-   (goto-char (point-max))
-   ))
+  (defun mb/org-entry-stencil  (title )
+   "Create and open a file with the given stencil."
+   (interactive "sEnter the title: ")
+   (let* ((date (format-time-string "%Y.%m.%d"))
+	  (dateDay (format-time-string "%Y-%m-%d %a"))
+	  (titleUnspaced (replace-regexp-in-string " " "-" title))
+	  (file-name (concat date "-" (downcase titleUnspaced) ".org"))
+	  (file-path (concat "~/org/" file-name))
 
-(setq easy-hugo-basedir "~/projects/easy-hugo-blog/quickstart/")
-(setq easy-hugo-url "http://marbor.strony.prz.edu.pl/hugo")
-(setq easy-hugo-sshdomain "blogdomain")
-(setq easy-hugo-root "/usr/bin/")
-(setq easy-hugo-previewtime "300")
-;; (define-key global-map (kbd "C-c C-e") 'easy-hugo)
+	  (stencil (concat "#+TITLE: " title "\n"
+			   "#+DESCRIPTION: \n"
+			   "#+AUTHOR: \n"
+			   "#+DATE: <" dateDay ">\n"
+			   "#+TAGS: \n"
+			   "#+OPTIONS: -:nil\n"
+			   "\n"
+			   ))) 
+     (with-temp-file file-path
+       (insert stencil))
+     (find-file file-path)
+     (goto-char (point-max))
+     ))
+
+  (defun mb/orgpriv-entry-stencil  (title )
+   "Create and open a file with the given stencil."
+   (interactive "sEnter the title: ")
+   (let* ((date (format-time-string "%Y.%m.%d"))
+	  (dateDay (format-time-string "%Y-%m-%d %a"))
+	  (titleUnspaced (replace-regexp-in-string " " "-" title))
+	  (file-name (concat date "-" (downcase titleUnspaced) ".org"))
+	  (file-path (concat "~/orgpriv/" file-name))
+
+	  (stencil (concat "#+TITLE: " title "\n"
+			   "#+DESCRIPTION: \n"
+			   "#+AUTHOR: \n"
+			   "#+DATE: <" dateDay ">\n"
+			   "#+TAGS: \n"
+			   "#+OPTIONS: -:nil\n"
+			   "\n"
+			   ))) 
+     (with-temp-file file-path
+       (insert stencil))
+     (find-file file-path)
+     (goto-char (point-max))
+     ))
+
+  (defun mb/rditit-entry-stencil  (title )
+   "Create and open a file with the given stencil."
+   (interactive "sEnter the title: ")
+   (let* ((date (format-time-string "%Y.%m.%d"))
+	  (dateDay (format-time-string "%Y-%m-%d %a"))
+	  (titleUnspaced (replace-regexp-in-string " " "-" title))
+	  (file-name (concat date "-" (downcase titleUnspaced) ".org"))
+	  (file-path (concat "~/org/RDITiT/pisma,maile-org/" file-name))
+
+	  (stencil (concat "#+TITLE: " title "\n"
+			   "#+DESCRIPTION: \n"
+			   "#+AUTHOR: \n"
+			   "#+DATE: <" dateDay ">\n"
+			   "#+TAGS: \n"
+			   "#+OPTIONS: -:nil\n"
+			   "\n"
+			   ))) 
+     (with-temp-file file-path
+       (insert stencil))
+     (find-file file-path)
+     (goto-char (point-max))
+     ))
+
+  (setq easy-hugo-basedir "~/projects/easy-hugo-blog/quickstart/")
+  (setq easy-hugo-url "http://marbor.strony.prz.edu.pl/hugo")
+  (setq easy-hugo-sshdomain "blogdomain")
+  (setq easy-hugo-root "/usr/bin/")
+  (setq easy-hugo-previewtime "300")
+  ;; (define-key global-map (kbd "C-c C-e") 'easy-hugo)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** The ending
@@ -1124,23 +1195,23 @@ See `org-latex-format-headline-function' for details."
 (workgroups-mode 1)    ; session manager for emacs
 (setq wg-session-file "~/.emacs.d/.emacs_workgroups") ;
 
-(if (not noninteractive)
-    ( ; if Emacs is started in graphical environment
-      progn
-      (add-hook 'kill-emacs-hook (
-		     lambda () (wg-create-workgroup "currentsession")))
-      (setq inhibit-startup-message t)
-      (add-hook 'window-setup-hook (
-		       lambda () (wg-open-workgroup "currentsession")))
-    )
-   (
-    ; if Emacs is run in batch mode - do not care about workgroups
-   )
-)
+  (if (not noninteractive)
+      ( ; if Emacs is started in graphical environment
+        progn
+	(add-hook 'kill-emacs-hook (
+		       lambda () (wg-create-workgroup "currentsession")))
+	(setq inhibit-startup-message t)
+	(add-hook 'window-setup-hook (
+			 lambda () (wg-open-workgroup "currentsession")))
+      )
+     (
+      ; if Emacs is run in batch mode - do not care about workgroups
+     )
+  )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Finishing touches
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; All done
-(message "All done in init.el.")
+  ;; All done
+  (message "All done in init.el.")
