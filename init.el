@@ -133,17 +133,13 @@
   ;; Advanced buffer mode
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
-  ;; emacs-sessions
-  (add-to-list 'load-path "~/.emacs.d/manual-download/emacs-sessions/")
-  (require 'sessions)
+(defun mb/close-all-buffers ()
+  (interactive)
+  (mapc 'kill-buffer (buffer-list)))
 
-  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  ;; persp-mode
-  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-  (add-to-list 'load-path "~/.emacs.d/manual-download/persp-mode/")
-  (require 'persp-mode)
-  (persp-mode 1)
+(defun mb/close-all-buffers-but-the-current-one ()
+  (interactive)
+  (mapc 'kill-buffer (delete (current-buffer) (buffer-list)) ))
 
 ;; Resize the whole frame, and not only a window
 ;; Adapted from https://stackoverflow.com/a/24714383/5103881
@@ -217,8 +213,8 @@ frame if FRAME is nil, and to 1 if AMT is nil."
 
 ;; Recently opened files ->
   (recentf-mode 1)
-  (setq recentf-max-menu-items 200)
-  (setq recentf-max-saved-items 200)
+  (setq recentf-max-menu-items 500)
+  (setq recentf-max-saved-items 500)
   ;; in original emacs this binding is for "Find file read-only"
   (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 ;; <- Recently opened files
@@ -301,6 +297,11 @@ frame if FRAME is nil, and to 1 if AMT is nil."
 
   (setq org-export-async-init-file (expand-file-name "~/.emacs.d/myarch/async_init.el"))
   (setq org-export-async-debug nil) ;; when set to 't' it stores all "*Org Export Process*" buffers, when set to 'nil' it leaves only the last one in the buffer list, but already killed
+
+(defun my-org-change-minus-syntax-fun ()
+  (modify-syntax-entry ?- "."))
+
+(add-hook 'org-mode-hook #'my-org-change-minus-syntax-fun)
 
 ;; Add all of the hooks...
 ;(add-hook 'c++-mode-hook 'my-c++-mode-hook)
@@ -411,13 +412,14 @@ See `org-latex-format-headline-function' for details."
    'org-babel-load-languages '(
 			       (C . t) ; enable processing C, C++, and D source blocks
 			       (julia . t)
-			       (matlab . t)
 			       (js . t)
-			       ;;(perl . t)
+			       (latex . t)
+			       (matlab . t)
 			       (octave . t)
 			       (org . t)
-			       (python . t)
+			       ;;(perl . t)
 			       (plantuml . t)
+			       (python . t)
 			       (shell . t)
 			       ))
 
@@ -527,6 +529,16 @@ See `org-latex-format-headline-function' for details."
         (run-hooks 'org-babel-tangle-finished-hook)
     path-collector))))
 
+(defun mb/tangle-file-and-close-new-buffers (target-file)
+  "Tangle code and close any buffers that were opened during the tangling process."
+  (let ((initial-buffers (buffer-list)))  ;; List of buffers before tangling
+    ;; Perform tangling operation
+    (mb/tangle-file target-file)
+    ;; Identify new buffers opened during tangling
+    (dolist (buf (buffer-list))
+      (unless (member buf initial-buffers)
+        (kill-buffer buf)))))  ;; Close only buffers that weren’t in the initial list
+
   (defun mb/org-babel-tangle-to-target-file-from-the-file (file target-file)
     (interactive "fFile to tangle: \nP")
       (let* ((visited (find-buffer-visiting file))
@@ -536,6 +548,17 @@ See `org-latex-format-headline-function' for details."
 	      (org-with-wide-buffer
 	       (mapcar #'expand-file-name
 		       (mb/tangle-file target-file))))
+	  (unless visited (kill-buffer buffer)))))
+
+  (defun mb/org-babel-tangle-to-target-file-from-the-file-and-clean (file target-file)
+    (interactive "fFile to tangle: \nP")
+      (let* ((visited (find-buffer-visiting file))
+	     (buffer (or visited (find-file-noselect file))))
+	(prog1
+	    (with-current-buffer buffer
+	      (org-with-wide-buffer
+	       (mapcar #'expand-file-name
+		       (mb/tangle-file-and-close-new-buffers target-file))))
 	  (unless visited (kill-buffer buffer)))))
 
   (defun mb/org-babel-export-org-file-to-latex (filename)
@@ -549,10 +572,35 @@ See `org-latex-format-headline-function' for details."
 
   (defun mb/org-babel-tangle-and-export (file target-file)
     (interactive)
-    (mb/org-babel-tangle-to-target-file-from-the-file file target-file)
+    ; (mb/org-babel-tangle-to-target-file-from-the-file file target-file)
+    (mb/org-babel-tangle-to-target-file-from-the-file-and-clean file target-file)
     (sleep-for 0.5)
     (mb/org-babel-export-org-file-to-latex target-file)
     )
+
+  (defun mb/org-babel-tangle-and-export-by-name (block-name)
+    (interactive)
+    (mb/org-babel-tangle-named-block block-name) 
+    (sleep-for 0.5)
+    (let ((target-file (concat block-name ".org")))
+        (mb/org-babel-export-org-file-to-latex target-file)
+    )
+    )
+
+(defun mb/tangle-from-file1-block-outputted-to-file2-and-export-target-to-latex-as-file3 (file1 targetfilename file3)
+  (interactive)
+  (let (
+   (temp1-absolute (expand-file-name file1))
+   (temp2-absolute (concat (expand-file-name (file-name-directory file1)) targetfilename))
+   (temp3-absolute (expand-file-name file3))
+   )
+   
+   ;  ; ;; ; ; (mb/org-babel-tangle-to-target-file-from-the-file temp1-absolute temp2)
+   (mb/org-babel-tangle-to-target-file-from-the-file-and-clean temp1-absolute targetfilename)
+   (rename-file temp2-absolute temp3-absolute t)
+   (mb/org-babel-export-org-file-to-latex temp3-absolute)
+  )
+)
 
 ;; enabling plantuml
 
@@ -816,6 +864,22 @@ See `org-latex-format-headline-function' for details."
 
   (require 'expand-region)
   (global-set-key (kbd "C-=") 'er/expand-region)
+
+(defun mb/buffer-directory ()
+  "Show current buffer's filepath (if exist)"
+  (interactive)
+  (if buffer-file-name
+      (message "Buffer's directory: %s" (file-name-directory buffer-file-name))
+    (message "Current buffer is not a file's buffer.")))
+
+(defun mb/buffer-absolute-path ()
+  "Copy the absolute file path of the current buffer to the kill-ring."
+  (interactive)
+  (if buffer-file-name
+      (progn
+        (kill-new (expand-file-name buffer-file-name))
+        (message "Copied buffer file path to kill-ring: %s" buffer-file-name))
+    (message "Current buffer is not visiting a file.")))
 
   (defun mb/select-current-line ()
     "Select the entire current line."
@@ -1118,8 +1182,10 @@ See `org-latex-format-headline-function' for details."
    (let* ((date (format-time-string "%Y.%m.%d"))
 	  (dateDay (format-time-string "%Y-%m-%d %a"))
 	  (titleUnspaced (replace-regexp-in-string " " "-" title))
+          (dir-name  (concat date "-" (downcase titleUnspaced) ))
 	  (file-name (concat date "-" (downcase titleUnspaced) ".org"))
-	  (file-path (concat "~/org/" file-name))
+	  (dir-path (concat "~/org/" dir-name ))
+	  (file-path (concat "~/org/" dir-name "/" file-name))
 
 	  (stencil (concat "#+TITLE: " title "\n"
 			   "#+DESCRIPTION: \n"
@@ -1128,7 +1194,18 @@ See `org-latex-format-headline-function' for details."
 			   "#+TAGS: \n"
 			   "#+OPTIONS: -:nil\n"
 			   "\n"
-			   ))) 
+			  "* TODO " title "\n"
+			  ":PROPERTIES:\n"
+			  ":PRJ-DIR: ./src"  "/\n"
+			  ":END:\n"
+			  "\n"
+			  "** Opis problemu \n"
+			  "#+begin_src org :tangle (concat (org-entry-get nil \"PRJ-DIR\" t) \"script.org\") :mkdirp yes :exports none :results none\n"
+			  "\n"
+			  "#+end_src\n"
+			   )))
+     
+     (make-directory dir-path)
      (with-temp-file file-path
        (insert stencil))
      (find-file file-path)
@@ -1181,12 +1258,79 @@ See `org-latex-format-headline-function' for details."
      (goto-char (point-max))
      ))
 
+  (load-file (concat user-emacs-directory "../.mysecrets/easy-hugo-url.el"))
+     ; (setq easy-hugo-url ".........")
+
   (setq easy-hugo-basedir "~/projects/easy-hugo-blog/quickstart/")
-  (setq easy-hugo-url "http://marbor.strony.prz.edu.pl/hugo")
   (setq easy-hugo-sshdomain "blogdomain")
   (setq easy-hugo-root "/usr/bin/")
   (setq easy-hugo-previewtime "300")
   ;; (define-key global-map (kbd "C-c C-e") 'easy-hugo)
+
+ (defun pp/blog-stencil  (title )
+  "Create and open a file with the given stencil."
+  (interactive "sEnter the title: ")
+  
+  (load-file (concat user-emacs-directory "../.mysecrets/blog_path.el"))
+  
+  (let* ((date (format-time-string "%Y-%m-%d"))
+   	 (dateDay (format-time-string "%Y-%m-%d %a"))
+   	 (titleUnspaced (replace-regexp-in-string " " "-" title))
+   	 (file-name (concat date "-" (downcase titleUnspaced) ".org"))
+   	 (file-path (concat pp/blog-path file-name))
+	 (stencil (concat ; "#+TITLE: " title "\n"
+			  "# #+OPTIONS: toc:nil \n"
+			  "# ## global settings: \n"
+			  "#+SETUPFILE: ../SETUPFILEORG \n"
+			  "# ## per directory settings:\n"
+			  "# ## - reload path to css files\n"
+			  "#+SETUPFILE: ./SETUPFILEORG\n"
+			  "#+SUBTITLE: Blog: " title "\n"
+			  "# * (Coś w rodzaju) menu :ignore:\n"
+			  "#+INCLUDE: ../menu.org\n"
+			  "# ###################################################################\n"
+
+			  "#+DATE: <" dateDay ">\n"
+			  "#+TAGS: \n"
+			  "\n"
+			  "* TODO " title "\n"
+			  ":PROPERTIES:\n"
+			  ":PRJ-DIR: ./" date "-" (car (split-string titleUnspaced)) "/\n"
+			  ":END:\n"
+			  "\n"
+			  "** Problem description\n"
+			  "#+begin_src org :tangle (concat (org-entry-get nil \"PRJ-DIR\" t) \"script.org\") :mkdirp yes :exports none :results none\n"
+			  "\n"
+			  "#+end_src\n"
+			  )))
+    
+     
+     ; open blog buffer
+     (find-file (concat pp/blog-path "index.org") )
+     ; znajdz sekcje z postami
+     (org-link-search "Posty")
+     ; przejdz do linii poniżej
+     ;;;; (next-line)
+     (org-end-of-line)
+     (org-return)
+     ; insert link to the blog entry
+     (insert (concat "** TODO [[file:./" file-name "][" date ": " title "]]" ) )
+
+     (with-temp-file file-path
+       (insert stencil))
+     (find-file file-path)
+      (goto-char (point-max))
+  )
+  )
+
+ (defun pp/blog-activation  ()
+  "Create and open a file with the given stencil."
+  (interactive)
+  (load-file (concat "~/.mysecrets/blog_path.el")) ; load variable pp/blog-path
+  ; open blog buffer
+  (find-file (concat pp/blog-path "index.org") )
+  
+  )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** The ending

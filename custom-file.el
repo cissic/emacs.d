@@ -10,7 +10,7 @@
  '(midnight-mode t)
  '(org-agenda-files nil)
  '(package-selected-packages
-   '(uuidgen zotxt calfw-cal calfw-org calfw expand-region julia-mode bufler quelpa-use-package quelpa persp-mode tabspaces matlab-mode session-async ob-async easy-hugo dall-e-shell chatgpt-shell companys gptel org-ai engrave-faces org-ref mediawiki emacs-everywhere org-plus-contrib auctex cdlatex ssh pdf-tools dockerfile-mode fill-column-indicator org company yasnippet counsel bash-completion ivy perspective workgroups2 smex org-special-block-extras org-ac modus-themes markdown-mode magit))
+   '(ob-async detached texfrag uuidgen zotxt calfw-cal calfw-org calfw expand-region julia-mode bufler quelpa-use-package quelpa persp-mode tabspaces matlab-mode session-async easy-hugo dall-e-shell chatgpt-shell companys gptel org-ai engrave-faces org-ref mediawiki emacs-everywhere org-plus-contrib auctex cdlatex ssh pdf-tools dockerfile-mode fill-column-indicator org company yasnippet counsel bash-completion ivy perspective workgroups2 smex org-special-block-extras org-ac modus-themes markdown-mode magit))
  '(send-mail-function 'mailclient-send-it)
  '(smtpmail-smtp-server "smtp.prz.edu.pl")
  '(smtpmail-smtp-service 25))
