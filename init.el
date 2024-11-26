@@ -35,13 +35,6 @@
 
   (define-key global-map (kbd "RET") 'newline-and-indent) ; Auto-indent new lines
 
-  (if (not (daemonp))           ; if this is not a --daemon session -> see: [[emacs-everywhere]] section
-     (desktop-save-mode 1)      ; Save buffers on closing and restore them at startup
-  )
-  (setq desktop-load-locked-desktop t) ; and don't ask for confirmation when 
-			     ; opening locked desktop
-  (setq desktop-save t)
-
   (save-place-mode t)        ; When re-entering a file, return to the place, 
 			     ; where I was when I left it the last time.
 
@@ -131,7 +124,7 @@
 (setq ring-bell-function 'ignore)
 
   ;; Advanced buffer mode
-(global-set-key (kbd "C-x C-b") 'ibuffer)
+(global-set-key (kbd "C-x C-b") 'ibuffer) ; this is overwritten by perspective-el configs....
 
 (defun mb/close-all-buffers ()
   (interactive)
@@ -140,6 +133,45 @@
 (defun mb/close-all-buffers-but-the-current-one ()
   (interactive)
   (mapc 'kill-buffer (delete (current-buffer) (buffer-list)) ))
+
+(setq inhibit-startup-message t)
+
+(require 'perspective)
+(global-set-key (kbd "C-x C-b") 'persp-list-buffers)
+(global-set-key (kbd "C-x b") 'persp-switch-to-buffer*)
+(global-set-key (kbd "C-x k") 'persp-kill-buffer*)
+
+(customize-set-variable 'persp-mode-prefix-key (kbd "C-x x"))
+
+(setq persp-state-default-file "~/.emacs.d/perspective-el-sessions/persp-sess.el")
+
+(setq switch-to-prev-buffer-skip
+      (lambda (win buff bury-or-kill)
+        (not (persp-is-current-buffer buff))))
+
+(add-hook 'ibuffer-hook
+          (lambda ()
+            (persp-ibuffer-set-filter-groups)
+            (unless (eq ibuffer-sorting-mode 'alphabetic)
+              (ibuffer-do-sort-by-alphabetic))))
+
+(add-hook 'kill-emacs-hook #'persp-state-save)
+
+
+(customize-set-variable 'display-buffer-base-action
+  '((display-buffer-reuse-window display-buffer-same-window)
+    (reusable-frames . t)))
+
+(customize-set-variable 'even-window-sizes nil)     ; avoid resizing
+
+
+(persp-mode)
+
+(persp-state-load persp-state-default-file)
+
+(add-to-list 'load-path "~/.emacs.d/manual-download/perspective-tabs")
+(require 'perspective-tabs)
+(perspective-tabs-mode +1)
 
 ;; Resize the whole frame, and not only a window
 ;; Adapted from https://stackoverflow.com/a/24714383/5103881
@@ -1335,23 +1367,6 @@ See `org-latex-format-headline-function' for details."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** The ending
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-(workgroups-mode 1)    ; session manager for emacs
-(setq wg-session-file "~/.emacs.d/.emacs_workgroups") ;
-
-  (if (not noninteractive)
-      ( ; if Emacs is started in graphical environment
-        progn
-	(add-hook 'kill-emacs-hook (
-		       lambda () (wg-create-workgroup "currentsession")))
-	(setq inhibit-startup-message t)
-	(add-hook 'window-setup-hook (
-			 lambda () (wg-open-workgroup "currentsession")))
-      )
-     (
-      ; if Emacs is run in batch mode - do not care about workgroups
-     )
-  )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Finishing touches
