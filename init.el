@@ -52,6 +52,13 @@
 (setq org-src-preserve-indentation     t 
       org-edit-src-content-indentation 0)
 
+(require 'move-dup)
+
+(global-set-key (kbd "M-p") 'move-dup-move-lines-up)
+(global-set-key (kbd "M-n") 'move-dup-move-lines-down)
+; (global-set-key (kbd "C-M-<up>") 'move-dup-duplicate-up)
+; (global-set-key (kbd "C-M-<down>") 'move-dup-duplicate-down)
+
 ;; Do not deselect after M-w copying -> 
  (defadvice kill-ring-save (after keep-transient-mark-active ())
    "Override the deactivation of the mark."

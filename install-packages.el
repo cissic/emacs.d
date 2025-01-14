@@ -66,6 +66,7 @@
     matlab-mode ; 
     modus-themes ; theme by Protesilaos Stavrou
     ;moe-theme ; https://github.com/kuanyui/moe-theme.el
+    move-dup
     ;mh
     ;ob-async
     org   ; ver. 9.3  built-in in Emacs 27.1; this install version 9.6 from melpa

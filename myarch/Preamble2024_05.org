@@ -4,6 +4,14 @@
 
 #+AUTHOR: MB
 
+* COMMENT About this file :noexport:
+This is another version of my =Preamble.org.=
+Changes:
+- in this iteration we use =engraved= package instead of =minted=
+  for code blocks.
+
+* Content :ignore:
+
 #+LATEX_HEADER:\usepackage{hyperref} 
 #+LATEX_HEADER:\hypersetup{colorlinks=true,linkcolor=blue,filecolor=magenta,urlcolor=blue}
 
@@ -87,38 +95,6 @@
 #+LATEX_HEADER:\definecolor{my-sky}{cmyk}  {0.25, 0.00, 0.08, 0.04, 1.00}
 #+LATEX_HEADER:\definecolor{my-gray}{cmyk}  {0.20, 0.20, 0.20, 0.20, 1.00}
 
-# ############ FORMATOWANIE BLOKÓW KODU I BLOKÓW Z WYNIKAMI
-# 1. Formatowanie kodów przy pomocy minted (jak na razie nie działa)
-# #+LaTeX_HEADER: \usepackage{minted} # This is added by default by Emacs exporter
-# #+LaTeX_HEADER: \newenvironment{resultsminted}{{\begin{minted}[,frame=single]}{\end{minted}}}}
-
-# #+LaTeX_HEADER: \usepackage{color}
-# #+LaTeX_HEADER: \definecolor{my-mint}{cmyk}  {0.20, 0.00, 0.16, 0.06, 1.00}
-# #+LaTeX_HEADER: \newenvironment{resultsminted}
-# #+LaTeX_HEADER: {\VerbatimEnvironment
-# #+LaTeX_HEADER: \begin{minted}[
-# #+LaTeX_HEADER: % linenos,
-# #+LaTeX_HEADER: % fontfamily=courier,
-# #+LaTeX_HEADER: % fontsize=\scriptsize,
-# #+LaTeX_HEADER: % xleftmargin=21pt,
-# #+LaTeX_HEADER: bgcolor=my-mint,
-# #+LaTeX_HEADER: frame=single
-# #+LaTeX_HEADER: ]{text}}
-# #+LaTeX_HEADER: {\end{minted}}
-
-# #+LaTeX_HEADER: \renewenvironment{resultsminted}
-# #+LaTeX_HEADER: {\VerbatimEnvironment
-# #+LaTeX_HEADER: \begin{minted}[
-# #+LaTeX_HEADER: % linenos,
-# #+LaTeX_HEADER: % fontfamily=courier,
-# #+LaTeX_HEADER: % fontsize=\scriptsize,
-# #+LaTeX_HEADER: % xleftmargin=21pt,
-# #+LaTeX_HEADER: bgcolor=my-mint,
-# #+LaTeX_HEADER: frame=single
-# #+LaTeX_HEADER: ]{text}}
-# #+LaTeX_HEADER: {\end{minted}}
-
-# #+LaTeX_HEADER: \usemintedstyle{emacs}
 
 
 
@@ -129,9 +105,15 @@
 #+LATEX_HEADER: \newcommand{\intab}{\int_{x_a}^{x_b}}
 #+LATEX_HEADER: \newcommand{\dotp}[1]{\langle #1 \rangle}
 
-#+LATEX_HEADER: \newcommand{\dif}{\mathrm{d} }
-#+LATEX_HEADER: \newcommand{\dx}{\mathrm{d} x}
-#+LATEX_HEADER: \newcommand{\dy}{\mathrm{d} y}
+#+LATEX_HEADER: \newcommand{\dif}{\operatorname{d} }
+#+LATEX_HEADER: \newcommand{\dx}{\operatorname{d} x}
+#+LATEX_HEADER: \newcommand{\dy}{\operatorname{d} y}
+#+LATEX_HEADER: \newcommand{\vc}{\mathbf}
+#+LATEX_HEADER: \newcommand{\odif}[2]{\frac{\dif #1}{\dif #2}}
+#+LATEX_HEADER: \newcommand{\odifn}[3]{\frac{\dif^{#3} #1}{\dif #2^{#3}}}
+#+LATEX_HEADER: \newcommand{\pdif}[2]{\frac{\partial #1}{\partial #2}}
+#+LATEX_HEADER: \newcommand{\pdifn}[3]{\frac{\partial^{#3} #1}{\partial #2^{#3}}}
+
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # my own macros
@@ -218,8 +200,7 @@
 # #+MACRO: begin_example  #+begin_ex
 # #+MACRO: end_example    #+end_ex
 
-#+MACRO: begin_comment  @@latex:\textcolor{red}{@@
-#+MACRO: end_comment    @@latex:}@@
+
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #    OLD EXPERIMENTS
