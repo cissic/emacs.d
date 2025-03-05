@@ -221,6 +221,12 @@
 #+MACRO: begin_comment  @@latex:\textcolor{red}{@@
 #+MACRO: end_comment    @@latex:}@@
 
+
+
+
+#+MACRO: begin_red  \color{red}
+#+MACRO: end_red    \color{black}
+
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 #    OLD EXPERIMENTS
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

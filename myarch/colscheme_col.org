@@ -14,3 +14,4 @@
 #+MACRO: task_box_col        my-steel
 #+MACRO: problem_box_col     my-steel
 #+MACRO: conclusion_box_col  my-steel
+#+MACRO: solution_box_col    white

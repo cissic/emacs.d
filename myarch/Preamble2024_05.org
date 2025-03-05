@@ -23,7 +23,7 @@ Changes:
 #+LATEX_HEADER:\usepackage{polski}
 #+LATEX_HEADER:\sloppy               % make hyphenation a bit easier for latex
 
-# #+LATEX_HEADER: \usepackage[most]{tcolorbox} 
+#+LATEX_HEADER: \usepackage[most]{tcolorbox} 
 #+LATEX_HEADER: \usepackage{amsmath}
 #+LATEX_HEADER: \usepackage{amsthm}
 
@@ -194,11 +194,20 @@ Changes:
 # #+MACRO: begin_example  #+begin_cbox {{{example_box_caption}}} $1 :background-color {{{example_box_col}}}
 # #+MACRO: end_example    #+end_cbox 
 
+#+MACRO: begin_solution  #+begin_cbox {{{solution_box_caption}}} $1 :background-color {{{solution_box_col}}}
+#+MACRO: end_solution    #+end_cbox
+
+
+
 #+MACRO: begin_example  @@latex:\begin{mbexample}{$1}{$2}@@
 #+MACRO: end_example    @@latex:\end{mbexample}@@
 
 # #+MACRO: begin_example  #+begin_ex
 # #+MACRO: end_example    #+end_ex
+
+
+
+
 
 
 

@@ -14,3 +14,4 @@
 #+MACRO: task_box_caption         Zadanie:
 #+MACRO: problem_box_caption      Problem:
 #+MACRO: conclusion_box_caption   Conclusion:
+#+MACRO: solution_box_caption     Rozwiązanie:

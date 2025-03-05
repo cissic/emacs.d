@@ -105,10 +105,10 @@
   
   ;; setting windmove-default-keybindings to super-<arrow> in order
   ;; to avoid org-mode conflicts
-  (global-set-key (kbd "s-<left>")  'windmove-left)
-  (global-set-key (kbd "s-<right>") 'windmove-right)
-  (global-set-key (kbd "s-<up>")    'windmove-up)
-  (global-set-key (kbd "s-<down>")  'windmove-down)
+  (global-set-key (kbd "M-s-<left>")  'windmove-left)
+  (global-set-key (kbd "M-s-<right>") 'windmove-right)
+  (global-set-key (kbd "M-s-<up>")    'windmove-up)
+  (global-set-key (kbd "M-s-<down>")  'windmove-down)
 ;; <- windmove
 
 ;; Easy windows resize ->
@@ -179,6 +179,97 @@
 (add-to-list 'load-path "~/.emacs.d/manual-download/perspective-tabs")
 (require 'perspective-tabs)
 (perspective-tabs-mode +1)
+
+(defun tab/rditit ()
+(interactive)
+(persp-switch "rditit")
+
+(find-file "/home/mb/org/RDITiT/AuxCodeRD.org")
+(find-file "/home/mb/org/RDITiT/BD_RD.org")
+(find-file "/home/mb/org/RDITiT/PrzewodyDoktorskie/!Uniwersalny-przebieg-przewodu/!przebieg-przewodu-SZABLON.org")
+(find-file "/home/mb/org/RDITiT/Notatki, dokumenty/notatki.org")
+(find-file "/home/mb/org/RDITiT/!RDnotes.org")
+)
+
+(defun tab/rditit-kill ()
+(interactive)
+(persp-kill "rditit")
+)
+
+(defun rd/tab ()
+(interactive)
+  (tab/rditit)
+ )
+
+(defun rd/tab-kill ()
+(interactive)
+  (tab/rditit-kill)
+ )
+
+(defun tab/emacs ()
+(interactive)
+(persp-switch "emacs")
+
+(find-file "/home/mb/.emacs.d/init.el")
+(find-file "/home/mb/.emacs.d/useful-shortcuts.org")
+(find-file "/home/mb/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org")
+
+)
+
+(defun tab/emacs-kill ()
+(interactive)
+(persp-kill "emacs")
+)
+
+(defun tab/dolfx ()
+(interactive)
+(persp-switch "dolfx")
+
+(find-file "~/projects/dolfinx-tutorials-PDE-PL/dolfinx-PDE-PL-tutorials.org")
+
+;; (find-file "~/projects/acomuffProject/org-mode/Preamble.org")
+;; (find-file "~/projects/acomuffProject/org-mode/PreambleBook.org")
+(find-file "~/projects/acomuffProject/org-mode/Book.org")
+;; (find-file "~/projects/acomuffProject/org-mode/chapters/impulseProcessing.org")
+(find-file "~/projects/acomuffProject/org-mode/chapters/mufflerDesign.org")
+
+)
+
+(defun tab/dolfx-kill ()
+(interactive)
+(persp-kill "dolfx")
+)
+
+(defun tab/cissic ()
+(interactive)
+(persp-switch "cissic")
+
+;; (find-file "")
+;; (find-file "")
+;; (find-file "")
+
+)
+
+(defun tab/cissic-kill ()
+(interactive)
+(persp-kill "cissic")
+)
+
+(defun tab/fdm ()
+(interactive)
+(persp-switch "fdm")
+
+;; (find-file "")
+(find-file "/home/mb/org/2025.02.19-projekty-mn-fdm/dowiązanie do wyklad-org-TODO/FDMimp-org/fdm1d.org")
+
+(find-file "/home/mb/org/2025.02.19-projekty-mn-fdm/2025.02.19-projekty-mn-fdm.org")
+
+)
+
+(defun tab/fdm-kill ()
+(interactive)
+(persp-kill "fdm")
+)
 
 ;; Resize the whole frame, and not only a window
 ;; Adapted from https://stackoverflow.com/a/24714383/5103881
@@ -318,7 +409,22 @@ frame if FRAME is nil, and to 1 if AMT is nil."
 
   (defun my-python-mode-hook()
              (lambda ()
-               (setq python-shell-interpreter "python") ))
+               (setq python-shell-interpreter "~/.emacs.d/.emacs-venv/bin/python3") ))
+
+;; (use-package pyvenv
+;;   :ensure t
+;;   :config
+;;   (pyvenv-mode t)
+
+;;   ;; Set correct Python interpreter
+;;   (setq pyvenv-post-activate-hooks
+;;         (list (lambda ()
+;;                 (setq python-shell-interpreter (concat pyvenv-virtual-env "bin/python3")))))
+;;   (setq pyvenv-post-deactivate-hooks
+;;         (list (lambda ()
+;;                 (setq python-shell-interpreter "python3")))))
+
+(pyvenv-workon "~/.emacs.d/.emacs-venv/bin/python3")
 
   ;; Org mode...
   (setq org-export-in-background t)
@@ -459,6 +565,7 @@ See `org-latex-format-headline-function' for details."
 			       ;;(perl . t)
 			       (plantuml . t)
 			       (python . t)
+			       (scad . t)
 			       (shell . t)
 			       ))
 
@@ -819,10 +926,10 @@ See `org-latex-format-headline-function' for details."
 
 (bash-completion-setup)
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;;;; Add this hook in order to run pdf-tools without a warning message.
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1)))
+(pdf-tools-install)
+(add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1) ; disable linum-mode
+				(midnight-mode 1) ; enable midnight-mode
+				))
 
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
   ;;;; AI - ChatGPT, Dall-E, Stable Diffusion and ...
@@ -897,7 +1004,8 @@ See `org-latex-format-headline-function' for details."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (defun mb/browse-file-directory()
   (interactive)
-  (call-process "dolphin" nil 0 nil "."))
+  ;; (call-process "dolphin" nil 0 nil "."))
+  (call-process "thunar" nil 0 nil "."))
 
 (define-key global-map (kbd "<s-f12>") 'mb/browse-file-directory)
 
@@ -908,7 +1016,10 @@ See `org-latex-format-headline-function' for details."
   "Show current buffer's filepath (if exist)"
   (interactive)
   (if buffer-file-name
-      (message "Buffer's directory: %s" (file-name-directory buffer-file-name))
+      (progn
+      (kill-new (expand-file-name (file-name-directory buffer-file-name)))
+      (message "Copied buffer directory to kill-ring:: %s" (file-name-directory buffer-file-name)))
+    
     (message "Current buffer is not a file's buffer.")))
 
 (defun mb/buffer-absolute-path ()
@@ -1093,9 +1204,10 @@ See `org-latex-format-headline-function' for details."
     (cfw:cal-create-source "Orange") ; diary source
     ; (cfw:ical-create-source "Moon" "~/moon.ics" "Gray")  ; ICS source1
     ; (cfw:ical-create-source "gcal" "https://..../basic.ics" "IndianRed") ; google calendar ICS
-   ))) 
+   )))
 
-  (cfw:open-mbx-calendar)
+;; Temporarily do not open calendar - it only makes me 
+  ;; (cfw:open-mbx-calendar)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Manually downloaded packages
@@ -1117,18 +1229,6 @@ See `org-latex-format-headline-function' for details."
 ;; <- doconce
 
 (global-set-key "\C-c\C-j" "\C-k =====")
-
-;; sunrise
-(add-to-list 'load-path "~/.emacs.d/manual-download/sunrise")
-(require 'sunrise)
-(require 'sunrise-buttons)
-(require 'sunrise-modeline)
-(add-to-list 'auto-mode-alist '("\\.srvm\\'" . sr-virtual-mode))
-
-(add-hook 'sunrise-mode-hook
-   '(lambda ()
-     (local-set-key (kbd "C-x k") 'kill-buffer)
-     (local-set-key (kbd "C-x j") 'sunrise-kill-pane-buffer)))
 
 ;; buffer-move - swap buffers easily
 (require 'buffer-move)
@@ -1178,6 +1278,51 @@ See `org-latex-format-headline-function' for details."
   (package-refresh-contents)
   (package-list-packages)
 )
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; *** Auxiliary functions for layout management
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defun toggle-window-split ()
+  (interactive)
+  (if (= (count-windows) 2)
+      (let* ((this-win-buffer (window-buffer))
+         (next-win-buffer (window-buffer (next-window)))
+         (this-win-edges (window-edges (selected-window)))
+         (next-win-edges (window-edges (next-window)))
+         (this-win-2nd (not (and (<= (car this-win-edges)
+                     (car next-win-edges))
+                     (<= (cadr this-win-edges)
+                     (cadr next-win-edges)))))
+         (splitter
+          (if (= (car this-win-edges)
+             (car (window-edges (next-window))))
+          'split-window-horizontally
+        'split-window-vertically)))
+    (delete-other-windows)
+    (let ((first-win (selected-window)))
+      (funcall splitter)
+      (if this-win-2nd (other-window 1))
+      (set-window-buffer (selected-window) this-win-buffer)
+      (set-window-buffer (next-window) next-win-buffer)
+      (select-window first-win)
+      (if this-win-2nd (other-window 1))))))
+
+;; (global-set-key (kbd "C-x |") 'toggle-window-split)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; *** Auxiliary functions...
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; fdap like ffap 
+(defun fdap (&optional path) 
+  "Open the given PATH in a file manager (e.g., Dolphin, Thunar). 
+If no PATH is provided, it tries to detect a file path at point or prompts the user."
+  (interactive)
+  (let* ((default-manager "thunar") ;; Change to "dolphin" or another file manager if needed
+         (detected-path (or path (ffap-file-at-point) (read-file-name "Select file or directory: ")))
+         (full-path (expand-file-name detected-path)))
+    (if (file-exists-p full-path)
+        (start-process "file-manager" nil default-manager full-path)
+      (message "Path does not exist: %s" full-path))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Blogging
