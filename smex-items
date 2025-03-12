@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
- pp/blog-stencil
- mb/buffer-absolute-path
- mb/buffer-directory
  mb/org-entry-stencil
- persp-switch
- org-mode
- display-fill-column-indicator-mode
+ tab/rditit-kill
+ rd/pack-and-upload
+ rd/export-ListaObec
+ revert-buffer
+ mb/reloadThisFile
+ eval-buffer
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 1219)
- (eval-buffer . 927)
+ (revert-buffer . 1225)
+ (eval-buffer . 953)
  (list-packages . 69)
  (package-refresh-contents . 6)
  (eval-expression . 36)
@@ -40,7 +40,7 @@
  (sunrise . 10)
  (list-faces-display . 1)
  (nc . 1)
- (ffap . 124)
+ (ffap . 125)
  (org-babel-remove-result . 10)
  (kill-sexp . 1)
  (sunrise-sort-by-time . 1)
@@ -71,7 +71,7 @@
  (column-marker-1 . 9)
  (column-marker-2 . 6)
  (column-marker-3 . 3)
- (display-fill-column-indicator-mode . 9)
+ (display-fill-column-indicator-mode . 10)
  (eww-toggle-colors . 3)
  (magit-init . 1)
  (package-install . 6)
@@ -245,7 +245,7 @@
  (rd/deleteZaproszenie . 1)
  (rd/export-level1-headlines-as-toclist . 1)
  (rd/export-ListaGosci . 1)
- (rd/export-ListaObec . 322)
+ (rd/export-ListaObec . 340)
  (rd/export-ListaCzlonkow . 3)
  (rd/clean-aux-ListaCzlonkow . 1)
  (org-babel-goto-named-src-block . 3)
@@ -254,10 +254,10 @@
  (mb/czy-doktorat . 1)
  (rd/load-TabelaCzlonkow-as-list . 5)
  (rd/export-Zaproszenie-Imienne . 3)
- (rd/export-all . 360)
+ (rd/export-all . 361)
  (rd/clean-all-aux . 79)
  (rd/clean-aux-Prezentacja . 1)
- (rd/export-Zaproszenie . 273)
+ (rd/export-Zaproszenie . 305)
  (rd/czy-doktorat . 6)
  (rd/clean-all-pdfs . 35)
  (markdown-mode . 1)
@@ -279,7 +279,7 @@
  (org-ai-kill-region-at-point . 1)
  (mb/browse-file-directory . 1)
  (org-ref-insert-label-link . 23)
- (org-ref-index . 4)
+ (org-ref-index . 5)
  (smex . 1)
  (org-ref-list-of-figures . 4)
  (org-ref-insert-ref-link . 42)
@@ -309,18 +309,18 @@
  (rd/spakuj-pdfy . 43)
  (find-file . 5)
  (rd/ftp-upload . 44)
- (rd/pack-and-upload . 239)
+ (rd/pack-and-upload . 246)
  (rd/ftp-clean . 33)
  (create-and-open-stencil-file . 2)
  (stencil-file . 8)
  (cissic-blog-stencil . 61)
- (mb/org-entry-stencil . 66)
+ (mb/org-entry-stencil . 69)
  (mb/orgpriv-entry-stencil . 14)
  (org-overview . 2)
  (rd/porzadek-obrad-orglist-string-2-org-file . 1)
  (rd/export-Zaproszenia-Imienne . 82)
- (rd/export-ListaGlosowan . 188)
- (rd/export-protokoly-kom-skr . 68)
+ (rd/export-ListaGlosowan . 189)
+ (rd/export-protokoly-kom-skr . 69)
  (rd/export-Zaproszenia-Wszystkie . 21)
  (rd/personal-data-list-Wrapper . 1)
  (ftp . 4)
@@ -334,7 +334,7 @@
  (org-show-all . 2)
  (mb/convert-properties-to-macros . 2)
  (mb/reloadAuxCode . 32)
- (mb/reloadThisFile . 605)
+ (mb/reloadThisFile . 607)
  (load-file . 1)
  (mb/testThisFile . 7)
  (aaa . 20)
@@ -493,7 +493,7 @@
  (prz-blog-stencil . 16)
  (goto-address . 1)
  (pp/blog-activation . 10)
- (pp/blog-stencil . 15)
+ (pp/blog-stencil . 17)
  (mb/buffer-directory . 25)
  (mb/org-babel-tangle-and-export . 1)
  (mb/close-all-buffers-but-this-one . 3)
@@ -543,11 +543,14 @@
  (persp-next . 16)
  (tab-bar-switch-to-next-tab . 4)
  (scad-preview . 2)
- (tab/dolfx . 6)
+ (tab/dolfx . 7)
  (tab/dolfx-kill . 5)
  (tab/emacs-kill . 3)
  (pp/generateWebPage . 1)
  (fdap . 6)
  (pyvenv-workon . 1)
  (help-mode . 2)
+ (tab/rditit . 2)
+ (tab/rditit-kill . 2)
+ (tab/fdm . 1)
 )

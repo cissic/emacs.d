@@ -683,7 +683,7 @@ See `org-latex-format-headline-function' for details."
     ;; Identify new buffers opened during tangling
     (dolist (buf (buffer-list))
       (unless (member buf initial-buffers)
-        (kill-buffer buf)))))  ;; Close only buffers that weren’t in the initial list
+        (kill-buffer buf)))))  ;; Close only buffers that weren't in the initial list
 
   (defun mb/org-babel-tangle-to-target-file-from-the-file (file target-file)
     (interactive "fFile to tangle: \nP")
@@ -855,7 +855,7 @@ See `org-latex-format-headline-function' for details."
   ;; *** Reftex default bibliography - though it's easier to use org-cite
   ;;     This is left in case org-ref doesn't work at all without it....
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  (require 'org-ref)
+  ;; (require 'org-ref)  ;; BECAUSE OF AN ERROR After Virtualbox installation from stable and all update-upgrade operations
 
   ;; Managing org-mode #+NAME properties like in reftex-mode
   (defun my/get-name (e)
@@ -1102,9 +1102,9 @@ See `org-latex-format-headline-function' for details."
 
   (setq diary-file "~/org/diary/diary")
 
-  ; 'american’ - month/day/year
-  ; ‘european’ - day/month/year
-  ; ‘iso’      - year/month/day
+  ; american - month/day/year
+  ; european - day/month/year
+  ; iso      - year/month/day
 
   (setq calendar-date-style "iso")
   (setq diary-date-forms diary-iso-date-forms)
@@ -1229,6 +1229,18 @@ See `org-latex-format-headline-function' for details."
 ;; <- doconce
 
 (global-set-key "\C-c\C-j" "\C-k =====")
+
+;; sunrise
+(add-to-list 'load-path "~/.emacs.d/manual-download/sunrise")
+(require 'sunrise)
+(require 'sunrise-buttons)
+(require 'sunrise-modeline)
+(add-to-list 'auto-mode-alist '("\\.srvm\\'" . sr-virtual-mode))
+
+(add-hook 'sunrise-mode-hook
+   '(lambda ()
+     (local-set-key (kbd "C-x k") 'kill-buffer)
+     (local-set-key (kbd "C-x j") 'sunrise-kill-pane-buffer)))
 
 ;; buffer-move - swap buffers easily
 (require 'buffer-move)

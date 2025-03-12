@@ -24,8 +24,8 @@ Changes:
 #+LATEX_HEADER:\sloppy               % make hyphenation a bit easier for latex
 
 #+LATEX_HEADER: \usepackage[most]{tcolorbox} 
-#+LATEX_HEADER: \usepackage{amsmath}
-#+LATEX_HEADER: \usepackage{amsthm}
+# #+LATEX_HEADER: \usepackage{amsmath}
+# #+LATEX_HEADER: \usepackage{amsthm}
 
 # %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 # ############ Full-stop after (sub)section title
