@@ -8,20 +8,23 @@
 
 https://www.gnu.org/software/emacs/refcards/pdf/pl-refcard.pdf
 
-1. Wstawianie krótkiego przykładu. Dwukropek poprzedzający inne znaki w linii
+1. Otwieranie linków w org-mode
+   : C-c C-o # (org-open-at-point)
+
+2. Wstawianie krótkiego przykładu. Dwukropek poprzedzający inne znaki w linii
    (w ten sposób sa zaznaczane skróty klawiszowe w dokumentacji org-mode):
    : krótki tekst - zostanie napisany inną czcionką zamiast używania #+BEGIN_EXAMPLE
    
-2. Znajdowanie i otwieranie pliku pod kursorem w org-modzie: (raz to dzialalo, ale przestalo)
+3. Znajdowanie i otwieranie pliku pod kursorem w org-modzie: (raz to dzialalo, ale przestalo)
    : C-c '     # czyli (org-edit-special)
 
-3. Wstawianie środowiska w org-mode (np. src itp.)
+4. Wstawianie środowiska w org-mode (np. src itp.)
    : C-c C-,
 
-4. Wstawianie linku w org-mode:
+5. Wstawianie linku w org-mode:
    : C-c C-l
 
-5. Komentarz w linii po tekście [[https://stackoverflow.com/a/27095959][(link)]]:
+6. Komentarz w linii po tekście [[https://stackoverflow.com/a/27095959][(link)]]:
    : @@comment: To komentarz w linii. Nie zostanie wyeksportowany do LateXa. comment@@
 
    Inne komentarze ( [[https://orgmode.org/quickstart.html][quickstart org-mode]] ):
@@ -33,28 +36,28 @@ https://www.gnu.org/software/emacs/refcards/pdf/pl-refcard.pdf
      Keyboard shortcut for it is:
      : C-c ; 
    
-6. Dołączanie (polecenie ~#+INCLUDE~ ) plików ([[https://orgmode.org/manual/Include-Files.html][link]]).
+7. Dołączanie (polecenie ~#+INCLUDE~ ) plików ([[https://orgmode.org/manual/Include-Files.html][link]]).
 
-7. Automatyczne "donumerowanie"/przenumerowanie listy
+8. Automatyczne "donumerowanie"/przenumerowanie listy
    : M-<RET>
 
-8. Wstawianie nowego punktu checklisty:
+9. Wstawianie nowego punktu checklisty:
    : M-S-<RET>
 
-9. Zwijanie/rozwijanie list itp.
-   : <TAB>
-   : S-<TAB>
+10. Zwijanie/rozwijanie list itp.
+    : <TAB>
+    : S-<TAB>
 
-10. Automatyczne rozwijanie wszystkich elementów http://muddyazian.blogspot.com/2015/03/how-to-expand-all-trees-emacs-and-org.html
+11. Automatyczne rozwijanie wszystkich elementów http://muddyazian.blogspot.com/2015/03/how-to-expand-all-trees-emacs-and-org.html
     : C-u C-u C-u <TAB>
 
-11. Zaznaczenie pól checklisty:
+12. Zaznaczenie pól checklisty:
    : C-c C-c
 
-12. Eksport dokumentu org do innych formatów:
+13. Eksport dokumentu org do innych formatów:
    : C-c C-e
 
-13. Dołączanie preambuły do pliku org [[https://emacs.stackexchange.com/questions/41697/reducing-latex-header-clutter-at-the-top-of-my-org-files][link]] (#+INCLUDE,#+SETUPFILE).
+14. Dołączanie preambuły do pliku org [[https://emacs.stackexchange.com/questions/41697/reducing-latex-header-clutter-at-the-top-of-my-org-files][link]] (#+INCLUDE,#+SETUPFILE).
     # #+INCLUDE: "manual_venvs.org" src emacs-lisp
     # #+INCLUDE: "manual_venvs.org" :lines "7-"
     # #+INCLUDE: "manual_venvs.org" :lines "7-" :minlevel 1
@@ -64,51 +67,51 @@ https://www.gnu.org/software/emacs/refcards/pdf/pl-refcard.pdf
     
     #+INCLUDE: "./chapters/manual_venvs.org" :minlevel 1
 
-14. Automatyczne przeladowywanie pliku z dysku:
+15. Automatyczne przeladowywanie pliku z dysku:
     https://emacs.stackexchange.com/questions/169/how-do-i-reload-a-file-in-a-buffer
    : M-x revert-buffer
    : C-x C-v RET @@comment M-x find-alternate-file -> https://emacs.stackexchange.com/a/189  comment@@
    : (auto-revert-mode 1)  ; # albo dodac w init.el
 
-15. Generowanie kodu z bloków #+begin_source -> tangling: 
+16. Generowanie kodu z bloków #+begin_source -> tangling: 
     : C-c C-v t
 
-16. Znacznik czasowy (timestamp)
+17. Znacznik czasowy (timestamp)
    : C-c .
 
-17. Zamiana kolejności dwóch słów:
+18. Zamiana kolejności dwóch słów:
  : M-t       
  : M-x transpose-words
 
-18. Zaznacz słowo pod kursorem
+19. Zaznacz słowo pod kursorem
  : M-b C-M-SPACE
 
-19. Makra:
+20. Makra:
   https://github.com/fniessen/org-macros
   https://orgmode.org/manual/Macro-Replacement.html
   https://stackoverflow.com/questions/22132603/define-org-mode-macro-with-line-breaks
 
-20. Zamieszczanie wyników obliczeń od razu jako wzory LaTeX:
+21. Zamieszczanie wyników obliczeń od razu jako wzory LaTeX:
  https://emacs-orgmode.gnu.narkive.com/1HleUR8q/o-workflow-matlab-latex-in-org-file
 
-21. Doklejanie pliku do org-agenda, aby listowanie działało jak należy:
+22. Doklejanie pliku do org-agenda, aby listowanie działało jak należy:
   https://emacs.stackexchange.com/questions/35137/orgmode-agenda-view-doesn%C2%B4t-display-any-results
   : org-agenda-file-to-front
 
-22. org-agenda
+23. org-agenda
   : C-c-a o
 
-23. Poruszanie się po kalendarzu:
+24. Poruszanie się po kalendarzu:
   https://emacs.stackexchange.com/questions/53715/how-to-schedule-exclusively-with-the-keyboard
 
-24. Kopiowanie nazwy pliku otwartego w buforze do schowka:
+25. Kopiowanie nazwy pliku otwartego w buforze do schowka:
   : copy-file-name-to-clipboard
 
-25. Zamiana kolejności dwóch sąsiadujących linii (aktualna linię zamienia z górną)
+26. Zamiana kolejności dwóch sąsiadujących linii (aktualna linię zamienia z górną)
   : C-x C-t
   : transpose-lines
 
-26. Wcinanie bloków kodu - indentacja (indentation) i cofanie wcinania:
+27. Wcinanie bloków kodu - indentacja (indentation) i cofanie wcinania:
   https://stackoverflow.com/questions/11713743/indent-several-lines-in-emacs
     a) Podejście 1
     : C-u 4 C-x TAB
@@ -124,20 +127,20 @@ https://www.gnu.org/software/emacs/refcards/pdf/pl-refcard.pdf
     Sposoby podane na [[https://www.gnu.org/software/emacs/manual/html_node/emacs/Indentation-Commands.html][stronie Emacsa]] nie działają co jest również wspomniane
     w linku powyżej.
 
-27. Odwracanie kolorów pdfa (https://www.reddit.com/r/emacs/comments/opkzxm/view_pdf_in_dark_mode_with_pdftools/):
+28. Odwracanie kolorów pdfa (https://www.reddit.com/r/emacs/comments/opkzxm/view_pdf_in_dark_mode_with_pdftools/):
     : M-x pdf-view-midnight-mode-minor
   (być może wcześniej trzeba ~pdf-view-mode~)
 
-28. Inteligentne zaznaczanie bloku tekstu (Emacs sam zdecyduje o co Ci chodzi)
+29. Inteligentne zaznaczanie bloku tekstu (Emacs sam zdecyduje o co Ci chodzi)
     : M-h
 
-29. Zamiana akapitów na elementy listy:
+30. Zamiana akapitów na elementy listy:
     Zaznacz stosowny tekst a następnie:
     : C-c -
     a potem
     : <S-leftarrow/rightarrow>
 
-30. Usuwanie pustych znaków z początku linii
+31. Usuwanie pustych znaków z początku linii
 https://stackoverflow.com/questions/445225/emacs-command-to-delete-up-to-non-whitespace-character (w simple.el)
     : delete-indentation 
     : M-^

@@ -205,6 +205,32 @@
 (require 'perspective-tabs)
 (perspective-tabs-mode +1)
 
+(defun tab/rditit ()
+(interactive)
+(persp-switch "rditit")
+
+(find-file "/home/mb/org/RDITiT/AuxCodeRD.org")
+(find-file "/home/mb/org/RDITiT/BD_RD.org")
+(find-file "/home/mb/org/RDITiT/PrzewodyDoktorskie/!Uniwersalny-przebieg-przewodu/!przebieg-przewodu-SZABLON.org")
+(find-file "/home/mb/org/RDITiT/Notatki, dokumenty/notatki.org")
+(find-file "/home/mb/org/RDITiT/!RDnotes.org")
+)
+
+(defun tab/rditit-kill ()
+(interactive)
+(persp-kill "rditit")
+)
+
+(defun rd/tab ()
+(interactive)
+  (tab/rditit)
+ )
+
+(defun rd/tab-kill ()
+(interactive)
+  (tab/rditit-kill)
+ )
+
 (defun tab/emacs ()
 (interactive)
 (persp-switch "emacs")
@@ -212,11 +238,47 @@
 (find-file "/home/mb/.emacs.d/init.el")
 (find-file "/home/mb/.emacs.d/useful-shortcuts.org")
 
+(find-file "/home/mb/projects/cissic.github.io/mysource/public-notes-org/3023-12-18-configuring-and-installing-emacs-29.org")
+
 ) ; endof (defun tab/emacs ()
 
 (defun tab/emacs-kill ()
 (interactive)
 (persp-kill "emacs")
+)
+
+(defun tab/dolfx ()
+(interactive)
+(persp-switch "dolfx")
+
+(find-file "~/projects/dolfinx-tutorials-PDE-PL/dolfinx-PDE-PL-tutorials.org")
+
+;; (find-file "~/projects/acomuffProject/org-mode/Preamble.org")
+;; (find-file "~/projects/acomuffProject/org-mode/PreambleBook.org")
+(find-file "~/projects/acomuffProject/org-mode/Book.org")
+;; (find-file "~/projects/acomuffProject/org-mode/chapters/impulseProcessing.org")
+(find-file "~/projects/acomuffProject/org-mode/chapters/mufflerDesign.org")
+
+)
+
+(defun tab/dolfx-kill ()
+(interactive)
+(persp-kill "dolfx")
+)
+
+(defun tab/cissic ()
+(interactive)
+(persp-switch "cissic")
+
+;; (find-file "")
+;; (find-file "")
+;; (find-file "")
+
+)
+
+(defun tab/cissic-kill ()
+(interactive)
+(persp-kill "cissic")
 )
 
 (defun tab/fdm ()
@@ -307,8 +369,8 @@ frame if FRAME is nil, and to 1 if AMT is nil."
 
 ;; Recently opened files ->
   (recentf-mode 1)
-  (setq recentf-max-menu-items 500)
-  (setq recentf-max-saved-items 500)
+  (setq recentf-max-menu-items 1000)
+  (setq recentf-max-saved-items 1000)
   ;; in original emacs this binding is for "Find file read-only"
   (global-set-key "\C-x\ \C-r" 'recentf-open-files)
 ;; <- Recently opened files
@@ -819,7 +881,7 @@ See `org-latex-format-headline-function' for details."
   ;; *** Reftex default bibliography - though it's easier to use org-cite
   ;;     This is left in case org-ref doesn't work at all without it....
   ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  (require 'org-ref)  ;; BECAUSE OF AN ERROR After Virtualbox installation from stable and all update-upgrade operations
+ ;  (require 'org-ref)  ;; BECAUSE OF AN ERROR After Virtualbox installation from stable and all update-upgrade operations
 
   ;; Managing org-mode #+NAME properties like in reftex-mode
   (defun my/get-name (e)
@@ -894,6 +956,17 @@ See `org-latex-format-headline-function' for details."
 (add-hook 'pdf-view-mode-hook (lambda() (linum-mode -1) ; disable linum-mode
 				(midnight-mode 1) ; enable midnight-mode
 				))
+
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;; AI - ChatGPT, Dall-E, Stable Diffusion and ...
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;; (require 'org-ai)
+  (add-hook 'org-mode-hook #'org-ai-mode)
+  (org-ai-global-mode)
+  ;; (setq org-ai-default-chat-model "gpt-4") ; if you are on the gpt-4 beta:
+  ;; (org-ai-install-yasnippets) ; if you are using yasnippet and want `ai` snippets
+
+  (load-file (concat user-emacs-directory "../.mysecrets/openaiapi.el"))
 
   (setq org-structure-template-alist
   '(("a" . "export ascii\n")
@@ -1049,6 +1122,25 @@ See `org-latex-format-headline-function' for details."
                                                          #'launch-separate-emacs-in-terminal)))))
     (save-buffers-kill-emacs)))
 
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;; Diary
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+  (setq diary-file "~/org/diary/diary")
+
+  ; american - month/day/year
+  ; european - day/month/year
+  ; iso      - year/month/day
+
+  (setq calendar-date-style "iso")
+  (setq diary-date-forms diary-iso-date-forms)
+  (setq diary-comment-start ";;")
+  (setq diary-comment-end "")
+  (setq diary-nonmarking-symbol "!")
+  ; (setq diary-show-holidays-flag t)
+
+  (setq calendar-mark-diary-entries-flag t)
+
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Emacs theme
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -1097,6 +1189,9 @@ See `org-latex-format-headline-function' for details."
 (global-set-key (kbd "C-c a") #'org-agenda)
 (global-set-key (kbd "C-c c") #'org-capture)
 
+   ;; Set your agenda files/directories (as a list of paths)
+   (setq org-agenda-files '("~/org/agenda/" "~/.notes") )
+
    ;; ;; Set default column view headings: Task Total-Time Time-Stamp
    ;; (setq org-columns-default-format "%50ITEM(Task) %10CLOCKSUM %16TIMESTAMP_IA")
   (setq org-columns-default-format "%25ITEM %TODO %3PRIORITY %TAGS")
@@ -1120,6 +1215,25 @@ See `org-latex-format-headline-function' for details."
 				    (org-agenda-files :maxlevel . 9))))
 
    (setq org-agenda-include-diary t)
+
+  (require 'calfw)
+  (require 'calfw-cal)
+  (require 'calfw-org)
+
+  (defun cfw:open-mbx-calendar ()
+   (interactive)
+   (cfw:open-calendar-buffer
+   :contents-sources
+   (list
+    (cfw:org-create-source "Green")  ; orgmode source
+    ; (cfw:howm-create-source "Blue")  ; howm source
+    (cfw:cal-create-source "Orange") ; diary source
+    ; (cfw:ical-create-source "Moon" "~/moon.ics" "Gray")  ; ICS source1
+    ; (cfw:ical-create-source "gcal" "https://..../basic.ics" "IndianRed") ; google calendar ICS
+   )))
+
+;; Temporarily do not open calendar - it only makes me ...
+  ;; (cfw:open-mbx-calendar)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** Manually downloaded packages
@@ -1169,6 +1283,13 @@ See `org-latex-format-headline-function' for details."
 (add-to-list 'load-path "~/.emacs.d/manual-download/ox-extra")
 (require 'ox-extra)
 (ox-extras-activate '(ignore-headlines))
+
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  ;;;; Keepass
+  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+  (add-to-list 'load-path "~/.emacs.d/manual-download/counsel-keepassxc")
+  (require 'counsel-keepassxc)
+  (setq counsel-keepassxc-database-file "~/.kipa/mb.kdbx")
 
 ;; [DEPRECATED] - use sunrise instead of this
 ;; midnight-commander emulation
@@ -1245,6 +1366,38 @@ If no PATH is provided, it tries to detect a file path at point or prompts the u
 ;; *** Blogging
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+ (defun cissic-blog-stencil  (title )
+  "Create and open a file with the given stencil."
+  (interactive "sEnter the title: ")
+  (let* ((date (format-time-string "%Y-%m-%d"))
+	 (dateDay (format-time-string "%Y-%m-%d %a"))
+	 (titleUnspaced (replace-regexp-in-string " " "-" title))
+	 (file-name (concat date "-" (downcase titleUnspaced) ".org"))
+	 (file-path (concat "~/projects/cissic.github.io/mysource/public-notes-org/" file-name))
+
+	 (stencil (concat "#+TITLE: " title "\n"
+			  "#+DESCRIPTION: \n"
+			  "#+AUTHOR: cissic \n"
+			  "#+DATE: <" dateDay ">\n"
+			  "#+TAGS: \n"
+			  "#+OPTIONS: -:nil\n"
+			  "\n"
+			  "* TODO " title "\n"
+			  ":PROPERTIES:\n"
+			  ":PRJ-DIR: ./" date "-" (car (split-string titleUnspaced)) "/\n"
+			  ":END:\n"
+			  "\n"
+			  "** Problem description\n"
+			  "#+begin_src org :tangle (concat (org-entry-get nil \"PRJ-DIR\" t) \"script.org\") :mkdirp yes :exports none :results none\n"
+			  "\n"
+			  "#+end_src\n"
+			  ))) 
+    (with-temp-file file-path
+      (insert stencil))
+    (find-file file-path)
+     (goto-char (point-max))
+     ))
+
   (defun mb/org-entry-stencil  (title )
    "Create and open a file with the given stencil."
    (interactive "sEnter the title: ")
@@ -1280,6 +1433,126 @@ If no PATH is provided, it tries to detect a file path at point or prompts the u
      (find-file file-path)
      (goto-char (point-max))
      ))
+
+  (defun mb/orgpriv-entry-stencil  (title )
+   "Create and open a file with the given stencil."
+   (interactive "sEnter the title: ")
+   (let* ((date (format-time-string "%Y.%m.%d"))
+	  (dateDay (format-time-string "%Y-%m-%d %a"))
+	  (titleUnspaced (replace-regexp-in-string " " "-" title))
+	  (file-name (concat date "-" (downcase titleUnspaced) ".org"))
+	  (file-path (concat "~/orgpriv/" file-name))
+
+	  (stencil (concat "#+TITLE: " title "\n"
+			   "#+DESCRIPTION: \n"
+			   "#+AUTHOR: \n"
+			   "#+DATE: <" dateDay ">\n"
+			   "#+TAGS: \n"
+			   "#+OPTIONS: -:nil\n"
+			   "\n"
+			   ))) 
+     (with-temp-file file-path
+       (insert stencil))
+     (find-file file-path)
+     (goto-char (point-max))
+     ))
+
+  (defun mb/rditit-entry-stencil  (title )
+   "Create and open a file with the given stencil."
+   (interactive "sEnter the title: ")
+   (let* ((date (format-time-string "%Y.%m.%d"))
+	  (dateDay (format-time-string "%Y-%m-%d %a"))
+	  (titleUnspaced (replace-regexp-in-string " " "-" title))
+	  (file-name (concat date "-" (downcase titleUnspaced) ".org"))
+	  (file-path (concat "~/org/RDITiT/pisma,maile-org/" file-name))
+
+	  (stencil (concat "#+TITLE: " title "\n"
+			   "#+DESCRIPTION: \n"
+			   "#+AUTHOR: \n"
+			   "#+DATE: <" dateDay ">\n"
+			   "#+TAGS: \n"
+			   "#+OPTIONS: -:nil\n"
+			   "\n"
+			   ))) 
+     (with-temp-file file-path
+       (insert stencil))
+     (find-file file-path)
+     (goto-char (point-max))
+     ))
+
+  (load-file (concat user-emacs-directory "../.mysecrets/easy-hugo-url.el"))
+     ; (setq easy-hugo-url ".........")
+
+  (setq easy-hugo-basedir "~/projects/easy-hugo-blog/quickstart/")
+  (setq easy-hugo-sshdomain "blogdomain")
+  (setq easy-hugo-root "/usr/bin/")
+  (setq easy-hugo-previewtime "300")
+  ;; (define-key global-map (kbd "C-c C-e") 'easy-hugo)
+
+ (defun pp/blog-stencil  (title )
+  "Create and open a file with the given stencil."
+  (interactive "sEnter the title: ")
+  
+  (load-file (concat user-emacs-directory "../.mysecrets/blog_path.el"))
+  
+  (let* ((date (format-time-string "%Y-%m-%d"))
+   	 (dateDay (format-time-string "%Y-%m-%d %a"))
+   	 (titleUnspaced (replace-regexp-in-string " " "-" title))
+   	 (file-name (concat date "-" (downcase titleUnspaced) ".org"))
+   	 (file-path (concat pp/blog-path file-name))
+	 (stencil (concat ; "#+TITLE: " title "\n"
+			  "# #+OPTIONS: toc:nil \n"
+			  "# ## global settings: \n"
+			  "#+SETUPFILE: ../SETUPFILEORG \n"
+			  "# ## per directory settings:\n"
+			  "# ## - reload path to css files\n"
+			  "#+SETUPFILE: ./SETUPFILEORG\n"
+			  "#+SUBTITLE: Blog: " title "\n"
+			  "# * (Coś w rodzaju) menu :ignore:\n"
+			  "#+INCLUDE: ../menu.org\n"
+			  "# ###################################################################\n"
+
+			  "#+DATE: <" dateDay ">\n"
+			  "#+TAGS: \n"
+			  "\n"
+			  "* TODO " title "\n"
+			  ":PROPERTIES:\n"
+			  ":PRJ-DIR: ./" date "-" (car (split-string titleUnspaced)) "/\n"
+			  ":END:\n"
+			  "\n"
+			  "** Problem description\n"
+			  "#+begin_src org :tangle (concat (org-entry-get nil \"PRJ-DIR\" t) \"script.org\") :mkdirp yes :exports none :results none\n"
+			  "\n"
+			  "#+end_src\n"
+			  )))
+    
+     
+     ; open blog buffer
+     (find-file (concat pp/blog-path "index.org") )
+     ; znajdz sekcje z postami
+     (org-link-search "Posty")
+     ; przejdz do linii poniżej
+     ;;;; (next-line)
+     (org-end-of-line)
+     (org-return)
+     ; insert link to the blog entry
+     (insert (concat "** TODO [[file:./" file-name "][" date ": " title "]]" ) )
+
+     (with-temp-file file-path
+       (insert stencil))
+     (find-file file-path)
+      (goto-char (point-max))
+  )
+  )
+
+ (defun pp/blog-activation  ()
+  "Create and open a file with the given stencil."
+  (interactive)
+  (load-file (concat "~/.mysecrets/blog_path.el")) ; load variable pp/blog-path
+  ; open blog buffer
+  (find-file (concat pp/blog-path "index.org") )
+  
+  )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; *** The ending

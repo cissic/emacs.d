@@ -1,19 +1,19 @@
 
 ;; ----- smex-history -----
 (
+ this-file-action
+ display-fill-column-indicator-mode
+ whitespace-cleanup
  mb/org-entry-stencil
- tab/rditit-kill
- rd/pack-and-upload
- rd/export-ListaObec
+ ffap
  revert-buffer
- mb/reloadThisFile
- eval-buffer
+ mb/export-and-upload-Vagrantfile-to-ftp
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 1225)
- (eval-buffer . 953)
+ (revert-buffer . 1230)
+ (eval-buffer . 957)
  (list-packages . 69)
  (package-refresh-contents . 6)
  (eval-expression . 36)
@@ -40,7 +40,7 @@
  (sunrise . 10)
  (list-faces-display . 1)
  (nc . 1)
- (ffap . 125)
+ (ffap . 127)
  (org-babel-remove-result . 10)
  (kill-sexp . 1)
  (sunrise-sort-by-time . 1)
@@ -71,7 +71,7 @@
  (column-marker-1 . 9)
  (column-marker-2 . 6)
  (column-marker-3 . 3)
- (display-fill-column-indicator-mode . 10)
+ (display-fill-column-indicator-mode . 17)
  (eww-toggle-colors . 3)
  (magit-init . 1)
  (package-install . 6)
@@ -145,7 +145,7 @@
  (org-sparse-tree . 5)
  (ido-write-file . 1)
  (kill-buffer . 2)
- (org-babel-tangle . 2)
+ (org-babel-tangle . 3)
  (org-toggle-item . 10)
  (org-toggle-heading . 1)
  (goto-line . 3)
@@ -313,8 +313,8 @@
  (rd/ftp-clean . 33)
  (create-and-open-stencil-file . 2)
  (stencil-file . 8)
- (cissic-blog-stencil . 61)
- (mb/org-entry-stencil . 69)
+ (cissic-blog-stencil . 62)
+ (mb/org-entry-stencil . 70)
  (mb/orgpriv-entry-stencil . 14)
  (org-overview . 2)
  (rd/porzadek-obrad-orglist-string-2-org-file . 1)
@@ -410,7 +410,7 @@
  (persp-ibuffer . 7)
  (tab-new . 1)
  (persp-state-load . 9)
- (persp-remove-buffer . 2)
+ (persp-remove-buffer . 4)
  (tabspaces-mode . 3)
  (tabspaces-switch-to-buffer . 7)
  (tabspaces-switch-buffer-and-tab . 2)
@@ -500,7 +500,7 @@
  (mb/close-all-buffers . 14)
  (kill-some-buffers . 1)
  (mb/close-all-buffers-but-the-current-one . 2)
- (mb/buffer-absolute-path . 10)
+ (mb/buffer-absolute-path . 11)
  (org-html-export-as-html . 1)
  (org-ascii-export-as-ascii . 1)
  (org-md-convert-region-to-md . 1)
@@ -550,7 +550,14 @@
  (fdap . 6)
  (pyvenv-workon . 1)
  (help-mode . 2)
- (tab/rditit . 2)
- (tab/rditit-kill . 2)
+ (tab/rditit . 3)
+ (tab/rditit-kill . 3)
  (tab/fdm . 1)
+ (this-file-action . 4)
+ (org-tangle-without-private . 21)
+ (toggle-variable . 32)
+ (mb/toggle-public/private-tangling . 9)
+ (mb/export-and-upload-Vagrantfile-to-ftp . 11)
+ (mb/export-and-upload-org-to-ftp . 2)
+ (whitespace-cleanup . 5)
 )
