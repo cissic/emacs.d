@@ -1,13 +1,13 @@
 
 ;; ----- smex-history -----
 (
+ mb/toggle-public/private-tangling
  org-redisplay-inline-images
  revert-buffer
  org-display-inline-images
  mb/org-entry-stencil
  persp-kill
- rd/export-all
- rd/export-Zaproszenie
+ eval-buffer
 )
 
 ;; ----- smex-data -----
@@ -556,7 +556,7 @@
  (this-file-action . 14)
  (org-tangle-without-private . 21)
  (toggle-variable . 32)
- (mb/toggle-public/private-tangling . 9)
+ (mb/toggle-public/private-tangling . 10)
  (mb/export-and-upload-Vagrantfile-to-ftp . 11)
  (mb/export-and-upload-org-to-ftp . 2)
  (whitespace-cleanup . 5)

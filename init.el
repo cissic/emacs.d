@@ -31,7 +31,10 @@
   (setq mb/tangle-for-private-purposes
    (not mb/tangle-for-private-purposes))
   (message (concat "Private tangling is now "
-	   (if mb/tangle-for-private-purposes "enabled" "disabled") "." ))
+	   (if mb/tangle-for-private-purposes "enabled" "disabled") ". " 
+	           "Tangle for public is "
+	   (if mb/tangle-for-private-purposes "off" "on") ". " )
+	   )
 )
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; 
@@ -916,22 +919,6 @@ See `org-latex-format-headline-function' for details."
     ("q" . "quote\n")
     ("s" . "src")
     ("v" . "verse\n")))
-
-  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  ;;;; AI - Whisper for voice recording
-  ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-  (setq whisper-install-directory "/tmp/"
-	whisper-model "base"
-	whisper-language "en"
-	whisper-translate nil
-	whisper-use-threads (/ (num-processors) 2))
-
-
-  (add-to-list 'load-path "~/.emacs.d/manual-download/whisper.el/")
-  ;; doconce (M-x DocOnce) may be needed to activate it -> 
-  (load-file "~/.emacs.d/manual-download/whisper.el/whisper.el")
-
-  (global-set-key [f12] 'whisper-run)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;;; Useful global shortcuts (text operations)
