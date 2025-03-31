@@ -1,18 +1,18 @@
 
 ;; ----- smex-history -----
 (
- this-file-action
- display-fill-column-indicator-mode
- whitespace-cleanup
- mb/org-entry-stencil
- ffap
+ org-redisplay-inline-images
  revert-buffer
- mb/export-and-upload-Vagrantfile-to-ftp
+ org-display-inline-images
+ mb/org-entry-stencil
+ persp-kill
+ rd/export-all
+ rd/export-Zaproszenie
 )
 
 ;; ----- smex-data -----
 (
- (revert-buffer . 1230)
+ (revert-buffer . 1231)
  (eval-buffer . 957)
  (list-packages . 69)
  (package-refresh-contents . 6)
@@ -214,8 +214,8 @@
  (diary-insert-entry . 1)
  (diary-insert-yearly-entry . 1)
  (diary . 3)
- (org-display-inline-images . 37)
- (org-redisplay-inline-images . 2)
+ (org-display-inline-images . 39)
+ (org-redisplay-inline-images . 9)
  (org-toggle-inline-images . 1)
  (itit/export-ListaGosci . 7)
  (itit/importListaGosci . 1)
@@ -239,7 +239,7 @@
  (server-start . 1)
  (toggle-debug-on-error . 12)
  (org-org-export-to-org . 1)
- (rd/Prezentacja2pdf . 1431)
+ (rd/Prezentacja2pdf . 1437)
  (rd/usunPrezentacja . 3)
  (rd/Zaproszenie2pdf . 2)
  (rd/deleteZaproszenie . 1)
@@ -254,12 +254,12 @@
  (mb/czy-doktorat . 1)
  (rd/load-TabelaCzlonkow-as-list . 5)
  (rd/export-Zaproszenie-Imienne . 3)
- (rd/export-all . 361)
- (rd/clean-all-aux . 79)
+ (rd/export-all . 365)
+ (rd/clean-all-aux . 80)
  (rd/clean-aux-Prezentacja . 1)
- (rd/export-Zaproszenie . 305)
+ (rd/export-Zaproszenie . 307)
  (rd/czy-doktorat . 6)
- (rd/clean-all-pdfs . 35)
+ (rd/clean-all-pdfs . 36)
  (markdown-mode . 1)
  (chatgpt-shell . 3)
  (convert-properties-to-macros . 10)
@@ -309,12 +309,12 @@
  (rd/spakuj-pdfy . 43)
  (find-file . 5)
  (rd/ftp-upload . 44)
- (rd/pack-and-upload . 246)
- (rd/ftp-clean . 33)
+ (rd/pack-and-upload . 251)
+ (rd/ftp-clean . 35)
  (create-and-open-stencil-file . 2)
  (stencil-file . 8)
  (cissic-blog-stencil . 62)
- (mb/org-entry-stencil . 70)
+ (mb/org-entry-stencil . 71)
  (mb/orgpriv-entry-stencil . 14)
  (org-overview . 2)
  (rd/porzadek-obrad-orglist-string-2-org-file . 1)
@@ -500,7 +500,7 @@
  (mb/close-all-buffers . 14)
  (kill-some-buffers . 1)
  (mb/close-all-buffers-but-the-current-one . 2)
- (mb/buffer-absolute-path . 11)
+ (mb/buffer-absolute-path . 12)
  (org-html-export-as-html . 1)
  (org-ascii-export-as-ascii . 1)
  (org-md-convert-region-to-md . 1)
@@ -512,7 +512,7 @@
  (persp-save-and-kill . 1)
  (customize-set-variable . 3)
  (customize-group . 1)
- (persp-kill . 6)
+ (persp-kill . 7)
  (persp-save-state-to-file . 5)
  (smie-edebug . 1)
  (persp-load-state-from-file . 5)
@@ -528,7 +528,7 @@
  (magit-log . 2)
  (magit-branch . 2)
  (org-babel-execute-src-block . 3)
- (rd/insert-uchwaly . 21)
+ (rd/insert-uchwaly . 22)
  (rd/insert-punkty-prezentacji-dla-doktoranta . 11)
  (split-name-with-initials . 1)
  (split-name . 2)
@@ -553,11 +553,12 @@
  (tab/rditit . 3)
  (tab/rditit-kill . 3)
  (tab/fdm . 1)
- (this-file-action . 4)
+ (this-file-action . 14)
  (org-tangle-without-private . 21)
  (toggle-variable . 32)
  (mb/toggle-public/private-tangling . 9)
  (mb/export-and-upload-Vagrantfile-to-ftp . 11)
  (mb/export-and-upload-org-to-ftp . 2)
  (whitespace-cleanup . 5)
+ (perspective-tabs-mode . 2)
 )
